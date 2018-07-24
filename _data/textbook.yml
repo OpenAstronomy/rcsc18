@@ -9,6 +9,15 @@ chapters:
 - children:
   - class: level_1
     title: Introduction
+    url: chapters/01-bash/01-Introduction
+  - class: level_1
+    title: Files And Directories
+    url: chapters/01-bash/02-files-and-directories
+  class: level_0
+  title: Bash
+- children:
+  - class: level_1
+    title: Introduction
     url: chapters/02-git/01-introduction
   - class: level_1
     title: Creating Repos
@@ -33,10 +42,4 @@ chapters:
     url: chapters/02-git/08-citation
   class: level_0
   title: Git
-- children:
-  - class: level_1
-    title: Introduction
-    url: chapters/01-bash/01-Introduction
-  class: level_0
-  title: Bash
 first_chapter_url: chapters/00-lessons

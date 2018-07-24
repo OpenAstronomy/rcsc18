@@ -1,4 +1,7 @@
 * [Lessons](notebooks/00-lessons.ipynb)
+* [Bash]()
+  * [Introduction](notebooks/01-bash/01-Introduction.ipynb)
+  * [Files And Directories](notebooks/01-bash/02-files-and-directories.ipynb)
 * [Git]()
   * [Introduction](notebooks/02-git/01-introduction.ipynb)
   * [Creating Repos](notebooks/02-git/02-creating-repos.ipynb)
@@ -8,5 +11,3 @@
   * [Remotes](notebooks/02-git/06-remotes.ipynb)
   * [Licensing](notebooks/02-git/07-licensing.ipynb)
   * [Citation](notebooks/02-git/08-citation.ipynb)
-* [Bash]()
-  * [Introduction](notebooks/01-bash/01-Introduction.ipynb)
