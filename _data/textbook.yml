@@ -3,6 +3,9 @@ chapters:
 - class: level_0
   title: Home
   url: /
+- class: level_0
+  title: Lessons
+  url: chapters/00-lessons
 - children:
   - class: level_1
     title: Introduction
@@ -36,4 +39,4 @@ chapters:
     url: chapters/01-bash/01-Introduction
   class: level_0
   title: Bash
-first_chapter_url: ''
+first_chapter_url: chapters/00-lessons

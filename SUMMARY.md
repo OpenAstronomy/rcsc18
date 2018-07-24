@@ -1,3 +1,4 @@
+* [Lessons](notebooks/00-lessons.ipynb)
 * [Git]()
   * [Introduction](notebooks/02-git/01-introduction.ipynb)
   * [Creating Repos](notebooks/02-git/02-creating-repos.ipynb)

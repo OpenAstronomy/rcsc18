@@ -2,30 +2,15 @@
 permalink: /
 ---
 
-# Textbooks with Jupyter and Jekyll
-
-This repository / website is a template for hosting your own textbook using
-Jupyter Notebooks and Jekyll.
-
-Here are some highlights:
-
-* All course content is written in markdown and Jupyter Notebooks, stored in `notebooks/`
-* This site comes packaged with helper scripts to convert these into Jekyll pages (in `scripts/`)
-* Pages can have [Binder](https://mybinder.org) or JupyterHub links automatically added for interactivity.
-* The website itself is based on Jekyll, and is highly extensible and can be freely-hosted on GitHub.
-
-This repository comes with some sample textbook files from the Data 8 course
-for Data Science at UC Berkeley. You can update these materials and all site
-content with your own, and have a Jupyter-based textbook ready to go shortly!
-
-Here are a few links of interest:
-
-* **[A short guide to deploying your own textbook](https://predictablynoisy.com/textbooks-with-jupyter/guide/01_overview/)**
-* **[The github repository for the guide and demo](https://github.com/choldgraf/textbooks-with-jupyter)**
+# Research Computing Summer School
+## The University of Hull
+### 3rd - 7th September 2018
 
 
-## To get started
+The E. A. Milne Centre for Astrophysics at the University of Hull is hosting the STFC Introductory Summer School for Research Computing in Solar Physics and Astronomy from 2nd to 7th September 2018.
 
-* **To see a demo of the textbook, click the "textbook" link above**.
-* **To start building your own Jupyter textbook**, click **[guide](https://predictablynoisy.com/textbooks-with-jupyter/guide/01_overview)**
-  in the navbar above.
+The Summer School is aimed at (but not restricted to) PhD students in astrophysics and solar physics. This summer school will consist mostly of practical sessions, allowing the students to quickly put into use the concepts they are being taught. This will be combined with a number of invited talks and specialist sessions.
+
+We will use the Python language, which is fast becoming the de facto standard in scientific computing, particularly in astronomy and space physics. Although these fields have historically used IDL, Python has become more popular in recent years, due in part to the fact that it is free and open-source. Additionally, Python’s simple, readable syntax and thriving developer community make it an excellent choice of first language for beginners. However, the principles we will be teaching are language-agnostic and will give the students a good understanding of how to develop and maintain high-quality software in any language.
+
+In addition, there will also be sessions on computing, teaching, outreach,  careers, and secret things you will need to know, in order to survive and thrive as a PhD student.
