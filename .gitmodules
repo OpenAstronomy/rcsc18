@@ -1,0 +1,3 @@
+[submodule "notebooks"]
+	path = notebooks
+	url = ssh://git@git.cadair.com:2205/cadair/summer_school_published.git
