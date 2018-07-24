@@ -101,7 +101,9 @@ def _generate_sidebar(files):
                 title = '{}. {}'.format(chapter_ix, title)
             chapter_ix += 1
         new_link = _prepare_link(link)
-        new_item = {'title': title, "class": "level_{}".format(int(level)), 'url': new_link}
+        new_item = {'title': title, "class": "level_{}".format(int(level))}
+        if new_link:
+            new_item.update({"url": new_link})
         if level == 0:
             if ix_file != (len(files) - 1) and level < files[ix_file + 1][-1]:
                 new_item['children'] = []

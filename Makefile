@@ -8,6 +8,7 @@ help:
 	@echo "  serve       to serve the repository locally with Jekyll"
 
 textbook:
+	python scripts/generate_summary_from_folders.py notebooks/ --filename_split_char=- --overwrite
 	python scripts/generate_textbook.py
 
 runall:

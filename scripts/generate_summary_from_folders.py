@@ -28,9 +28,17 @@ def notebooks_folder_to_files(notebooks_folder):
         split_subfolders = rel_folder.split('/')
         level = len(split_subfolders) if split_subfolders[0] != '' else 0
         if last_folder != rel_folder:
-            subfolder_title = ' '.join(ii.capitalize() for ii in split_subfolders[-1].split('_'))
+            subfolder_title = ' '.join(ii.capitalize() for ii in split_subfolders[-1].split(args.filename_split_char))
+            sf_parts = subfolder_title.split()
+            try:
+                # If first part of the filename is a number for ordering, remove it
+                int(sf_parts[0])
+                subfolder_title = " ".join(sf_parts[1:])
+            except Exception:
+                pass
             all_files.append((subfolder_title, '', level-1))
 
+        filenames.sort()
         for filename in filenames:
             suffix = os.path.splitext(filename)[-1]
             if not suffix in ['.ipynb', '.md']:
@@ -47,7 +55,7 @@ def notebooks_folder_to_files(notebooks_folder):
             url = os.path.join(notebooks_folder, rel_folder, filename)
             last_folder = rel_folder
             all_files.append((title, url, level))
-    all_files = [ii for ii in all_files if len(ii[1]) > 0]
+    # all_files = [ii for ii in all_files if len(ii[1]) > 0]
     return all_files
 
 
