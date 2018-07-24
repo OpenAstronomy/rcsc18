@@ -9,7 +9,10 @@ source "https://rubygems.org"
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 
-gem "github-pages", group: :jekyll_plugins
+# gem "github-pages", group: :jekyll_plugins
+gem "jekyll-paginate"
+gem "jekyll-gist"
+gem "jemoji"
 gem 'jekyll-redirect-from'
 
 # If you want to use Jekyll native, uncomment the line below.

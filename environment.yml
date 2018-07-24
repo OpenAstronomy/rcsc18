@@ -1,4 +1,4 @@
-name: textbook
+name: stfc
 
 channels:
   - conda-forge
