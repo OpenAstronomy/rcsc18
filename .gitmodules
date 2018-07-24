@@ -1,3 +1,0 @@
-[submodule "stfc_org"]
-	path = notebooks
-	url = ssh://git@git.cadair.com:2205/cadair/stfc_org
