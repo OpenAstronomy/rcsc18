@@ -13,6 +13,9 @@ chapters:
   - class: level_1
     title: Files And Directories
     url: chapters/01-bash/02-files-and-directories
+  - class: level_1
+    title: Working With Files And Directories
+    url: chapters/01-bash/03-working-with-files-and-directories
   class: level_0
   title: Bash
 - children:

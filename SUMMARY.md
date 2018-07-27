@@ -2,6 +2,7 @@
 * [Bash]()
   * [Introduction](notebooks/01-bash/01-Introduction.ipynb)
   * [Files And Directories](notebooks/01-bash/02-files-and-directories.ipynb)
+  * [Working With Files And Directories](notebooks/01-bash/03-working-with-files-and-directories.ipynb)
 * [Git]()
   * [Introduction](notebooks/02-git/01-introduction.ipynb)
   * [Creating Repos](notebooks/02-git/02-creating-repos.ipynb)
