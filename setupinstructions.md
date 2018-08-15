@@ -169,4 +169,4 @@ and press [Enter]. This command may take a moment or two to process, after which
 
 # Acknowledgement
 
-These install instructions are adapted from the software carpentry instructions under the terms of the CC-BY 4.0 licence.
+These install instructions are adapted from the [software carpentry instructions](https://carpentries.github.io/workshop-template/) under the terms of the CC-BY 4.0 licence.
