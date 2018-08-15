@@ -165,3 +165,8 @@ conda install numpy matplotlib jupyter sunpy astropy
 ```
 
 and press [Enter]. This command may take a moment or two to process, after which you will be shown the packages which will be installed (there will be a lot, as it will include the packages required by those specified in the command above) and asked if you want to proceed. Press [Enter] again and the installation will begin, which may take some time.
+
+
+# Acknowledgement
+
+These install instructions are adapted from the software carpentry instructions under the terms of the CC-BY 4.0 licence.
