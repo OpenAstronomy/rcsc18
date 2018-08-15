@@ -6,7 +6,7 @@ title                    : "Research Computing Summer School"
 title_separator          : "-"
 name                     : "Stuart Mumford"
 description              : ""
-url                      : "https://cadair.github.io/rcsc" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://cadair.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/rcsc" # the subpath of your site, e.g. "/blog". Defaults to "/"
 repository               : "rcsc" # GitHub username/repo-name for this site
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
