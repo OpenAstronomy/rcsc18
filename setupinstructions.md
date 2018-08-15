@@ -138,7 +138,7 @@ conda config --append channels conda-forge
 then press [Enter]. Now, to create an environment for the workshop, type
 
 ```
-conda create -n stfc-summer-school python=3
+conda create -n stfc-summer-school python=3.6
 ```
 
 and press [Enter] again. This will create a new environment called `stfc-summer-school` and install the latest available version of Python 3 into it.
