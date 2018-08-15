@@ -2,7 +2,7 @@
 main:
   - title: "Timetable"
     url: /timetable/
-  - title: "Setup Instructions"
+  - title: "Setup"
     url: /setup-instructions/
   - title: "Help"
     url: /help/
