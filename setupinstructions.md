@@ -122,26 +122,26 @@ We will teach Python using the [Jupyter notebook](https://jupyter.org/), a progr
 
 ### Python packages
 
-All the python libraries you will need for the workshop can be installed using Anaconda. Anaconda also provides the capability to install packages in distinct environments, and we will use this capability for the workshop.
+All the Python libraries you will need for the workshop can be installed using Anaconda. Anaconda also provides the capability to install packages in distinct environments, and we will use this capability for the workshop.
 
 #### Creating an environment
 
 Before installing the packages you need, you should first create an environment into which they can be installed. This will act as a grouping of installed packages - using several such environments can allow you to have several instances of the same packages installed without them interfering with each other. This is useful, for example, if different things you are working on require different versions of the same package. 
 
 
-First we need to add an additional source of conda packages, the community conda forge repository.
+First we need to add an additional source of conda packages, the community conda forge repository. To do this, open a terminal window and type
 
 ```
 conda config --append channels conda-forge
 ```
 
-For now, just create one environment for the workshop. To do this, open a terminal window and type
+then press [Enter]. Now, to create an environment for the workshop, type
 
 ```
 conda create -n stfc-summer-school python=3
 ```
 
-then press [Enter]. This will create a new environment called stfc-summer-school and install the latest available version of Python 3 into it.
+and press [Enter] again. This will create a new environment called `stfc-summer-school` and install the latest available version of Python 3 into it.
 
 Although this command has created the environment, it isn't currenly active. To activate it, in your terminal type
 
@@ -152,13 +152,13 @@ on linux and macos:
 source activate stfc-summer-school
 ```
 
-on windows:
+on Windows:
 
 ```
 activate stfc-summer-school
 ```
 
-and press [Enter]. Remember this command, as you will need to run it every time you open a new terminal if you want to use the packages installed in this environment. Now, to install the python libraries needed for the workshop, type
+and press [Enter]. Remember this command, as you will need to run it every time you open a new terminal if you want to use the packages installed in this environment. Now, to install the Python libraries needed for the workshop, type
 
 ```
 conda install numpy matplotlib jupyter sunpy astropy
