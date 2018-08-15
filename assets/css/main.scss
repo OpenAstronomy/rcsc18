@@ -59,6 +59,10 @@ li a.level_2 {
 }
 
 
+div.nosidebar article {
+    width: 100%;
+}
+
 // Textbook
 section.textbook article {
   @media (min-width: 64em) {
