@@ -1,5 +1,5 @@
 ---
-interact_link: notebooks/02-git/01-introduction.ipynb
+interact_link: 02-git/01-introduction.ipynb
 title: 'Introduction'
 permalink: 'chapters/02-git/01-introduction'
 previouschapter:

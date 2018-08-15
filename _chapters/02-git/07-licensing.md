@@ -1,5 +1,5 @@
 ---
-interact_link: notebooks/02-git/07-licensing.ipynb
+interact_link: 02-git/07-licensing.ipynb
 title: 'Licensing'
 permalink: 'chapters/02-git/07-licensing'
 previouschapter:

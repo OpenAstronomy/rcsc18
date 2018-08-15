@@ -1,5 +1,5 @@
 ---
-interact_link: notebooks/python1b/02-comments-and-docs.ipynb
+interact_link: python1b/02-comments-and-docs.ipynb
 title: 'Comments And Docs'
 permalink: 'chapters/python1b/02-comments-and-docs'
 previouschapter:

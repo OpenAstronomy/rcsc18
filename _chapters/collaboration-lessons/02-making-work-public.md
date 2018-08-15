@@ -1,5 +1,5 @@
 ---
-interact_link: notebooks/collaboration-lessons/02-making-work-public.ipynb
+interact_link: collaboration-lessons/02-making-work-public.ipynb
 title: 'Making Work Public'
 permalink: 'chapters/collaboration-lessons/02-making-work-public'
 previouschapter:

@@ -1,5 +1,5 @@
 ---
-interact_link: notebooks/02-git/02-creating-repos.ipynb
+interact_link: 02-git/02-creating-repos.ipynb
 title: 'Creating Repos'
 permalink: 'chapters/02-git/02-creating-repos'
 previouschapter:

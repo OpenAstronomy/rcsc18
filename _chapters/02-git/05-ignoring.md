@@ -1,5 +1,5 @@
 ---
-interact_link: notebooks/02-git/05-ignoring.ipynb
+interact_link: 02-git/05-ignoring.ipynb
 title: 'Ignoring'
 permalink: 'chapters/02-git/05-ignoring'
 previouschapter:

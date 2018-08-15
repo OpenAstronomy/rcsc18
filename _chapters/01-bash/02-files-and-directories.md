@@ -1,5 +1,5 @@
 ---
-interact_link: notebooks/01-bash/02-files-and-directories.ipynb
+interact_link: 01-bash/02-files-and-directories.ipynb
 title: 'Files And Directories'
 permalink: 'chapters/01-bash/02-files-and-directories'
 previouschapter:

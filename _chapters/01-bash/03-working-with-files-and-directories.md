@@ -1,5 +1,5 @@
 ---
-interact_link: notebooks/01-bash/03-working-with-files-and-directories.ipynb
+interact_link: 01-bash/03-working-with-files-and-directories.ipynb
 title: 'Working With Files And Directories'
 permalink: 'chapters/01-bash/03-working-with-files-and-directories'
 previouschapter:

@@ -1,5 +1,5 @@
 ---
-interact_link: notebooks/collaboration-lessons/01-remotes.ipynb
+interact_link: collaboration-lessons/01-remotes.ipynb
 title: 'Remotes'
 permalink: 'chapters/collaboration-lessons/01-remotes'
 previouschapter:

@@ -1,5 +1,5 @@
 ---
-interact_link: notebooks/02-git/06-cloning.ipynb
+interact_link: 02-git/06-cloning.ipynb
 title: 'Cloning'
 permalink: 'chapters/02-git/06-cloning'
 previouschapter:

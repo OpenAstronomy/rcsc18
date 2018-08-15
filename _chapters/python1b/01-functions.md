@@ -1,5 +1,5 @@
 ---
-interact_link: notebooks/python1b/01-functions.ipynb
+interact_link: python1b/01-functions.ipynb
 title: 'Functions'
 permalink: 'chapters/python1b/01-functions'
 previouschapter:

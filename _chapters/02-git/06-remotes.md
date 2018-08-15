@@ -1,5 +1,5 @@
 ---
-interact_link: notebooks/02-git/06-remotes.ipynb
+interact_link: 02-git/06-remotes.ipynb
 title: 'Remotes'
 permalink: 'chapters/02-git/06-remotes'
 previouschapter:

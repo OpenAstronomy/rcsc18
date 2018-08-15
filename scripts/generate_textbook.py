@@ -260,7 +260,7 @@ if __name__ == '__main__':
         yaml_fm += ['---']
 
         if link.endswith('.ipynb'):
-            yaml_fm += ['interact_link: {}'.format(link.lstrip('./'))]
+            yaml_fm += ['interact_link: {}'.format(link.lstrip('./notebooks/'))]
         yaml_fm += ["title: '{}'".format(title)]
         yaml_fm += ["permalink: '{}'".format(_prepare_link(link))]
         yaml_fm += ['previouschapter:']

@@ -1,5 +1,5 @@
 ---
-interact_link: notebooks/02-git/04-exploring-history.ipynb
+interact_link: 02-git/04-exploring-history.ipynb
 title: 'Exploring History'
 permalink: 'chapters/02-git/04-exploring-history'
 previouschapter:

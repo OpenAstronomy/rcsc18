@@ -1,5 +1,5 @@
 ---
-interact_link: notebooks/collaboration-lessons/03-forks.ipynb
+interact_link: collaboration-lessons/03-forks.ipynb
 title: 'Forks'
 permalink: 'chapters/collaboration-lessons/03-forks'
 previouschapter:

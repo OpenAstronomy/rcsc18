@@ -1,5 +1,5 @@
 ---
-interact_link: notebooks/00-setup-instructions/00-setup-instructions.ipynb
+interact_link: 00-setup-instructions/00-setup-instructions.ipynb
 title: 'Setup Instructions'
 permalink: 'chapters/00-setup-instructions/00-setup-instructions'
 previouschapter:
@@ -7,7 +7,7 @@ previouschapter:
   title: 'Setup Instructions'
 nextchapter:
   url: 
-  title: 'Collaboration Lessons'
+  title: 'Bash'
 redirect_from:
   - 'chapters/00-setup-instructions/00-setup-instructions'
 ---

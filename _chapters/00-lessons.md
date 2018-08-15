@@ -1,5 +1,5 @@
 ---
-interact_link: notebooks/00-lessons.ipynb
+interact_link: 00-lessons.ipynb
 title: 'Lessons'
 permalink: 'chapters/00-lessons'
 previouschapter:

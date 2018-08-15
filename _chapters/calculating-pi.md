@@ -1,5 +1,5 @@
 ---
-interact_link: notebooks/calculating-pi.ipynb
+interact_link: calculating-pi.ipynb
 title: 'Calculating Pi'
 permalink: 'chapters/calculating-pi'
 previouschapter:
@@ -7,7 +7,7 @@ previouschapter:
   title: 'Lessons'
 nextchapter:
   url: 
-  title: 'Bash'
+  title: 'Setup Instructions'
 redirect_from:
   - 'chapters/calculating-pi'
 ---

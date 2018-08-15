@@ -1,5 +1,5 @@
 ---
-interact_link: notebooks/02-git/08-citation.ipynb
+interact_link: 02-git/08-citation.ipynb
 title: 'Citation'
 permalink: 'chapters/02-git/08-citation'
 previouschapter:
@@ -7,7 +7,7 @@ previouschapter:
   title: 'Licensing'
 nextchapter:
   url: 
-  title: 'Setup Instructions'
+  title: 'Collaboration Lessons'
 redirect_from:
   - 'chapters/02-git/08-citation'
 ---

@@ -1,5 +1,5 @@
 ---
-interact_link: notebooks/01-bash/01-Introduction.ipynb
+interact_link: 01-bash/01-Introduction.ipynb
 title: 'Introduction'
 permalink: 'chapters/01-bash/01-Introduction'
 previouschapter:

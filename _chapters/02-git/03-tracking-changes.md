@@ -1,5 +1,5 @@
 ---
-interact_link: notebooks/02-git/03-tracking-changes.ipynb
+interact_link: 02-git/03-tracking-changes.ipynb
 title: 'Tracking Changes'
 permalink: 'chapters/02-git/03-tracking-changes'
 previouschapter:
