@@ -1,18 +1,18 @@
 ---
-interact_link: notebooks/00-setup-instructions/00-setup-instructions.ipynb
 title: 'Setup Instructions'
-permalink: 'chapters/00-setup-instructions/00-setup-instructions'
-previouschapter:
-  url: 
-  title: 'Setup Instructions'
-nextchapter:
-  url: 
-  title: 'Collaboration Lessons'
-redirect_from:
-  - 'chapters/00-setup-instructions/00-setup-instructions'
+permalink: /setup-instructions/
+layout: single
+masthead: true
+footer: true
+sidebar:
+  nav: setup
 ---
 
-# Setting up git
+# Setting up your Computer
+
+During this summer school you will be expected to follow along with the instructors and do expercies on your own computer. To facilitate this please follow the setup instructions on this page before the workshop. If you have any issues please email the organisers. There will also be some time on the Monday morning to fix any issues.
+
+## Git
 
 ### The Bash Shell
 
@@ -65,7 +65,7 @@ Git should be installed on your computer as part of your Bash install (described
 
 If Git is not already available on your machine you can try to install it via your distro's package manager. For Debian/Ubuntu run `sudo apt-get install git` and for Fedora run `sudo dnf install git`.
 
-### Text Editor
+## Text Editor
 
 When you're writing code, it's nice to have a text editor that is optimized for writing code, with features like automatic color-coding of key words. The default text editor on macOS and Linux is usually set to Vim, which is not famous for being intuitive. If you accidentally find yourself stuck in it, try typing the escape key, followed by `:q!` (colon, lower-case 'q', exclamation mark), then hitting [Enter] to return to the shell.
 
@@ -98,18 +98,18 @@ We will teach Python using the [Jupyter notebook](https://jupyter.org/), a progr
 
 #### Windows
 [Video Tutorial](https://www.youtube.com/watch?v=xxQ0mzZ8UvA)
-1. Open https://www.anaconda.com/download/#windows with your web browser.
+1. Open [https://www.anaconda.com/download/#windows](https://www.anaconda.com/download/#windows) with your web browser.
 1. Download the Python 3 installer for Windows.
 1. Install Python 3 using all of the defaults for installation except make sure to check **Make Anaconda the default Python**.
 
 #### macOS
 [Video Tutorial](https://www.youtube.com/watch?v=TcSAln46u9U)
-1. Open https://www.anaconda.com/download/#macos with your web browser.
+1. Open [https://www.anaconda.com/download/#macos](https://www.anaconda.com/download/#macos) with your web browser.
 1. Download the Python 3 installer for OS X.
 1. Install Python 3 using all of the defaults for installation.
 
 #### Linux
-1. Open https://www.anaconda.com/download/#linux with your web browser.
+1. Open [https://www.anaconda.com/download/#linux](https://www.anaconda.com/download/#linux) with your web browser.
 1. Download the Python 3 installer for Linux. (The installation requires using the shell. If you aren't comfortable doing the installation yourself stop here and request help at the workshop.)
 1. Open a terminal window.
 1. Type
@@ -128,6 +128,13 @@ All the python libraries you will need for the workshop can be installed using A
 
 Before installing the packages you need, you should first create an environment into which they can be installed. This will act as a grouping of installed packages - using several such environments can allow you to have several instances of the same packages installed without them interfering with each other. This is useful, for example, if different things you are working on require different versions of the same package. 
 
+
+First we need to add an additional source of conda packages, the community conda forge repository.
+
+```
+conda config --append channels conda-forge
+```
+
 For now, just create one environment for the workshop. To do this, open a terminal window and type
 
 ```
@@ -138,8 +145,17 @@ then press [Enter]. This will create a new environment called stfc-summer-school
 
 Although this command has created the environment, it isn't currenly active. To activate it, in your terminal type
 
+
+on linux and macos:
+
 ```
 source activate stfc-summer-school
+```
+
+on windows:
+
+```
+activate stfc-summer-school
 ```
 
 and press [Enter]. Remember this command, as you will need to run it every time you open a new terminal if you want to use the packages installed in this environment. Now, to install the python libraries needed for the workshop, type

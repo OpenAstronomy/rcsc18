@@ -4,3 +4,29 @@ main:
     url: /timetable/
   - title: "Setup Instructions"
     url: /setup-instructions/
+
+setup:
+  - class: level_0
+    title: Setting up Your Computer
+    url: /setup-instructions/
+  - children:
+      - class: level_0
+        title: Bash
+        url: /setup-instructions#the-bash-shell
+      - class: level_0
+        title: Git
+        url: /setup-instructions#git-1
+    class: level_0
+    title: Git
+    url: /setup-instructions#git
+  - class: level_0
+    title: Text Editor
+    url: /setup-instructions#text-editor
+  - children:
+      - class: level_1
+        title: Python Packages
+        url: /setup-instructions#python-packages
+    class: level_0
+    title: Python
+    url: /setup-instructions#python
+        
