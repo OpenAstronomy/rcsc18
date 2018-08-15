@@ -4,6 +4,8 @@ main:
     url: /timetable/
   - title: "Setup Instructions"
     url: /setup-instructions/
+  - title: "Help"
+    url: /help/
 
 setup:
   - class: level_0

@@ -101,10 +101,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Chris Holdgraf"
+  name             : "Stuart Mumford and Andrew Leonard"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : ""
-  location         : "Berkeley, CA."
+  location         : ""
   email            :
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
