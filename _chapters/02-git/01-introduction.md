@@ -48,29 +48,18 @@ git config --global user.email "andy.j.leonard@gmail.com"
 
 Please use your own name and email address instead of mine. This user name and email will be associated with your subsequent Git activity, which means that any changes pushed to GitHub, BitBucket, GitLab or another Git host server in a later lesson will include this information.
 
-#### Line Endings
-
-As with other keys, when you hit Return on your keyboard, your computer encodes this input as a character. For reasons that are long to explain, different operating systems use different character(s) to represent the end of a line. (You may also hear these referred to as newlines or line breaks.) Because Git uses these characters to compare files, it may cause unexpected issues when editing a file on different machines.
-
-You can change the way Git recognizes and encodes line endings using the core.autocrlf command to git config. The following settings are recommended:
-
-On macOS and Linux:
-
-```
-git config --global core.autocrlf input
-```
-
-And on Windows:
-
-```
-git config --global core.autocrlf true
-```
-
-You can read more about this issue on this [GitHub page](https://help.github.com/articles/dealing-with-line-endings/).
+<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #f4fd9c; padding-bottom: 5px;'><h4>Line Endings</h4>
+<p>As with other keys, when you hit Return on your keyboard, your computer encodes this input as a character. For reasons that are long to explain, different operating systems use different character(s) to represent the end of a line. (You may also hear these referred to as newlines or line breaks.) Because Git uses these characters to compare files, it may cause unexpected issues when editing a file on different machines.</p>
+<p>You can change the way Git recognizes and encodes line endings using the core.autocrlf command to git config. The following settings are recommended:</p>
+<p>On macOS and Linux:</p>
+<p>`git config --global core.autocrlf input`</p>
+<p>And on Windows:</p>
+<p>`git config --global core.autocrlf true`</p>
+<p>You can read more about this issue on this <a href="https://help.github.com/articles/dealing-with-line-endings/">GitHub page</a>.</p></div>
 
 For these lessons, we will be interacting with GitHub and so the email address used should be the same as the one used when you set up your GitHub account later . If you are concerned about privacy, please review [GitHub’s instructions for keeping your email address private](https://help.github.com/articles/setting-your-commit-email-address-on-github/). If you elect to use a private email address with GitHub, then use that same email address for the user.email value, e.g. username@users.noreply.github.com replacing username with your GitHub one. You can change the email address later on by using the git config command again.
 
-Dracula also has to set his favorite text editor, following this table:
+You should also set your favorite text editor now, following this table:
 
 Editor|Configuration command
 ---|---
@@ -90,9 +79,8 @@ Vim|`$ git config --global core.editor "vim"`
 
 It is possible to reconfigure the text editor for Git whenever you want to change it.
 
-#### Exiting Vim
-
-Note that Vim is the default editor for many programs. If you haven’t used Vim before and wish to exit a session without saving your changes, press `Esc` then type `:q!` and hit Return. If you want to save your changes and quit, press `Esc` then type `:wq` and hit Return.
+<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #f4fd9c; padding-bottom: 5px;'><h4>Exiting Vim</h4>
+<p>Note that Vim is the default editor for many programs. If you haven’t used Vim before and wish to exit a session without saving your changes, press `Esc` then type `:q!` and hit Return. If you want to save your changes and quit, press `Esc` then type `:wq` and hit Return.</p></div>
 
 The four commands we just ran above only need to be run once: the flag --global tells Git to use the settings for every project, in your user account, on this computer.
 
@@ -106,31 +94,22 @@ git config --list
 
 You can change your configuration as many times as you want: just use the same commands to choose another editor or update your email address.
 
-#### Proxy
-In some networks you need to use a proxy. If this is the case, you may also need to tell Git about the proxy:
+<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #f4fd9c; padding-bottom: 5px;'><h4>Proxy</h4>
+<p>In some networks you need to use a proxy. If this is the case, you may also need to tell Git about the proxy:</p>
+<p>`git config --global http.proxy proxy-url
+git config --global https.proxy proxy-url`</p>
+<p>To disable the proxy, use</p>
+<p>`git config --global --unset http.proxy
+git config --global --unset https.proxy`</p></div>
 
-```
-git config --global http.proxy proxy-url
-git config --global https.proxy proxy-url
-```
+<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #f4fd9c; padding-bottom: 5px;'><h4>Git Help and Manual</h4>
+<p>Always remember that if you forget a git command, you can access the list of commands by using -h and access the Git manual by using --help :</p>
+<p>`git config -h
+git config --help`</p></div>
 
-To disable the proxy, use
-
-```
-git config --global --unset http.proxy
-git config --global --unset https.proxy
-```
-
-#### Git Help and Manual
-
-Always remember that if you forget a git command, you can access the list of commands by using -h and access the Git manual by using --help :
-
-```
-git config -h
-git config --help
-```
-
-#### Key Points
-- Version control is like an unlimited ‘undo’.
-- Version control also allows many people to work in parallel.
-- Use git config with the --global option to configure a user name, email address, editor, and other preferences once per machine.
+<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #7ae78e; padding-bottom: 5px;'><h4>Key Points</h4>
+<ul>
+<li>Version control is like an unlimited ‘undo’.</li>
+<li>Version control also allows many people to work in parallel.</li>
+<li>Use git config with the --global option to configure a user name, email address, editor, and other preferences once per machine.</li>
+</ul></div>

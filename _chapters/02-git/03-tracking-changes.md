@@ -21,24 +21,12 @@ First let’s make sure we’re still in the right directory. You should be in t
 pwd
 ```
 
-{:.output_stream}
-```
-/home/drew/workshops/STFC-summer-school-2018/stfc_org/git-lessons
-
-```
-
 If you are still in moons, navigate back up to planets
 
 
 {:.input_area}
 ```xonsh
 pwd
-```
-
-{:.output_stream}
-```
-/home/drew/workshops/STFC-summer-school-2018/stfc_org/git-lessons
-
 ```
 
 
@@ -65,22 +53,10 @@ mars.txt now contains a single line, which we can see by running:
 ls
 ```
 
-{:.output_stream}
-```
-01-introduction.ipynb  02-creating-repos.ipynb  03-tracking-changes.ipynb  04-exploring-history.ipynb  05-ignoring.ipynb  06-remotes.ipynb  07-licensing.ipynb  08-citation.ipynb
-
-```
-
 
 {:.input_area}
 ```xonsh
 cat mars.txt
-```
-
-{:.output_stream}
-```
-/usr/bin/cat: mars.txt: No such file or directory
-
 ```
 
 If we check the status of our project again, Git tells us that it’s noticed the new file:
@@ -139,8 +115,8 @@ git log
 
 `git log` lists all commits made to a repository in reverse chronological order. The listing for each commit includes the commit’s full identifier (which starts with the same characters as the short identifier printed by the git commit command earlier), the commit’s author, when it was created, and the log message Git was given when the commit was created.
 
-### Where Are My Changes?
-If we run `ls` at this point, we will still see just one file called `mars.txt`. That’s because Git saves information about files’ history in the special `.git` directory mentioned earlier so that our filesystem doesn’t become cluttered (and so that we can’t accidentally edit or delete an old version).
+<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #f4fd9c; padding-bottom: 5px;'><h3>Where Are My Changes?</h3>
+<p>If we run `ls` at this point, we will still see just one file called `mars.txt`. That’s because Git saves information about files’ history in the special `.git` directory mentioned earlier so that our filesystem doesn’t become cluttered (and so that we can’t accidentally edit or delete an old version).</p></div>
 
 Now suppose Dracula adds more information to the file. (Again, we’ll edit with `nano` and then `cat` the file to show its contents; you may use a different editor, and don’t need to `cat`.)
 
@@ -197,10 +173,9 @@ Git insists that we add files to the set we want to commit before actually commi
 
 To allow for this, Git has a special staging area where it keeps track of things that have been added to the current changeset but not yet committed.
 
-### Staging Area
-If you think of Git as taking snapshots of changes over the life of a project, git add specifies what will go in a snapshot (putting things in the staging area), and git commit then actually takes the snapshot, and makes a permanent record of it (as a commit). If you don’t have anything staged when you type git commit, Git will prompt you to use git commit -a or git commit --all, which is kind of like gathering everyone for the picture! However, it’s almost always better to explicitly add things to the staging area, because you might commit changes you forgot you made. (Going back to snapshots, you might get the extra with incomplete makeup walking on the stage for the snapshot because you used -a!) Try to stage things manually, or you might find yourself searching for “git undo commit” more than you would like!
-
-![](http://swcarpentry.github.io/git-novice/fig/git-staging-area.svg)
+<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #f4fd9c; padding-bottom: 5px;'><h3>Staging Area</h3>
+<p>If you think of Git as taking snapshots of changes over the life of a project, git add specifies what will go in a snapshot (putting things in the staging area), and git commit then actually takes the snapshot, and makes a permanent record of it (as a commit). If you don’t have anything staged when you type git commit, Git will prompt you to use git commit -a or git commit --all, which is kind of like gathering everyone for the picture! However, it’s almost always better to explicitly add things to the staging area, because you might commit changes you forgot you made. (Going back to snapshots, you might get the extra with incomplete makeup walking on the stage for the snapshot because you used -a!) Try to stage things manually, or you might find yourself searching for “git undo commit” more than you would like!</p>
+<p><img alt="" src="http://swcarpentry.github.io/git-novice/fig/git-staging-area.svg" /></p></div>
 
 Let’s watch as our changes to a file move from our editor to the staging area and into long-term storage. First, we’ll add another line to the file:
 
@@ -258,230 +233,178 @@ and look at the history of what we’ve done so far:
 git log
 ```
 
-### Word-based diffing
-Sometimes, e.g. in the case of the text documents a line-wise diff is too coarse. That is where the --color-words option of git diff comes in very useful as it highlights the changed words using colors.
+<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #f4fd9c; padding-bottom: 5px;'><h3>Word-based diffing</h3>
+<p>Sometimes, e.g. in the case of the text documents a line-wise diff is too coarse. That is where the --color-words option of git diff comes in very useful as it highlights the changed words using colors.</p></div>
 
-### Paging the Log
-When the output of git log is too long to fit in your screen, git uses a program to split it into pages of the size of your screen. When this “pager” is called, you will notice that the last line in your screen is a :, instead of your usual prompt.
+<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #f4fd9c; padding-bottom: 5px;'><h3>Paging the Log</h3>
+<p>When the output of git log is too long to fit in your screen, git uses a program to split it into pages of the size of your screen. When this “pager” is called, you will notice that the last line in your screen is a :, instead of your usual prompt.</p>
+<ul>
+<li>To get out of the pager, press Q.</li>
+<li>To move to the next page, press Spacebar.</li>
+<li>To search for some_word in all pages, press / and type some_word. Navigate through matches pressing N.</li>
+</ul></div>
 
-- To get out of the pager, press Q.
-- To move to the next page, press Spacebar.
-- To search for some_word in all pages, press / and type some_word. Navigate through matches pressing N.
+<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #f4fd9c; padding-bottom: 5px;'><h3>Limit Log Size</h3>
+<p>To avoid having git log cover your entire terminal screen, you can limit the number of commits that Git lists by using -N, where N is the number of commits that you want to view. For example, if you only want information from the last commit you can use:</p>
+<p>```
+$ git log -1</p>
+<p>commit 005937fbe2a98fb83f0ade869025dc2636b4dad5
+Author: Vlad Dracula <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#118;&#108;&#97;&#100;&#64;&#116;&#114;&#97;&#110;&#46;&#115;&#121;&#108;&#118;&#97;&#110;&#46;&#105;&#97;">&#118;&#108;&#97;&#100;&#64;&#116;&#114;&#97;&#110;&#46;&#115;&#121;&#108;&#118;&#97;&#110;&#46;&#105;&#97;</a>
+Date:   Thu Aug 22 10:14:07 2013 -0400</p>
+<p>Discuss concerns about Mars' climate for Mummy
+```</p>
+<p>You can also reduce the quantity of information using the --oneline option:</p>
+<p>```
+$ git log --oneline</p>
+<ul>
+<li>005937f Discuss concerns about Mars' climate for Mummy</li>
+<li>34961b1 Add concerns about effects of Mars' moons on Wolfman</li>
+<li>f22b25e Start notes on Mars as a base
+```</li>
+</ul>
+<p>You can also combine the --oneline options with others. One useful combination is:</p>
+<p>```
+$ git log --oneline --graph --all --decorate</p>
+<ul>
+<li>005937f Discuss concerns about Mars' climate for Mummy (HEAD, master)</li>
+<li>34961b1 Add concerns about effects of Mars' moons on Wolfman</li>
+<li>f22b25e Start notes on Mars as a base
+```</li>
+</ul></div>
 
-### Limit Log Size
-To avoid having git log cover your entire terminal screen, you can limit the number of commits that Git lists by using -N, where N is the number of commits that you want to view. For example, if you only want information from the last commit you can use:
-
-```
-$ git log -1
-
-commit 005937fbe2a98fb83f0ade869025dc2636b4dad5
-Author: Vlad Dracula <vlad@tran.sylvan.ia>
-Date:   Thu Aug 22 10:14:07 2013 -0400
-
-   Discuss concerns about Mars' climate for Mummy
-```
-
-You can also reduce the quantity of information using the --oneline option:
-
-```
-$ git log --oneline
-
- * 005937f Discuss concerns about Mars' climate for Mummy
- * 34961b1 Add concerns about effects of Mars' moons on Wolfman
- * f22b25e Start notes on Mars as a base
-```
-
-You can also combine the --oneline options with others. One useful combination is:
-
-```
-$ git log --oneline --graph --all --decorate
-
-* 005937f Discuss concerns about Mars' climate for Mummy (HEAD, master)
-* 34961b1 Add concerns about effects of Mars' moons on Wolfman
-* f22b25e Start notes on Mars as a base
-```
-
-### Directories
-Two important facts you should know about directories in Git.
-
-1. Git does not track directories on their own, only files within them. Try it for yourself:
-
-```
-$ mkdir directory
+<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #f4fd9c; padding-bottom: 5px;'><h3>Directories</h3>
+<p>Two important facts you should know about directories in Git.</p>
+<ol>
+<li>Git does not track directories on their own, only files within them. Try it for yourself:</li>
+</ol>
+<p>`$ mkdir directory
 $ git status
 $ git add directory
-$ git status
-```
-
-Note, our newly created empty directory directory does not appear in the list of untracked files even if we explicitly add it (via git add) to our repository. This is the reason why you will sometimes see .gitkeep files in otherwise empty directories. Unlike .gitignore, these files are not special and their sole purpose is to populate a directory so that Git adds it to the repository. In fact, you can name such files anything you like.
-
-2. If you create a directory in your Git repository and populate it with files, you can add all files in the directory at once by:
-
-```
-git add <directory-with-files>
-```
+$ git status`</p>
+<p>Note, our newly created empty directory directory does not appear in the list of untracked files even if we explicitly add it (via git add) to our repository. This is the reason why you will sometimes see .gitkeep files in otherwise empty directories. Unlike .gitignore, these files are not special and their sole purpose is to populate a directory so that Git adds it to the repository. In fact, you can name such files anything you like.</p>
+<ol>
+<li>If you create a directory in your Git repository and populate it with files, you can add all files in the directory at once by:</li>
+</ol>
+<p>`git add &lt;directory-with-files&gt;`</p></div>
 
 To recap, when we want to add changes to our repository, we first need to add the changed files to the staging area (git add) and then commit the staged changes to the repository (git commit):
 
 ![](http://swcarpentry.github.io/git-novice/fig/git-committing.svg)
 
-### Choosing a Commit Message
-Which of the following commit messages would be most appropriate for the last commit made to mars.txt?
+<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h3>Choosing a Commit Message</h3>
+<p>Which of the following commit messages would be most appropriate for the last commit made to mars.txt?</p>
+<ul>
+<li>“Changes”</li>
+<li>“Added line ‘But the Mummy will appreciate the lack of humidity’ to mars.txt”</li>
+<li>“Discuss effects of Mars’ climate on the Mummy”</li>
+</ul></div>
 
-- “Changes”
-- “Added line ‘But the Mummy will appreciate the lack of humidity’ to mars.txt”
-- “Discuss effects of Mars’ climate on the Mummy”
+<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #ded4b9; padding-bottom: 5px;'><h4>Solution</h4>
+<p>Answer 1 is not descriptive enough, and the purpose of the commit is unclear; and answer 2 is redundant to using “git diff” to see what changed in this commit; but answer 3 is good: short, descriptive, and imperative.</p></div>
 
-#### Solution
-Answer 1 is not descriptive enough, and the purpose of the commit is unclear; and answer 2 is redundant to using “git diff” to see what changed in this commit; but answer 3 is good: short, descriptive, and imperative.
+<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h3>Committing Changes to Git</h3>
+<p>Which command(s) below would save the changes of myfile.txt to my local Git repository?</p>
+<p>```
+$ git commit -m "my recent changes"</p>
+<p>$ git init myfile.txt
+$ git commit -m "my recent changes"</p>
+<p>$ git add myfile.txt
+$ git commit -m "my recent changes"</p>
+<p>$ git commit -m myfile.txt "my recent changes"
+```</p></div>
 
-### Committing Changes to Git
-Which command(s) below would save the changes of myfile.txt to my local Git repository?
+<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #ded4b9; padding-bottom: 5px;'><h4>Solution</h4>
+<ul>
+<li>Would only create a commit if files have already been staged.</li>
+<li>Would try to create a new repository.</li>
+<li>Is correct: first add the file to the staging area, then commit.</li>
+<li>Would try to commit a file “my recent changes” with the message myfile.txt.</li>
+</ul></div>
 
-```
-$ git commit -m "my recent changes"
+<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h3>Committing Multiple Files</h3>
+<p>The staging area can hold changes from any number of files that you want to commit as a single snapshot.</p>
+<ol>
+<li>Add some text to mars.txt noting your decision to consider Venus as a base</li>
+<li>Create a new file venus.txt with your initial thoughts about Venus as a base for you and your friends</li>
+<li>Add changes from both files to the staging area, and commit those changes.</li>
+</ol></div>
 
-$ git init myfile.txt
-$ git commit -m "my recent changes"
-
-$ git add myfile.txt
-$ git commit -m "my recent changes"
-
-$ git commit -m myfile.txt "my recent changes"
-```
-
-#### Solution
-- Would only create a commit if files have already been staged.
-- Would try to create a new repository.
-- Is correct: first add the file to the staging area, then commit.
-- Would try to commit a file “my recent changes” with the message myfile.txt.
-
-### Committing Multiple Files
-The staging area can hold changes from any number of files that you want to commit as a single snapshot.
-
-1. Add some text to mars.txt noting your decision to consider Venus as a base
-1. Create a new file venus.txt with your initial thoughts about Venus as a base for you and your friends
-1. Add changes from both files to the staging area, and commit those changes.
-
-#### Solution
-First we make our changes to the mars.txt and venus.txt files:
-
-```
+<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #ded4b9; padding-bottom: 5px;'><h4>Solution</h4>
+<p>First we make our changes to the mars.txt and venus.txt files:</p>
+<p>```
 $ nano mars.txt
-$ cat mars.txt
-
-Maybe I should start with a base on Venus.
-
-$ nano venus.txt
-$ cat venus.txt
-
-Venus is a nice planet and I definitely should consider it as a base.
-```
-
-Now you can add both files to the staging area. We can do that in one line:
-
-```
-$ git add mars.txt venus.txt
-```
-
-Or with multiple commands:
-
-```
-$ git add mars.txt
-$ git add venus.txt
-```
-
-Now the files are ready to commit. You can check that using git status. If you are ready to commit use:
-
-```
-$ git commit -m "Write plans to start a base on Venus"
-
-[master cc127c2]
+$ cat mars.txt</p>
+<p>Maybe I should start with a base on Venus.</p>
+<p>$ nano venus.txt
+$ cat venus.txt</p>
+<p>Venus is a nice planet and I definitely should consider it as a base.
+```</p>
+<p>Now you can add both files to the staging area. We can do that in one line:</p>
+<p>`$ git add mars.txt venus.txt`</p>
+<p>Or with multiple commands:</p>
+<p>`$ git add mars.txt
+$ git add venus.txt`</p>
+<p>Now the files are ready to commit. You can check that using git status. If you are ready to commit use:</p>
+<p>```
+$ git commit -m "Write plans to start a base on Venus"</p>
+<p>[master cc127c2]
  Write plans to start a base on Venus
  2 files changed, 2 insertions(+)
  create mode 100644 venus.txt
-```
+```</p></div>
 
-### `bio` Repository
-- Create a new Git repository on your computer called bio.
-- Write a three-line biography for yourself in a file called me.txt, commit your changes
-- Modify one line, add a fourth line
-- Display the differences between its updated state and its original state.
+<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h3>`bio` Repository</h3>
+<ul>
+<li>Create a new Git repository on your computer called bio.</li>
+<li>Write a three-line biography for yourself in a file called me.txt, commit your changes</li>
+<li>Modify one line, add a fourth line</li>
+<li>Display the differences between its updated state and its original state.</li>
+</ul></div>
 
-#### Solution
-If needed, move out of the planets folder:
+<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #ded4b9; padding-bottom: 5px;'><h4>Solution</h4>
+<p>If needed, move out of the planets folder:</p>
+<p>`$ cd ..`</p>
+<p>Create a new folder called bio and ‘move’ into it:</p>
+<p>`$ mkdir bio
+$ cd bio`</p>
+<p>Initialise git:</p>
+<p>`$ git init`</p>
+<p>Create your biography file me.txt using nano or another text editor. Once in place, add and commit it to the repository:</p>
+<p>`$ git add me.txt
+$ git commit -m'Adding biography file'`</p>
+<p>Modify the file as described (modify one line, add a fourth line). To display the differences between its updated state and its original state, use git diff:</p>
+<p>`$ git diff me.txt`</p></div>
 
-```
-$ cd ..
-```
+<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h3>Author and Committer</h3>
+<p>For each of the commits you have done, Git stored your name twice. You are named as the author and as the committer. You can observe that by telling Git to show you more information about your last commits:</p>
+<p>`$ git log --format=full`</p>
+<p>When committing you can name someone else as the author:</p>
+<p>`$ git commit --author="Vlad Dracula &lt;vlad@tran.sylvan.ia&gt;"`</p>
+<p>Create a new repository and create two commits: one without the --author option and one by naming a colleague of yours as the author. Run git log and git log --format=full. Think about ways how that can allow you to collaborate with your colleagues.</p></div>
 
-Create a new folder called bio and ‘move’ into it:
-
-```
-$ mkdir bio
-$ cd bio
-```
-
-Initialise git:
-
-```
-$ git init
-```
-
-Create your biography file me.txt using nano or another text editor. Once in place, add and commit it to the repository:
-
-```
+<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #ded4b9; padding-bottom: 5px;'><h4>Solution</h4>
+<p>```
 $ git add me.txt
-$ git commit -m'Adding biography file'
-```
-
-Modify the file as described (modify one line, add a fourth line). To display the differences between its updated state and its original state, use git diff:
-
-```
-$ git diff me.txt
-```
-
-### Author and Committer
-For each of the commits you have done, Git stored your name twice. You are named as the author and as the committer. You can observe that by telling Git to show you more information about your last commits:
-
-```
-$ git log --format=full
-```
-
-When committing you can name someone else as the author:
-
-```
-$ git commit --author="Vlad Dracula <vlad@tran.sylvan.ia>"
-```
-
-Create a new repository and create two commits: one without the --author option and one by naming a colleague of yours as the author. Run git log and git log --format=full. Think about ways how that can allow you to collaborate with your colleagues.
-
-#### Solution
-```
-$ git add me.txt
-$ git commit -m "Update Vlad's bio." --author="Frank N. Stein <franky@monster.com>"
-
-[master 4162a51] Update Vlad's bio.
-Author: Frank N. Stein <franky@monster.com>
-1 file changed, 2 insertions(+), 2 deletions(-)
-
-$ git log --format=full
+$ git commit -m "Update Vlad's bio." --author="Frank N. Stein <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#102;&#114;&#97;&#110;&#107;&#121;&#64;&#109;&#111;&#110;&#115;&#116;&#101;&#114;&#46;&#99;&#111;&#109;">&#102;&#114;&#97;&#110;&#107;&#121;&#64;&#109;&#111;&#110;&#115;&#116;&#101;&#114;&#46;&#99;&#111;&#109;</a>"</p>
+<p>[master 4162a51] Update Vlad's bio.
+Author: Frank N. Stein <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#102;&#114;&#97;&#110;&#107;&#121;&#64;&#109;&#111;&#110;&#115;&#116;&#101;&#114;&#46;&#99;&#111;&#109;">&#102;&#114;&#97;&#110;&#107;&#121;&#64;&#109;&#111;&#110;&#115;&#116;&#101;&#114;&#46;&#99;&#111;&#109;</a>
+1 file changed, 2 insertions(+), 2 deletions(-)</p>
+<p>$ git log --format=full
 commit 4162a51b273ba799a9d395dd70c45d96dba4e2ff
-Author: Frank N. Stein <franky@monster.com>
-Commit: Vlad Dracula <vlad@tran.sylvan.ia>
+Author: Frank N. Stein <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#102;&#114;&#97;&#110;&#107;&#121;&#64;&#109;&#111;&#110;&#115;&#116;&#101;&#114;&#46;&#99;&#111;&#109;">&#102;&#114;&#97;&#110;&#107;&#121;&#64;&#109;&#111;&#110;&#115;&#116;&#101;&#114;&#46;&#99;&#111;&#109;</a>
+Commit: Vlad Dracula <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#118;&#108;&#97;&#100;&#64;&#116;&#114;&#97;&#110;&#46;&#115;&#121;&#108;&#118;&#97;&#110;&#46;&#105;&#97;">&#118;&#108;&#97;&#100;&#64;&#116;&#114;&#97;&#110;&#46;&#115;&#121;&#108;&#118;&#97;&#110;&#46;&#105;&#97;</a></p>
+<p>Update Vlad's bio.</p>
+<p>commit aaa3271e5e26f75f11892718e83a3e2743fab8ea
+Author: Vlad Dracula <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#118;&#108;&#97;&#100;&#64;&#116;&#114;&#97;&#110;&#46;&#115;&#121;&#108;&#118;&#97;&#110;&#46;&#105;&#97;">&#118;&#108;&#97;&#100;&#64;&#116;&#114;&#97;&#110;&#46;&#115;&#121;&#108;&#118;&#97;&#110;&#46;&#105;&#97;</a>
+Commit: Vlad Dracula <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#118;&#108;&#97;&#100;&#64;&#116;&#114;&#97;&#110;&#46;&#115;&#121;&#108;&#118;&#97;&#110;&#46;&#105;&#97;">&#118;&#108;&#97;&#100;&#64;&#116;&#114;&#97;&#110;&#46;&#115;&#121;&#108;&#118;&#97;&#110;&#46;&#105;&#97;</a></p>
+<p>Vlad's initial bio.
+```</p></div>
 
-Update Vlad's bio.
-
-commit aaa3271e5e26f75f11892718e83a3e2743fab8ea
-Author: Vlad Dracula <vlad@tran.sylvan.ia>
-Commit: Vlad Dracula <vlad@tran.sylvan.ia>
-
-Vlad's initial bio.
-```
-
-### Key Points
-- git status shows the status of a repository.
-- Files can be stored in a project’s working directory (which users see), the staging area (where the next commit is being built up) and the local repository (where commits are permanently recorded).
-- git add puts files in the staging area.
-- git commit saves the staged content as a new commit in the local repository.
-- Write a commit message that accurately describes your changes.
+<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #7ae78e; padding-bottom: 5px;'><h3>Key Points</h3>
+<ul>
+<li>git status shows the status of a repository.</li>
+<li>Files can be stored in a project’s working directory (which users see), the staging area (where the next commit is being built up) and the local repository (where commits are permanently recorded).</li>
+<li>git add puts files in the staging area.</li>
+<li>git commit saves the staged content as a new commit in the local repository.</li>
+<li>Write a commit message that accurately describes your changes.</li>
+</ul></div>

@@ -2,3 +2,5 @@
 main:
   - title: "Timetable"
     url: /timetable/
+  - title: "Setup Instructions"
+    url: /setup-instructions/

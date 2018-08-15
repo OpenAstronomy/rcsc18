@@ -7,7 +7,7 @@ previouschapter:
   title: 'Licensing'
 nextchapter:
   url: 
-  title: 'Bash'
+  title: 'Setup Instructions'
 redirect_from:
   - 'chapters/02-git/08-citation'
 ---
@@ -50,9 +50,7 @@ More detailed advice, and other ways to make your code citable can be found at t
 
 There is also an `@software{...` BibTeX entry type in case no “umbrella” citation like a paper or book exists for the project you want to make citable.
 
-***
-### Key Points
-
-- Add a CITATION file to a repository to explain how you want your work cited.
-
-
+<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #7ae78e; padding-bottom: 5px;'><h3>Key Points</h3>
+<ul>
+<li>Add a CITATION file to a repository to explain how you want your work cited.</li>
+</ul></div>

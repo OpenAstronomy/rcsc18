@@ -6,8 +6,8 @@ previouschapter:
   url: 
   title: ''
 nextchapter:
-  url: 
-  title: 'Git'
+  url: chapters/calculating-pi
+  title: 'Calculating Pi'
 redirect_from:
   - 'chapters/00-lessons'
 ---

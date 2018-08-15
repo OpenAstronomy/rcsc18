@@ -1,15 +1,15 @@
 ---
-interact_link: notebooks/02-git/06-remotes.ipynb
+interact_link: notebooks/collaboration-lessons/01-remotes.ipynb
 title: 'Remotes'
-permalink: 'chapters/02-git/06-remotes'
+permalink: 'chapters/collaboration-lessons/01-remotes'
 previouschapter:
-  url: chapters/02-git/06-cloning
-  title: 'Cloning'
+  url: 
+  title: 'Collaboration Lessons'
 nextchapter:
-  url: chapters/02-git/07-licensing
-  title: 'Licensing'
+  url: chapters/collaboration-lessons/02-making-work-public
+  title: 'Making Work Public'
 redirect_from:
-  - 'chapters/02-git/06-remotes'
+  - 'chapters/collaboration-lessons/01-remotes'
 ---
 
 ## Remotes in GitHub
@@ -17,6 +17,9 @@ redirect_from:
 Version control really comes into its own when we begin to collaborate with other people. We already have most of the machinery we need to do this; the only thing missing is to copy changes from one repository to another.
 
 Systems like Git allow us to move work between any two repositories. In practice, though, it’s easiest to use one copy as a central hub, and to keep it on the web rather than on someone’s laptop. Most programmers use hosting services like GitHub, BitBucket or GitLab to hold those master copies; we’ll explore the pros and cons of this in the final section of this lesson.
+
+<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #f4fd9c; padding-bottom: 5px;'><h3>Getting a GitHub account</h3>
+<p>This lesson and the remainder of the workshop require you to have a GitHub account. If you have one already, make sure that you remember your username and password - check these now by logging in at <a href="https://github.com/">github.com</a>. If you don't already have an account, go to <a href="https://github.com/">github.com</a> and make one.</p></div>
 
 Let’s start by sharing the changes we’ve made to our current project with the world. Log in to GitHub, then click on the icon in the top right corner to create a new repository called planets:
 
