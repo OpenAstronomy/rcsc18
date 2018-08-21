@@ -173,30 +173,67 @@ The functions `s` and `std_dev` are computationally equivalent (they both calcul
 
 As this example illustrates, both documentation and a programmer’s _coding style_ combine to determine how easy it is for others to read and understand the programmer’s code. Choosing meaningful variable names and using blank spaces to break the code into logical “chunks” are helpful techniques for producing _readable code_. This is useful not only for sharing code with others, but also for the original programmer. If you need to revisit code that you wrote months ago and haven’t thought about since then, you will appreciate the value of readable code!
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h3>Testing and Documenting Your Function</h3>
-<p>Run the commands `help(np.arange)` and `help(np.linspace)` to see how to use these functions to generate regularly-spaced values, then use those values to test your `rescale` function. Once you’ve successfully tested your function, add a docstring that explains what it does.</p></div>
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #ded4b9; padding-bottom: 5px;'><h3>Solution</h3>
-<p>```python
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> # Testing and Documenting Your Function</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+Run the commands `help(np.arange)` and `help(np.linspace)` to see how to use these functions to generate regularly-spaced values, then use those values to test your `rescale` function. Once you’ve successfully tested your function, add a docstring that explains what it does.
+
+</div>
+
+</section>
+
+
+
+<section class="solution panel panel-primary">
+<div class="panel-heading">
+<h2 class="fa fa-eye"> # Solution</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+```python
 """
-Takes an array as input, and returns a corresponding array scaled so that 0 corresponds to the minimum and 1 to the maximum value of the input array.</p>
-<p>Examples:</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>rescale(numpy.arange(10.0))
+Takes an array as input, and returns a corresponding array scaled so that 0 corresponds to the minimum and 1 to the maximum value of the input array.
+
+Examples:
+>>> rescale(numpy.arange(10.0))
 array([ 0.        ,  0.11111111,  0.22222222,  0.33333333,  0.44444444,
         0.55555556,  0.66666667,  0.77777778,  0.88888889,  1.        ])
-rescale(numpy.linspace(0, 100, 5))
+>>> rescale(numpy.linspace(0, 100, 5))
 array([ 0.  ,  0.25,  0.5 ,  0.75,  1.  ])
 """
-```</p>
-</blockquote>
-</blockquote>
-</blockquote></div>
+```
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h3>Readable Code</h3>
-<p>Revise a function you wrote for one of the previous exercises to try to make the code more readable. Then, collaborate with one of your neighbors to critique each other’s functions and discuss how your function implementations could be further improved to make them more readable.</p></div>
+</div>
+
+</section>
+
+
+
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> # Readable Code</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+Revise a function you wrote for one of the previous exercises to try to make the code more readable. Then, collaborate with one of your neighbors to critique each other’s functions and discuss how your function implementations could be further improved to make them more readable.
+
+</div>
+
+</section>
+
 
 Key Points
 

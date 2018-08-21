@@ -26,16 +26,27 @@ redirect_from:
 
 This whole notebook needs going over and realigning with whatever science we end up doing in the first lesson. Also look over the challenges and the ones on the SWC website because there are loads of them now.
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #daee84; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #daee84, #def090); border-color: #daee84; margin-top: 0px; margin-left: -5px;'> &#8263; Overview</h2>
-<h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #daee84, #def090); border-color: #daee84; margin-top: 0px; margin-left: -5px;'> &#8263; Learning Objectives:</h2>
-<ul>
-<li>Define a function that takes parameters.</li>
-<li>Return a value from a function.</li>
-<li>Test and debug a function.</li>
-<li>Set default values for function parameters.</li>
-<li>Explain why we should divide programs into small, single-purpose
-  functions.</li>
-</ul></div>
+
+<section class="objectives panel panel-warning">
+<div class="panel-heading">
+<h2 class="fa fa-certificate"> Learning Objectives:</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+- Define a function that takes parameters.
+- Return a value from a function.
+- Test and debug a function.
+- Set default values for function parameters.
+- Explain why we should divide programs into small, single-purpose
+  functions.
+
+</div>
+
+</section>
+
 
 At this point, we've written code to draw some interesting features in our inflammation data, loop over all our data files to quickly draw these plots for each of them, and have Python make decisions based on what it sees in our data. But, our code is getting pretty long and complicated; what if we had thousands of datasets, and didn't want to generate a  figure for every single one? Commenting out the figure-drawing code is a nuisance. Also, what if we want to use that code again, on a different dataset or at a different point in our program? Cutting and pasting it is going to make our code get very long and very repetitive, very quickly. We'd like a way to package our code so that it is easier to reuse, and Python provides for this by letting us define things called 'functions' - a shorthand way of re-executing longer pieces of code.
 
@@ -62,27 +73,55 @@ print('absolute zero in Celsius:', kelvin_to_celsius(0.0))
 
 We've successfully called the function that we defined, and we have access to the value that we returned.
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #f4fd9c; padding-bottom: 5px;'><h3>Integer division</h3>
-<p>We are using Python 3 division, which always returns a floating point number:</p>
-<p>`python
-print(5/9)`</p>
-<p>Unfortunately, this wasn't the case in Python 2:</p>
-<p>`python
-!python2 -c "print 5/9"`</p>
-<p>If you are using Python 2 and want to keep the fractional part of division you need to convert one or the other number to floating point:</p>
-<p>`python
-float(5) / 9`
-`python
-5 / float(9)`
-`python
-5.0 / 9`
-`python
-5 / 9.0`</p>
-<p>And if you want an integer result from division in Python 3, use a double-slash:
-`python
-4 // 2`
-`python
-3 // 2`</p></div>
+
+<section class="callout panel panel-warning">
+<div class="panel-heading">
+<h2 class="fa fa-thumb-tack"> # Integer division</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+We are using Python 3 division, which always returns a floating point number:
+
+```python
+print(5/9)
+```
+
+Unfortunately, this wasn't the case in Python 2:
+
+```python
+!python2 -c "print 5/9"
+```
+
+If you are using Python 2 and want to keep the fractional part of division you need to convert one or the other number to floating point:
+
+```python
+float(5) / 9
+```
+```python
+5 / float(9)
+```
+```python
+5.0 / 9
+```
+```python
+5 / 9.0
+```
+
+And if you want an integer result from division in Python 3, use a double-slash:
+```python
+4 // 2
+```
+```python
+3 // 2
+```
+
+</div>
+
+</section>
+
 
 ## Composing Functions
 
@@ -278,12 +317,28 @@ np.loadtxt('data/inflammation-01.csv', ',')
 
 then the filename is assigned to `fname` (which is what we want), but the delimiter string `','` is assigned to `dtype` rather than `delimiter`, because `dtype` is the second parameter in the list. However ',' isn't a known `dtype` so our code produced an error message when we tried to run it. When we call `loadtxt` we don't have to provide `fname=` for the filename because it's the first item in the list, but if we want the ',' to be assigned to the variable `delimiter`, we *do* have to provide `delimiter=` for the second parameter since `delimiter` is not the second parameter in the list.
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #eec275, #f0c883); border-color: #eec275; margin-top: 0px; margin-left: -5px;'> &#9998; Combining strings</h2>
-<p>"Adding" two strings produces their concatenation: `'a'` + `'b'` is `'ab'`. Write a function called `fence` that takes two parameters called `original` and `wrapper` and returns a new string that has the wrapper character at the beginning and end of the original. A call to your function should look like this:</p>
-<p>```python
-print(fence('name', '*'))</p>
-<p><em>name</em>
-```</p></div>
+
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> Combining strings</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+"Adding" two strings produces their concatenation: `'a'` + `'b'` is `'ab'`. Write a function called `fence` that takes two parameters called `original` and `wrapper` and returns a new string that has the wrapper character at the beginning and end of the original. A call to your function should look like this:
+
+```python
+print(fence('name', '*'))
+
+*name*
+```
+
+</div>
+
+</section>
+
 
 
 {:.input_area}
@@ -295,58 +350,152 @@ def fence(original, wrapper='#'):
 print(fence('name', '*'))
 ```
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #eec275, #f0c883); border-color: #eec275; margin-top: 0px; margin-left: -5px;'> &#9998; Selecting characters from strings</h2>
-<p>If the variable `s` refers to a string, then `s[0]` is the string's first
+
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> Selecting characters from strings</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+If the variable `s` refers to a string, then `s[0]` is the string's first
 character and `s[-1]` is its last. Write a function called `outer` that
 returns a string made up of just the first and last characters of its
-input. A call to your function should look like this:</p>
-<p>```python
-print(outer('helium'))</p>
-<p>hm
-```</p></div>
+input. A call to your function should look like this:
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #eec275, #f0c883); border-color: #eec275; margin-top: 0px; margin-left: -5px;'> &#9998; Rescaling an array</h2>
-<p>Write a function `rescale` that takes an array as input and returns a corresponding array of values scaled to lie in the range 0.0 to 1.0. (Hint: If L and H are the lowest and highest values in the original array, then the replacement for a value v should be (v − L)/(H − L).)</p></div>
+```python
+print(outer('helium'))
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #eec275, #f0c883); border-color: #eec275; margin-top: 0px; margin-left: -5px;'> &#9998; Defining defaults</h2>
-<p>Rewrite the `rescale` function so that it scales data to lie between 0.0 and 1.0 by default, but will allow the caller to specify lower and upper bounds if they want. Compare your implementation to your neighbor's: do the two functions always behave the same way?</p></div>
+hm
+```
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #eec275, #f0c883); border-color: #eec275; margin-top: 0px; margin-left: -5px;'> &#9998; Variables inside and outside functions</h2>
-<p>What does the following piece of code display when run - and why?</p>
-<p>```python
+</div>
+
+</section>
+
+
+
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> Rescaling an array</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+Write a function `rescale` that takes an array as input and returns a corresponding array of values scaled to lie in the range 0.0 to 1.0. (Hint: If L and H are the lowest and highest values in the original array, then the replacement for a value v should be (v − L)/(H − L).)
+
+</div>
+
+</section>
+
+
+
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> Defining defaults</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+Rewrite the `rescale` function so that it scales data to lie between 0.0 and 1.0 by default, but will allow the caller to specify lower and upper bounds if they want. Compare your implementation to your neighbor's: do the two functions always behave the same way?
+
+</div>
+
+</section>
+
+
+
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> Variables inside and outside functions</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+What does the following piece of code display when run - and why?
+
+```python
 f = 0
-k = 0</p>
-<p>def f2k(f):
-  k = ((f-32)*(5.0/9.0)) + 273.15
-  return k</p>
-<p>f2k(8)
-f2k(41)
-f2k(32)</p>
-<p>print(k)
-```</p></div>
+k = 0
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #eec275, #f0c883); border-color: #eec275; margin-top: 0px; margin-left: -5px;'> &#9998; The Old Switcheroo</h2>
-<p>Consider this code:</p>
-<p>```python
+def f2k(f):
+  k = ((f-32)*(5.0/9.0)) + 273.15
+  return k
+
+f2k(8)
+f2k(41)
+f2k(32)
+
+print(k)
+```
+
+</div>
+
+</section>
+
+
+
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> The Old Switcheroo</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+Consider this code:
+
+```python
 a = 3
-b = 7</p>
-<p>def swap(a, b):
+b = 7
+
+def swap(a, b):
     temp = a
     a = b
-    b = temp</p>
-<p>swap(a, b)</p>
-<p>print(a, b)
-```</p>
-<p>Which of the following would be printed if you were to run this code? Why did you pick this answer?</p>
-<ul>
-<li>`7 3`</li>
-<li>`3 7`</li>
-<li>`3 3`</li>
-<li>`7 7`</li>
-</ul></div>
+    b = temp
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #ded4b9; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #ded4b9, #e1d8c0); border-color: #ded4b9; margin-top: 0px; margin-left: -5px;'> &#128065; Solution</h2>
-<p>`3, 7` is correct. Initially `a` has a value of 3 and `b` has a value of 7. When the `swap` function is called, it creates local variables (also called `a` and `b` in this case) and trades their values. The function does not return any values and does not alter `a` or `b` outside of its local copy. Therefore the original values of `a` and `b` remain unchanged.</p></div>
+swap(a, b)
+
+print(a, b)
+```
+
+Which of the following would be printed if you were to run this code? Why did you pick this answer?
+
+- `7 3`
+- `3 7`
+- `3 3`
+- `7 7`
+
+</div>
+
+</section>
+
+
+
+<section class="solution panel panel-primary">
+<div class="panel-heading">
+<h2 class="fa fa-eye"> Solution</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+`3, 7` is correct. Initially `a` has a value of 3 and `b` has a value of 7. When the `swap` function is called, it creates local variables (also called `a` and `b` in this case) and trades their values. The function does not return any values and does not alter `a` or `b` outside of its local copy. Therefore the original values of `a` and `b` remain unchanged.
+
+</div>
+
+</section>
+
 
 ## Key Points
 

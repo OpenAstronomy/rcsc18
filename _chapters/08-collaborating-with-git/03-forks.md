@@ -7,7 +7,7 @@ previouschapter:
   title: 'Making Work Public'
 nextchapter:
   url: 
-  title: 'Setup Instructions'
+  title: ''
 redirect_from:
   - 'chapters/08-collaborating-with-git/03-forks'
 ---
@@ -128,11 +128,33 @@ Now if you look at your remotes again you'll see that you have two now, one call
 git remote -v
 ```
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #f4fd9c; padding-bottom: 5px;'><h3>Other ways to handle remotes</h3>
-<p>In this case we cloned the repo first, then forked it on GitHub, so we had to change the `origin` remote, and this is a common path, particularly when you want to look at a project locally before you know that you'll want to collaborating on it. But sometimes you will want to fork the repo first, and then clone your own repo. In that situation, the `origin` remote will already automatically point at your GitHub repo, and you will only need to add `upstream` to point at the main repo.</p>
-<p>You may also want to use a remote which is somebody else's fork of a central repo, rather than that repo itself or your fork of it. In this case a useful name for that remote would be that person's name or GitHub username, so for example:</p>
-<p>`git remote add cadair https://github.com/Cadair/STFC-summer-school.git`</p>
-<p>or</p>
-<p>`git remote add stuart https://github.com/Cadair/STFC-summer-school.git`</p></div>
+
+<section class="callout panel panel-warning">
+<div class="panel-heading">
+<h2 class="fa fa-thumb-tack"> # Other ways to handle remotes</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+In this case we cloned the repo first, then forked it on GitHub, so we had to change the `origin` remote, and this is a common path, particularly when you want to look at a project locally before you know that you'll want to collaborating on it. But sometimes you will want to fork the repo first, and then clone your own repo. In that situation, the `origin` remote will already automatically point at your GitHub repo, and you will only need to add `upstream` to point at the main repo.
+
+You may also want to use a remote which is somebody else's fork of a central repo, rather than that repo itself or your fork of it. In this case a useful name for that remote would be that person's name or GitHub username, so for example:
+
+```
+git remote add cadair https://github.com/Cadair/STFC-summer-school.git
+```
+
+or
+
+```
+git remote add stuart https://github.com/Cadair/STFC-summer-school.git
+```
+
+</div>
+
+</section>
+
 
 * TODO (if I have time) Add an example of all of this with a setup including a main upstream repo, an origin and another contributor

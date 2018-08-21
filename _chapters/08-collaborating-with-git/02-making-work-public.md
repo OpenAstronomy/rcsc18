@@ -31,24 +31,63 @@ This article provides an excellent overview of licensing and licensing options f
 
 At the end of the day what matters is that there is a clear statement as to what the license is. Also, the license is best chosen from the get-go, even if for a repository that is not public. Pushing off the decision only makes it more complicated later, because each time a new collaborator starts contributing, they, too, hold copyright and will thus need to be asked for approval once a license is chosen.
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h3>Can I Use Open License?</h3>
-<p>Find out whether you are allowed to apply an open license to your software. Can you do this unilaterally, or do you need permission from someone in your institution? If so, who?</p></div>
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h3>What licenses have I already accepted?</h3>
-<p>Many of the software tools we use on a daily basis (including in this workshop) are released as open-source software. Pick a project on GitHub from the list below, or one of your own choosing. Find its license (usually in a file called LICENSE or COPYING) and talk about how it restricts your use of the software. Is it one of the licenses discussed in this session? How is it different?</p>
-<ul>
-<li>Git, the source-code management tool</li>
-<li>CPython, the standard implementation of the Python language</li>
-<li>Jupyter, the project behind the web-based Python notebooks we’ll be using</li>
-<li>EtherPad, a real-time collaborative editor</li>
-</ul></div>
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> # Can I Use Open License?</h2>
+</div>
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #7ae78e; padding-bottom: 5px;'><h3>Key Points</h3>
-<ul>
-<li>People who incorporate General Public License (GPL’d) software into their own software must make their software also open under the GPL license; most other open licenses do not require this.</li>
-<li>The Creative Commons family of licenses allow people to mix and match requirements and restrictions on attribution, creation of derivative works, further sharing, and commercialization.</li>
-<li>People who are not lawyers should not try to write licenses from scratch.</li>
-</ul></div>
+
+<div class="panel-body">
+
+
+Find out whether you are allowed to apply an open license to your software. Can you do this unilaterally, or do you need permission from someone in your institution? If so, who?
+
+</div>
+
+</section>
+
+
+
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> # What licenses have I already accepted?</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+Many of the software tools we use on a daily basis (including in this workshop) are released as open-source software. Pick a project on GitHub from the list below, or one of your own choosing. Find its license (usually in a file called LICENSE or COPYING) and talk about how it restricts your use of the software. Is it one of the licenses discussed in this session? How is it different?
+
+- Git, the source-code management tool
+- CPython, the standard implementation of the Python language
+- Jupyter, the project behind the web-based Python notebooks we’ll be using
+- EtherPad, a real-time collaborative editor
+
+</div>
+
+</section>
+
+
+
+<section class="keypoints panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-exclamation-circle"> # Key Points</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+- People who incorporate General Public License (GPL’d) software into their own software must make their software also open under the GPL license; most other open licenses do not require this.
+- The Creative Commons family of licenses allow people to mix and match requirements and restrictions on attribution, creation of derivative works, further sharing, and commercialization.
+- People who are not lawyers should not try to write licenses from scratch.
+
+</div>
+
+</section>
+
 
 ## Citation
 
@@ -88,7 +127,19 @@ More detailed advice, and other ways to make your code citable can be found at t
 
 There is also an `@software{...` BibTeX entry type in case no “umbrella” citation like a paper or book exists for the project you want to make citable.
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #7ae78e; padding-bottom: 5px;'><h3>Key Points</h3>
-<ul>
-<li>Add a CITATION file to a repository to explain how you want your work cited.</li>
-</ul></div>
+
+<section class="keypoints panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-exclamation-circle"> # Key Points</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+- Add a CITATION file to a repository to explain how you want your work cited.
+
+</div>
+
+</section>
+

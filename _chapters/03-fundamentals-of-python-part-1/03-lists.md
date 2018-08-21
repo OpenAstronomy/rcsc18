@@ -3,11 +3,11 @@ interact_link: 03-fundamentals-of-python-part-1/03-lists.ipynb
 title: 'Lists'
 permalink: 'chapters/03-fundamentals-of-python-part-1/03-lists'
 previouschapter:
-  url: chapters/03-fundamentals-of-python-part-1/02-loop
-  title: 'Loop'
+  url: chapters/03-fundamentals-of-python-part-1/02-repeating-actions
+  title: 'Repeating Actions'
 nextchapter:
-  url: chapters/03-fundamentals-of-python-part-1/04-files
-  title: 'Files'
+  url: chapters/03-fundamentals-of-python-part-1/04-processing-files
+  title: 'Processing Files'
 redirect_from:
   - 'chapters/03-fundamentals-of-python-part-1/03-lists'
 ---
@@ -329,15 +329,41 @@ odds: [1, 3, 5, 7]
 This is different from how variables worked in lesson 1, and more similar to how a spreadsheet
 works.
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #eec275, #f0c883); border-color: #eec275; margin-top: 0px; margin-left: -5px;'> &#9998; Challenge: Turn a String Into a List</h2>
-<p>Use a for-loop to convert the string "hello" into a list of letters:</p>
-<p>`python
-["h", "e", "l", "l", "o"]`</p>
-<p>Hint: You can create an empty list like this:</p>
-<p>`python
-my_list = []`</p></div>
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #ded4b9; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #ded4b9, #e1d8c0); border-color: #ded4b9; margin-top: 0px; margin-left: -5px;'> &#128065; Solution</h2></div>
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> Challenge: Turn a String Into a List</h2>
+</div>
+
+
+<div class="panel-body">
+
+Use a for-loop to convert the string "hello" into a list of letters:
+
+```python
+["h", "e", "l", "l", "o"]
+```
+
+Hint: You can create an empty list like this:
+
+```python
+my_list = []
+```
+
+
+</div>
+
+</section>
+
+
+
+<section class="solution panel panel-primary">
+<div class="panel-heading">
+<h2 class="fa fa-eye"> Solution</h2>
+</div>
+
+</section>
+
 
 
 {:.input_area}
@@ -385,8 +411,22 @@ last: 4
 
 ```
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #eec275, #f0c883); border-color: #eec275; margin-top: 0px; margin-left: -5px;'> &#9998; Challenge: Slicing From the End</h2>
-<p>Use slicing to access only the last four characters of the following string and the last four entries of the following list.</p></div>
+
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> Challenge: Slicing From the End</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+Use slicing to access only the last four characters of the following string and the last four entries of the following list.
+
+</div>
+
+</section>
+
 
 
 {:.input_area}
@@ -400,8 +440,22 @@ the length of the string or list
 (e.g. if you wanted to apply the solution to a set of lists of different lengths)?
 If not, try to change your approach to make it more robust.
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #ded4b9; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #ded4b9, #e1d8c0); border-color: #ded4b9; margin-top: 0px; margin-left: -5px;'> &#128065; Solution</h2>
-<p>Use negative indices to count elements from the end of a container (such as list or string):</p></div>
+
+<section class="solution panel panel-primary">
+<div class="panel-heading">
+<h2 class="fa fa-eye"> Solution</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+Use negative indices to count elements from the end of a container (such as list or string):
+
+</div>
+
+</section>
+
 
 
 {:.input_area}
@@ -464,10 +518,24 @@ subset [5, 13, 23, 37]
 
 ```
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #eec275, #f0c883); border-color: #eec275; margin-top: 0px; margin-left: -5px;'> &#9998; Challenge:</h2>
-<p>Use the step size argument to create a new string
+
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> Challenge:</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+Use the step size argument to create a new string
 that contains only every other character in the string
-"In an octopus's garden in the shade"</p></div>
+"In an octopus's garden in the shade"
+
+</div>
+
+</section>
+
 
 
 {:.input_area}
@@ -475,9 +543,23 @@ that contains only every other character in the string
 beatles = "In an octopus's garden in the shade"
 ```
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #ded4b9; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #ded4b9, #e1d8c0); border-color: #ded4b9; margin-top: 0px; margin-left: -5px;'> &#128065; Solution</h2>
-<p>To obtain every other character you need to provide a slice with the step
-size of 2:</p></div>
+
+<section class="solution panel panel-primary">
+<div class="panel-heading">
+<h2 class="fa fa-eye"> Solution</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+To obtain every other character you need to provide a slice with the step
+size of 2:
+
+</div>
+
+</section>
+
 
 
 {:.input_area}

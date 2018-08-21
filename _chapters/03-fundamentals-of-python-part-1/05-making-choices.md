@@ -242,25 +242,65 @@ elif 4 < 5:
     print('C')
 ```
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #eec275, #f0c883); border-color: #eec275; margin-top: 0px; margin-left: -5px;'> &#9998; Challenge:</h2>
-<p>Which of the following would be printed if you were to run this code?
-Why did you pick this answer?</p>
-<ol>
-<li>A</li>
-<li>B</li>
-<li>C</li>
-<li>B and C</li>
-</ol></div>
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #ded4b9; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #ded4b9, #e1d8c0); border-color: #ded4b9; margin-top: 0px; margin-left: -5px;'> &#128065; Solution</h2>
-<p>C gets printed because the first two conditions, `4 &gt; 5` and `4 == 5`, are not
-true, but `4 &lt; 5` is true.</p></div>
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> Challenge:</h2>
+</div>
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #eec275, #f0c883); border-color: #eec275; margin-top: 0px; margin-left: -5px;'> &#9998; Challenge: What Is Truth?</h2>
-<p>`True` and `False` booleans are not the only values in Python that are true and false.
-In fact, <em>any</em> value can be used in an `if` or `elif`.
+
+<div class="panel-body">
+
+
+Which of the following would be printed if you were to run this code?
+Why did you pick this answer?
+
+1.  A
+2.  B
+3.  C
+4.  B and C
+
+</div>
+
+</section>
+
+
+
+<section class="solution panel panel-primary">
+<div class="panel-heading">
+<h2 class="fa fa-eye"> Solution</h2>
+</div>
+
+
+<div class="panel-body">
+
+C gets printed because the first two conditions, `4 > 5` and `4 == 5`, are not
+true, but `4 < 5` is true.
+
+</div>
+
+</section>
+
+
+
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> Challenge: What Is Truth?</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+`True` and `False` booleans are not the only values in Python that are true and false.
+In fact, *any* value can be used in an `if` or `elif`.
 After reading and running the code below,
-explain what the rule is for which values are considered true and which are considered false.</p></div>
+explain what the rule is for which values are considered true and which are considered false.
+
+</div>
+
+</section>
+
 
 
 {:.input_area}
@@ -287,11 +327,25 @@ one is true
 
 ```
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #eec275, #f0c883); border-color: #eec275; margin-top: 0px; margin-left: -5px;'> &#9998; Challenge: That's Not Not What I Meant</h2>
-<p>Sometimes it is useful to check whether some condition is not true. The Boolean
+
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> Challenge: That's Not Not What I Meant</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+Sometimes it is useful to check whether some condition is not true. The Boolean
 operator `not` can do this explicitly. After reading and running the code below,
 write some `if` statements that use `not` to test the rule that you formulated
-in the previous challenge.</p></div>
+in the previous challenge.
+
+</div>
+
+</section>
+
 
 
 {:.input_area}
@@ -311,13 +365,34 @@ not not True is true
 
 ```
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #eec275, #f0c883); border-color: #eec275; margin-top: 0px; margin-left: -5px;'> &#9998; Challenge: Close Enough</h2>
-<p>Write some conditions that print `True` if the variable `a` is within 10% of the variable `b`
+
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> Challenge: Close Enough</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+Write some conditions that print `True` if the variable `a` is within 10% of the variable `b`
 and `False` otherwise.
 Compare your implementation with your partner's:
-do you get the same answer for all possible pairs of numbers?</p></div>
+do you get the same answer for all possible pairs of numbers?
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #ded4b9; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #ded4b9, #e1d8c0); border-color: #ded4b9; margin-top: 0px; margin-left: -5px;'> &#128065; Solution 1</h2></div>
+</div>
+
+</section>
+
+
+
+<section class="solution panel panel-primary">
+<div class="panel-heading">
+<h2 class="fa fa-eye"> Solution 1</h2>
+</div>
+
+</section>
+
 
 
 {:.input_area}
@@ -337,7 +412,14 @@ True
 
 ```
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #ded4b9; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #ded4b9, #e1d8c0); border-color: #ded4b9; margin-top: 0px; margin-left: -5px;'> &#128065; Solution 2</h2></div>
+
+<section class="solution panel panel-primary">
+<div class="panel-heading">
+<h2 class="fa fa-eye"> Solution 2</h2>
+</div>
+
+</section>
+
 
 
 {:.input_area}
@@ -351,8 +433,22 @@ True
 
 ```
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #ded4b9; padding-bottom: 5px;'><p>This works because the Booleans `True` and `False` have string representations
-which can be printed.</p></div>
+
+<section class="solution panel panel-primary">
+<div class="panel-heading">
+<h2 class="fa fa-eye"> </h2>
+</div>
+
+
+<div class="panel-body">
+
+This works because the Booleans `True` and `False` have string representations
+which can be printed.
+
+</div>
+
+</section>
+
 
 ## In-Place Operators
 Python (and most other languages in the C family) provides in-place operators
@@ -374,12 +470,33 @@ print(x)
 
 ```
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #eec275, #f0c883); border-color: #eec275; margin-top: 0px; margin-left: -5px;'> &#9998; Challenge:</h2>
-<p>Write some code that sums the positive and negative numbers in a list separately,
-using in-place operators.
-Do you think the result is more or less readable than writing the same without in-place operators?</p></div>
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #ded4b9; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #ded4b9, #e1d8c0); border-color: #ded4b9; margin-top: 0px; margin-left: -5px;'> &#128065; Solution</h2></div>
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> Challenge:</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+Write some code that sums the positive and negative numbers in a list separately,
+using in-place operators.
+Do you think the result is more or less readable than writing the same without in-place operators?
+
+</div>
+
+</section>
+
+
+
+<section class="solution panel panel-primary">
+<div class="panel-heading">
+<h2 class="fa fa-eye"> Solution</h2>
+</div>
+
+</section>
+
 
 
 {:.input_area}
@@ -414,11 +531,25 @@ also have some other files that we do not care about at this point. We'd like to
 these files into three lists called `large_files`, `small_files`, and `other_files`,
 respectively.
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #eec275, #f0c883); border-color: #eec275; margin-top: 0px; margin-left: -5px;'> &#9998; Challenge:</h2>
-<p>Add code to the template below to do this. Note that the string method
-<a href="https://docs.python.org/3.5/library/stdtypes.html#str.startswith">`startswith`</a>
+
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> Challenge:</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+Add code to the template below to do this. Note that the string method
+[`startswith`](https://docs.python.org/3.5/library/stdtypes.html#str.startswith)
 returns `True` if and only if the string it is called on starts with the string
-passed as an argument, that is:</p></div>
+passed as an argument, that is:
+
+</div>
+
+</section>
+
 
 
 {:.input_area}
@@ -479,7 +610,14 @@ other_files = ['myscript.py']
 ```
 
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #ded4b9; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #ded4b9, #e1d8c0); border-color: #ded4b9; margin-top: 0px; margin-left: -5px;'> &#128065; Solution</h2></div>
+
+<section class="solution panel panel-primary">
+<div class="panel-heading">
+<h2 class="fa fa-eye"> Solution</h2>
+</div>
+
+</section>
+
 
 
 {:.input_area}
@@ -505,16 +643,35 @@ other_files: ['myscript.py']
 
 ```
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #eec275, #f0c883); border-color: #eec275; margin-top: 0px; margin-left: -5px;'> &#9998; Challenge: Counting Vowels</h2>
-<ol>
-<li>Write a loop that counts the number of vowels in a character string.</li>
-<li>Test it on a few individual words and full sentences.</li>
-<li>Once you are done, compare your solution to your neighbor's.
-   Did you make the same decisions about how to handle the letter 'y'
-   (which some people think is a vowel, and some do not)?</li>
-</ol></div>
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #ded4b9; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #ded4b9, #e1d8c0); border-color: #ded4b9; margin-top: 0px; margin-left: -5px;'> &#128065; Solution</h2></div>
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> Challenge: Counting Vowels</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+1. Write a loop that counts the number of vowels in a character string.
+2. Test it on a few individual words and full sentences.
+3. Once you are done, compare your solution to your neighbor's.
+   Did you make the same decisions about how to handle the letter 'y'
+   (which some people think is a vowel, and some do not)?
+
+</div>
+
+</section>
+
+
+
+<section class="solution panel panel-primary">
+<div class="panel-heading">
+<h2 class="fa fa-eye"> Solution</h2>
+</div>
+
+</section>
+
 
 
 {:.input_area}

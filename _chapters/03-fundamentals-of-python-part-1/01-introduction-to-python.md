@@ -248,18 +248,38 @@ These data correspond to arthritis patients' inflammation.
 The rows are the individual patients, and the columns
 are their daily inflammation measurements.
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #f4fd9c; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #f4fd9c, #f5fda6); border-color: #f4fd9c; margin-top: 0px; margin-left: -5px;'> &#128204; Data Type</h2>
-<p>A Numpy array contains one or more elements
+
+<section class="callout panel panel-warning">
+<div class="panel-heading">
+<h2 class="fa fa-thumb-tack"> Data Type</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+A Numpy array contains one or more elements
 of the same type. The `type` function will only tell you that
 a variable is a NumPy array but won't tell you the type of
 thing inside the array.
 We can find out the type
-of the data contained in the NumPy array.</p>
-<p>`python
-print(data.dtype)`</p>
-<p>`dtype('float64')`</p>
-<p>This tells us that the NumPy array's elements are
-floating-point numbers.</p></div>
+of the data contained in the NumPy array.
+
+```python
+print(data.dtype)
+```
+
+```
+dtype('float64')
+```
+
+This tells us that the NumPy array's elements are
+floating-point numbers.
+
+</div>
+
+</section>
+
 
 With the following command, we can see the array's shape:
 
@@ -421,18 +441,39 @@ print(numpy.mean(data))
 
 `mean` is a function that takes an array as an argument.
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #f4fd9c; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #f4fd9c, #f5fda6); border-color: #f4fd9c; margin-top: 0px; margin-left: -5px;'> &#128204; Not All Functions Have Input</h2>
-<p>Generally, a function uses inputs to produce outputs.
+
+<section class="callout panel panel-warning">
+<div class="panel-heading">
+<h2 class="fa fa-thumb-tack"> Not All Functions Have Input</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+Generally, a function uses inputs to produce outputs.
 However, some functions produce outputs without
 needing any input. For example, checking the current time
-doesn't require any input.</p>
-<p>`python
+doesn't require any input.
+
+```python
 import time
-print(time.ctime())`</p>
-<p>`'Sat Mar 26 13:07:33 2016'`</p>
-<p>For functions that don't take in any arguments,
+print(time.ctime())
+```
+
+```
+'Sat Mar 26 13:07:33 2016'
+```
+
+For functions that don't take in any arguments,
 we still need parentheses (`()`)
-to tell Python to go and do something for us.</p></div>
+to tell Python to go and do something for us.
+
+
+</div>
+
+</section>
+
 
 NumPy has lots of useful functions that take an array as input.
 Let's use three of those functions to get some descriptive values about the dataset.
@@ -452,14 +493,28 @@ print('standard deviation:', stdval)
 Here we've assigned the return value from `numpy.max(data)` to the variable `maxval`, the value
 from `numpy.min(data)` to `minval`, and so on.
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #f4fd9c; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #f4fd9c, #f5fda6); border-color: #f4fd9c; margin-top: 0px; margin-left: -5px;'> &#128204; Mystery Functions in IPython</h2>
-<p>How did we know what functions NumPy has and how to use them?
+
+<section class="callout panel panel-warning">
+<div class="panel-heading">
+<h2 class="fa fa-thumb-tack"> Mystery Functions in IPython</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+How did we know what functions NumPy has and how to use them?
 If you are working in the IPython/Jupyter Notebook, there is an easy way to find out.
 If you type the name of something followed by a dot, then you can use tab completion
 (e.g. type `numpy.` and then press tab)
 to see a list of all functions and attributes that you can use. After selecting one, you
 can also add a question mark (e.g. `numpy.cumprod?`), and IPython will return an
-explanation of the method! This is the same as doing `help(numpy.cumprod)`.</p></div>
+explanation of the method! This is the same as doing `help(numpy.cumprod)`.
+
+</div>
+
+</section>
+
 
 When analyzing data, though,
 we often want to look at variations in statistical values,
@@ -585,11 +640,28 @@ trend seems particularly likely, so either there's a mistake in our calculations
 wrong with our data.  This insight would have been difficult to reach by examining the numbers
 themselves without visualization tools.
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #f4fd9c; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #f4fd9c, #f5fda6); border-color: #f4fd9c; margin-top: 0px; margin-left: -5px;'> &#128204; Scientists Dislike Typing</h2>
-<p>We have just been importing NumPy and matplotlib using `import numpy` and `import matplotlib.pyplot`.</p>
-<p>From here on we are going to shorten these imports, you can either adopt this or continue using the long version. The reason we are going to start using the shortened versions is that that is the way that the majority of open source scientific python libraries use these imports, so we want to get you used to them now.</p>
-<p>When working with other people, it is important to agree on a convention of how common libraries
-are imported.</p></div>
+
+<section class="callout panel panel-warning">
+<div class="panel-heading">
+<h2 class="fa fa-thumb-tack"> Scientists Dislike Typing</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+We have just been importing NumPy and matplotlib using `import numpy` and `import matplotlib.pyplot`.
+
+From here on we are going to shorten these imports, you can either adopt this or continue using the long version. The reason we are going to start using the shortened versions is that that is the way that the majority of open source scientific python libraries use these imports, so we want to get you used to them now.
+
+When working with other people, it is important to agree on a convention of how common libraries
+are imported.
+
+
+</div>
+
+</section>
+
 
 
 {:.input_area}
@@ -645,107 +717,366 @@ and that we want a tight layout.
 (If we leave out that call to `fig.tight_layout()`,
 the graphs will actually be squeezed together more closely.)
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #eec275, #f0c883); border-color: #eec275; margin-top: 0px; margin-left: -5px;'> &#9998; Challenge: Check Your Understanding</h2>
-<p>What values do the variables `mass` and `age` have after each statement in the following program?
-Test your answers by executing the commands.</p>
-<p>`python
+
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> Challenge: Check Your Understanding</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+What values do the variables `mass` and `age` have after each statement in the following program?
+Test your answers by executing the commands.
+
+```python
 mass = 47.5
 age = 122
 mass = mass * 2.0
-age = age - 20`</p></div>
+age = age - 20
+```
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #eec275, #f0c883); border-color: #eec275; margin-top: 0px; margin-left: -5px;'> &#9998; Challenge: Sorting Out References</h2>
-<p>What does the following program print out?</p>
-<p>`first, second = 'Grace', 'Hopper'
+
+</div>
+
+</section>
+
+
+
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> Challenge: Sorting Out References</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+What does the following program print out?
+
+```
+first, second = 'Grace', 'Hopper'
 third, fourth = second, first
-print(third, fourth)`</p></div>
+print(third, fourth)
+```
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #ded4b9; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #ded4b9, #e1d8c0); border-color: #ded4b9; margin-top: 0px; margin-left: -5px;'> &#128065; Solution</h2>
-<p>`Hopper Grace`</p></div>
+</div>
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #eec275, #f0c883); border-color: #eec275; margin-top: 0px; margin-left: -5px;'> &#9998; Challenge: Slicing Strings</h2>
-<p>A section of an array is called a slice.
-We can take slices of character strings as well:</p>
-<p>`python
+</section>
+
+
+
+<section class="solution panel panel-primary">
+<div class="panel-heading">
+<h2 class="fa fa-eye"> Solution</h2>
+</div>
+
+
+<div class="panel-body">
+
+```
+Hopper Grace
+```
+
+</div>
+
+</section>
+
+
+
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> Challenge: Slicing Strings</h2>
+</div>
+
+
+<div class="panel-body">
+
+A section of an array is called a slice.
+We can take slices of character strings as well:
+
+```python
 element = 'oxygen'
 print('first three characters:', element[0:3])
-print('last three characters:', element[3:6])`</p>
-<p>`first three characters: oxy
-last three characters: gen`</p>
-<p>What is the value of `element[:4]`?
+print('last three characters:', element[3:6])
+```
+
+```
+first three characters: oxy
+last three characters: gen
+```
+
+What is the value of `element[:4]`?
 What about `element[4:]`?
-Or `element[:]`?</p></div>
+Or `element[:]`?
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #ded4b9; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #ded4b9, #e1d8c0); border-color: #ded4b9; margin-top: 0px; margin-left: -5px;'> &#128065; Solution</h2>
-<p>`oxyg
+
+</div>
+
+</section>
+
+
+
+<section class="solution panel panel-primary">
+<div class="panel-heading">
+<h2 class="fa fa-eye"> Solution</h2>
+</div>
+
+
+<div class="panel-body">
+
+```
+oxyg
 en
-oxygen`</p></div>
+oxygen
+```
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #eec275, #f0c883); border-color: #eec275; margin-top: 0px; margin-left: -5px;'> &#9998; Challenge:</h2>
-<p>What is `element[-1]`?
-What is `element[-2]`?</p></div>
+</div>
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #ded4b9; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #ded4b9, #e1d8c0); border-color: #ded4b9; margin-top: 0px; margin-left: -5px;'> &#128065; Solution</h2>
-<p>`n
-e`</p></div>
+</section>
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #eec275, #f0c883); border-color: #eec275; margin-top: 0px; margin-left: -5px;'> &#9998; Challenge:</h2>
-<p>Given those answers, explain what `element[1:-1]` does.</p></div>
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #ded4b9; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #ded4b9, #e1d8c0); border-color: #ded4b9; margin-top: 0px; margin-left: -5px;'> &#128065; Solution</h2>
-<p>Creates a substring from index 1 up to (not including) the final index,
-effectively removing the first and last letters from 'oxygen'</p></div>
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #eec275, #f0c883); border-color: #eec275; margin-top: 0px; margin-left: -5px;'> &#9998; Challenge:  Thin Slices</h2>
-<p>The expression `element[3:3]` produces an empty string,
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> Challenge:</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+What is `element[-1]`?
+What is `element[-2]`?
+
+</div>
+
+</section>
+
+
+
+<section class="solution panel panel-primary">
+<div class="panel-heading">
+<h2 class="fa fa-eye"> Solution</h2>
+</div>
+
+
+<div class="panel-body">
+
+```
+n
+e
+```
+
+</div>
+
+</section>
+
+
+
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> Challenge:</h2>
+</div>
+
+
+<div class="panel-body">
+
+Given those answers, explain what `element[1:-1]` does.
+
+</div>
+
+</section>
+
+
+
+<section class="solution panel panel-primary">
+<div class="panel-heading">
+<h2 class="fa fa-eye"> Solution</h2>
+</div>
+
+
+<div class="panel-body">
+
+Creates a substring from index 1 up to (not including) the final index,
+effectively removing the first and last letters from 'oxygen'
+
+
+</div>
+
+</section>
+
+
+
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> Challenge:  Thin Slices</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+The expression `element[3:3]` produces an empty string,
 i.e., a string that contains no characters.
 If `data` holds our array of patient data,
 what does `data[3:3, 4:4]` produce?
-What about `data[3:3, :]`?</p></div>
+What about `data[3:3, :]`?
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #ded4b9; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #ded4b9, #e1d8c0); border-color: #ded4b9; margin-top: 0px; margin-left: -5px;'> &#128065; Solution</h2>
-<p>`[]
-[]`</p></div>
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #eec275, #f0c883); border-color: #eec275; margin-top: 0px; margin-left: -5px;'> &#9998; Challenge: Plot Scaling</h2>
-<p>Why do all of our plots stop just short of the upper end of our graph?</p></div>
+</div>
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #ded4b9; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #ded4b9, #e1d8c0); border-color: #ded4b9; margin-top: 0px; margin-left: -5px;'> &#128065; Solution</h2>
-<p>Because matplotlib normally sets x and y axes limits to the min and max of our data
-(depending on data range)</p>
-<p>If we want to change this, we can use the `set_ylim(min, max)` method of each 'axes',
-for example:</p>
-<p>`python
-axes3.set_ylim(0,6)`</p></div>
+</section>
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #eec275, #f0c883); border-color: #eec275; margin-top: 0px; margin-left: -5px;'> &#9998; Challenge:</h2>
-<p>Update your plotting code to automatically set a more appropriate scale.
-(Hint: you can make use of the `max` and `min` methods to help.)</p></div>
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #ded4b9; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #ded4b9, #e1d8c0); border-color: #ded4b9; margin-top: 0px; margin-left: -5px;'> &#128065; Solution</h2>
-<p>```python</p>
-<h1>One method</h1>
-<p>axes3.set_ylabel('min')
+
+<section class="solution panel panel-primary">
+<div class="panel-heading">
+<h2 class="fa fa-eye"> Solution</h2>
+</div>
+
+
+<div class="panel-body">
+
+```
+[]
+[]
+```
+
+
+</div>
+
+</section>
+
+
+
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> Challenge: Plot Scaling</h2>
+</div>
+
+
+<div class="panel-body">
+
+Why do all of our plots stop just short of the upper end of our graph?
+
+
+</div>
+
+</section>
+
+
+
+<section class="solution panel panel-primary">
+<div class="panel-heading">
+<h2 class="fa fa-eye"> Solution</h2>
+</div>
+
+
+<div class="panel-body">
+
+Because matplotlib normally sets x and y axes limits to the min and max of our data
+(depending on data range)
+
+If we want to change this, we can use the `set_ylim(min, max)` method of each 'axes',
+for example:
+
+```python
+axes3.set_ylim(0,6)
+```
+
+</div>
+
+</section>
+
+
+
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> Challenge:</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+Update your plotting code to automatically set a more appropriate scale.
+(Hint: you can make use of the `max` and `min` methods to help.)
+
+</div>
+
+</section>
+
+
+
+<section class="solution panel panel-primary">
+<div class="panel-heading">
+<h2 class="fa fa-eye"> Solution</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+```python
+# One method
+axes3.set_ylabel('min')
 axes3.plot(numpy.min(data, axis=0))
 axes3.set_ylim(0,6)
-```</p>
-<p>```python</p>
-<h1>A more automated approach</h1>
-<p>min_data = numpy.min(data, axis=0)
+```
+
+```python
+# A more automated approach
+min_data = numpy.min(data, axis=0)
 axes3.set_ylabel('min')
 axes3.plot(min_data)
 axes3.set_ylim(numpy.min(min_data), numpy.max(min_data) * 1.1)
-```</p></div>
+```
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #eec275, #f0c883); border-color: #eec275; margin-top: 0px; margin-left: -5px;'> &#9998; Challenge: Drawing Straight Lines</h2>
-<p>In the center and right subplots above, we expect all lines to look like step functions because
+
+</div>
+
+</section>
+
+
+
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> Challenge: Drawing Straight Lines</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+In the center and right subplots above, we expect all lines to look like step functions because
 non-integer value are not realistic for the minimum and maximum values. However, you can see
 that the lines are not always vertical or horizontal, and in particular the step function
-in the subplot on the right looks slanted. Why is this?</p></div>
+in the subplot on the right looks slanted. Why is this?
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #ded4b9; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #ded4b9, #e1d8c0); border-color: #ded4b9; margin-top: 0px; margin-left: -5px;'> &#128065; Solution</h2>
-<p>Because matplotlib interpolates (draws a straight line) between the points.
-One way to do avoid this is to use the Matplotlib `drawstyle` option:</p></div>
+
+</div>
+
+</section>
+
+
+
+<section class="solution panel panel-primary">
+<div class="panel-heading">
+<h2 class="fa fa-eye"> Solution</h2>
+</div>
+
+
+<div class="panel-body">
+
+Because matplotlib interpolates (draws a straight line) between the points.
+One way to do avoid this is to use the Matplotlib `drawstyle` option:
+
+</div>
+
+</section>
+
 
 
 {:.input_area}
@@ -775,11 +1106,32 @@ fig.tight_layout()
 plt.show()
 ```
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #eec275, #f0c883); border-color: #eec275; margin-top: 0px; margin-left: -5px;'> &#9998; Challenge: Make Your Own Plot</h2>
-<p>Create a plot showing the standard deviation (`numpy.std`)
-of the inflammation data for each day across all patients.</p></div>
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #ded4b9; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #ded4b9, #e1d8c0); border-color: #ded4b9; margin-top: 0px; margin-left: -5px;'> &#128065; Solution</h2></div>
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> Challenge: Make Your Own Plot</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+Create a plot showing the standard deviation (`numpy.std`)
+of the inflammation data for each day across all patients.
+
+</div>
+
+</section>
+
+
+
+<section class="solution panel panel-primary">
+<div class="panel-heading">
+<h2 class="fa fa-eye"> Solution</h2>
+</div>
+
+</section>
+
 
 
 {:.input_area}
@@ -788,11 +1140,32 @@ std_plot = plt.plot(numpy.std(data, axis=0))
 plt.show()
 ```
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #eec275, #f0c883); border-color: #eec275; margin-top: 0px; margin-left: -5px;'> &#9998; Challenge: Moving Plots Around</h2>
-<p>Modify the program to display the three plots on top of one another
-instead of side by side.</p></div>
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #ded4b9; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #ded4b9, #e1d8c0); border-color: #ded4b9; margin-top: 0px; margin-left: -5px;'> &#128065; Solution</h2></div>
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> Challenge: Moving Plots Around</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+Modify the program to display the three plots on top of one another
+instead of side by side.
+
+</div>
+
+</section>
+
+
+
+<section class="solution panel panel-primary">
+<div class="panel-heading">
+<h2 class="fa fa-eye"> Solution</h2>
+</div>
+
+</section>
+
 
 
 {:.input_area}
@@ -848,18 +1221,46 @@ print(C)
 
 ```
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #eec275, #f0c883); border-color: #eec275; margin-top: 0px; margin-left: -5px;'> &#9998; Challenge:</h2>
-<p>Write some additional code that slices the first and last columns of `A`,
-and stacks them into a 3x2 array.
-Make sure to `print` the results to verify your solution.</p></div>
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #ded4b9; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #ded4b9, #e1d8c0); border-color: #ded4b9; margin-top: 0px; margin-left: -5px;'> &#128065; Solution</h2>
-<p>A 'gotcha' with array indexing is that singleton dimensions
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> Challenge:</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+Write some additional code that slices the first and last columns of `A`,
+and stacks them into a 3x2 array.
+Make sure to `print` the results to verify your solution.
+
+</div>
+
+</section>
+
+
+
+<section class="solution panel panel-primary">
+<div class="panel-heading">
+<h2 class="fa fa-eye"> Solution</h2>
+</div>
+
+
+<div class="panel-body">
+
+A 'gotcha' with array indexing is that singleton dimensions
 are dropped by default. That means `A[:, 0]` is a one dimensional
 array, which won't stack as desired. To preserve singleton dimensions,
 the index itself can be a slice or array. For example, `A[:, :1]` returns
 a two dimensional array with one singleton dimension (i.e. a column
-vector).</p></div>
+vector).
+
+
+</div>
+
+</section>
+
 
 
 {:.input_area}
@@ -869,9 +1270,24 @@ print('D = ')
 print(D)
 ```
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #ded4b9; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #ded4b9, #e1d8c0); border-color: #ded4b9; margin-top: 0px; margin-left: -5px;'> &#128065; Solution</h2>
-<p>An alternative way to achieve the same result is to use Numpy's
-delete function to remove the second column of A.</p></div>
+
+<section class="solution panel panel-primary">
+<div class="panel-heading">
+<h2 class="fa fa-eye"> Solution</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+An alternative way to achieve the same result is to use Numpy's
+delete function to remove the second column of A.
+
+
+</div>
+
+</section>
+
 
 
 {:.input_area}
@@ -911,14 +1327,40 @@ numpy.diff(npdiff)
 array([2, 3, 4, 5])
 ```
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #eec275, #f0c883); border-color: #eec275; margin-top: 0px; margin-left: -5px;'> &#9998; Challenge:</h2>
-<p>Which axis would it make sense to use this function along?</p></div>
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #ded4b9; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #ded4b9, #e1d8c0); border-color: #ded4b9; margin-top: 0px; margin-left: -5px;'> &#128065; Solution</h2>
-<p>Since the row axis (0) is patients, it does not make sense to get the
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> Challenge:</h2>
+</div>
+
+
+<div class="panel-body">
+
+Which axis would it make sense to use this function along?
+
+</div>
+
+</section>
+
+
+
+<section class="solution panel panel-primary">
+<div class="panel-heading">
+<h2 class="fa fa-eye"> Solution</h2>
+</div>
+
+
+<div class="panel-body">
+
+Since the row axis (0) is patients, it does not make sense to get the
 difference between two arbitrary patients. The column axis (1) is in
 days, so the difference is the change in inflammation -- a meaningful
-concept.</p></div>
+concept.
+
+</div>
+
+</section>
+
 
 
 {:.input_area}
@@ -926,22 +1368,78 @@ concept.</p></div>
 numpy.diff(data, axis=1)
 ```
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #eec275, #f0c883); border-color: #eec275; margin-top: 0px; margin-left: -5px;'> &#9998; Challenge:</h2>
-<p>If the shape of an individual data file is `(60, 40)` (60 rows and 40
+
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> Challenge:</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+If the shape of an individual data file is `(60, 40)` (60 rows and 40
 columns), what would the shape of the array be after you run the `diff()`
-function and why?</p></div>
+function and why?
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #ded4b9; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #ded4b9, #e1d8c0); border-color: #ded4b9; margin-top: 0px; margin-left: -5px;'> &#128065; Solution</h2>
-<p>The shape will be `(60, 39)` because there is one fewer difference between
-columns than there are columns in the data.</p></div>
+</div>
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #eec275, #f0c883); border-color: #eec275; margin-top: 0px; margin-left: -5px;'> &#9998; Challenge:</h2>
-<p>How would you find the largest change in inflammation for each patient? Does
-it matter if the change in inflammation is an increase or a decrease?</p></div>
+</section>
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #ded4b9; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #ded4b9, #e1d8c0); border-color: #ded4b9; margin-top: 0px; margin-left: -5px;'> &#128065; Solution</h2>
-<p>By using the `numpy.max()` function after you apply the `numpy.diff()`
-function, you will get the largest difference between days.</p></div>
+
+
+<section class="solution panel panel-primary">
+<div class="panel-heading">
+<h2 class="fa fa-eye"> Solution</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+The shape will be `(60, 39)` because there is one fewer difference between
+columns than there are columns in the data.
+
+</div>
+
+</section>
+
+
+
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> Challenge:</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+How would you find the largest change in inflammation for each patient? Does
+it matter if the change in inflammation is an increase or a decrease?
+
+</div>
+
+</section>
+
+
+
+<section class="solution panel panel-primary">
+<div class="panel-heading">
+<h2 class="fa fa-eye"> Solution</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+By using the `numpy.max()` function after you apply the `numpy.diff()`
+function, you will get the largest difference between days.
+
+</div>
+
+</section>
+
 
 
 {:.input_area}
@@ -949,13 +1447,27 @@ function, you will get the largest difference between days.</p></div>
 numpy.max(numpy.diff(data, axis=1), axis=1)
 ```
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #eec275, #f0c883); border-color: #eec275; margin-top: 0px; margin-left: -5px;'> &#9998; Challenge:</h2>
-<p>If inflammation values <em>decrease</em> along an axis, then the difference from
+
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> Challenge:</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+If inflammation values *decrease* along an axis, then the difference from
 one element to the next will be negative. If
-you are interested in the <strong>magnitude</strong> of the change and not the
+you are interested in the **magnitude** of the change and not the
 direction, the `numpy.absolute()` function will provide that.
-Notice the difference if you get the largest <em>absolute</em> difference
-between readings.</p></div>
+Notice the difference if you get the largest _absolute_ difference
+between readings.
+
+</div>
+
+</section>
+
 
 
 {:.input_area}

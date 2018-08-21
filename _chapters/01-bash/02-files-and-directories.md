@@ -14,20 +14,32 @@ redirect_from:
 
 # Navigating Files and Directories
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #daee84; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #daee84, #def090); border-color: #daee84; margin-top: 0px; margin-left: -5px;'> &#8263; Overview</h2>
-<p>Questions:</p>
-<ul>
-<li>"How can I move around on my computer?"</li>
-<li>"How can I see what files and directories I have?"</li>
-<li>"How can I specify the location of a file or directory on my computer?"</li>
-</ul>
-<p>Objectives:</p>
-<ul>
-<li>"Explain the similarities and differences between a file and a directory."</li>
-<li>"Translate an absolute path into a relative path and vice versa."</li>
-<li>"Construct absolute and relative paths that identify specific files and directories."</li>
-<li>"Demonstrate the use of tab completion, and explain its advantages."</li>
-</ul></div>
+
+<section class="objectives panel panel-warning">
+<div class="panel-heading">
+<h2 class="fa fa-certificate"> </h2>
+</div>
+
+
+<div class="panel-body">
+
+Questions:
+
+- "How can I move around on my computer?"
+- "How can I see what files and directories I have?"
+- "How can I specify the location of a file or directory on my computer?"
+
+Objectives:
+
+- "Explain the similarities and differences between a file and a directory."
+- "Translate an absolute path into a relative path and vice versa."
+- "Construct absolute and relative paths that identify specific files and directories."
+- "Demonstrate the use of tab completion, and explain its advantages."
+
+</div>
+
+</section>
+
 
 The part of the operating system responsible for managing files and directories 
 is called the **file system**.
@@ -57,10 +69,24 @@ pwd
 
 Here, the computer's response is `/Users/nelle`, which is Nelle's **home directory**.
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #f4fd9c; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #f4fd9c, #f5fda6); border-color: #f4fd9c; margin-top: 0px; margin-left: -5px;'> &#128204; Home Directory Variation</h2>
-<p>The home directory path will look different on different operating systems.
-On Linux it may look like `/home/nelle`, and on Windows it will be similar to `C:\Documents and Settings\nelle` or `C:\Users\nelle`.<br />
-(Note that it may look slightly different for different versions of Windows.) In future examples, we've used Mac output as the default - Linux and Windows output may differ slightly, but should be generally similar.  </p></div>
+
+<section class="callout panel panel-warning">
+<div class="panel-heading">
+<h2 class="fa fa-thumb-tack"> Home Directory Variation</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+The home directory path will look different on different operating systems.
+On Linux it may look like `/home/nelle`, and on Windows it will be similar to `C:\Documents and Settings\nelle` or `C:\Users\nelle`.  
+(Note that it may look slightly different for different versions of Windows.) In future examples, we've used Mac output as the default - Linux and Windows output may differ slightly, but should be generally similar.  
+
+</div>
+
+</section>
+
 
 To understand what a "home directory" is,
 let's have a look at how the file system as a whole is organized.  For the
@@ -682,15 +708,47 @@ or available locally via: info '(coreutils) ls invocation'
 
 ```
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #f4fd9c; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #f4fd9c, #f5fda6); border-color: #f4fd9c; margin-top: 0px; margin-left: -5px;'> &#128204; Unsupported command-line options</h2>
-<p>If you try to use an option (flag) that is not supported, `ls` and other programs
-will usually print an error message similar to:</p>
-<p>`$ ls -j`
-`ls: invalid option -- 'j'
-Try 'ls --help' for more information.`</p></div>
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #f4fd9c; padding-bottom: 5px;'><h4>The `man` command</h4>
-<p>The other way to learn about `ls` is to type</p></div>
+<section class="callout panel panel-warning">
+<div class="panel-heading">
+<h2 class="fa fa-thumb-tack"> Unsupported command-line options</h2>
+</div>
+
+
+<div class="panel-body">
+
+If you try to use an option (flag) that is not supported, `ls` and other programs
+will usually print an error message similar to:
+
+```
+$ ls -j
+```
+```
+ls: invalid option -- 'j'
+Try 'ls --help' for more information.
+```
+
+</div>
+
+</section>
+
+
+
+<section class="callout panel panel-warning">
+<div class="panel-heading">
+<h2 class="fa fa-thumb-tack"> The `man` command</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+The other way to learn about `ls` is to type
+
+</div>
+
+</section>
+
 
 
 {:.input_area}
@@ -893,25 +951,53 @@ Note that in most command line tools, multiple flags can be combined
 with a single `-` and no spaces between the flags: `ls -F -a` is 
 equivalent to `ls -Fa`.
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #f4fd9c; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #f4fd9c, #f5fda6); border-color: #f4fd9c; margin-top: 0px; margin-left: -5px;'> &#128204; Other Hidden Files</h2>
-<p>In addition to the hidden directories `..` and `.`, you may also see a file
+
+<section class="callout panel panel-warning">
+<div class="panel-heading">
+<h2 class="fa fa-thumb-tack"> Other Hidden Files</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+In addition to the hidden directories `..` and `.`, you may also see a file
 called `.bash_profile`. This file usually contains shell configuration
 settings. You may also see other files and directories beginning
 with `.`. These are usually files and directories that are used to configure
 different programs on your computer. The prefix `.` is used to prevent these
 configuration files from cluttering the terminal when a standard `ls` command
-is used.</p></div>
+is used.
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #f4fd9c; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #f4fd9c, #f5fda6); border-color: #f4fd9c; margin-top: 0px; margin-left: -5px;'> &#128204; Orthogonality</h2>
-<p>The special names `.` and `..` don't belong to `cd`;
+</div>
+
+</section>
+
+
+
+<section class="callout panel panel-warning">
+<div class="panel-heading">
+<h2 class="fa fa-thumb-tack"> Orthogonality</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+The special names `.` and `..` don't belong to `cd`;
 they are interpreted the same way by every program.
 For example,
 if we are in `/Users/nelle/data`,
 the command `ls ..` will give us a listing of `/Users/nelle`.
 When the meanings of the parts are the same no matter how they're combined,
-programmers say they are <strong>orthogonal</strong>:
+programmers say they are **orthogonal**:
 Orthogonal systems tend to be easier for people to learn
-because there are fewer special cases and exceptions to keep track of.</p></div>
+because there are fewer special cases and exceptions to keep track of.
+
+</div>
+
+</section>
+
 
 These then, are the basic commands for navigating the filesystem on your computer:
 `pwd`, `ls` and `cd`.  Let's explore some variations on those commands.  What happens
@@ -1005,89 +1091,181 @@ cd: no such file or directory: /Users/nelle/Desktop/data-shell
 
 Run `pwd` and `ls -F` to ensure that we're in the directory we expect.  
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #f4fd9c; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #f4fd9c, #f5fda6); border-color: #f4fd9c; margin-top: 0px; margin-left: -5px;'> &#128204; Two More Shortcuts</h2>
-<p>The shell interprets the character `~` (tilde) at the start of a path to
+
+<section class="callout panel panel-warning">
+<div class="panel-heading">
+<h2 class="fa fa-thumb-tack"> Two More Shortcuts</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+The shell interprets the character `~` (tilde) at the start of a path to
 mean "the current user's home directory". For example, if Nelle's home
 directory is `/Users/nelle`, then `~/data` is equivalent to
 `/Users/nelle/data`. This only works if it is the first character in the
-path: `here/there/~/elsewhere` is <em>not</em> `here/there/Users/nelle/elsewhere`.</p>
-<p>Another shortcut is the `-` (dash) character.  `cd` will translate `-` into
-<em>the previous directory I was in</em>, which is faster than having to remember,
-then type, the full path.  This is a <em>very</em> efficient way of moving back
+path: `here/there/~/elsewhere` is *not* `here/there/Users/nelle/elsewhere`.
+
+Another shortcut is the `-` (dash) character.  `cd` will translate `-` into
+*the previous directory I was in*, which is faster than having to remember,
+then type, the full path.  This is a *very* efficient way of moving back
 and forth between directories. The difference between `cd ..` and `cd -` is
-that the former brings you <em>up</em>, while the latter brings you <em>back</em>. You can
-think of it as the <em>Last Channel</em> button on a TV remote.</p></div>
+that the former brings you *up*, while the latter brings you *back*. You can
+think of it as the *Last Channel* button on a TV remote.
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #eec275, #f0c883); border-color: #eec275; margin-top: 0px; margin-left: -5px;'> &#9998; Absolute vs Relative Paths</h2>
-<p>Starting from `/Users/amanda/data/`,
+</div>
+
+</section>
+
+
+
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> Absolute vs Relative Paths</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+Starting from `/Users/amanda/data/`,
 which of the following commands could Amanda use to navigate to her home directory,
-which is `/Users/amanda`?</p>
-<ol>
-<li>`cd .`</li>
-<li>`cd /`</li>
-<li>`cd /home/amanda`</li>
-<li>`cd ../..`</li>
-<li>`cd ~`</li>
-<li>`cd home`</li>
-<li>`cd ~/data/..`</li>
-<li>`cd`</li>
-<li>`cd ..`</li>
-</ol></div>
+which is `/Users/amanda`?
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #ded4b9; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #ded4b9, #e1d8c0); border-color: #ded4b9; margin-top: 0px; margin-left: -5px;'> &#128065; Solution</h2>
-<ol>
-<li>No: `.` stands for the current directory.</li>
-<li>No: `/` stands for the root directory.</li>
-<li>No: Amanda's home directory is `/Users/amanda`.</li>
-<li>No: this goes up two levels, i.e. ends in `/Users`.</li>
-<li>Yes: `~` stands for the user's home directory, in this case `/Users/amanda`.</li>
-<li>No: this would navigate into a directory `home` in the current directory if it exists.</li>
-<li>Yes: unnecessarily complicated, but correct.</li>
-<li>Yes: shortcut to go back to the user's home directory.</li>
-<li>Yes: goes up one level.</li>
-</ol></div>
+1. `cd .`
+2. `cd /`
+3. `cd /home/amanda`
+4. `cd ../..`
+5. `cd ~`
+6. `cd home`
+7. `cd ~/data/..`
+8. `cd`
+9. `cd ..`
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #eec275, #f0c883); border-color: #eec275; margin-top: 0px; margin-left: -5px;'> &#9998; Relative Path Resolution</h2>
-<p>Using the filesystem diagram below, if `pwd` displays `/Users/thing`,
-what will `ls -F ../backup` display?</p>
-<ol>
-<li>`../backup: No such file or directory`</li>
-<li>`2012-12-01 2013-01-08 2013-01-27`</li>
-<li>`2012-12-01/ 2013-01-08/ 2013-01-27/`</li>
-<li>`original/ pnas_final/ pnas_sub/`</li>
-</ol>
-<p><img alt="File System for Challenge Questions" src="../fig/filesystem-challenge.svg" /></p></div>
+</div>
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #ded4b9; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #ded4b9, #e1d8c0); border-color: #ded4b9; margin-top: 0px; margin-left: -5px;'> &#128065; Solution</h2>
-<ol>
-<li>No: there <em>is</em> a directory `backup` in `/Users`.</li>
-<li>No: this is the content of `Users/thing/backup`,
-   but with `..` we asked for one level further up.</li>
-<li>No: see previous explanation.</li>
-<li>Yes: `../backup/` refers to `/Users/backup/`.</li>
-</ol></div>
+</section>
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #eec275, #f0c883); border-color: #eec275; margin-top: 0px; margin-left: -5px;'> &#9998; `ls` Reading Comprehension</h2>
-<p>Assuming a directory structure as in the above Figure
+
+
+<section class="solution panel panel-primary">
+<div class="panel-heading">
+<h2 class="fa fa-eye"> Solution</h2>
+</div>
+
+
+<div class="panel-body">
+
+1. No: `.` stands for the current directory.
+2. No: `/` stands for the root directory.
+3. No: Amanda's home directory is `/Users/amanda`.
+4. No: this goes up two levels, i.e. ends in `/Users`.
+5. Yes: `~` stands for the user's home directory, in this case `/Users/amanda`.
+6. No: this would navigate into a directory `home` in the current directory if it exists.
+7. Yes: unnecessarily complicated, but correct.
+8. Yes: shortcut to go back to the user's home directory.
+9. Yes: goes up one level.
+
+</div>
+
+</section>
+
+
+
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> Relative Path Resolution</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+Using the filesystem diagram below, if `pwd` displays `/Users/thing`,
+what will `ls -F ../backup` display?
+
+1.  `../backup: No such file or directory`
+2.  `2012-12-01 2013-01-08 2013-01-27`
+3.  `2012-12-01/ 2013-01-08/ 2013-01-27/`
+4.  `original/ pnas_final/ pnas_sub/`
+
+![File System for Challenge Questions](../fig/filesystem-challenge.svg)
+
+</div>
+
+</section>
+
+
+
+<section class="solution panel panel-primary">
+<div class="panel-heading">
+<h2 class="fa fa-eye"> Solution</h2>
+</div>
+
+
+<div class="panel-body">
+
+1. No: there *is* a directory `backup` in `/Users`.
+2. No: this is the content of `Users/thing/backup`,
+   but with `..` we asked for one level further up.
+3. No: see previous explanation.
+4. Yes: `../backup/` refers to `/Users/backup/`.
+
+</div>
+
+</section>
+
+
+
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> `ls` Reading Comprehension</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+Assuming a directory structure as in the above Figure
 (File System for Challenge Questions), if `pwd` displays `/Users/backup`,
 and `-r` tells `ls` to display things in reverse order,
-what command will display:</p>
-<p>`pnas_sub/ pnas_final/ original/`</p>
-<ol>
-<li>`ls pwd`</li>
-<li>`ls -r -F`</li>
-<li>`ls -r -F /Users/backup`</li>
-<li>Either #2 or #3 above, but not #1.</li>
-</ol></div>
+what command will display:
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #ded4b9; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #ded4b9, #e1d8c0); border-color: #ded4b9; margin-top: 0px; margin-left: -5px;'> &#128065; Solution</h2>
-<ol>
-<li>No: `pwd` is not the name of a directory.</li>
-<li>Yes: `ls` without directory argument lists files and directories
-   in the current directory.</li>
-<li>Yes: uses the absolute path explicitly.</li>
-<li>Correct: see explanations above.</li>
-</ol></div>
+```
+pnas_sub/ pnas_final/ original/
+```
+
+1.  `ls pwd`
+2.  `ls -r -F`
+3.  `ls -r -F /Users/backup`
+4.  Either #2 or #3 above, but not #1.
+
+</div>
+
+</section>
+
+
+
+<section class="solution panel panel-primary">
+<div class="panel-heading">
+<h2 class="fa fa-eye"> Solution</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+1. No: `pwd` is not the name of a directory.
+2. Yes: `ls` without directory argument lists files and directories
+   in the current directory.
+3. Yes: uses the absolute path explicitly.
+4. Correct: see explanations above.
+
+</div>
+
+</section>
+
 
 ### Nelle's Pipeline: Organizing Files
 
@@ -1104,15 +1282,29 @@ but she found them hard to understand after a couple of years.
 (The final straw was when she found herself creating
 a directory called `revised-revised-results-3`.)
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #f4fd9c; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #f4fd9c, #f5fda6); border-color: #f4fd9c; margin-top: 0px; margin-left: -5px;'> &#128204; Sorting Output</h2>
-<p>Nelle names her directories "year-month-day",
+
+<section class="callout panel panel-warning">
+<div class="panel-heading">
+<h2 class="fa fa-thumb-tack"> Sorting Output</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+Nelle names her directories "year-month-day",
 with leading zeroes for months and days,
 because the shell displays file and directory names in alphabetical order.
 If she used month names,
 December would come before July;
 if she didn't use leading zeroes,
 November ('11') would come before July ('7'). Similarly, putting the year first
-means that June 2012 will come before June 2013.</p></div>
+means that June 2012 will come before June 2013.
+
+</div>
+
+</section>
+
 
 Each of her physical samples is labelled according to her lab's convention
 with a unique ten-character ID,
@@ -1174,18 +1366,31 @@ and so on.
 This is called **tab completion**,
 and we will see it in many other tools as we go on.
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #7ae78e; padding-bottom: 5px;'><p>Keypoints:</p>
-<ul>
-<li>"The file system is responsible for managing information on the disk."</li>
-<li>"Information is stored in files, which are stored in directories (folders)."</li>
-<li>"Directories can also store other directories, which forms a directory tree."</li>
-<li>"`cd path` changes the current working directory."</li>
-<li>"`ls path` prints a listing of a specific file or directory; `ls` on its own lists the current working directory."</li>
-<li>"`pwd` prints the user's current working directory."</li>
-<li>"`/` on its own is the root directory of the whole file system."</li>
-<li>"A relative path specifies a location starting from the current location."</li>
-<li>"An absolute path specifies a location from the root of the file system."</li>
-<li>"Directory names in a path are separated with `/` on Unix, but `\\` on Windows."</li>
-<li>"`..` means 'the directory above the current one'; `.` on its own means 'the current directory'."</li>
-<li>"Most files' names are `something.extension`. The extension isn't required, and doesn't guarantee anything, but is normally used to indicate the type of data in the file."</li>
-</ul></div>
+
+<section class="keypoints panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-exclamation-circle"> </h2>
+</div>
+
+
+<div class="panel-body">
+
+Keypoints:
+
+- "The file system is responsible for managing information on the disk."
+- "Information is stored in files, which are stored in directories (folders)."
+- "Directories can also store other directories, which forms a directory tree."
+- "`cd path` changes the current working directory."
+- "`ls path` prints a listing of a specific file or directory; `ls` on its own lists the current working directory."
+- "`pwd` prints the user's current working directory."
+- "`/` on its own is the root directory of the whole file system."
+- "A relative path specifies a location starting from the current location."
+- "An absolute path specifies a location from the root of the file system."
+- "Directory names in a path are separated with `/` on Unix, but `\\` on Windows."
+- "`..` means 'the directory above the current one'; `.` on its own means 'the current directory'."
+- "Most files' names are `something.extension`. The extension isn't required, and doesn't guarantee anything, but is normally used to indicate the type of data in the file."
+
+</div>
+
+</section>
+

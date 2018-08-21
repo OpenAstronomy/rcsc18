@@ -65,33 +65,111 @@ git status
 
 If you are using a different version of git, the exact wording of the output might be slightly different.
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h4>Places to Create Git Repositories</h4>
-<p>Along with tracking information about planets (the project we have already created), Dracula would also like to track information about moons. Despite Wolfman’s concerns, Dracula creates a moons project inside his planets project with the following sequence of commands:</p>
-<p>`$ cd ~/Desktop   # return to Desktop directory
+
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> Places to Create Git Repositories</h2>
+</div>
+
+
+<div class="panel-body">
+
+Along with tracking information about planets (the project we have already created), Dracula would also like to track information about moons. Despite Wolfman’s concerns, Dracula creates a moons project inside his planets project with the following sequence of commands:
+
+```
+$ cd ~/Desktop   # return to Desktop directory
 $ cd planets     # go into planets directory, which is already a Git repository
 $ ls -a          # ensure the .git sub-directory is still present in the planets directory
 $ mkdir moons    # make a sub-directory planets/moons
 $ cd moons       # go into moons sub-directory
 $ git init       # make the moons sub-directory a Git repository
-$ ls -a          # ensure the .git sub-directory is present indicating we have created a new Git repository`</p>
-<p>Is the `git init` command, run inside the moons sub-directory, required for tracking files stored in the moons sub-directory?</p></div>
+$ ls -a          # ensure the .git sub-directory is present indicating we have created a new Git repository
+```
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #ded4b9; padding-bottom: 5px;'><h4>Solution</h4>
-<p>No. Dracula does not need to make the moons sub-directory a Git repository because the planets repository will track all files, sub-directories, and sub-directory files under the planets directory. Thus, in order to track all information about moons, Dracula only needed to add the moons sub-directory to the planets directory.</p>
-<p>Additionally, Git repositories can interfere with each other if they are “nested”: the outer repository will try to version-control the inner repository. Therefore, it’s best to create each new Git repository in a separate directory. To be sure that there is no conflicting repository in the directory, check the output of git status. If it looks like the following, you are good to go to create a new repository as shown above:</p>
-<p>`$ git status`
-`fatal: Not a git repository (or any of the parent directories): .git`</p></div>
+Is the `git init` command, run inside the moons sub-directory, required for tracking files stored in the moons sub-directory?
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h4>Correcting git init Mistakes</h4>
-<p>Wolfman explains to Dracula how a nested repository is redundant and may cause confusion down the road. Dracula would like to remove the nested repository. How can Dracula undo his last git init in the moons sub-directory?</p></div>
+</div>
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #ded4b9; padding-bottom: 5px;'><h4>Solution – USE WITH CAUTION!</h4>
-<p>To recover from this little mistake, Dracula can just remove the `.git` folder in the moons subdirectory by running the following command from inside the planets directory:</p>
-<p>`$ rm -rf moons/.git`</p>
-<p>But be careful! Running this command in the wrong directory, will remove the entire Git history of a project you might want to keep. Therefore, always check your current directory using the command `pwd`.</p></div>
+</section>
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #7ae78e; padding-bottom: 5px;'><h4>Key Points</h4>
-<ul>
-<li>`git init` initializes a repository.</li>
-<li>Git stores all of its repository data in the `.git` directory.</li>
-</ul></div>
+
+
+<section class="solution panel panel-primary">
+<div class="panel-heading">
+<h2 class="fa fa-eye"> Solution</h2>
+</div>
+
+
+<div class="panel-body">
+
+No. Dracula does not need to make the moons sub-directory a Git repository because the planets repository will track all files, sub-directories, and sub-directory files under the planets directory. Thus, in order to track all information about moons, Dracula only needed to add the moons sub-directory to the planets directory.
+
+Additionally, Git repositories can interfere with each other if they are “nested”: the outer repository will try to version-control the inner repository. Therefore, it’s best to create each new Git repository in a separate directory. To be sure that there is no conflicting repository in the directory, check the output of git status. If it looks like the following, you are good to go to create a new repository as shown above:
+
+```
+$ git status
+```
+```
+fatal: Not a git repository (or any of the parent directories): .git
+```
+
+</div>
+
+</section>
+
+
+
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> Correcting git init Mistakes</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+Wolfman explains to Dracula how a nested repository is redundant and may cause confusion down the road. Dracula would like to remove the nested repository. How can Dracula undo his last git init in the moons sub-directory?
+
+</div>
+
+</section>
+
+
+
+<section class="solution panel panel-primary">
+<div class="panel-heading">
+<h2 class="fa fa-eye"> Solution – USE WITH CAUTION!</h2>
+</div>
+
+
+<div class="panel-body">
+
+To recover from this little mistake, Dracula can just remove the `.git` folder in the moons subdirectory by running the following command from inside the planets directory:
+
+```
+$ rm -rf moons/.git
+```
+
+But be careful! Running this command in the wrong directory, will remove the entire Git history of a project you might want to keep. Therefore, always check your current directory using the command `pwd`.
+
+</div>
+
+</section>
+
+
+
+<section class="keypoints panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-exclamation-circle"> Key Points</h2>
+</div>
+
+
+<div class="panel-body">
+
+- `git init` initializes a repository.
+- Git stores all of its repository data in the `.git` directory.
+
+</div>
+
+</section>
+

@@ -200,14 +200,38 @@ accept 1, 2, or 3 parameters.
   it starts at the first one, ends just before the second one, and increments by the third one.
   For exmaple `range(3, 10, 2)` produces `3, 5, 7, 9`.
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #eec275, #f0c883); border-color: #eec275; margin-top: 0px; margin-left: -5px;'> &#9998; Challenge:</h2>
-<p>Using `range`,
-write a loop that uses `range` to print the first 3 natural numbers:</p>
-<p>`1
-2
-3`</p></div>
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #ded4b9; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #ded4b9, #e1d8c0); border-color: #ded4b9; margin-top: 0px; margin-left: -5px;'> &#128065; Solution</h2></div>
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> Challenge:</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+Using `range`,
+write a loop that uses `range` to print the first 3 natural numbers:
+
+```
+1
+2
+3
+```
+
+</div>
+
+</section>
+
+
+
+<section class="solution panel panel-primary">
+<div class="panel-heading">
+<h2 class="fa fa-eye"> Solution</h2>
+</div>
+
+</section>
+
 
 
 {:.input_area}
@@ -226,11 +250,31 @@ Exponentiation is built into Python:
 print(5 ** 3)
 ```
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #eec275, #f0c883); border-color: #eec275; margin-top: 0px; margin-left: -5px;'> &#9998; Challenge:</h2>
-<p>Write a loop that calculates the same result as `5 ** 3` using
-multiplication (and without exponentiation).</p></div>
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #ded4b9; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #ded4b9, #e1d8c0); border-color: #ded4b9; margin-top: 0px; margin-left: -5px;'> &#128065; Solution</h2></div>
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> Challenge:</h2>
+</div>
+
+
+<div class="panel-body">
+
+Write a loop that calculates the same result as `5 ** 3` using
+multiplication (and without exponentiation).
+
+</div>
+
+</section>
+
+
+
+<section class="solution panel panel-primary">
+<div class="panel-heading">
+<h2 class="fa fa-eye"> Solution</h2>
+</div>
+
+</section>
+
 
 
 {:.input_area}
@@ -241,13 +285,33 @@ for i in range(0, 3):
 print(result)
 ```
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #eec275, #f0c883); border-color: #eec275; margin-top: 0px; margin-left: -5px;'> &#9998; Challenge: Reverse a String</h2>
-<p>Knowing that two strings can be concatenated using the `+` operator,
+
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> Challenge: Reverse a String</h2>
+</div>
+
+
+<div class="panel-body">
+
+Knowing that two strings can be concatenated using the `+` operator,
 write a loop that takes a string
 and produces a new string with the characters in reverse order,
-so `'Newton'` becomes `'notweN'`.</p></div>
+so `'Newton'` becomes `'notweN'`.
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #ded4b9; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #ded4b9, #e1d8c0); border-color: #ded4b9; margin-top: 0px; margin-left: -5px;'> &#128065; Solution</h2></div>
+</div>
+
+</section>
+
+
+
+<section class="solution panel panel-primary">
+<div class="panel-heading">
+<h2 class="fa fa-eye"> Solution</h2>
+</div>
+
+</section>
+
 
 
 {:.input_area}
@@ -288,10 +352,31 @@ y = cc[0] * x**0 + cc[1] * x**1 + cc[2] * x**2
 y
 ```
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #eec275, #f0c883); border-color: #eec275; margin-top: 0px; margin-left: -5px;'> &#9998; Challenge:</h2>
-<p>Write a loop using `enumerate(cc)` which computes the value `y` of any polynomial, given `x` and `cc`.</p></div>
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #ded4b9; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #ded4b9, #e1d8c0); border-color: #ded4b9; margin-top: 0px; margin-left: -5px;'> &#128065; Solution</h2></div>
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> Challenge:</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+Write a loop using `enumerate(cc)` which computes the value `y` of any polynomial, given `x` and `cc`.
+
+</div>
+
+</section>
+
+
+
+<section class="solution panel panel-primary">
+<div class="panel-heading">
+<h2 class="fa fa-eye"> Solution</h2>
+</div>
+
+</section>
+
 
 
 {:.input_area}

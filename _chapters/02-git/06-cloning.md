@@ -6,8 +6,8 @@ previouschapter:
   url: chapters/02-git/05-ignoring
   title: 'Ignoring'
 nextchapter:
-  url: chapters/02-git/06-remotes
-  title: 'Remotes'
+  url: 
+  title: 'Fundamentals Of Python Part 1'
 redirect_from:
   - 'chapters/02-git/06-cloning'
 ---

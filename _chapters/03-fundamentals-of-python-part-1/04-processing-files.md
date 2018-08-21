@@ -124,12 +124,33 @@ and their minima show the same staircase structure;
 a different situation has been revealed in the third dataset,
 where the maxima are a bit less regular, but the minima are consistently zero.
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #eec275, #f0c883); border-color: #eec275; margin-top: 0px; margin-left: -5px;'> &#9998; Challenge: Plotting Differences</h2>
-<p>Plot the difference between the average of the first dataset
-and the average of the second dataset,
-i.e., the difference between the leftmost plot of the first two figures.</p></div>
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #ded4b9; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #ded4b9, #e1d8c0); border-color: #ded4b9; margin-top: 0px; margin-left: -5px;'> &#128065; Solution</h2></div>
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> Challenge: Plotting Differences</h2>
+</div>
+
+
+<div class="panel-body">
+
+Plot the difference between the average of the first dataset
+and the average of the second dataset,
+i.e., the difference between the leftmost plot of the first two figures.
+
+
+</div>
+
+</section>
+
+
+
+<section class="solution panel panel-primary">
+<div class="panel-heading">
+<h2 class="fa fa-eye"> Solution</h2>
+</div>
+
+</section>
+
 
 
 {:.input_area}
@@ -156,8 +177,23 @@ plt.show()
 ![png](../../images/chapters/03-fundamentals-of-python-part-1/04-processing-files_11_0.png)
 
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #eec275; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #eec275, #f0c883); border-color: #eec275; margin-top: 0px; margin-left: -5px;'> &#9998; Challenge: Generate Composite Statistics</h2>
-<p>Use each of the files once to generate a dataset containing values averaged over all patients:</p></div>
+
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2 class="fa fa-pencil"> Challenge: Generate Composite Statistics</h2>
+</div>
+
+
+<div class="panel-body">
+
+
+Use each of the files once to generate a dataset containing values averaged over all patients:
+
+
+</div>
+
+</section>
+
 
 
 {:.input_area}
@@ -184,7 +220,14 @@ IndentationError: expected an indented block
 
 Then use pyplot to generate average, max, and min for all patients.
 
-<div style='padding-left: 5px; padding-top: 0; padding-bottom: 0; padding-right: 0; border: 1px solid; border-color: #ded4b9; padding-bottom: 5px;'><h2 style='padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #ded4b9, #e1d8c0); border-color: #ded4b9; margin-top: 0px; margin-left: -5px;'> &#128065; Solution</h2></div>
+
+<section class="solution panel panel-primary">
+<div class="panel-heading">
+<h2 class="fa fa-eye"> Solution</h2>
+</div>
+
+</section>
+
 
 
 {:.input_area}
