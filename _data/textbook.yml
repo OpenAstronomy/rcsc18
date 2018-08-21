@@ -6,4 +6,82 @@ chapters:
 - class: level_0
   title: Lessons
   url: chapters/00-lessons
+- children:
+  - class: level_1
+    title: Introduction
+    url: chapters/01-bash/01-Introduction
+  - class: level_1
+    title: Files And Directories
+    url: chapters/01-bash/02-files-and-directories
+  - class: level_1
+    title: Working With Files And Directories
+    url: chapters/01-bash/03-working-with-files-and-directories
+  class: level_0
+  title: Bash
+- children:
+  - class: level_1
+    title: Introduction
+    url: chapters/02-git/01-introduction
+  - class: level_1
+    title: Creating Repos
+    url: chapters/02-git/02-creating-repos
+  - class: level_1
+    title: Tracking Changes
+    url: chapters/02-git/03-tracking-changes
+  - class: level_1
+    title: Exploring History
+    url: chapters/02-git/04-exploring-history
+  - class: level_1
+    title: Ignoring
+    url: chapters/02-git/05-ignoring
+  - class: level_1
+    title: Cloning
+    url: chapters/02-git/06-cloning
+  class: level_0
+  title: Git
+- children:
+  - class: level_1
+    title: Introduction To Python
+    url: chapters/03-fundamentals-of-python-part-1/01-introduction-to-python
+  - class: level_1
+    title: Repeating Actions
+    url: chapters/03-fundamentals-of-python-part-1/02-repeating-actions
+  - class: level_1
+    title: Lists
+    url: chapters/03-fundamentals-of-python-part-1/03-lists
+  - class: level_1
+    title: Processing Files
+    url: chapters/03-fundamentals-of-python-part-1/04-processing-files
+  - class: level_1
+    title: Making Choices
+    url: chapters/03-fundamentals-of-python-part-1/05-making-choices
+  class: level_0
+  title: Fundamentals Of Python Part 1
+- children:
+  - class: level_1
+    title: Functions
+    url: chapters/04-fundamentals-of-python-part-2/01-functions
+  - class: level_1
+    title: Comments And Docs
+    url: chapters/04-fundamentals-of-python-part-2/02-comments-and-docs
+  class: level_0
+  title: Fundamentals Of Python Part 2
+- children:
+  - class: level_1
+    title: Calculating Pi
+    url: chapters/07-approximating-pi/01-calculating-pi
+  class: level_0
+  title: Approximating Pi
+- children:
+  - class: level_1
+    title: Remotes
+    url: chapters/08-collaborating-with-git/01-remotes
+  - class: level_1
+    title: Making Work Public
+    url: chapters/08-collaborating-with-git/02-making-work-public
+  - class: level_1
+    title: Forks
+    url: chapters/08-collaborating-with-git/03-forks
+  class: level_0
+  title: Collaborating With Git
 first_chapter_url: chapters/00-lessons
