@@ -52,7 +52,7 @@ def notebooks_folder_to_files(notebooks_folder):
             filename_parts = filename.split(args.filename_split_char)
             try:
                 # If first part of the filename is a number for ordering, remove it
-                forder = int(filename_parts[0])
+                int(filename_parts[0])
                 filename_parts = filename_parts[1:]
             except Exception:
                 pass
