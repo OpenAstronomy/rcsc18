@@ -34,14 +34,13 @@ At the end of the day what matters is that there is a clear statement as to what
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> # Can I Use Open License?</h2>
+<h2><span class="fa fa-pencil"></span> # Can I Use Open License?</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-Find out whether you are allowed to apply an open license to your software. Can you do this unilaterally, or do you need permission from someone in your institution? If so, who?
+<p>Find out whether you are allowed to apply an open license to your software. Can you do this unilaterally, or do you need permission from someone in your institution? If so, who?</p>
 
 </div>
 
@@ -51,19 +50,19 @@ Find out whether you are allowed to apply an open license to your software. Can 
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> # What licenses have I already accepted?</h2>
+<h2><span class="fa fa-pencil"></span> # What licenses have I already accepted?</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-Many of the software tools we use on a daily basis (including in this workshop) are released as open-source software. Pick a project on GitHub from the list below, or one of your own choosing. Find its license (usually in a file called LICENSE or COPYING) and talk about how it restricts your use of the software. Is it one of the licenses discussed in this session? How is it different?
-
-- Git, the source-code management tool
-- CPython, the standard implementation of the Python language
-- Jupyter, the project behind the web-based Python notebooks we’ll be using
-- EtherPad, a real-time collaborative editor
+<p>Many of the software tools we use on a daily basis (including in this workshop) are released as open-source software. Pick a project on GitHub from the list below, or one of your own choosing. Find its license (usually in a file called LICENSE or COPYING) and talk about how it restricts your use of the software. Is it one of the licenses discussed in this session? How is it different?</p>
+<ul>
+<li>Git, the source-code management tool</li>
+<li>CPython, the standard implementation of the Python language</li>
+<li>Jupyter, the project behind the web-based Python notebooks we’ll be using</li>
+<li>EtherPad, a real-time collaborative editor</li>
+</ul>
 
 </div>
 
@@ -73,16 +72,17 @@ Many of the software tools we use on a daily basis (including in this workshop) 
 
 <section class="keypoints panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-exclamation-circle"> # Key Points</h2>
+<h2><span class="fa fa-exclamation-circle"></span> # Key Points</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-- People who incorporate General Public License (GPL’d) software into their own software must make their software also open under the GPL license; most other open licenses do not require this.
-- The Creative Commons family of licenses allow people to mix and match requirements and restrictions on attribution, creation of derivative works, further sharing, and commercialization.
-- People who are not lawyers should not try to write licenses from scratch.
+<ul>
+<li>People who incorporate General Public License (GPL’d) software into their own software must make their software also open under the GPL license; most other open licenses do not require this.</li>
+<li>The Creative Commons family of licenses allow people to mix and match requirements and restrictions on attribution, creation of derivative works, further sharing, and commercialization.</li>
+<li>People who are not lawyers should not try to write licenses from scratch.</li>
+</ul>
 
 </div>
 
@@ -130,14 +130,15 @@ There is also an `@software{...` BibTeX entry type in case no “umbrella” cit
 
 <section class="keypoints panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-exclamation-circle"> # Key Points</h2>
+<h2><span class="fa fa-exclamation-circle"></span> # Key Points</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-- Add a CITATION file to a repository to explain how you want your work cited.
+<ul>
+<li>Add a CITATION file to a repository to explain how you want your work cited.</li>
+</ul>
 
 </div>
 

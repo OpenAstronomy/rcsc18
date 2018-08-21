@@ -127,16 +127,15 @@ where the maxima are a bit less regular, but the minima are consistently zero.
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Challenge: Plotting Differences</h2>
+<h2><span class="fa fa-pencil"></span> Challenge: Plotting Differences</h2>
 </div>
 
 
 <div class="panel-body">
 
-Plot the difference between the average of the first dataset
+<p>Plot the difference between the average of the first dataset
 and the average of the second dataset,
-i.e., the difference between the leftmost plot of the first two figures.
-
+i.e., the difference between the leftmost plot of the first two figures.</p>
 
 </div>
 
@@ -146,7 +145,7 @@ i.e., the difference between the leftmost plot of the first two figures.
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 </section>
@@ -180,15 +179,13 @@ plt.show()
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Challenge: Generate Composite Statistics</h2>
+<h2><span class="fa fa-pencil"></span> Challenge: Generate Composite Statistics</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-Use each of the files once to generate a dataset containing values averaged over all patients:
-
+<p>Use each of the files once to generate a dataset containing values averaged over all patients:</p>
 
 </div>
 
@@ -223,7 +220,7 @@ Then use pyplot to generate average, max, and min for all patients.
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 </section>

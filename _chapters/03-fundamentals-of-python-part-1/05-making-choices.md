@@ -245,20 +245,20 @@ elif 4 < 5:
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Challenge:</h2>
+<h2><span class="fa fa-pencil"></span> Challenge:</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-Which of the following would be printed if you were to run this code?
-Why did you pick this answer?
-
-1.  A
-2.  B
-3.  C
-4.  B and C
+<p>Which of the following would be printed if you were to run this code?
+Why did you pick this answer?</p>
+<ol>
+<li>A</li>
+<li>B</li>
+<li>C</li>
+<li>B and C</li>
+</ol>
 
 </div>
 
@@ -268,14 +268,14 @@ Why did you pick this answer?
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 
 <div class="panel-body">
 
-C gets printed because the first two conditions, `4 > 5` and `4 == 5`, are not
-true, but `4 < 5` is true.
+<p>C gets printed because the first two conditions, <code>4 &gt; 5</code> and <code>4 == 5</code>, are not
+true, but <code>4 &lt; 5</code> is true.</p>
 
 </div>
 
@@ -285,17 +285,16 @@ true, but `4 < 5` is true.
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Challenge: What Is Truth?</h2>
+<h2><span class="fa fa-pencil"></span> Challenge: What Is Truth?</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-`True` and `False` booleans are not the only values in Python that are true and false.
-In fact, *any* value can be used in an `if` or `elif`.
+<p><code>True</code> and <code>False</code> booleans are not the only values in Python that are true and false.
+In fact, <em>any</em> value can be used in an <code>if</code> or <code>elif</code>.
 After reading and running the code below,
-explain what the rule is for which values are considered true and which are considered false.
+explain what the rule is for which values are considered true and which are considered false.</p>
 
 </div>
 
@@ -330,17 +329,16 @@ one is true
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Challenge: That's Not Not What I Meant</h2>
+<h2><span class="fa fa-pencil"></span> Challenge: That's Not Not What I Meant</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-Sometimes it is useful to check whether some condition is not true. The Boolean
-operator `not` can do this explicitly. After reading and running the code below,
-write some `if` statements that use `not` to test the rule that you formulated
-in the previous challenge.
+<p>Sometimes it is useful to check whether some condition is not true. The Boolean
+operator <code>not</code> can do this explicitly. After reading and running the code below,
+write some <code>if</code> statements that use <code>not</code> to test the rule that you formulated
+in the previous challenge.</p>
 
 </div>
 
@@ -368,17 +366,16 @@ not not True is true
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Challenge: Close Enough</h2>
+<h2><span class="fa fa-pencil"></span> Challenge: Close Enough</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-Write some conditions that print `True` if the variable `a` is within 10% of the variable `b`
-and `False` otherwise.
+<p>Write some conditions that print <code>True</code> if the variable <code>a</code> is within 10% of the variable <code>b</code>
+and <code>False</code> otherwise.
 Compare your implementation with your partner's:
-do you get the same answer for all possible pairs of numbers?
+do you get the same answer for all possible pairs of numbers?</p>
 
 </div>
 
@@ -388,7 +385,7 @@ do you get the same answer for all possible pairs of numbers?
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution 1</h2>
+<h2><span class="fa fa-eye"></span> Solution 1</h2>
 </div>
 
 </section>
@@ -415,7 +412,7 @@ True
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution 2</h2>
+<h2><span class="fa fa-eye"></span> Solution 2</h2>
 </div>
 
 </section>
@@ -436,14 +433,14 @@ True
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> </h2>
+<h2><span class="fa fa-eye"></span> </h2>
 </div>
 
 
 <div class="panel-body">
 
-This works because the Booleans `True` and `False` have string representations
-which can be printed.
+<p>This works because the Booleans <code>True</code> and <code>False</code> have string representations
+which can be printed.</p>
 
 </div>
 
@@ -473,16 +470,15 @@ print(x)
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Challenge:</h2>
+<h2><span class="fa fa-pencil"></span> Challenge:</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-Write some code that sums the positive and negative numbers in a list separately,
+<p>Write some code that sums the positive and negative numbers in a list separately,
 using in-place operators.
-Do you think the result is more or less readable than writing the same without in-place operators?
+Do you think the result is more or less readable than writing the same without in-place operators?</p>
 
 </div>
 
@@ -492,7 +488,7 @@ Do you think the result is more or less readable than writing the same without i
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 </section>
@@ -534,17 +530,16 @@ respectively.
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Challenge:</h2>
+<h2><span class="fa fa-pencil"></span> Challenge:</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-Add code to the template below to do this. Note that the string method
-[`startswith`](https://docs.python.org/3.5/library/stdtypes.html#str.startswith)
-returns `True` if and only if the string it is called on starts with the string
-passed as an argument, that is:
+<p>Add code to the template below to do this. Note that the string method
+<a href="https://docs.python.org/3.5/library/stdtypes.html#str.startswith"><code>startswith</code></a>
+returns <code>True</code> if and only if the string it is called on starts with the string
+passed as an argument, that is:</p>
 
 </div>
 
@@ -613,7 +608,7 @@ other_files = ['myscript.py']
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 </section>
@@ -646,18 +641,19 @@ other_files: ['myscript.py']
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Challenge: Counting Vowels</h2>
+<h2><span class="fa fa-pencil"></span> Challenge: Counting Vowels</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-1. Write a loop that counts the number of vowels in a character string.
-2. Test it on a few individual words and full sentences.
-3. Once you are done, compare your solution to your neighbor's.
+<ol>
+<li>Write a loop that counts the number of vowels in a character string.</li>
+<li>Test it on a few individual words and full sentences.</li>
+<li>Once you are done, compare your solution to your neighbor's.
    Did you make the same decisions about how to handle the letter 'y'
-   (which some people think is a vowel, and some do not)?
+   (which some people think is a vowel, and some do not)?</li>
+</ol>
 
 </div>
 
@@ -667,7 +663,7 @@ other_files: ['myscript.py']
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 </section>

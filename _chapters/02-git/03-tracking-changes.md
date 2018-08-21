@@ -118,13 +118,13 @@ git log
 
 <section class="callout panel panel-warning">
 <div class="panel-heading">
-<h2 class="fa fa-thumb-tack"> # Where Are My Changes?</h2>
+<h2><span class="fa fa-thumb-tack"></span> # Where Are My Changes?</h2>
 </div>
 
 
 <div class="panel-body">
 
-If we run `ls` at this point, we will still see just one file called `mars.txt`. That’s because Git saves information about files’ history in the special `.git` directory mentioned earlier so that our filesystem doesn’t become cluttered (and so that we can’t accidentally edit or delete an old version).
+<p>If we run <code>ls</code> at this point, we will still see just one file called <code>mars.txt</code>. That’s because Git saves information about files’ history in the special <code>.git</code> directory mentioned earlier so that our filesystem doesn’t become cluttered (and so that we can’t accidentally edit or delete an old version).</p>
 
 </div>
 
@@ -189,15 +189,14 @@ To allow for this, Git has a special staging area where it keeps track of things
 
 <section class="callout panel panel-warning">
 <div class="panel-heading">
-<h2 class="fa fa-thumb-tack"> # Staging Area</h2>
+<h2><span class="fa fa-thumb-tack"></span> # Staging Area</h2>
 </div>
 
 
 <div class="panel-body">
 
-If you think of Git as taking snapshots of changes over the life of a project, git add specifies what will go in a snapshot (putting things in the staging area), and git commit then actually takes the snapshot, and makes a permanent record of it (as a commit). If you don’t have anything staged when you type git commit, Git will prompt you to use git commit -a or git commit --all, which is kind of like gathering everyone for the picture! However, it’s almost always better to explicitly add things to the staging area, because you might commit changes you forgot you made. (Going back to snapshots, you might get the extra with incomplete makeup walking on the stage for the snapshot because you used -a!) Try to stage things manually, or you might find yourself searching for “git undo commit” more than you would like!
-
-![](http://swcarpentry.github.io/git-novice/fig/git-staging-area.svg)
+<p>If you think of Git as taking snapshots of changes over the life of a project, git add specifies what will go in a snapshot (putting things in the staging area), and git commit then actually takes the snapshot, and makes a permanent record of it (as a commit). If you don’t have anything staged when you type git commit, Git will prompt you to use git commit -a or git commit --all, which is kind of like gathering everyone for the picture! However, it’s almost always better to explicitly add things to the staging area, because you might commit changes you forgot you made. (Going back to snapshots, you might get the extra with incomplete makeup walking on the stage for the snapshot because you used -a!) Try to stage things manually, or you might find yourself searching for “git undo commit” more than you would like!</p>
+<p><img alt="" src="http://swcarpentry.github.io/git-novice/fig/git-staging-area.svg" /></p>
 
 </div>
 
@@ -263,13 +262,13 @@ git log
 
 <section class="callout panel panel-warning">
 <div class="panel-heading">
-<h2 class="fa fa-thumb-tack"> # Word-based diffing</h2>
+<h2><span class="fa fa-thumb-tack"></span> # Word-based diffing</h2>
 </div>
 
 
 <div class="panel-body">
 
-Sometimes, e.g. in the case of the text documents a line-wise diff is too coarse. That is where the --color-words option of git diff comes in very useful as it highlights the changed words using colors.
+<p>Sometimes, e.g. in the case of the text documents a line-wise diff is too coarse. That is where the --color-words option of git diff comes in very useful as it highlights the changed words using colors.</p>
 
 </div>
 
@@ -279,17 +278,18 @@ Sometimes, e.g. in the case of the text documents a line-wise diff is too coarse
 
 <section class="callout panel panel-warning">
 <div class="panel-heading">
-<h2 class="fa fa-thumb-tack"> # Paging the Log</h2>
+<h2><span class="fa fa-thumb-tack"></span> # Paging the Log</h2>
 </div>
 
 
 <div class="panel-body">
 
-When the output of git log is too long to fit in your screen, git uses a program to split it into pages of the size of your screen. When this “pager” is called, you will notice that the last line in your screen is a :, instead of your usual prompt.
-
-- To get out of the pager, press Q.
-- To move to the next page, press Spacebar.
-- To search for some_word in all pages, press / and type some_word. Navigate through matches pressing N.
+<p>When the output of git log is too long to fit in your screen, git uses a program to split it into pages of the size of your screen. When this “pager” is called, you will notice that the last line in your screen is a :, instead of your usual prompt.</p>
+<ul>
+<li>To get out of the pager, press Q.</li>
+<li>To move to the next page, press Spacebar.</li>
+<li>To search for some_word in all pages, press / and type some_word. Navigate through matches pressing N.</li>
+</ul>
 
 </div>
 
@@ -299,43 +299,39 @@ When the output of git log is too long to fit in your screen, git uses a program
 
 <section class="callout panel panel-warning">
 <div class="panel-heading">
-<h2 class="fa fa-thumb-tack"> # Limit Log Size</h2>
+<h2><span class="fa fa-thumb-tack"></span> # Limit Log Size</h2>
 </div>
 
 
 <div class="panel-body">
 
-To avoid having git log cover your entire terminal screen, you can limit the number of commits that Git lists by using -N, where N is the number of commits that you want to view. For example, if you only want information from the last commit you can use:
-
-```
-$ git log -1
+<p>To avoid having git log cover your entire terminal screen, you can limit the number of commits that Git lists by using -N, where N is the number of commits that you want to view. For example, if you only want information from the last commit you can use:</p>
+<div class="codehilite"><pre><span></span>$ git log -1
 
 commit 005937fbe2a98fb83f0ade869025dc2636b4dad5
-Author: Vlad Dracula <vlad@tran.sylvan.ia>
-Date:   Thu Aug 22 10:14:07 2013 -0400
+Author: Vlad Dracula &lt;vlad@tran.sylvan.ia&gt;
+Date:   Thu Aug <span class="m">22</span> <span class="m">10</span>:14:07 <span class="m">2013</span> -0400
 
-   Discuss concerns about Mars' climate for Mummy
-```
+   Discuss concerns about Mars<span class="err">&#39;</span> climate <span class="k">for</span> Mummy
+</pre></div>
 
-You can also reduce the quantity of information using the --oneline option:
 
-```
-$ git log --oneline
+<p>You can also reduce the quantity of information using the --oneline option:</p>
+<div class="codehilite"><pre><span></span>$ git log --oneline
 
- * 005937f Discuss concerns about Mars' climate for Mummy
- * 34961b1 Add concerns about effects of Mars' moons on Wolfman
+ * 005937f Discuss concerns about Mars<span class="s1">&#39; climate for Mummy</span>
+<span class="s1"> * 34961b1 Add concerns about effects of Mars&#39;</span> moons on Wolfman
  * f22b25e Start notes on Mars as a base
-```
+</pre></div>
 
-You can also combine the --oneline options with others. One useful combination is:
 
-```
-$ git log --oneline --graph --all --decorate
+<p>You can also combine the --oneline options with others. One useful combination is:</p>
+<div class="codehilite"><pre><span></span><span class="nv">$</span> <span class="nv">git</span> <span class="nb">log</span> <span class="o">--</span><span class="n">oneline</span> <span class="o">--</span><span class="n">graph</span> <span class="o">--</span><span class="n">all</span> <span class="o">--</span><span class="n">decorate</span>
 
-* 005937f Discuss concerns about Mars' climate for Mummy (HEAD, master)
-* 34961b1 Add concerns about effects of Mars' moons on Wolfman
-* f22b25e Start notes on Mars as a base
-```
+<span class="o">*</span> <span class="mo">005</span><span class="mi">937</span><span class="n">f</span> <span class="n">Discuss</span> <span class="n">concerns</span> <span class="n">about</span> <span class="n">Mars</span><span class="s">&#39; climate for Mummy (HEAD, master)</span>
+<span class="s">* 34961b1 Add concerns about effects of Mars&#39;</span> <span class="n">moons</span> <span class="n">on</span> <span class="n">Wolfman</span>
+<span class="o">*</span> <span class="n">f22b25e</span> <span class="n">Start</span> <span class="n">notes</span> <span class="n">on</span> <span class="n">Mars</span> <span class="n">as</span> <span class="n">a</span> <span class="n">base</span>
+</pre></div>
 
 </div>
 
@@ -345,30 +341,29 @@ $ git log --oneline --graph --all --decorate
 
 <section class="callout panel panel-warning">
 <div class="panel-heading">
-<h2 class="fa fa-thumb-tack"> # Directories</h2>
+<h2><span class="fa fa-thumb-tack"></span> # Directories</h2>
 </div>
 
 
 <div class="panel-body">
 
-Two important facts you should know about directories in Git.
-
-1. Git does not track directories on their own, only files within them. Try it for yourself:
-
-```
-$ mkdir directory
+<p>Two important facts you should know about directories in Git.</p>
+<ol>
+<li>Git does not track directories on their own, only files within them. Try it for yourself:</li>
+</ol>
+<div class="codehilite"><pre><span></span>$ mkdir directory
 $ git status
 $ git add directory
 $ git status
-```
+</pre></div>
 
-Note, our newly created empty directory directory does not appear in the list of untracked files even if we explicitly add it (via git add) to our repository. This is the reason why you will sometimes see .gitkeep files in otherwise empty directories. Unlike .gitignore, these files are not special and their sole purpose is to populate a directory so that Git adds it to the repository. In fact, you can name such files anything you like.
 
-2. If you create a directory in your Git repository and populate it with files, you can add all files in the directory at once by:
-
-```
-git add <directory-with-files>
-```
+<p>Note, our newly created empty directory directory does not appear in the list of untracked files even if we explicitly add it (via git add) to our repository. This is the reason why you will sometimes see .gitkeep files in otherwise empty directories. Unlike .gitignore, these files are not special and their sole purpose is to populate a directory so that Git adds it to the repository. In fact, you can name such files anything you like.</p>
+<ol>
+<li>If you create a directory in your Git repository and populate it with files, you can add all files in the directory at once by:</li>
+</ol>
+<div class="codehilite"><pre><span></span>git add &lt;directory-with-files&gt;
+</pre></div>
 
 </div>
 
@@ -382,17 +377,18 @@ To recap, when we want to add changes to our repository, we first need to add th
 
 <section class="challange panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> # Choosing a Commit Message</h2>
+<h2><span class="fa fa-pencil"></span> # Choosing a Commit Message</h2>
 </div>
 
 
 <div class="panel-body">
 
-Which of the following commit messages would be most appropriate for the last commit made to mars.txt?
-
-- “Changes”
-- “Added line ‘But the Mummy will appreciate the lack of humidity’ to mars.txt”
-- “Discuss effects of Mars’ climate on the Mummy”
+<p>Which of the following commit messages would be most appropriate for the last commit made to mars.txt?</p>
+<ul>
+<li>“Changes”</li>
+<li>“Added line ‘But the Mummy will appreciate the lack of humidity’ to mars.txt”</li>
+<li>“Discuss effects of Mars’ climate on the Mummy”</li>
+</ul>
 
 </div>
 
@@ -402,13 +398,13 @@ Which of the following commit messages would be most appropriate for the last co
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 
 <div class="panel-body">
 
-Answer 1 is not descriptive enough, and the purpose of the commit is unclear; and answer 2 is redundant to using “git diff” to see what changed in this commit; but answer 3 is good: short, descriptive, and imperative.
+<p>Answer 1 is not descriptive enough, and the purpose of the commit is unclear; and answer 2 is redundant to using “git diff” to see what changed in this commit; but answer 3 is good: short, descriptive, and imperative.</p>
 
 </div>
 
@@ -418,25 +414,23 @@ Answer 1 is not descriptive enough, and the purpose of the commit is unclear; an
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> # Committing Changes to Git</h2>
+<h2><span class="fa fa-pencil"></span> # Committing Changes to Git</h2>
 </div>
 
 
 <div class="panel-body">
 
-Which command(s) below would save the changes of myfile.txt to my local Git repository?
-
-```
-$ git commit -m "my recent changes"
+<p>Which command(s) below would save the changes of myfile.txt to my local Git repository?</p>
+<div class="codehilite"><pre><span></span>$ git commit -m <span class="s2">&quot;my recent changes&quot;</span>
 
 $ git init myfile.txt
-$ git commit -m "my recent changes"
+$ git commit -m <span class="s2">&quot;my recent changes&quot;</span>
 
 $ git add myfile.txt
-$ git commit -m "my recent changes"
+$ git commit -m <span class="s2">&quot;my recent changes&quot;</span>
 
-$ git commit -m myfile.txt "my recent changes"
-```
+$ git commit -m myfile.txt <span class="s2">&quot;my recent changes&quot;</span>
+</pre></div>
 
 </div>
 
@@ -446,16 +440,18 @@ $ git commit -m myfile.txt "my recent changes"
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 
 <div class="panel-body">
 
-- Would only create a commit if files have already been staged.
-- Would try to create a new repository.
-- Is correct: first add the file to the staging area, then commit.
-- Would try to commit a file “my recent changes” with the message myfile.txt.
+<ul>
+<li>Would only create a commit if files have already been staged.</li>
+<li>Would try to create a new repository.</li>
+<li>Is correct: first add the file to the staging area, then commit.</li>
+<li>Would try to commit a file “my recent changes” with the message myfile.txt.</li>
+</ul>
 
 </div>
 
@@ -465,17 +461,18 @@ $ git commit -m myfile.txt "my recent changes"
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> # Committing Multiple Files</h2>
+<h2><span class="fa fa-pencil"></span> # Committing Multiple Files</h2>
 </div>
 
 
 <div class="panel-body">
 
-The staging area can hold changes from any number of files that you want to commit as a single snapshot.
-
-1. Add some text to mars.txt noting your decision to consider Venus as a base
-1. Create a new file venus.txt with your initial thoughts about Venus as a base for you and your friends
-1. Add changes from both files to the staging area, and commit those changes.
+<p>The staging area can hold changes from any number of files that you want to commit as a single snapshot.</p>
+<ol>
+<li>Add some text to mars.txt noting your decision to consider Venus as a base</li>
+<li>Create a new file venus.txt with your initial thoughts about Venus as a base for you and your friends</li>
+<li>Add changes from both files to the staging area, and commit those changes.</li>
+</ol>
 
 </div>
 
@@ -485,16 +482,14 @@ The staging area can hold changes from any number of files that you want to comm
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 
 <div class="panel-body">
 
-First we make our changes to the mars.txt and venus.txt files:
-
-```
-$ nano mars.txt
+<p>First we make our changes to the mars.txt and venus.txt files:</p>
+<div class="codehilite"><pre><span></span>$ nano mars.txt
 $ cat mars.txt
 
 Maybe I should start with a base on Venus.
@@ -503,96 +498,28 @@ $ nano venus.txt
 $ cat venus.txt
 
 Venus is a nice planet and I definitely should consider it as a base.
-```
+</pre></div>
 
-Now you can add both files to the staging area. We can do that in one line:
 
-```
-$ git add mars.txt venus.txt
-```
+<p>Now you can add both files to the staging area. We can do that in one line:</p>
+<div class="codehilite"><pre><span></span>$ git add mars.txt venus.txt
+</pre></div>
 
-Or with multiple commands:
 
-```
-$ git add mars.txt
+<p>Or with multiple commands:</p>
+<div class="codehilite"><pre><span></span>$ git add mars.txt
 $ git add venus.txt
-```
-
-Now the files are ready to commit. You can check that using git status. If you are ready to commit use:
-
-```
-$ git commit -m "Write plans to start a base on Venus"
-
-[master cc127c2]
- Write plans to start a base on Venus
- 2 files changed, 2 insertions(+)
- create mode 100644 venus.txt
-```
-
-</div>
-
-</section>
+</pre></div>
 
 
+<p>Now the files are ready to commit. You can check that using git status. If you are ready to commit use:</p>
+<div class="codehilite"><pre><span></span><span class="err">$</span> <span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="s">&quot;Write plans to start a base on Venus&quot;</span>
 
-<section class="challenge panel panel-success">
-<div class="panel-heading">
-<h2 class="fa fa-pencil"> # `bio` Repository</h2>
-</div>
-
-
-<div class="panel-body">
-
-- Create a new Git repository on your computer called bio.
-- Write a three-line biography for yourself in a file called me.txt, commit your changes
-- Modify one line, add a fourth line
-- Display the differences between its updated state and its original state.
-
-</div>
-
-</section>
-
-
-
-<section class="solution panel panel-primary">
-<div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
-</div>
-
-
-<div class="panel-body">
-
-If needed, move out of the planets folder:
-
-```
-$ cd ..
-```
-
-Create a new folder called bio and ‘move’ into it:
-
-```
-$ mkdir bio
-$ cd bio
-```
-
-Initialise git:
-
-```
-$ git init
-```
-
-Create your biography file me.txt using nano or another text editor. Once in place, add and commit it to the repository:
-
-```
-$ git add me.txt
-$ git commit -m'Adding biography file'
-```
-
-Modify the file as described (modify one line, add a fourth line). To display the differences between its updated state and its original state, use git diff:
-
-```
-$ git diff me.txt
-```
+<span class="p">[</span><span class="n">master</span> <span class="n">cc127c2</span><span class="p">]</span>
+ <span class="n">Write</span> <span class="n">plans</span> <span class="n">to</span> <span class="n">start</span> <span class="n">a</span> <span class="n">base</span> <span class="n">on</span> <span class="n">Venus</span>
+ <span class="mi">2</span> <span class="n">files</span> <span class="n">changed</span><span class="p">,</span> <span class="mi">2</span> <span class="n">insertions</span><span class="p">(</span><span class="o">+</span><span class="p">)</span>
+ <span class="n">create</span> <span class="n">mode</span> <span class="mi">100644</span> <span class="n">venus</span><span class="p">.</span><span class="n">txt</span>
+</pre></div>
 
 </div>
 
@@ -602,25 +529,18 @@ $ git diff me.txt
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> # Author and Committer</h2>
+<h2><span class="fa fa-pencil"></span> # `bio` Repository</h2>
 </div>
 
 
 <div class="panel-body">
 
-For each of the commits you have done, Git stored your name twice. You are named as the author and as the committer. You can observe that by telling Git to show you more information about your last commits:
-
-```
-$ git log --format=full
-```
-
-When committing you can name someone else as the author:
-
-```
-$ git commit --author="Vlad Dracula <vlad@tran.sylvan.ia>"
-```
-
-Create a new repository and create two commits: one without the --author option and one by naming a colleague of yours as the author. Run git log and git log --format=full. Think about ways how that can allow you to collaborate with your colleagues.
+<ul>
+<li>Create a new Git repository on your computer called bio.</li>
+<li>Write a three-line biography for yourself in a file called me.txt, commit your changes</li>
+<li>Modify one line, add a fourth line</li>
+<li>Display the differences between its updated state and its original state.</li>
+</ul>
 
 </div>
 
@@ -630,33 +550,98 @@ Create a new repository and create two commits: one without the --author option 
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 
 <div class="panel-body">
 
-```
-$ git add me.txt
-$ git commit -m "Update Vlad's bio." --author="Frank N. Stein <franky@monster.com>"
+<p>If needed, move out of the planets folder:</p>
+<div class="codehilite"><pre><span></span>$ <span class="nb">cd</span> ..
+</pre></div>
 
-[master 4162a51] Update Vlad's bio.
-Author: Frank N. Stein <franky@monster.com>
-1 file changed, 2 insertions(+), 2 deletions(-)
 
-$ git log --format=full
-commit 4162a51b273ba799a9d395dd70c45d96dba4e2ff
-Author: Frank N. Stein <franky@monster.com>
-Commit: Vlad Dracula <vlad@tran.sylvan.ia>
+<p>Create a new folder called bio and ‘move’ into it:</p>
+<div class="codehilite"><pre><span></span>$ mkdir bio
+$ <span class="nb">cd</span> bio
+</pre></div>
 
-Update Vlad's bio.
+
+<p>Initialise git:</p>
+<div class="codehilite"><pre><span></span>$ git init
+</pre></div>
+
+
+<p>Create your biography file me.txt using nano or another text editor. Once in place, add and commit it to the repository:</p>
+<div class="codehilite"><pre><span></span>$ git add me.txt
+$ git commit -m<span class="s1">&#39;Adding biography file&#39;</span>
+</pre></div>
+
+
+<p>Modify the file as described (modify one line, add a fourth line). To display the differences between its updated state and its original state, use git diff:</p>
+<div class="codehilite"><pre><span></span>$ git diff me.txt
+</pre></div>
+
+</div>
+
+</section>
+
+
+
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2><span class="fa fa-pencil"></span> # Author and Committer</h2>
+</div>
+
+
+<div class="panel-body">
+
+<p>For each of the commits you have done, Git stored your name twice. You are named as the author and as the committer. You can observe that by telling Git to show you more information about your last commits:</p>
+<div class="codehilite"><pre><span></span>$ git log --format<span class="o">=</span>full
+</pre></div>
+
+
+<p>When committing you can name someone else as the author:</p>
+<div class="codehilite"><pre><span></span>$ git commit --author<span class="o">=</span><span class="s2">&quot;Vlad Dracula &lt;vlad@tran.sylvan.ia&gt;&quot;</span>
+</pre></div>
+
+
+<p>Create a new repository and create two commits: one without the --author option and one by naming a colleague of yours as the author. Run git log and git log --format=full. Think about ways how that can allow you to collaborate with your colleagues.</p>
+
+</div>
+
+</section>
+
+
+
+<section class="solution panel panel-primary">
+<div class="panel-heading">
+<h2><span class="fa fa-eye"></span> Solution</h2>
+</div>
+
+
+<div class="panel-body">
+
+<div class="codehilite"><pre><span></span>$ git add me.txt
+$ git commit -m <span class="s2">&quot;Update Vlad&#39;s bio.&quot;</span> --author<span class="o">=</span><span class="s2">&quot;Frank N. Stein &lt;franky@monster.com&gt;&quot;</span>
+
+<span class="o">[</span>master 4162a51<span class="o">]</span> Update Vlad<span class="s1">&#39;s bio.</span>
+<span class="s1">Author: Frank N. Stein &lt;franky@monster.com&gt;</span>
+<span class="s1">1 file changed, 2 insertions(+), 2 deletions(-)</span>
+
+<span class="s1">$ git log --format=full</span>
+<span class="s1">commit 4162a51b273ba799a9d395dd70c45d96dba4e2ff</span>
+<span class="s1">Author: Frank N. Stein &lt;franky@monster.com&gt;</span>
+<span class="s1">Commit: Vlad Dracula &lt;vlad@tran.sylvan.ia&gt;</span>
+
+<span class="s1">Update Vlad&#39;</span>s bio.
 
 commit aaa3271e5e26f75f11892718e83a3e2743fab8ea
-Author: Vlad Dracula <vlad@tran.sylvan.ia>
-Commit: Vlad Dracula <vlad@tran.sylvan.ia>
+Author: Vlad Dracula &lt;vlad@tran.sylvan.ia&gt;
+Commit: Vlad Dracula &lt;vlad@tran.sylvan.ia&gt;
 
-Vlad's initial bio.
-```
+Vlad<span class="err">&#39;</span>s initial bio.
+</pre></div>
 
 </div>
 
@@ -666,17 +651,19 @@ Vlad's initial bio.
 
 <section class="keypoints panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-exclamation-circle"> # Key Points</h2>
+<h2><span class="fa fa-exclamation-circle"></span> # Key Points</h2>
 </div>
 
 
 <div class="panel-body">
 
-- git status shows the status of a repository.
-- Files can be stored in a project’s working directory (which users see), the staging area (where the next commit is being built up) and the local repository (where commits are permanently recorded).
-- git add puts files in the staging area.
-- git commit saves the staged content as a new commit in the local repository.
-- Write a commit message that accurately describes your changes.
+<ul>
+<li>git status shows the status of a repository.</li>
+<li>Files can be stored in a project’s working directory (which users see), the staging area (where the next commit is being built up) and the local repository (where commits are permanently recorded).</li>
+<li>git add puts files in the staging area.</li>
+<li>git commit saves the staged content as a new commit in the local repository.</li>
+<li>Write a commit message that accurately describes your changes.</li>
+</ul>
 
 </div>
 
