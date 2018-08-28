@@ -401,3 +401,15 @@
 .affix {
   position: fixed;
 }
+
+
+
+/* Custom hacks */
+
+div.panel-heading > h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: inherit;
+    font-size: inherit;
+    border-bottom: none;
+}

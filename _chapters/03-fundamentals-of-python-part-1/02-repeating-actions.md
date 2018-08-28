@@ -203,21 +203,18 @@ accept 1, 2, or 3 parameters.
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Challenge:</h2>
+<h2><span class="fa fa-pencil"></span> Challenge:</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-Using `range`,
-write a loop that uses `range` to print the first 3 natural numbers:
-
-```
-1
+<p>Using <code>range</code>,
+write a loop that uses <code>range</code> to print the first 3 natural numbers:</p>
+<div class="codehilite"><pre><span></span>1
 2
 3
-```
+</pre></div>
 
 </div>
 
@@ -227,7 +224,7 @@ write a loop that uses `range` to print the first 3 natural numbers:
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 </section>
@@ -253,14 +250,14 @@ print(5 ** 3)
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Challenge:</h2>
+<h2><span class="fa fa-pencil"></span> Challenge:</h2>
 </div>
 
 
 <div class="panel-body">
 
-Write a loop that calculates the same result as `5 ** 3` using
-multiplication (and without exponentiation).
+<p>Write a loop that calculates the same result as <code>5 ** 3</code> using
+multiplication (and without exponentiation).</p>
 
 </div>
 
@@ -270,7 +267,7 @@ multiplication (and without exponentiation).
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 </section>
@@ -288,16 +285,16 @@ print(result)
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Challenge: Reverse a String</h2>
+<h2><span class="fa fa-pencil"></span> Challenge: Reverse a String</h2>
 </div>
 
 
 <div class="panel-body">
 
-Knowing that two strings can be concatenated using the `+` operator,
+<p>Knowing that two strings can be concatenated using the <code>+</code> operator,
 write a loop that takes a string
 and produces a new string with the characters in reverse order,
-so `'Newton'` becomes `'notweN'`.
+so <code>'Newton'</code> becomes <code>'notweN'</code>.</p>
 
 </div>
 
@@ -307,7 +304,7 @@ so `'Newton'` becomes `'notweN'`.
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 </section>
@@ -355,14 +352,13 @@ y
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Challenge:</h2>
+<h2><span class="fa fa-pencil"></span> Challenge:</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-Write a loop using `enumerate(cc)` which computes the value `y` of any polynomial, given `x` and `cc`.
+<p>Write a loop using <code>enumerate(cc)</code> which computes the value <code>y</code> of any polynomial, given <code>x</code> and <code>cc</code>.</p>
 
 </div>
 
@@ -372,7 +368,7 @@ Write a loop using `enumerate(cc)` which computes the value `y` of any polynomia
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 </section>

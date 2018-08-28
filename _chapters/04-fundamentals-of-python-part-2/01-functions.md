@@ -29,19 +29,20 @@ This whole notebook needs going over and realigning with whatever science we end
 
 <section class="objectives panel panel-warning">
 <div class="panel-heading">
-<h2 class="fa fa-certificate"> Learning Objectives:</h2>
+<h2><span class="fa fa-certificate"></span> Learning Objectives:</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-- Define a function that takes parameters.
-- Return a value from a function.
-- Test and debug a function.
-- Set default values for function parameters.
-- Explain why we should divide programs into small, single-purpose
-  functions.
+<ul>
+<li>Define a function that takes parameters.</li>
+<li>Return a value from a function.</li>
+<li>Test and debug a function.</li>
+<li>Set default values for function parameters.</li>
+<li>Explain why we should divide programs into small, single-purpose
+  functions.</li>
+</ul>
 
 </div>
 
@@ -76,47 +77,46 @@ We've successfully called the function that we defined, and we have access to th
 
 <section class="callout panel panel-warning">
 <div class="panel-heading">
-<h2 class="fa fa-thumb-tack"> # Integer division</h2>
+<h2><span class="fa fa-thumb-tack"></span> # Integer division</h2>
 </div>
 
 
 <div class="panel-body">
 
+<p>We are using Python 3 division, which always returns a floating point number:</p>
+<div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="mi">5</span><span class="o">/</span><span class="mi">9</span><span class="p">)</span>
+</pre></div>
 
-We are using Python 3 division, which always returns a floating point number:
 
-```python
-print(5/9)
-```
+<p>Unfortunately, this wasn't the case in Python 2:</p>
+<div class="codehilite"><pre><span></span><span class="err">!</span><span class="n">python2</span> <span class="o">-</span><span class="n">c</span> <span class="s2">&quot;print 5/9&quot;</span>
+</pre></div>
 
-Unfortunately, this wasn't the case in Python 2:
 
-```python
-!python2 -c "print 5/9"
-```
+<p>If you are using Python 2 and want to keep the fractional part of division you need to convert one or the other number to floating point:</p>
+<div class="codehilite"><pre><span></span><span class="nb">float</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="o">/</span> <span class="mi">9</span>
+</pre></div>
 
-If you are using Python 2 and want to keep the fractional part of division you need to convert one or the other number to floating point:
 
-```python
-float(5) / 9
-```
-```python
-5 / float(9)
-```
-```python
-5.0 / 9
-```
-```python
-5 / 9.0
-```
+<div class="codehilite"><pre><span></span><span class="mi">5</span> <span class="o">/</span> <span class="nb">float</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span>
+</pre></div>
 
-And if you want an integer result from division in Python 3, use a double-slash:
-```python
-4 // 2
-```
-```python
-3 // 2
-```
+
+<div class="codehilite"><pre><span></span><span class="mf">5.0</span> <span class="o">/</span> <span class="mi">9</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="mi">5</span> <span class="o">/</span> <span class="mf">9.0</span>
+</pre></div>
+
+
+<p>And if you want an integer result from division in Python 3, use a double-slash:</p>
+<div class="codehilite"><pre><span></span><span class="mi">4</span> <span class="o">//</span> <span class="mi">2</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="mi">3</span> <span class="o">//</span> <span class="mi">2</span>
+</pre></div>
 
 </div>
 
@@ -320,20 +320,17 @@ then the filename is assigned to `fname` (which is what we want), but the delimi
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Combining strings</h2>
+<h2><span class="fa fa-pencil"></span> Combining strings</h2>
 </div>
 
 
 <div class="panel-body">
 
+<p>"Adding" two strings produces their concatenation: <code>'a'</code> + <code>'b'</code> is <code>'ab'</code>. Write a function called <code>fence</code> that takes two parameters called <code>original</code> and <code>wrapper</code> and returns a new string that has the wrapper character at the beginning and end of the original. A call to your function should look like this:</p>
+<div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="n">fence</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="s1">&#39;*&#39;</span><span class="p">))</span>
 
-"Adding" two strings produces their concatenation: `'a'` + `'b'` is `'ab'`. Write a function called `fence` that takes two parameters called `original` and `wrapper` and returns a new string that has the wrapper character at the beginning and end of the original. A call to your function should look like this:
-
-```python
-print(fence('name', '*'))
-
-*name*
-```
+<span class="o">*</span><span class="n">name</span><span class="o">*</span>
+</pre></div>
 
 </div>
 
@@ -353,23 +350,20 @@ print(fence('name', '*'))
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Selecting characters from strings</h2>
+<h2><span class="fa fa-pencil"></span> Selecting characters from strings</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-If the variable `s` refers to a string, then `s[0]` is the string's first
-character and `s[-1]` is its last. Write a function called `outer` that
+<p>If the variable <code>s</code> refers to a string, then <code>s[0]</code> is the string's first
+character and <code>s[-1]</code> is its last. Write a function called <code>outer</code> that
 returns a string made up of just the first and last characters of its
-input. A call to your function should look like this:
+input. A call to your function should look like this:</p>
+<div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="n">outer</span><span class="p">(</span><span class="s1">&#39;helium&#39;</span><span class="p">))</span>
 
-```python
-print(outer('helium'))
-
-hm
-```
+<span class="n">hm</span>
+</pre></div>
 
 </div>
 
@@ -379,14 +373,13 @@ hm
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Rescaling an array</h2>
+<h2><span class="fa fa-pencil"></span> Rescaling an array</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-Write a function `rescale` that takes an array as input and returns a corresponding array of values scaled to lie in the range 0.0 to 1.0. (Hint: If L and H are the lowest and highest values in the original array, then the replacement for a value v should be (v − L)/(H − L).)
+<p>Write a function <code>rescale</code> that takes an array as input and returns a corresponding array of values scaled to lie in the range 0.0 to 1.0. (Hint: If L and H are the lowest and highest values in the original array, then the replacement for a value v should be (v − L)/(H − L).)</p>
 
 </div>
 
@@ -396,14 +389,13 @@ Write a function `rescale` that takes an array as input and returns a correspond
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Defining defaults</h2>
+<h2><span class="fa fa-pencil"></span> Defining defaults</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-Rewrite the `rescale` function so that it scales data to lie between 0.0 and 1.0 by default, but will allow the caller to specify lower and upper bounds if they want. Compare your implementation to your neighbor's: do the two functions always behave the same way?
+<p>Rewrite the <code>rescale</code> function so that it scales data to lie between 0.0 and 1.0 by default, but will allow the caller to specify lower and upper bounds if they want. Compare your implementation to your neighbor's: do the two functions always behave the same way?</p>
 
 </div>
 
@@ -413,29 +405,26 @@ Rewrite the `rescale` function so that it scales data to lie between 0.0 and 1.0
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Variables inside and outside functions</h2>
+<h2><span class="fa fa-pencil"></span> Variables inside and outside functions</h2>
 </div>
 
 
 <div class="panel-body">
 
+<p>What does the following piece of code display when run - and why?</p>
+<div class="codehilite"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">k</span> <span class="o">=</span> <span class="mi">0</span>
 
-What does the following piece of code display when run - and why?
+<span class="k">def</span> <span class="nf">f2k</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
+  <span class="n">k</span> <span class="o">=</span> <span class="p">((</span><span class="n">f</span><span class="o">-</span><span class="mi">32</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">5.0</span><span class="o">/</span><span class="mf">9.0</span><span class="p">))</span> <span class="o">+</span> <span class="mf">273.15</span>
+  <span class="k">return</span> <span class="n">k</span>
 
-```python
-f = 0
-k = 0
+<span class="n">f2k</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
+<span class="n">f2k</span><span class="p">(</span><span class="mi">41</span><span class="p">)</span>
+<span class="n">f2k</span><span class="p">(</span><span class="mi">32</span><span class="p">)</span>
 
-def f2k(f):
-  k = ((f-32)*(5.0/9.0)) + 273.15
-  return k
-
-f2k(8)
-f2k(41)
-f2k(32)
-
-print(k)
-```
+<span class="k">print</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
+</pre></div>
 
 </div>
 
@@ -445,35 +434,34 @@ print(k)
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> The Old Switcheroo</h2>
+<h2><span class="fa fa-pencil"></span> The Old Switcheroo</h2>
 </div>
 
 
 <div class="panel-body">
 
+<p>Consider this code:</p>
+<div class="codehilite"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">7</span>
 
-Consider this code:
+<span class="k">def</span> <span class="nf">swap</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="n">temp</span> <span class="o">=</span> <span class="n">a</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="n">b</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="n">temp</span>
 
-```python
-a = 3
-b = 7
+<span class="n">swap</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
 
-def swap(a, b):
-    temp = a
-    a = b
-    b = temp
+<span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+</pre></div>
 
-swap(a, b)
 
-print(a, b)
-```
-
-Which of the following would be printed if you were to run this code? Why did you pick this answer?
-
-- `7 3`
-- `3 7`
-- `3 3`
-- `7 7`
+<p>Which of the following would be printed if you were to run this code? Why did you pick this answer?</p>
+<ul>
+<li><code>7 3</code></li>
+<li><code>3 7</code></li>
+<li><code>3 3</code></li>
+<li><code>7 7</code></li>
+</ul>
 
 </div>
 
@@ -483,14 +471,13 @@ Which of the following would be printed if you were to run this code? Why did yo
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-`3, 7` is correct. Initially `a` has a value of 3 and `b` has a value of 7. When the `swap` function is called, it creates local variables (also called `a` and `b` in this case) and trades their values. The function does not return any values and does not alter `a` or `b` outside of its local copy. Therefore the original values of `a` and `b` remain unchanged.
+<p><code>3, 7</code> is correct. Initially <code>a</code> has a value of 3 and <code>b</code> has a value of 7. When the <code>swap</code> function is called, it creates local variables (also called <code>a</code> and <code>b</code> in this case) and trades their values. The function does not return any values and does not alter <code>a</code> or <code>b</code> outside of its local copy. Therefore the original values of <code>a</code> and <code>b</code> remain unchanged.</p>
 
 </div>
 

@@ -21,14 +21,13 @@ Systems like Git allow us to move work between any two repositories. In practice
 
 <section class="callout panel panel-warning">
 <div class="panel-heading">
-<h2 class="fa fa-thumb-tack"> # Getting a GitHub account</h2>
+<h2><span class="fa fa-thumb-tack"></span> # Getting a GitHub account</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-This lesson and the remainder of the workshop require you to have a GitHub account. If you have one already, make sure that you remember your username and password - check these now by logging in at [github.com](https://github.com/). If you don't already have an account, go to [github.com](https://github.com/) and make one.
+<p>This lesson and the remainder of the workshop require you to have a GitHub account. If you have one already, make sure that you remember your username and password - check these now by logging in at <a href="https://github.com/">github.com</a>. If you don't already have an account, go to <a href="https://github.com/">github.com</a> and make one.</p>
 
 </div>
 
@@ -74,14 +73,13 @@ Click on the ‘HTTPS’ link to change the protocol from SSH to HTTPS.
 
 <section class="callout panel panel-warning">
 <div class="panel-heading">
-<h2 class="fa fa-thumb-tack"> # HTTPS vs. SSH</h2>
+<h2><span class="fa fa-thumb-tack"></span> # HTTPS vs. SSH</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-We use HTTPS here because it does not require additional configuration. After the workshop you may want to set up SSH access, which is a bit more secure, by following one of the great tutorials from GitHub, Atlassian/BitBucket and GitLab (this one has a screencast).
+<p>We use HTTPS here because it does not require additional configuration. After the workshop you may want to set up SSH access, which is a bit more secure, by following one of the great tutorials from GitHub, Atlassian/BitBucket and GitLab (this one has a screencast).</p>
 
 </div>
 
@@ -121,26 +119,22 @@ git push origin master
 
 <section class="callout panel panel-warning">
 <div class="panel-heading">
-<h2 class="fa fa-thumb-tack"> # Proxy</h2>
+<h2><span class="fa fa-thumb-tack"></span> # Proxy</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-If the network you are connected to uses a proxy, there is a chance that your last command failed with “Could not resolve hostname” as the error message. To solve this issue, you need to tell Git about the proxy:
-
-```
-$ git config --global http.proxy http://user:password@proxy.url
+<p>If the network you are connected to uses a proxy, there is a chance that your last command failed with “Could not resolve hostname” as the error message. To solve this issue, you need to tell Git about the proxy:</p>
+<div class="codehilite"><pre><span></span>$ git config --global http.proxy http://user:password@proxy.url
 $ git config --global https.proxy http://user:password@proxy.url
-```
+</pre></div>
 
-When you connect to another network that doesn’t use a proxy, you will need to tell Git to disable the proxy using:
 
-```
-$ git config --global --unset http.proxy
+<p>When you connect to another network that doesn’t use a proxy, you will need to tell Git to disable the proxy using:</p>
+<div class="codehilite"><pre><span></span>$ git config --global --unset http.proxy
 $ git config --global --unset https.proxy
-```
+</pre></div>
 
 </div>
 
@@ -150,22 +144,19 @@ $ git config --global --unset https.proxy
 
 <section class="callout panel panel-warning">
 <div class="panel-heading">
-<h2 class="fa fa-thumb-tack"> # Password Managers</h2>
+<h2><span class="fa fa-thumb-tack"></span> # Password Managers</h2>
 </div>
 
 
 <div class="panel-body">
 
+<p>If your operating system has a password manager configured, git push will try to use it when it needs your username and password. For example, this is the default behavior for Git Bash on Windows. If you want to type your username and password at the terminal instead of using a password manager, type:</p>
+<div class="codehilite"><pre><span></span>$ <span class="nb">unset</span> SSH_ASKPASS
+</pre></div>
 
-If your operating system has a password manager configured, git push will try to use it when it needs your username and password. For example, this is the default behavior for Git Bash on Windows. If you want to type your username and password at the terminal instead of using a password manager, type:
 
-```
-$ unset SSH_ASKPASS
-```
-
-in the terminal, before you run git push. Despite the name, git uses SSH_ASKPASS for all credential entry, so you may want to unset SSH_ASKPASS whether you are using git via SSH or https.
-
-You may also want to add unset SSH_ASKPASS at the end of your ~/.bashrc to make git default to using the terminal for usernames and passwords.
+<p>in the terminal, before you run git push. Despite the name, git uses SSH_ASKPASS for all credential entry, so you may want to unset SSH_ASKPASS whether you are using git via SSH or https.</p>
+<p>You may also want to add unset SSH_ASKPASS at the end of your ~/.bashrc to make git default to using the terminal for usernames and passwords.</p>
 
 </div>
 
@@ -179,14 +170,13 @@ Our local and remote repositories are now in this state:
 
 <section class="callout panel panel-warning">
 <div class="panel-heading">
-<h2 class="fa fa-thumb-tack"> # The ‘-u’ Flag</h2>
+<h2><span class="fa fa-thumb-tack"></span> # The ‘-u’ Flag</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-You may see a -u option used with git push in some documentation. This option is synonymous with the --set-upstream-to option for the git branch command, and is used to associate the current branch with a remote branch so that the git pull command can be used without any arguments. To do this, simply use git push -u origin master once the remote has been set up.
+<p>You may see a -u option used with git push in some documentation. This option is synonymous with the --set-upstream-to option for the git branch command, and is used to associate the current branch with a remote branch so that the git pull command can be used without any arguments. To do this, simply use git push -u origin master once the remote has been set up.</p>
 
 </div>
 
@@ -206,14 +196,13 @@ Pulling has no effect in this case because the two repositories are already sync
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> # GitHub GUI</h2>
+<h2><span class="fa fa-pencil"></span> # GitHub GUI</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-Browse to your planets repository on GitHub. Under the Code tab, find and click on the text that says “XX commits” (where “XX” is some number). Hover over, and click on, the three buttons to the right of each commit. What information can you gather/explore from these buttons? How would you get that same information in the shell?
+<p>Browse to your planets repository on GitHub. Under the Code tab, find and click on the text that says “XX commits” (where “XX” is some number). Hover over, and click on, the three buttons to the right of each commit. What information can you gather/explore from these buttons? How would you get that same information in the shell?</p>
 
 </div>
 
@@ -223,18 +212,15 @@ Browse to your planets repository on GitHub. Under the Code tab, find and click 
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-The left-most button (with the picture of a clipboard) copies the full identifier of the commit to the clipboard. In the shell, git log will show you the full commit identifier for each commit.
-
-When you click on the middle button, you’ll see all of the changes that were made in that particular commit. Green shaded lines indicate additions and red ones removals. In the shell we can do the same thing with git diff. In particular, git diff ID1..ID2 where ID1 and ID2 are commit identifiers (e.g. git diff a3bf1e5..041e637) will show the differences between those two commits.
-
-The right-most button lets you view all of the files in the repository at the time of that commit. To do this in the shell, we’d need to checkout the repository at that particular time. We can do this with git checkout ID where ID is the identifier of the commit we want to look at. If we do this, we need to remember to put the repository back to the right state afterwards!
+<p>The left-most button (with the picture of a clipboard) copies the full identifier of the commit to the clipboard. In the shell, git log will show you the full commit identifier for each commit.</p>
+<p>When you click on the middle button, you’ll see all of the changes that were made in that particular commit. Green shaded lines indicate additions and red ones removals. In the shell we can do the same thing with git diff. In particular, git diff ID1..ID2 where ID1 and ID2 are commit identifiers (e.g. git diff a3bf1e5..041e637) will show the differences between those two commits.</p>
+<p>The right-most button lets you view all of the files in the repository at the time of that commit. To do this in the shell, we’d need to checkout the repository at that particular time. We can do this with git checkout ID where ID is the identifier of the commit we want to look at. If we do this, we need to remember to put the repository back to the right state afterwards!</p>
 
 </div>
 
@@ -244,14 +230,13 @@ The right-most button lets you view all of the files in the repository at the ti
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> # GitHub Timestamp</h2>
+<h2><span class="fa fa-pencil"></span> # GitHub Timestamp</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-Create a remote repository on GitHub. Push the contents of your local repository to the remote. Make changes to your local repository and push these changes. Go to the repo you just created on GitHub and check the timestamps of the files. How does GitHub record times, and why?
+<p>Create a remote repository on GitHub. Push the contents of your local repository to the remote. Make changes to your local repository and push these changes. Go to the repo you just created on GitHub and check the timestamps of the files. How does GitHub record times, and why?</p>
 
 </div>
 
@@ -261,14 +246,13 @@ Create a remote repository on GitHub. Push the contents of your local repository
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-GitHub displays timestamps in a human readable relative format (i.e. “22 hours ago” or “three weeks ago”). However, if you hover over the timestamp, you can see the exact time at which the last change to the file occurred.
+<p>GitHub displays timestamps in a human readable relative format (i.e. “22 hours ago” or “three weeks ago”). However, if you hover over the timestamp, you can see the exact time at which the last change to the file occurred.</p>
 
 </div>
 
@@ -278,14 +262,13 @@ GitHub displays timestamps in a human readable relative format (i.e. “22 hours
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> # Push vs. Commit</h2>
+<h2><span class="fa fa-pencil"></span> # Push vs. Commit</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-In this lesson, we introduced the “git push” command. How is “git push” different from “git commit”?
+<p>In this lesson, we introduced the “git push” command. How is “git push” different from “git commit”?</p>
 
 </div>
 
@@ -295,14 +278,13 @@ In this lesson, we introduced the “git push” command. How is “git push” 
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-When we push changes, we’re interacting with a remote repository to update it with the changes we’ve made locally (often this corresponds to sharing the changes we’ve made with others). Commit only updates your local repository.
+<p>When we push changes, we’re interacting with a remote repository to update it with the changes we’ve made locally (often this corresponds to sharing the changes we’ve made with others). Commit only updates your local repository.</p>
 
 </div>
 
@@ -312,20 +294,18 @@ When we push changes, we’re interacting with a remote repository to update it 
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> # Fixing Remote Settings</h2>
+<h2><span class="fa fa-pencil"></span> # Fixing Remote Settings</h2>
 </div>
 
 
 <div class="panel-body">
 
+<p>It happens quite often in practice that you made a typo in the remote URL. This exercise is about how to fix this kind of issue. First start by adding a remote with an invalid URL:</p>
+<div class="codehilite"><pre><span></span>git remote add broken https://github.com/this/url/is/invalid
+</pre></div>
 
-It happens quite often in practice that you made a typo in the remote URL. This exercise is about how to fix this kind of issue. First start by adding a remote with an invalid URL:
 
-```
-git remote add broken https://github.com/this/url/is/invalid
-```
-
-Do you get an error when adding the remote? Can you think of a command that would make it obvious that your remote URL was not valid? Can you figure out how to fix the URL (tip: use git remote -h)? Don’t forget to clean up and remove this remote once you are done with this exercise.
+<p>Do you get an error when adding the remote? Can you think of a command that would make it obvious that your remote URL was not valid? Can you figure out how to fix the URL (tip: use git remote -h)? Don’t forget to clean up and remove this remote once you are done with this exercise.</p>
 
 </div>
 
@@ -335,14 +315,13 @@ Do you get an error when adding the remote? Can you think of a command that woul
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-We don’t see any error message when we add the remote (adding the remote tells git about it, but doesn’t try to use it yet). As soon as we try to use git push we’ll see an error message. The command git remote set-url allows us to change the remote’s URL to fix it.
+<p>We don’t see any error message when we add the remote (adding the remote tells git about it, but doesn’t try to use it yet). As soon as we try to use git push we’ll see an error message. The command git remote set-url allows us to change the remote’s URL to fix it.</p>
 
 </div>
 
@@ -352,14 +331,13 @@ We don’t see any error message when we add the remote (adding the remote tells
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> # GitHub License and README files</h2>
+<h2><span class="fa fa-pencil"></span> # GitHub License and README files</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-In this section we learned about creating a remote repository on GitHub, but when you initialized your GitHub repo, you didn’t add a README.md or a license file. If you had, what do you think would have happened when you tried to link your local and remote repositories?
+<p>In this section we learned about creating a remote repository on GitHub, but when you initialized your GitHub repo, you didn’t add a README.md or a license file. If you had, what do you think would have happened when you tried to link your local and remote repositories?</p>
 
 </div>
 
@@ -369,14 +347,13 @@ In this section we learned about creating a remote repository on GitHub, but whe
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-In this case, since we already had a README file in our own (local) repository, we’d see a merge conflict (when git realises that there are two versions of the file and asks us to reconcile the differences).
+<p>In this case, since we already had a README file in our own (local) repository, we’d see a merge conflict (when git realises that there are two versions of the file and asks us to reconcile the differences).</p>
 
 </div>
 
@@ -386,17 +363,18 @@ In this case, since we already had a README file in our own (local) repository, 
 
 <section class="keypoints panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-exclamation-circle"> # Key Points</h2>
+<h2><span class="fa fa-exclamation-circle"></span> # Key Points</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-- A local Git repository can be connected to one or more remote repositories.
-- Use the HTTPS protocol to connect to remote repositories until you have learned how to set up SSH.
-- git push copies changes from a local repository to a remote repository.
-- git pull copies changes from a remote repository to a local repository.
+<ul>
+<li>A local Git repository can be connected to one or more remote repositories.</li>
+<li>Use the HTTPS protocol to connect to remote repositories until you have learned how to set up SSH.</li>
+<li>git push copies changes from a local repository to a remote repository.</li>
+<li>git pull copies changes from a remote repository to a local repository.</li>
+</ul>
 
 </div>
 

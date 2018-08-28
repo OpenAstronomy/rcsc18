@@ -332,24 +332,20 @@ works.
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Challenge: Turn a String Into a List</h2>
+<h2><span class="fa fa-pencil"></span> Challenge: Turn a String Into a List</h2>
 </div>
 
 
 <div class="panel-body">
 
-Use a for-loop to convert the string "hello" into a list of letters:
+<p>Use a for-loop to convert the string "hello" into a list of letters:</p>
+<div class="codehilite"><pre><span></span><span class="p">[</span><span class="s2">&quot;h&quot;</span><span class="p">,</span> <span class="s2">&quot;e&quot;</span><span class="p">,</span> <span class="s2">&quot;l&quot;</span><span class="p">,</span> <span class="s2">&quot;l&quot;</span><span class="p">,</span> <span class="s2">&quot;o&quot;</span><span class="p">]</span>
+</pre></div>
 
-```python
-["h", "e", "l", "l", "o"]
-```
 
-Hint: You can create an empty list like this:
-
-```python
-my_list = []
-```
-
+<p>Hint: You can create an empty list like this:</p>
+<div class="codehilite"><pre><span></span><span class="n">my_list</span> <span class="o">=</span> <span class="p">[]</span>
+</pre></div>
 
 </div>
 
@@ -359,7 +355,7 @@ my_list = []
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 </section>
@@ -414,14 +410,13 @@ last: 4
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Challenge: Slicing From the End</h2>
+<h2><span class="fa fa-pencil"></span> Challenge: Slicing From the End</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-Use slicing to access only the last four characters of the following string and the last four entries of the following list.
+<p>Use slicing to access only the last four characters of the following string and the last four entries of the following list.</p>
 
 </div>
 
@@ -443,14 +438,13 @@ If not, try to change your approach to make it more robust.
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-Use negative indices to count elements from the end of a container (such as list or string):
+<p>Use negative indices to count elements from the end of a container (such as list or string):</p>
 
 </div>
 
@@ -521,16 +515,15 @@ subset [5, 13, 23, 37]
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Challenge:</h2>
+<h2><span class="fa fa-pencil"></span> Challenge:</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-Use the step size argument to create a new string
+<p>Use the step size argument to create a new string
 that contains only every other character in the string
-"In an octopus's garden in the shade"
+"In an octopus's garden in the shade"</p>
 
 </div>
 
@@ -546,15 +539,14 @@ beatles = "In an octopus's garden in the shade"
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-To obtain every other character you need to provide a slice with the step
-size of 2:
+<p>To obtain every other character you need to provide a slice with the step
+size of 2:</p>
 
 </div>
 

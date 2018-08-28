@@ -176,14 +176,13 @@ As this example illustrates, both documentation and a programmer’s _coding sty
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> # Testing and Documenting Your Function</h2>
+<h2><span class="fa fa-pencil"></span> # Testing and Documenting Your Function</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-Run the commands `help(np.arange)` and `help(np.linspace)` to see how to use these functions to generate regularly-spaced values, then use those values to test your `rescale` function. Once you’ve successfully tested your function, add a docstring that explains what it does.
+<p>Run the commands <code>help(np.arange)</code> and <code>help(np.linspace)</code> to see how to use these functions to generate regularly-spaced values, then use those values to test your <code>rescale</code> function. Once you’ve successfully tested your function, add a docstring that explains what it does.</p>
 
 </div>
 
@@ -193,25 +192,23 @@ Run the commands `help(np.arange)` and `help(np.linspace)` to see how to use the
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> # Solution</h2>
+<h2><span class="fa fa-eye"></span> # Solution</h2>
 </div>
 
 
 <div class="panel-body">
 
+<div class="codehilite"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Takes an array as input, and returns a corresponding array scaled so that 0 corresponds to the minimum and 1 to the maximum value of the input array.</span>
 
-```python
-"""
-Takes an array as input, and returns a corresponding array scaled so that 0 corresponds to the minimum and 1 to the maximum value of the input array.
-
-Examples:
->>> rescale(numpy.arange(10.0))
-array([ 0.        ,  0.11111111,  0.22222222,  0.33333333,  0.44444444,
-        0.55555556,  0.66666667,  0.77777778,  0.88888889,  1.        ])
->>> rescale(numpy.linspace(0, 100, 5))
-array([ 0.  ,  0.25,  0.5 ,  0.75,  1.  ])
-"""
-```
+<span class="sd">Examples:</span>
+<span class="sd">&gt;&gt;&gt; rescale(numpy.arange(10.0))</span>
+<span class="sd">array([ 0.        ,  0.11111111,  0.22222222,  0.33333333,  0.44444444,</span>
+<span class="sd">        0.55555556,  0.66666667,  0.77777778,  0.88888889,  1.        ])</span>
+<span class="sd">&gt;&gt;&gt; rescale(numpy.linspace(0, 100, 5))</span>
+<span class="sd">array([ 0.  ,  0.25,  0.5 ,  0.75,  1.  ])</span>
+<span class="sd">&quot;&quot;&quot;</span>
+</pre></div>
 
 </div>
 
@@ -221,14 +218,13 @@ array([ 0.  ,  0.25,  0.5 ,  0.75,  1.  ])
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> # Readable Code</h2>
+<h2><span class="fa fa-pencil"></span> # Readable Code</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-Revise a function you wrote for one of the previous exercises to try to make the code more readable. Then, collaborate with one of your neighbors to critique each other’s functions and discuss how your function implementations could be further improved to make them more readable.
+<p>Revise a function you wrote for one of the previous exercises to try to make the code more readable. Then, collaborate with one of your neighbors to critique each other’s functions and discuss how your function implementations could be further improved to make them more readable.</p>
 
 </div>
 

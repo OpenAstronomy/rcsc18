@@ -51,30 +51,25 @@ Please use your own name and email address instead of mine. This user name and e
 
 <section class="callout panel panel-warning">
 <div class="panel-heading">
-<h2 class="fa fa-thumb-tack"> Line Endings</h2>
+<h2><span class="fa fa-thumb-tack"></span> Line Endings</h2>
 </div>
 
 
 <div class="panel-body">
 
+<p>As with other keys, when you hit Return on your keyboard, your computer encodes this input as a character. For reasons that are long to explain, different operating systems use different character(s) to represent the end of a line. (You may also hear these referred to as newlines or line breaks.) Because Git uses these characters to compare files, it may cause unexpected issues when editing a file on different machines.</p>
+<p>You can change the way Git recognizes and encodes line endings using the core.autocrlf command to git config. The following settings are recommended:</p>
+<p>On macOS and Linux:</p>
+<div class="codehilite"><pre><span></span>git config --global core.autocrlf input
+</pre></div>
 
-As with other keys, when you hit Return on your keyboard, your computer encodes this input as a character. For reasons that are long to explain, different operating systems use different character(s) to represent the end of a line. (You may also hear these referred to as newlines or line breaks.) Because Git uses these characters to compare files, it may cause unexpected issues when editing a file on different machines.
 
-You can change the way Git recognizes and encodes line endings using the core.autocrlf command to git config. The following settings are recommended:
+<p>And on Windows:</p>
+<div class="codehilite"><pre><span></span>git config --global core.autocrlf true
+</pre></div>
 
-On macOS and Linux:
 
-```
-git config --global core.autocrlf input
-```
-
-And on Windows:
-
-```
-git config --global core.autocrlf true
-```
-
-You can read more about this issue on this [GitHub page](https://help.github.com/articles/dealing-with-line-endings/).
+<p>You can read more about this issue on this <a href="https://help.github.com/articles/dealing-with-line-endings/">GitHub page</a>.</p>
 
 </div>
 
@@ -106,14 +101,13 @@ It is possible to reconfigure the text editor for Git whenever you want to chang
 
 <section class="callout panel panel-warning">
 <div class="panel-heading">
-<h2 class="fa fa-thumb-tack"> Exiting Vim</h2>
+<h2><span class="fa fa-thumb-tack"></span> Exiting Vim</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-Note that Vim is the default editor for many programs. If you haven’t used Vim before and wish to exit a session without saving your changes, press `Esc` then type `:q!` and hit Return. If you want to save your changes and quit, press `Esc` then type `:wq` and hit Return.
+<p>Note that Vim is the default editor for many programs. If you haven’t used Vim before and wish to exit a session without saving your changes, press <code>Esc</code> then type <code>:q!</code> and hit Return. If you want to save your changes and quit, press <code>Esc</code> then type <code>:wq</code> and hit Return.</p>
 
 </div>
 
@@ -135,25 +129,22 @@ You can change your configuration as many times as you want: just use the same c
 
 <section class="callout panel panel-warning">
 <div class="panel-heading">
-<h2 class="fa fa-thumb-tack"> Proxy</h2>
+<h2><span class="fa fa-thumb-tack"></span> Proxy</h2>
 </div>
 
 
 <div class="panel-body">
 
-In some networks you need to use a proxy. If this is the case, you may also need to tell Git about the proxy:
-
-```
-git config --global http.proxy proxy-url
+<p>In some networks you need to use a proxy. If this is the case, you may also need to tell Git about the proxy:</p>
+<div class="codehilite"><pre><span></span>git config --global http.proxy proxy-url
 git config --global https.proxy proxy-url
-```
+</pre></div>
 
-To disable the proxy, use
 
-```
-git config --global --unset http.proxy
+<p>To disable the proxy, use</p>
+<div class="codehilite"><pre><span></span>git config --global --unset http.proxy
 git config --global --unset https.proxy
-```
+</pre></div>
 
 </div>
 
@@ -163,19 +154,16 @@ git config --global --unset https.proxy
 
 <section class="callout panel panel-warning">
 <div class="panel-heading">
-<h2 class="fa fa-thumb-tack"> Git Help and Manual</h2>
+<h2><span class="fa fa-thumb-tack"></span> Git Help and Manual</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-Always remember that if you forget a git command, you can access the list of commands by using -h and access the Git manual by using --help :
-
-```
-git config -h
+<p>Always remember that if you forget a git command, you can access the list of commands by using -h and access the Git manual by using --help :</p>
+<div class="codehilite"><pre><span></span>git config -h
 git config --help
-```
+</pre></div>
 
 </div>
 
@@ -185,15 +173,17 @@ git config --help
 
 <section class="keypoints panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-exclamation-circle"> Key Points</h2>
+<h2><span class="fa fa-exclamation-circle"></span> Key Points</h2>
 </div>
 
 
 <div class="panel-body">
 
-- Version control is like an unlimited ‘undo’.
-- Version control also allows many people to work in parallel.
-- Use git config with the --global option to configure a user name, email address, editor, and other preferences once per machine.
+<ul>
+<li>Version control is like an unlimited ‘undo’.</li>
+<li>Version control also allows many people to work in parallel.</li>
+<li>Use git config with the --global option to configure a user name, email address, editor, and other preferences once per machine.</li>
+</ul>
 
 </div>
 

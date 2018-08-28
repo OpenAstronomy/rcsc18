@@ -17,24 +17,25 @@ redirect_from:
 
 <section class="objectives panel panel-warning">
 <div class="panel-heading">
-<h2 class="fa fa-certificate"> </h2>
+<h2><span class="fa fa-certificate"></span> </h2>
 </div>
 
 
 <div class="panel-body">
 
-Questions:
-
-- "How can I move around on my computer?"
-- "How can I see what files and directories I have?"
-- "How can I specify the location of a file or directory on my computer?"
-
-Objectives:
-
-- "Explain the similarities and differences between a file and a directory."
-- "Translate an absolute path into a relative path and vice versa."
-- "Construct absolute and relative paths that identify specific files and directories."
-- "Demonstrate the use of tab completion, and explain its advantages."
+<p>Questions:</p>
+<ul>
+<li>"How can I move around on my computer?"</li>
+<li>"How can I see what files and directories I have?"</li>
+<li>"How can I specify the location of a file or directory on my computer?"</li>
+</ul>
+<p>Objectives:</p>
+<ul>
+<li>"Explain the similarities and differences between a file and a directory."</li>
+<li>"Translate an absolute path into a relative path and vice versa."</li>
+<li>"Construct absolute and relative paths that identify specific files and directories."</li>
+<li>"Demonstrate the use of tab completion, and explain its advantages."</li>
+</ul>
 
 </div>
 
@@ -72,16 +73,15 @@ Here, the computer's response is `/Users/nelle`, which is Nelle's **home directo
 
 <section class="callout panel panel-warning">
 <div class="panel-heading">
-<h2 class="fa fa-thumb-tack"> Home Directory Variation</h2>
+<h2><span class="fa fa-thumb-tack"></span> Home Directory Variation</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-The home directory path will look different on different operating systems.
-On Linux it may look like `/home/nelle`, and on Windows it will be similar to `C:\Documents and Settings\nelle` or `C:\Users\nelle`.  
-(Note that it may look slightly different for different versions of Windows.) In future examples, we've used Mac output as the default - Linux and Windows output may differ slightly, but should be generally similar.  
+<p>The home directory path will look different on different operating systems.
+On Linux it may look like <code>/home/nelle</code>, and on Windows it will be similar to <code>C:\Documents and Settings\nelle</code> or <code>C:\Users\nelle</code>.<br />
+(Note that it may look slightly different for different versions of Windows.) In future examples, we've used Mac output as the default - Linux and Windows output may differ slightly, but should be generally similar.  </p>
 
 </div>
 
@@ -711,22 +711,21 @@ or available locally via: info '(coreutils) ls invocation'
 
 <section class="callout panel panel-warning">
 <div class="panel-heading">
-<h2 class="fa fa-thumb-tack"> Unsupported command-line options</h2>
+<h2><span class="fa fa-thumb-tack"></span> Unsupported command-line options</h2>
 </div>
 
 
 <div class="panel-body">
 
-If you try to use an option (flag) that is not supported, `ls` and other programs
-will usually print an error message similar to:
+<p>If you try to use an option (flag) that is not supported, <code>ls</code> and other programs
+will usually print an error message similar to:</p>
+<div class="codehilite"><pre><span></span>$ ls -j
+</pre></div>
 
-```
-$ ls -j
-```
-```
-ls: invalid option -- 'j'
-Try 'ls --help' for more information.
-```
+
+<div class="codehilite"><pre><span></span><span class="n">ls</span><span class="o">:</span> <span class="n">invalid</span> <span class="n">option</span> <span class="o">--</span> <span class="s1">&#39;j&#39;</span>
+<span class="n">Try</span> <span class="s1">&#39;ls --help&#39;</span> <span class="k">for</span> <span class="n">more</span> <span class="n">information</span><span class="o">.</span>
+</pre></div>
 
 </div>
 
@@ -736,14 +735,13 @@ Try 'ls --help' for more information.
 
 <section class="callout panel panel-warning">
 <div class="panel-heading">
-<h2 class="fa fa-thumb-tack"> The `man` command</h2>
+<h2><span class="fa fa-thumb-tack"></span> The `man` command</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-The other way to learn about `ls` is to type
+<p>The other way to learn about <code>ls</code> is to type</p>
 
 </div>
 
@@ -954,20 +952,19 @@ equivalent to `ls -Fa`.
 
 <section class="callout panel panel-warning">
 <div class="panel-heading">
-<h2 class="fa fa-thumb-tack"> Other Hidden Files</h2>
+<h2><span class="fa fa-thumb-tack"></span> Other Hidden Files</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-In addition to the hidden directories `..` and `.`, you may also see a file
-called `.bash_profile`. This file usually contains shell configuration
+<p>In addition to the hidden directories <code>..</code> and <code>.</code>, you may also see a file
+called <code>.bash_profile</code>. This file usually contains shell configuration
 settings. You may also see other files and directories beginning
-with `.`. These are usually files and directories that are used to configure
-different programs on your computer. The prefix `.` is used to prevent these
-configuration files from cluttering the terminal when a standard `ls` command
-is used.
+with <code>.</code>. These are usually files and directories that are used to configure
+different programs on your computer. The prefix <code>.</code> is used to prevent these
+configuration files from cluttering the terminal when a standard <code>ls</code> command
+is used.</p>
 
 </div>
 
@@ -977,22 +974,21 @@ is used.
 
 <section class="callout panel panel-warning">
 <div class="panel-heading">
-<h2 class="fa fa-thumb-tack"> Orthogonality</h2>
+<h2><span class="fa fa-thumb-tack"></span> Orthogonality</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-The special names `.` and `..` don't belong to `cd`;
+<p>The special names <code>.</code> and <code>..</code> don't belong to <code>cd</code>;
 they are interpreted the same way by every program.
 For example,
-if we are in `/Users/nelle/data`,
-the command `ls ..` will give us a listing of `/Users/nelle`.
+if we are in <code>/Users/nelle/data</code>,
+the command <code>ls ..</code> will give us a listing of <code>/Users/nelle</code>.
 When the meanings of the parts are the same no matter how they're combined,
-programmers say they are **orthogonal**:
+programmers say they are <strong>orthogonal</strong>:
 Orthogonal systems tend to be easier for people to learn
-because there are fewer special cases and exceptions to keep track of.
+because there are fewer special cases and exceptions to keep track of.</p>
 
 </div>
 
@@ -1094,25 +1090,23 @@ Run `pwd` and `ls -F` to ensure that we're in the directory we expect.
 
 <section class="callout panel panel-warning">
 <div class="panel-heading">
-<h2 class="fa fa-thumb-tack"> Two More Shortcuts</h2>
+<h2><span class="fa fa-thumb-tack"></span> Two More Shortcuts</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-The shell interprets the character `~` (tilde) at the start of a path to
+<p>The shell interprets the character <code>~</code> (tilde) at the start of a path to
 mean "the current user's home directory". For example, if Nelle's home
-directory is `/Users/nelle`, then `~/data` is equivalent to
-`/Users/nelle/data`. This only works if it is the first character in the
-path: `here/there/~/elsewhere` is *not* `here/there/Users/nelle/elsewhere`.
-
-Another shortcut is the `-` (dash) character.  `cd` will translate `-` into
-*the previous directory I was in*, which is faster than having to remember,
-then type, the full path.  This is a *very* efficient way of moving back
-and forth between directories. The difference between `cd ..` and `cd -` is
-that the former brings you *up*, while the latter brings you *back*. You can
-think of it as the *Last Channel* button on a TV remote.
+directory is <code>/Users/nelle</code>, then <code>~/data</code> is equivalent to
+<code>/Users/nelle/data</code>. This only works if it is the first character in the
+path: <code>here/there/~/elsewhere</code> is <em>not</em> <code>here/there/Users/nelle/elsewhere</code>.</p>
+<p>Another shortcut is the <code>-</code> (dash) character.  <code>cd</code> will translate <code>-</code> into
+<em>the previous directory I was in</em>, which is faster than having to remember,
+then type, the full path.  This is a <em>very</em> efficient way of moving back
+and forth between directories. The difference between <code>cd ..</code> and <code>cd -</code> is
+that the former brings you <em>up</em>, while the latter brings you <em>back</em>. You can
+think of it as the <em>Last Channel</em> button on a TV remote.</p>
 
 </div>
 
@@ -1122,26 +1116,26 @@ think of it as the *Last Channel* button on a TV remote.
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Absolute vs Relative Paths</h2>
+<h2><span class="fa fa-pencil"></span> Absolute vs Relative Paths</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-Starting from `/Users/amanda/data/`,
+<p>Starting from <code>/Users/amanda/data/</code>,
 which of the following commands could Amanda use to navigate to her home directory,
-which is `/Users/amanda`?
-
-1. `cd .`
-2. `cd /`
-3. `cd /home/amanda`
-4. `cd ../..`
-5. `cd ~`
-6. `cd home`
-7. `cd ~/data/..`
-8. `cd`
-9. `cd ..`
+which is <code>/Users/amanda</code>?</p>
+<ol>
+<li><code>cd .</code></li>
+<li><code>cd /</code></li>
+<li><code>cd /home/amanda</code></li>
+<li><code>cd ../..</code></li>
+<li><code>cd ~</code></li>
+<li><code>cd home</code></li>
+<li><code>cd ~/data/..</code></li>
+<li><code>cd</code></li>
+<li><code>cd ..</code></li>
+</ol>
 
 </div>
 
@@ -1151,21 +1145,23 @@ which is `/Users/amanda`?
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 
 <div class="panel-body">
 
-1. No: `.` stands for the current directory.
-2. No: `/` stands for the root directory.
-3. No: Amanda's home directory is `/Users/amanda`.
-4. No: this goes up two levels, i.e. ends in `/Users`.
-5. Yes: `~` stands for the user's home directory, in this case `/Users/amanda`.
-6. No: this would navigate into a directory `home` in the current directory if it exists.
-7. Yes: unnecessarily complicated, but correct.
-8. Yes: shortcut to go back to the user's home directory.
-9. Yes: goes up one level.
+<ol>
+<li>No: <code>.</code> stands for the current directory.</li>
+<li>No: <code>/</code> stands for the root directory.</li>
+<li>No: Amanda's home directory is <code>/Users/amanda</code>.</li>
+<li>No: this goes up two levels, i.e. ends in <code>/Users</code>.</li>
+<li>Yes: <code>~</code> stands for the user's home directory, in this case <code>/Users/amanda</code>.</li>
+<li>No: this would navigate into a directory <code>home</code> in the current directory if it exists.</li>
+<li>Yes: unnecessarily complicated, but correct.</li>
+<li>Yes: shortcut to go back to the user's home directory.</li>
+<li>Yes: goes up one level.</li>
+</ol>
 
 </div>
 
@@ -1175,22 +1171,21 @@ which is `/Users/amanda`?
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Relative Path Resolution</h2>
+<h2><span class="fa fa-pencil"></span> Relative Path Resolution</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-Using the filesystem diagram below, if `pwd` displays `/Users/thing`,
-what will `ls -F ../backup` display?
-
-1.  `../backup: No such file or directory`
-2.  `2012-12-01 2013-01-08 2013-01-27`
-3.  `2012-12-01/ 2013-01-08/ 2013-01-27/`
-4.  `original/ pnas_final/ pnas_sub/`
-
-![File System for Challenge Questions](../fig/filesystem-challenge.svg)
+<p>Using the filesystem diagram below, if <code>pwd</code> displays <code>/Users/thing</code>,
+what will <code>ls -F ../backup</code> display?</p>
+<ol>
+<li><code>../backup: No such file or directory</code></li>
+<li><code>2012-12-01 2013-01-08 2013-01-27</code></li>
+<li><code>2012-12-01/ 2013-01-08/ 2013-01-27/</code></li>
+<li><code>original/ pnas_final/ pnas_sub/</code></li>
+</ol>
+<p><img alt="File System for Challenge Questions" src="../fig/filesystem-challenge.svg" /></p>
 
 </div>
 
@@ -1200,17 +1195,19 @@ what will `ls -F ../backup` display?
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 
 <div class="panel-body">
 
-1. No: there *is* a directory `backup` in `/Users`.
-2. No: this is the content of `Users/thing/backup`,
-   but with `..` we asked for one level further up.
-3. No: see previous explanation.
-4. Yes: `../backup/` refers to `/Users/backup/`.
+<ol>
+<li>No: there <em>is</em> a directory <code>backup</code> in <code>/Users</code>.</li>
+<li>No: this is the content of <code>Users/thing/backup</code>,
+   but with <code>..</code> we asked for one level further up.</li>
+<li>No: see previous explanation.</li>
+<li>Yes: <code>../backup/</code> refers to <code>/Users/backup/</code>.</li>
+</ol>
 
 </div>
 
@@ -1220,26 +1217,26 @@ what will `ls -F ../backup` display?
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> `ls` Reading Comprehension</h2>
+<h2><span class="fa fa-pencil"></span> `ls` Reading Comprehension</h2>
 </div>
 
 
 <div class="panel-body">
 
+<p>Assuming a directory structure as in the above Figure
+(File System for Challenge Questions), if <code>pwd</code> displays <code>/Users/backup</code>,
+and <code>-r</code> tells <code>ls</code> to display things in reverse order,
+what command will display:</p>
+<div class="codehilite"><pre><span></span>pnas_sub/ pnas_final/ original/
+</pre></div>
 
-Assuming a directory structure as in the above Figure
-(File System for Challenge Questions), if `pwd` displays `/Users/backup`,
-and `-r` tells `ls` to display things in reverse order,
-what command will display:
 
-```
-pnas_sub/ pnas_final/ original/
-```
-
-1.  `ls pwd`
-2.  `ls -r -F`
-3.  `ls -r -F /Users/backup`
-4.  Either #2 or #3 above, but not #1.
+<ol>
+<li><code>ls pwd</code></li>
+<li><code>ls -r -F</code></li>
+<li><code>ls -r -F /Users/backup</code></li>
+<li>Either #2 or #3 above, but not #1.</li>
+</ol>
 
 </div>
 
@@ -1249,18 +1246,19 @@ pnas_sub/ pnas_final/ original/
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-1. No: `pwd` is not the name of a directory.
-2. Yes: `ls` without directory argument lists files and directories
-   in the current directory.
-3. Yes: uses the absolute path explicitly.
-4. Correct: see explanations above.
+<ol>
+<li>No: <code>pwd</code> is not the name of a directory.</li>
+<li>Yes: <code>ls</code> without directory argument lists files and directories
+   in the current directory.</li>
+<li>Yes: uses the absolute path explicitly.</li>
+<li>Correct: see explanations above.</li>
+</ol>
 
 </div>
 
@@ -1285,21 +1283,20 @@ a directory called `revised-revised-results-3`.)
 
 <section class="callout panel panel-warning">
 <div class="panel-heading">
-<h2 class="fa fa-thumb-tack"> Sorting Output</h2>
+<h2><span class="fa fa-thumb-tack"></span> Sorting Output</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-Nelle names her directories "year-month-day",
+<p>Nelle names her directories "year-month-day",
 with leading zeroes for months and days,
 because the shell displays file and directory names in alphabetical order.
 If she used month names,
 December would come before July;
 if she didn't use leading zeroes,
 November ('11') would come before July ('7'). Similarly, putting the year first
-means that June 2012 will come before June 2013.
+means that June 2012 will come before June 2013.</p>
 
 </div>
 
@@ -1369,26 +1366,27 @@ and we will see it in many other tools as we go on.
 
 <section class="keypoints panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-exclamation-circle"> </h2>
+<h2><span class="fa fa-exclamation-circle"></span> </h2>
 </div>
 
 
 <div class="panel-body">
 
-Keypoints:
-
-- "The file system is responsible for managing information on the disk."
-- "Information is stored in files, which are stored in directories (folders)."
-- "Directories can also store other directories, which forms a directory tree."
-- "`cd path` changes the current working directory."
-- "`ls path` prints a listing of a specific file or directory; `ls` on its own lists the current working directory."
-- "`pwd` prints the user's current working directory."
-- "`/` on its own is the root directory of the whole file system."
-- "A relative path specifies a location starting from the current location."
-- "An absolute path specifies a location from the root of the file system."
-- "Directory names in a path are separated with `/` on Unix, but `\\` on Windows."
-- "`..` means 'the directory above the current one'; `.` on its own means 'the current directory'."
-- "Most files' names are `something.extension`. The extension isn't required, and doesn't guarantee anything, but is normally used to indicate the type of data in the file."
+<p>Keypoints:</p>
+<ul>
+<li>"The file system is responsible for managing information on the disk."</li>
+<li>"Information is stored in files, which are stored in directories (folders)."</li>
+<li>"Directories can also store other directories, which forms a directory tree."</li>
+<li>"<code>cd path</code> changes the current working directory."</li>
+<li>"<code>ls path</code> prints a listing of a specific file or directory; <code>ls</code> on its own lists the current working directory."</li>
+<li>"<code>pwd</code> prints the user's current working directory."</li>
+<li>"<code>/</code> on its own is the root directory of the whole file system."</li>
+<li>"A relative path specifies a location starting from the current location."</li>
+<li>"An absolute path specifies a location from the root of the file system."</li>
+<li>"Directory names in a path are separated with <code>/</code> on Unix, but <code>\\</code> on Windows."</li>
+<li>"<code>..</code> means 'the directory above the current one'; <code>.</code> on its own means 'the current directory'."</li>
+<li>"Most files' names are <code>something.extension</code>. The extension isn't required, and doesn't guarantee anything, but is normally used to indicate the type of data in the file."</li>
+</ul>
 
 </div>
 

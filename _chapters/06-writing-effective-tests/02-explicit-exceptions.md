@@ -148,24 +148,22 @@ FileNotFoundError: This is not a file
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> What Type of Error?</h2>
+<h2><span class="fa fa-pencil"></span> What Type of Error?</h2>
 </div>
 
 
 <div class="panel-body">
 
+<p>The example above:</p>
+<div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">square</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;x can not be a string&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span>
+</pre></div>
 
-The example above:
 
-```python
-def square(x):
-    if isinstance(x, str):
-        raise ValueError("x can not be a string")
-    else:
-        return x**2
-```
-
-uses `ValueError`, what type of error would be more appropriate?
+<p>uses <code>ValueError</code>, what type of error would be more appropriate?</p>
 
 </div>
 
@@ -175,14 +173,13 @@ uses `ValueError`, what type of error would be more appropriate?
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-`TypeError` should be raised when the type (i.e. `str`, `float`, `int`) is incorrect.
+<p><code>TypeError</code> should be raised when the type (i.e. <code>str</code>, <code>float</code>, <code>int</code>) is incorrect.</p>
 
 </div>
 
@@ -274,26 +271,38 @@ AssertionError:
 
 <section class="callout panel panel-warning">
 <div class="panel-heading">
-<h2 class="fa fa-thumb-tack"> The `assert` statement</h2>
+<h2><span class="fa fa-thumb-tack"></span> The `assert` statement</h2>
 </div>
 
 
 <div class="panel-body">
 
+<p>As we will see later, the way to make a test fail is to raise an error. Therefore the <code>assert</code> statement in Python is a useful shortcut when writing tests.</p>
+<p>The <code>assert</code> statement will raise an error if a condition is not satisfied. The general form of the assert statement is:</p>
+<div class="codehilite"><pre><span></span><span class="k">assert</span> <span class="n">condition</span><span class="p">,</span> <span class="n">message</span>
+</pre></div>
 
-As we will see later, the way to make a test fail is to raise an error. Therefore the `assert` statement in Python is a useful shortcut when writing tests.
 
-The `assert` statement will raise an error if a condition is not satisfied. The general form of the assert statement is:
+<p>i.e.</p>
+<div class="codehilite"><pre><span></span><span class="k">assert</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">6</span><span class="p">,</span> <span class="s2">&quot;Five is not equal to six&quot;</span>
+</pre></div>
 
-```python
-assert condition, message
-```
+</div>
 
-i.e.
+</section>
 
-```python
-assert 5 == 6, "Five is not equal to six"
-```
+
+
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2><span class="fa fa-pencil"></span> </h2>
+</div>
+
+
+<div class="panel-body">
+
+<h1>Writing Tests</h1>
+<p>Write tests for the following function. Try to think of ways that the function could do things that are not expected.</p>
 
 </div>
 

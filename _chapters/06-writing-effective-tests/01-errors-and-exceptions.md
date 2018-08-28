@@ -58,20 +58,19 @@ the program encountered an error on Line 6, when it tried to run the code `print
 
 <section class="callout panel panel-warning">
 <div class="panel-heading">
-<h2 class="fa fa-thumb-tack"> Long Tracebacks</h2>
+<h2><span class="fa fa-thumb-tack"></span> Long Tracebacks</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-Sometimes, you might see a traceback that is very long -- sometimes they might even be 20 levels deep!
+<p>Sometimes, you might see a traceback that is very long -- sometimes they might even be 20 levels deep!
 This can make it seem like something horrible happened,
 but really it just means that your program called many functions before it ran into the error.
 Most of the time,
 you can just pay attention to the bottom-most level,
 which is the actual place where the error occurred.
-{: .callout}
+{: .callout}</p>
 
 </div>
 
@@ -148,37 +147,34 @@ it *always* means that there is a problem with how your code is indented.
 
 <section class="callout panel panel-warning">
 <div class="panel-heading">
-<h2 class="fa fa-thumb-tack"> Tabs and Spaces</h2>
+<h2><span class="fa fa-thumb-tack"></span> Tabs and Spaces</h2>
 </div>
 
 
 <div class="panel-body">
 
-Some indentation errors are harder to spot than others.
+<p>Some indentation errors are harder to spot than others.
 In particular, mixing spaces and tabs can be difficult to spot
 because they are both whitespace.
 In the example below, the first two lines in the body of the function
-`some_function` are indented with tabs, while the third line &mdash; with spaces.
+<code>some_function</code> are indented with tabs, while the third line &mdash; with spaces.
 If you're working in a Jupyter notebook, be sure to copy and paste this example
 rather than trying to type it in manually because Jupyter automatically replaces
-tabs with spaces.
+tabs with spaces.</p>
+<div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">some_function</span><span class="p">():</span>
+    <span class="n">msg</span> <span class="o">=</span> <span class="s2">&quot;hello, world!&quot;</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">msg</span>
+</pre></div>
 
-```python
-def some_function():
-	msg = "hello, world!"
-	print(msg)
-        return msg
-```
 
-Visually it is impossible to spot the error.
-Fortunately, Python does not allow you to mix tabs and spaces.
-
-```
-  File "<ipython-input-5-653b36fbcd41>", line 4
+<p>Visually it is impossible to spot the error.
+Fortunately, Python does not allow you to mix tabs and spaces.</p>
+<div class="codehilite"><pre><span></span>  File &quot;&lt;ipython-input-5-653b36fbcd41&gt;&quot;, line 4
     return msg
               ^
 TabError: inconsistent use of tabs and spaces in indentation
-```
+</pre></div>
 
 </div>
 
@@ -315,65 +311,64 @@ often reveals common reasons why you might get that error.
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Reading Error Messages</h2>
+<h2><span class="fa fa-pencil"></span> Reading Error Messages</h2>
 </div>
 
 
 <div class="panel-body">
 
-Read the python code and the resulting traceback below, and answer the following questions:
+<p>Read the python code and the resulting traceback below, and answer the following questions:</p>
+<ol>
+<li>How many levels does the traceback have?</li>
+<li>What is the function name where the error occurred?</li>
+<li>On which line number in this function did the error occurr?</li>
+<li>What is the type of error?</li>
+<li>What is the error message?</li>
+</ol>
+<div class="codehilite"><pre><span></span><span class="c1"># This code has an intentional error. Do not type it directly;</span>
+<span class="c1"># use it for reference to understand the error message below.</span>
+<span class="k">def</span> <span class="nf">print_message</span><span class="p">(</span><span class="n">day</span><span class="p">):</span>
+    <span class="n">messages</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;monday&quot;</span><span class="p">:</span> <span class="s2">&quot;Hello, world!&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;tuesday&quot;</span><span class="p">:</span> <span class="s2">&quot;Today is tuesday!&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;wednesday&quot;</span><span class="p">:</span> <span class="s2">&quot;It is the middle of the week.&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;thursday&quot;</span><span class="p">:</span> <span class="s2">&quot;Today is Donnerstag in German!&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;friday&quot;</span><span class="p">:</span> <span class="s2">&quot;Last day of the week!&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;saturday&quot;</span><span class="p">:</span> <span class="s2">&quot;Hooray for the weekend!&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;sunday&quot;</span><span class="p">:</span> <span class="s2">&quot;Aw, the weekend is almost over.&quot;</span>
+    <span class="p">}</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">messages</span><span class="p">[</span><span class="n">day</span><span class="p">])</span>
 
-1.  How many levels does the traceback have?
-2.  What is the function name where the error occurred?
-3.  On which line number in this function did the error occurr?
-4.  What is the type of error?
-5.  What is the error message?
+<span class="k">def</span> <span class="nf">print_friday_message</span><span class="p">():</span>
+    <span class="n">print_message</span><span class="p">(</span><span class="s2">&quot;Friday&quot;</span><span class="p">)</span>
 
-```python
-# This code has an intentional error. Do not type it directly;
-# use it for reference to understand the error message below.
-def print_message(day):
-    messages = {
-        "monday": "Hello, world!",
-        "tuesday": "Today is tuesday!",
-        "wednesday": "It is the middle of the week.",
-        "thursday": "Today is Donnerstag in German!",
-        "friday": "Last day of the week!",
-        "saturday": "Hooray for the weekend!",
-        "sunday": "Aw, the weekend is almost over."
-    }
-    print(messages[day])
+<span class="n">print_friday_message</span><span class="p">()</span>
+</pre></div>
 
-def print_friday_message():
-    print_message("Friday")
 
-print_friday_message()
-```
-
-```
----------------------------------------------------------------------------
+<div class="codehilite"><pre><span></span>---------------------------------------------------------------------------
 KeyError                                  Traceback (most recent call last)
-<ipython-input-1-4be1945adbe2> in <module>()
-     14     print_message("Friday")
+&lt;ipython-input-1-4be1945adbe2&gt; in &lt;module&gt;()
+     14     print_message(&quot;Friday&quot;)
      15
----> 16 print_friday_message()
+---&gt; 16 print_friday_message()
 
-<ipython-input-1-4be1945adbe2> in print_friday_message()
+&lt;ipython-input-1-4be1945adbe2&gt; in print_friday_message()
      12
      13 def print_friday_message():
----> 14     print_message("Friday")
+---&gt; 14     print_message(&quot;Friday&quot;)
      15
      16 print_friday_message()
 
-<ipython-input-1-4be1945adbe2> in print_message(day)
-      9         "sunday": "Aw, the weekend is almost over."
+&lt;ipython-input-1-4be1945adbe2&gt; in print_message(day)
+      9         &quot;sunday&quot;: &quot;Aw, the weekend is almost over.&quot;
      10     }
----> 11     print(messages[day])
+---&gt; 11     print(messages[day])
      12
      13 def print_friday_message():
 
-KeyError: 'Friday'
-```
+KeyError: &#39;Friday&#39;
+</pre></div>
 
 </div>
 
@@ -383,18 +378,19 @@ KeyError: 'Friday'
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-1. 3 levels
-2. `print_message`
-3. 11
-4. `KeyError`
-5. There isn't really a message; you're supposed to infer that `Friday` is not a key in `messages`.
+<ol>
+<li>3 levels</li>
+<li><code>print_message</code></li>
+<li>11</li>
+<li><code>KeyError</code></li>
+<li>There isn't really a message; you're supposed to infer that <code>Friday</code> is not a key in <code>messages</code>.</li>
+</ol>
 
 </div>
 
@@ -404,23 +400,23 @@ KeyError: 'Friday'
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Identifying Syntax Errors</h2>
+<h2><span class="fa fa-pencil"></span> Identifying Syntax Errors</h2>
 </div>
 
 
 <div class="panel-body">
 
-1. Read the code below, and (without running it) try to identify what the errors are.
-2. Run the code, and read the error message. Is it a `SyntaxError` or an `IndentationError`?
-3. Fix the error.
-4. Repeat steps 2 and 3, until you have fixed all the errors.
-
-```python
-def another_function
-  print("Syntax errors are annoying.")
-   print("But at least python tells us about them!")
-  print("So they are usually not too hard to fix.")
-```
+<ol>
+<li>Read the code below, and (without running it) try to identify what the errors are.</li>
+<li>Run the code, and read the error message. Is it a <code>SyntaxError</code> or an <code>IndentationError</code>?</li>
+<li>Fix the error.</li>
+<li>Repeat steps 2 and 3, until you have fixed all the errors.</li>
+</ol>
+<div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">another_function</span>
+  <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Syntax errors are annoying.&quot;</span><span class="p">)</span>
+   <span class="k">print</span><span class="p">(</span><span class="s2">&quot;But at least python tells us about them!&quot;</span><span class="p">)</span>
+  <span class="k">print</span><span class="p">(</span><span class="s2">&quot;So they are usually not too hard to fix.&quot;</span><span class="p">)</span>
+</pre></div>
 
 </div>
 
@@ -430,15 +426,15 @@ def another_function
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 
 <div class="panel-body">
 
-`SyntaxError` for missing `():` at end of first line,
+<p><code>SyntaxError</code> for missing <code>():</code> at end of first line,
 ndentationError` for mismatch between second and third lines.
-A fixed version is:
+A fixed version is:</p>
 
 </div>
 
@@ -457,31 +453,30 @@ def another_function():
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Identifying Variable Name Errors</h2>
+<h2><span class="fa fa-pencil"></span> Identifying Variable Name Errors</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-1. Read the code below, and (without running it) try to identify what the errors are.
-2. Run the code, and read the error message.
-   What type of `NameError` do you think this is?
+<ol>
+<li>Read the code below, and (without running it) try to identify what the errors are.</li>
+<li>Run the code, and read the error message.
+   What type of <code>NameError</code> do you think this is?
    In other words, is it a string with no quotes,
    a misspelled variable,
-   or a variable that should have been defined but was not?
-3. Fix the error.
-4. Repeat steps 2 and 3, until you have fixed all the errors.
-
-```python
-for number in range(10):
-    # use a if the number is a multiple of 3, otherwise use b
-    if (Number % 3) == 0:
-        message = message + a
-    else:
-        message = message + "b"
-print(message)
-```
+   or a variable that should have been defined but was not?</li>
+<li>Fix the error.</li>
+<li>Repeat steps 2 and 3, until you have fixed all the errors.</li>
+</ol>
+<div class="codehilite"><pre><span></span><span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="c1"># use a if the number is a multiple of 3, otherwise use b</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">Number</span> <span class="o">%</span> <span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">message</span> <span class="o">=</span> <span class="n">message</span> <span class="o">+</span> <span class="n">a</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">message</span> <span class="o">=</span> <span class="n">message</span> <span class="o">+</span> <span class="s2">&quot;b&quot;</span>
+<span class="k">print</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+</pre></div>
 
 </div>
 
@@ -491,15 +486,14 @@ print(message)
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-3 `NameError`s for `number` being misspelled, for `message` not defined, and for `a` not being in quotes.
-Fixed version:
+<p>3 <code>NameError</code>s for <code>number</code> being misspelled, for <code>message</code> not defined, and for <code>a</code> not being in quotes.
+Fixed version:</p>
 
 </div>
 
@@ -522,21 +516,20 @@ print(message)
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Identifying Index Errors</h2>
+<h2><span class="fa fa-pencil"></span> Identifying Index Errors</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-1. Read the code below, and (without running it) try to identify what the errors are.
-2. Run the code, and read the error message. What type of error is it?
-3. Fix the error.
-
-```python
-seasons = ['Spring', 'Summer', 'Fall', 'Winter']
-print('My favorite season is ', seasons[4])
-```
+<ol>
+<li>Read the code below, and (without running it) try to identify what the errors are.</li>
+<li>Run the code, and read the error message. What type of error is it?</li>
+<li>Fix the error.</li>
+</ol>
+<div class="codehilite"><pre><span></span><span class="n">seasons</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Spring&#39;</span><span class="p">,</span> <span class="s1">&#39;Summer&#39;</span><span class="p">,</span> <span class="s1">&#39;Fall&#39;</span><span class="p">,</span> <span class="s1">&#39;Winter&#39;</span><span class="p">]</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;My favorite season is &#39;</span><span class="p">,</span> <span class="n">seasons</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
+</pre></div>
 
 </div>
 
@@ -546,15 +539,14 @@ print('My favorite season is ', seasons[4])
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-`IndexError`; the last entry is `seasons[3]`, so `seasons[4]` doesn't make sense.
-A fixed version is:
+<p><code>IndexError</code>; the last entry is <code>seasons[3]</code>, so <code>seasons[4]</code> doesn't make sense.
+A fixed version is:</p>
 
 </div>
 

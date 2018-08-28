@@ -17,33 +17,33 @@ redirect_from:
 
 <section class="objectives panel panel-warning">
 <div class="panel-heading">
-<h2 class="fa fa-certificate"> </h2>
+<h2><span class="fa fa-certificate"></span> </h2>
 </div>
 
 
 <div class="panel-body">
 
-Questions:
-
-- How can I create, copy, and delete files and directories?
-- How can I edit files?
-
-Objectives:
-
-- Create a directory hierarchy that matches a given diagram.
-- Create files in that hierarchy using an editor or by copying and renaming existing files.
-- Delete specified files and/or directories.
-
-Keypoints:
-
-- `cp old new` copies a file.
-- `mkdir path` creates a new directory.
-- `mv old new` moves (renames) a file or directory.
-- `rm path` removes (deletes) a file.
-- Use of the Control key may be described in many ways, including `Ctrl-X`, `Control-X`, and `^X`.
-- The shell does not have a trash bin: once something is deleted, it's really gone.
-- Depending on the type of work you do, you may need a more powerful text editor than Nano.
-
+<p>Questions:</p>
+<ul>
+<li>How can I create, copy, and delete files and directories?</li>
+<li>How can I edit files?</li>
+</ul>
+<p>Objectives:</p>
+<ul>
+<li>Create a directory hierarchy that matches a given diagram.</li>
+<li>Create files in that hierarchy using an editor or by copying and renaming existing files.</li>
+<li>Delete specified files and/or directories.</li>
+</ul>
+<p>Keypoints:</p>
+<ul>
+<li><code>cp old new</code> copies a file.</li>
+<li><code>mkdir path</code> creates a new directory.</li>
+<li><code>mv old new</code> moves (renames) a file or directory.</li>
+<li><code>rm path</code> removes (deletes) a file.</li>
+<li>Use of the Control key may be described in many ways, including <code>Ctrl-X</code>, <code>Control-X</code>, and <code>^X</code>.</li>
+<li>The shell does not have a trash bin: once something is deleted, it's really gone.</li>
+<li>Depending on the type of work you do, you may need a more powerful text editor than Nano.</li>
+</ul>
 
 </div>
 
@@ -108,19 +108,17 @@ ls -F
 
 <section class="callout panel panel-warning">
 <div class="panel-heading">
-<h2 class="fa fa-thumb-tack"> Two ways of doing the same thing</h2>
+<h2><span class="fa fa-thumb-tack"></span> Two ways of doing the same thing</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-Using the shell to create a directory is no different than using a file explorer.
+<p>Using the shell to create a directory is no different than using a file explorer.
 If you open the current directory using your operating system's graphical file explorer,
-the `thesis` directory will appear there too.
+the <code>thesis</code> directory will appear there too.
 While they are two different ways of interacting with the files,
-the files and directories themselves are the same.
-
+the files and directories themselves are the same.</p>
 
 </div>
 
@@ -130,38 +128,35 @@ the files and directories themselves are the same.
 
 <section class="callout panel panel-warning">
 <div class="panel-heading">
-<h2 class="fa fa-thumb-tack"> Good names for files and directories</h2>
+<h2><span class="fa fa-thumb-tack"></span> Good names for files and directories</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-Complicated names of files and directories can make your life painful
+<p>Complicated names of files and directories can make your life painful
 when working on the command line. Here we provide a few useful
-tips for the names of your files.
-
-1. Don't use whitespaces.
-
-   Whitespaces can make a name more meaningful
+tips for the names of your files.</p>
+<ol>
+<li>Don't use whitespaces.</li>
+</ol>
+<p>Whitespaces can make a name more meaningful
    but since whitespace is used to break arguments on the command line
    it is better to avoid them in names of files and directories.
-   You can use `-` or `_` instead of whitespace.
-
-2. Don't begin the name with `-` (dash).
-
-   Commands treat names starting with `-` as options.
-
-3. Stick with letters, numbers, `.` (period or 'full stop'), `-` (dash) and `_` (underscore).
-
-   Many other characters have special meanings on the command line.
+   You can use <code>-</code> or <code>_</code> instead of whitespace.</p>
+<ol>
+<li>Don't begin the name with <code>-</code> (dash).</li>
+</ol>
+<p>Commands treat names starting with <code>-</code> as options.</p>
+<ol>
+<li>Stick with letters, numbers, <code>.</code> (period or 'full stop'), <code>-</code> (dash) and <code>_</code> (underscore).</li>
+</ol>
+<p>Many other characters have special meanings on the command line.
    We will learn about some of these during this lesson.
    There are special characters that can cause your command to not work as
-   expected and can even result in data loss.
-
-If you need to refer to names of files or directories that have whitespace
-or another non-alphanumeric character, you should surround the name in quotes (`""`).
-
+   expected and can even result in data loss.</p>
+<p>If you need to refer to names of files or directories that have whitespace
+or another non-alphanumeric character, you should surround the name in quotes (<code>""</code>).</p>
 
 </div>
 
@@ -194,34 +189,31 @@ nano draft.txt
 
 <section class="callout panel panel-warning">
 <div class="panel-heading">
-<h2 class="fa fa-thumb-tack"> Which Editor?</h2>
+<h2><span class="fa fa-thumb-tack"></span> Which Editor?</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-When we say, "`nano` is a text editor," we really do mean "text": it can
+<p>When we say, "<code>nano</code> is a text editor," we really do mean "text": it can
 only work with plain character data, not tables, images, or any other
 human-friendly media. We use it in examples because it is one of the 
 least complex text editors. However, because of this trait, it may 
 not be powerful enough or flexible enough for the work you need to do
 after this workshop. On Unix systems (such as Linux and Mac OS X),
-many programmers use [Emacs](http://www.gnu.org/software/emacs/) or
-[Vim](http://www.vim.org/) (both of which require more time to learn), 
+many programmers use <a href="http://www.gnu.org/software/emacs/">Emacs</a> or
+<a href="http://www.vim.org/">Vim</a> (both of which require more time to learn), 
 or a graphical editor such as
-[Gedit](http://projects.gnome.org/gedit/). On Windows, you may wish to
-use [Notepad++](http://notepad-plus-plus.org/).  Windows also has a built-in
-editor called `notepad` that can be run from the command line in the same
-way as `nano` for the purposes of this lesson.  
-
-No matter what editor you use, you will need to know where it searches
+<a href="http://projects.gnome.org/gedit/">Gedit</a>. On Windows, you may wish to
+use <a href="http://notepad-plus-plus.org/">Notepad++</a>.  Windows also has a built-in
+editor called <code>notepad</code> that can be run from the command line in the same
+way as <code>nano</code> for the purposes of this lesson.  </p>
+<p>No matter what editor you use, you will need to know where it searches
 for and saves files. If you start it from the shell, it will (probably)
 use your current working directory as its default location. If you use
 your computer's start menu, it may want to save files in your desktop or
 documents directory instead. You can change this by navigating to
-another directory the first time you "Save As..."
-
+another directory the first time you "Save As..."</p>
 
 </div>
 
@@ -242,28 +234,27 @@ return to the shell.
 
 <section class="callout panel panel-warning">
 <div class="panel-heading">
-<h2 class="fa fa-thumb-tack"> Control, Ctrl, or ^ Key</h2>
+<h2><span class="fa fa-thumb-tack"></span> Control, Ctrl, or ^ Key</h2>
 </div>
 
 
 <div class="panel-body">
 
-The Control key is also called the "Ctrl" key. There are various ways
+<p>The Control key is also called the "Ctrl" key. There are various ways
 in which using the Control key may be described. For example, you may
 see an instruction to press the Control key and, while holding it down,
-press the X key, described as any of:
-
-* `Control-X`
-* `Control+X`
-* `Ctrl-X`
-* `Ctrl+X`
-* `^X`
-* `C-x`
-
-In nano, along the bottom of the screen you'll see `^G Get Help ^O WriteOut`.
-This means that you can use `Control-G` to get help and `Control-O` to save your
-file.
-
+press the X key, described as any of:</p>
+<ul>
+<li><code>Control-X</code></li>
+<li><code>Control+X</code></li>
+<li><code>Ctrl-X</code></li>
+<li><code>Ctrl+X</code></li>
+<li><code>^X</code></li>
+<li><code>C-x</code></li>
+</ul>
+<p>In nano, along the bottom of the screen you'll see <code>^G Get Help ^O WriteOut</code>.
+This means that you can use <code>Control-G</code> to get help and <code>Control-O</code> to save your
+file.</p>
 
 </div>
 
@@ -282,29 +273,32 @@ ls
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Creating Files a Different Way</h2>
+<h2><span class="fa fa-pencil"></span> Creating Files a Different Way</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-We have seen how to create text files using the `nano` editor.
-Now, try the following command in your home directory:
-
-```
-$ cd                  # go to your home directory
+<p>We have seen how to create text files using the <code>nano</code> editor.
+Now, try the following command in your home directory:</p>
+<div class="codehilite"><pre><span></span>$ <span class="nb">cd</span>                  <span class="c1"># go to your home directory</span>
 $ touch my_file.txt
-```
+</pre></div>
 
-1.  What did the touch command do?
+
+<ol>
+<li>
+<p>What did the touch command do?
     When you look at your home directory using the GUI file explorer,
-    does the file show up?
-
-2.  Use `ls -l` to inspect the files.  How large is `my_file.txt`?
-
-3.  When might you want to create a file this way?
-
+    does the file show up?</p>
+</li>
+<li>
+<p>Use <code>ls -l</code> to inspect the files.  How large is <code>my_file.txt</code>?</p>
+</li>
+<li>
+<p>When might you want to create a file this way?</p>
+</li>
+</ol>
 
 </div>
 
@@ -314,29 +308,32 @@ $ touch my_file.txt
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-1.  The touch command generates a new file called 'my_file.txt' in
+<ol>
+<li>The touch command generates a new file called 'my_file.txt' in
     your home directory.  If you are in your home directory, you
     can observe this newly generated file by typing 'ls' at the 
     command line prompt.  'my_file.txt' can also be viewed in your
-    GUI file explorer.
-2.  When you inspect the file with 'ls -l', note that the size of
+    GUI file explorer.</li>
+<li>
+<p>When you inspect the file with 'ls -l', note that the size of
     'my_file.txt' is 0kb.  In other words, it contains no data.
-    If you open 'my_file.txt' using your text editor it is blank.
-
-3.  Some programs do not generate output files themselves, but
+    If you open 'my_file.txt' using your text editor it is blank.</p>
+</li>
+<li>
+<p>Some programs do not generate output files themselves, but
     instead require that empty files have already been generated.
     When the program is run, it searches for an existing file to
     populate with its output.  The touch command allows you to
     efficiently generate a blank text file to be used by such
-    programs.
-
+    programs.</p>
+</li>
+</ol>
 
 </div>
 
@@ -370,20 +367,19 @@ ls
 
 <section class="callout panel panel-warning">
 <div class="panel-heading">
-<h2 class="fa fa-thumb-tack"> Deleting Is Forever</h2>
+<h2><span class="fa fa-thumb-tack"></span> Deleting Is Forever</h2>
 </div>
 
 
 <div class="panel-body">
 
-The Unix shell doesn't have a trash bin that we can recover deleted
+<p>The Unix shell doesn't have a trash bin that we can recover deleted
 files from (though most graphical interfaces to Unix do).  Instead,
 when we delete files, they are unhooked from the file system so that
 their storage space on disk can be recycled. Tools for finding and
 recovering deleted files do exist, but there's no guarantee they'll
 work in any particular situation, since the computer may recycle the
-file's disk space right away.
-
+file's disk space right away.</p>
 
 </div>
 
@@ -440,15 +436,14 @@ rm -r thesis
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Using `rm` Safely</h2>
+<h2><span class="fa fa-pencil"></span> Using `rm` Safely</h2>
 </div>
 
 
 <div class="panel-body">
 
-What happens when we type `rm -i thesis/quotations.txt`?
-Why would we want this protection when using `rm`?
-
+<p>What happens when we type <code>rm -i thesis/quotations.txt</code>?
+Why would we want this protection when using <code>rm</code>?</p>
 
 </div>
 
@@ -458,18 +453,19 @@ Why would we want this protection when using `rm`?
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 
 <div class="panel-body">
 
-```
-$ rm: remove regular file 'thesis/quotations.txt'?
-```
-The -i option will prompt before every removal. 
+<div class="codehilite"><pre><span></span>$ rm: remove regular file <span class="s1">&#39;thesis/quotations.txt&#39;</span>?
+</pre></div>
+
+
+<p>The -i option will prompt before every removal. 
 The Unix shell doesn't have a trash bin, so all the files removed will disappear forever. 
-By using the -i flag, we have the chance to check that we are deleting only the files that we want to remove.
+By using the -i flag, we have the chance to check that we are deleting only the files that we want to remove.</p>
 
 </div>
 
@@ -479,27 +475,25 @@ By using the -i flag, we have the chance to check that we are deleting only the 
 
 <section class="callout panel panel-warning">
 <div class="panel-heading">
-<h2 class="fa fa-thumb-tack"> With Great Power Comes Great Responsibility</h2>
+<h2><span class="fa fa-thumb-tack"></span> With Great Power Comes Great Responsibility</h2>
 </div>
 
 
 <div class="panel-body">
 
-Removing the files in a directory recursively can be a very dangerous
+<p>Removing the files in a directory recursively can be a very dangerous
 operation. If we're concerned about what we might be deleting we can
-add the "interactive" flag `-i` to `rm` which will ask us for confirmation
-before each step
-
-```
-$ rm -r -i thesis
+add the "interactive" flag <code>-i</code> to <code>rm</code> which will ask us for confirmation
+before each step</p>
+<div class="codehilite"><pre><span></span>$ rm -r -i thesis
 rm: descend into directory ‘thesis’? y
 rm: remove regular file ‘thesis/draft.txt’? y
 rm: remove directory ‘thesis’? y
-```
+</pre></div>
 
-This removes everything in the directory, then the directory itself, asking
-at each step for you to confirm the deletion.
 
+<p>This removes everything in the directory, then the directory itself, asking
+at each step for you to confirm the deletion.</p>
 
 </div>
 
@@ -605,30 +599,26 @@ ls quotes.txt
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Moving to the Current Folder</h2>
+<h2><span class="fa fa-pencil"></span> Moving to the Current Folder</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-After running the following commands,
-Jamie realizes that she put the files `sucrose.dat` and `maltose.dat` into the wrong folder:
-
-```
-$ ls -F
+<p>After running the following commands,
+Jamie realizes that she put the files <code>sucrose.dat</code> and <code>maltose.dat</code> into the wrong folder:</p>
+<div class="codehilite"><pre><span></span>$ ls -F
  analyzed/ raw/
 $ ls -F analyzed
 fructose.dat glucose.dat maltose.dat sucrose.dat
-$ cd raw/
-```
+$ <span class="nb">cd</span> raw/
+</pre></div>
 
-Fill in the blanks to move these files to the current folder
-(i.e., the one she is currently in):
 
-```
-$ mv ___/sucrose.dat  ___/maltose.dat ___
-```
+<p>Fill in the blanks to move these files to the current folder
+(i.e., the one she is currently in):</p>
+<div class="codehilite"><pre><span></span>$ mv ___/sucrose.dat  ___/maltose.dat ___
+</pre></div>
 
 </div>
 
@@ -638,19 +628,18 @@ $ mv ___/sucrose.dat  ___/maltose.dat ___
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 
 <div class="panel-body">
 
-```
-$ mv ../analyzed/sucrose.dat ../analyzed/maltose.dat .
-```
+<div class="codehilite"><pre><span></span>$ mv ../analyzed/sucrose.dat ../analyzed/maltose.dat .
+</pre></div>
 
-Recall that `..` refers to the parent directory (i.e. one above the current directory)
-and that `.` refers to the current directory.
 
+<p>Recall that <code>..</code> refers to the parent directory (i.e. one above the current directory)
+and that <code>.</code> refers to the current directory.</p>
 
 </div>
 
@@ -697,33 +686,30 @@ but it does find the copy in `thesis` that we didn't delete.
 
 <section class="callout panel panel-warning">
 <div class="panel-heading">
-<h2 class="fa fa-thumb-tack"> What's In A Name?</h2>
+<h2><span class="fa fa-thumb-tack"></span> What's In A Name?</h2>
 </div>
 
 
 <div class="panel-body">
 
-You may have noticed that all of Nelle's files' names are "something dot
+<p>You may have noticed that all of Nelle's files' names are "something dot
 something", and in this part of the lesson, we always used the extension
-`.txt`.  This is just a convention: we can call a file `mythesis` or
+<code>.txt</code>.  This is just a convention: we can call a file <code>mythesis</code> or
 almost anything else we want. However, most people use two-part names
 most of the time to help them (and their programs) tell different kinds
 of files apart. The second part of such a name is called the
-**filename extension**, and indicates
-what type of data the file holds: `.txt` signals a plain text file, `.pdf`
-indicates a PDF document, `.cfg` is a configuration file full of parameters
-for some program or other, `.png` is a PNG image, and so on.
-
-This is just a convention, albeit an important one. Files contain
+<strong>filename extension</strong>, and indicates
+what type of data the file holds: <code>.txt</code> signals a plain text file, <code>.pdf</code>
+indicates a PDF document, <code>.cfg</code> is a configuration file full of parameters
+for some program or other, <code>.png</code> is a PNG image, and so on.</p>
+<p>This is just a convention, albeit an important one. Files contain
 bytes: it's up to us and our programs to interpret those bytes
 according to the rules for plain text files, PDF documents, configuration
-files, images, and so on.
-
-Naming a PNG image of a whale as `whale.mp3` doesn't somehow
-magically turn it into a recording of whalesong, though it *might*
+files, images, and so on.</p>
+<p>Naming a PNG image of a whale as <code>whale.mp3</code> doesn't somehow
+magically turn it into a recording of whalesong, though it <em>might</em>
 cause the operating system to try to open it with a music player
-when someone double-clicks it.
-
+when someone double-clicks it.</p>
 
 </div>
 
@@ -733,23 +719,22 @@ when someone double-clicks it.
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Renaming Files</h2>
+<h2><span class="fa fa-pencil"></span> Renaming Files</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-Suppose that you created a `.txt` file in your current directory to contain a list of the
-statistical tests you will need to do to analyze your data, and named it: `statstics.txt`
+<p>Suppose that you created a <code>.txt</code> file in your current directory to contain a list of the
+statistical tests you will need to do to analyze your data, and named it: <code>statstics.txt</code>
 After creating and saving this file you realize you misspelled the filename! You want to
-correct the mistake, which of the following commands could you use to do so?
-
-1. `cp statstics.txt statistics.txt`
-2. `mv statstics.txt statistics.txt`
-3. `mv statstics.txt .`
-4. `cp statstics.txt .`
-
+correct the mistake, which of the following commands could you use to do so?</p>
+<ol>
+<li><code>cp statstics.txt statistics.txt</code></li>
+<li><code>mv statstics.txt statistics.txt</code></li>
+<li><code>mv statstics.txt .</code></li>
+<li><code>cp statstics.txt .</code></li>
+</ol>
 
 </div>
 
@@ -759,20 +744,21 @@ correct the mistake, which of the following commands could you use to do so?
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 
 <div class="panel-body">
 
-1. No.  While this would create a file with the correct name, the incorrectly named file still exists in the directory
-and would need to be deleted.
-2. Yes, this would work to rename the file.
-3. No, the period(.) indicates where to move the file, but does not provide a new file name; identical file names
-cannot be created.
-4. No, the period(.) indicates where to copy the file, but does not provide a new file name; identical file names
-cannot be created.
-
+<ol>
+<li>No.  While this would create a file with the correct name, the incorrectly named file still exists in the directory
+and would need to be deleted.</li>
+<li>Yes, this would work to rename the file.</li>
+<li>No, the period(.) indicates where to move the file, but does not provide a new file name; identical file names
+cannot be created.</li>
+<li>No, the period(.) indicates where to copy the file, but does not provide a new file name; identical file names
+cannot be created.</li>
+</ol>
 
 </div>
 
@@ -782,42 +768,42 @@ cannot be created.
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Moving and Copying</h2>
+<h2><span class="fa fa-pencil"></span> Moving and Copying</h2>
 </div>
 
 
 <div class="panel-body">
 
-What is the output of the closing `ls` command in the sequence shown below?
+<p>What is the output of the closing <code>ls</code> command in the sequence shown below?</p>
+<div class="codehilite"><pre><span></span>$ <span class="nb">pwd</span>
+</pre></div>
 
-```
-$ pwd
-```
 
-```
-/Users/jamie/data
-```
+<div class="codehilite"><pre><span></span>/Users/jamie/data
+</pre></div>
 
-```
-$ ls
-```
 
-```
-proteins.dat
-```
+<div class="codehilite"><pre><span></span>$ ls
+</pre></div>
 
-```
-$ mkdir recombine
+
+<div class="codehilite"><pre><span></span>proteins.dat
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>$ mkdir recombine
 $ mv proteins.dat recombine/
 $ cp recombine/proteins.dat ../proteins-saved.dat
 $ ls
-```
+</pre></div>
 
-1.   `proteins-saved.dat recombine`
-2.   `recombine`
-3.   `proteins.dat recombine`
-4.   `proteins-saved.dat`
 
+<ol>
+<li><code>proteins-saved.dat recombine</code></li>
+<li><code>recombine</code></li>
+<li><code>proteins.dat recombine</code></li>
+<li><code>proteins-saved.dat</code></li>
+</ol>
 
 </div>
 
@@ -827,25 +813,25 @@ $ ls
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 
 <div class="panel-body">
 
-We start in the `/Users/jamie/data` directory, and create a new folder called `recombine`.
-The second line moves (`mv`) the file `proteins.dat` to the new folder (`recombine`).
+<p>We start in the <code>/Users/jamie/data</code> directory, and create a new folder called <code>recombine</code>.
+The second line moves (<code>mv</code>) the file <code>proteins.dat</code> to the new folder (<code>recombine</code>).
 The third line makes a copy of the file we just moved.  The tricky part here is where the file was
-copied to.  Recall that `..` means "go up a level", so the copied file is now in `/Users/jamie`.
-Notice that `..` is interpreted with respect to the current working
-directory, **not** with respect to the location of the file being copied.
-So, the only thing that will show using ls (in `/Users/jamie/data`) is the recombine folder.
-
-1. No, see explanation above.  `proteins-saved.dat` is located at `/Users/jamie`
-2. Yes
-3. No, see explanation above.  `proteins.dat` is located at `/Users/jamie/data/recombine`
-4. No, see explanation above.  `proteins-saved.dat` is located at `/Users/jamie`
-
+copied to.  Recall that <code>..</code> means "go up a level", so the copied file is now in <code>/Users/jamie</code>.
+Notice that <code>..</code> is interpreted with respect to the current working
+directory, <strong>not</strong> with respect to the location of the file being copied.
+So, the only thing that will show using ls (in <code>/Users/jamie/data</code>) is the recombine folder.</p>
+<ol>
+<li>No, see explanation above.  <code>proteins-saved.dat</code> is located at <code>/Users/jamie</code></li>
+<li>Yes</li>
+<li>No, see explanation above.  <code>proteins.dat</code> is located at <code>/Users/jamie/data/recombine</code></li>
+<li>No, see explanation above.  <code>proteins-saved.dat</code> is located at <code>/Users/jamie</code></li>
+</ol>
 
 </div>
 
@@ -855,44 +841,39 @@ So, the only thing that will show using ls (in `/Users/jamie/data`) is the recom
 
 <section class="challange panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Organizing Directories and Files</h2>
+<h2><span class="fa fa-pencil"></span> Organizing Directories and Files</h2>
 </div>
 
 
 <div class="panel-body">
 
+<p>Jamie is working on a project and she sees that her files aren't very well
+organized:</p>
+<div class="codehilite"><pre><span></span>$ ls -F
+</pre></div>
 
-Jamie is working on a project and she sees that her files aren't very well
-organized:
 
-```
-$ ls -F
-```
+<div class="codehilite"><pre><span></span>analyzed/  fructose.dat    raw/   sucrose.dat
+</pre></div>
 
-```
-analyzed/  fructose.dat    raw/   sucrose.dat
-```
 
-The `fructose.dat` and `sucrose.dat` files contain output from her data
+<p>The <code>fructose.dat</code> and <code>sucrose.dat</code> files contain output from her data
 analysis. What command(s) covered in this lesson does she need to run so that the commands below will
-produce the output shown?
+produce the output shown?</p>
+<div class="codehilite"><pre><span></span>$ ls -F
+</pre></div>
 
-```
-$ ls -F
-```
 
-```
-analyzed/   raw/
-```
+<div class="codehilite"><pre><span></span>analyzed/   raw/
+</pre></div>
 
-```
-$ ls analyzed
-```
 
-```
-fructose.dat    sucrose.dat
-```
+<div class="codehilite"><pre><span></span>$ ls analyzed
+</pre></div>
 
+
+<div class="codehilite"><pre><span></span>fructose.dat    sucrose.dat
+</pre></div>
 
 </div>
 
@@ -902,19 +883,19 @@ fructose.dat    sucrose.dat
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 
 <div class="panel-body">
 
-```
-mv *.dat analyzed
-```
+<div class="codehilite"><pre><span></span>mv *.dat analyzed
+</pre></div>
 
-Jamie needs to move her files `fructose.dat` and `sucrose.dat` to the `analyzed` directory.
+
+<p>Jamie needs to move her files <code>fructose.dat</code> and <code>sucrose.dat</code> to the <code>analyzed</code> directory.
 The shell will expand *.dat to match all .dat files in the current directory.
-The `mv` command then moves the list of .dat files to the "analyzed" directory.
+The <code>mv</code> command then moves the list of .dat files to the "analyzed" directory.</p>
 
 </div>
 
@@ -924,36 +905,30 @@ The `mv` command then moves the list of .dat files to the "analyzed" directory.
 
 <section class="challange panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Copy with Multiple Filenames</h2>
+<h2><span class="fa fa-pencil"></span> Copy with Multiple Filenames</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-For this exercise, you can test the commands in the `data-shell/data` directory.
-
-In the example below, what does `cp` do when given several filenames and a directory name?
-
-```
-$ mkdir backup
+<p>For this exercise, you can test the commands in the <code>data-shell/data</code> directory.</p>
+<p>In the example below, what does <code>cp</code> do when given several filenames and a directory name?</p>
+<div class="codehilite"><pre><span></span>$ mkdir backup
 $ cp amino-acids.txt animals.txt backup/
-```
+</pre></div>
 
-In the example below, what does `cp` do when given three or more file names?
 
-```
-$ ls -F
-```
+<p>In the example below, what does <code>cp</code> do when given three or more file names?</p>
+<div class="codehilite"><pre><span></span>$ ls -F
+</pre></div>
 
-```
-amino-acids.txt  animals.txt  backup/  elements/  morse.txt  pdb/  planets.txt  salmon.txt  sunspot.txt
-```
 
-```
-$ cp amino-acids.txt animals.txt morse.txt 
-```
+<div class="codehilite"><pre><span></span>amino-acids.txt  animals.txt  backup/  elements/  morse.txt  pdb/  planets.txt  salmon.txt  sunspot.txt
+</pre></div>
 
+
+<div class="codehilite"><pre><span></span>$ cp amino-acids.txt animals.txt morse.txt 
+</pre></div>
 
 </div>
 
@@ -963,22 +938,18 @@ $ cp amino-acids.txt animals.txt morse.txt
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-If given more than one file name followed by a directory name (i.e. the destination directory must 
-be the last argument), `cp` copies the files to the named directory.
-
-If given three file names, `cp` throws an error because it is expecting a directory
-name as the last argument.
-
-```
-cp: target ‘morse.txt’ is not a directory
-```
+<p>If given more than one file name followed by a directory name (i.e. the destination directory must 
+be the last argument), <code>cp</code> copies the files to the named directory.</p>
+<p>If given three file names, <code>cp</code> throws an error because it is expecting a directory
+name as the last argument.</p>
+<div class="codehilite"><pre><span></span><span class="n">cp</span><span class="o">:</span> <span class="n">target</span> <span class="err">‘</span><span class="n">morse</span><span class="o">.</span><span class="na">txt</span><span class="err">’</span> <span class="k">is</span> <span class="n">not</span> <span class="n">a</span> <span class="n">directory</span>
+</pre></div>
 
 </div>
 
@@ -988,42 +959,37 @@ cp: target ‘morse.txt’ is not a directory
 
 <section class="challange panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Copy a folder structure but not the files</h2>
+<h2><span class="fa fa-pencil"></span> Copy a folder structure but not the files</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-You're starting a new experiment, and would like to duplicate the file
+<p>You're starting a new experiment, and would like to duplicate the file
 structure from your previous experiment without the data files so you can
-add new data.
+add new data.</p>
+<p>Assume that the file structure is in a folder called '2016-05-18-data',
+which contains a <code>data</code> folder that in turn contains folders named <code>raw</code> and
+<code>processed</code> that contain data files.  The goal is to copy the file structure
+of the <code>2016-05-18-data</code> folder into a folder called <code>2016-05-20-data</code> and
+remove the data files from the directory you just created.</p>
+<p>Which of the following set of commands would achieve this objective?
+What would the other commands do?</p>
+<div class="codehilite"><pre><span></span>$ cp -r <span class="m">2016</span>-05-18-data/ <span class="m">2016</span>-05-20-data/
+$ rm <span class="m">2016</span>-05-20-data/raw/*
+$ rm <span class="m">2016</span>-05-20-data/processed/*
+</pre></div>
 
-Assume that the file structure is in a folder called '2016-05-18-data',
-which contains a `data` folder that in turn contains folders named `raw` and
-`processed` that contain data files.  The goal is to copy the file structure
-of the `2016-05-18-data` folder into a folder called `2016-05-20-data` and
-remove the data files from the directory you just created.
 
-Which of the following set of commands would achieve this objective?
-What would the other commands do?
+<div class="codehilite"><pre><span></span>$ rm <span class="m">2016</span>-05-20-data/raw/*
+$ rm <span class="m">2016</span>-05-20-data/processed/*
+$ cp -r <span class="m">2016</span>-05-18-data/ <span class="m">2016</span>-5-20-data/
+</pre></div>
 
-```
-$ cp -r 2016-05-18-data/ 2016-05-20-data/
-$ rm 2016-05-20-data/raw/*
-$ rm 2016-05-20-data/processed/*
-```
 
-```
-$ rm 2016-05-20-data/raw/*
-$ rm 2016-05-20-data/processed/*
-$ cp -r 2016-05-18-data/ 2016-5-20-data/
-```
-
-```
-$ cp -r 2016-05-18-data/ 2016-05-20-data/
-$ rm -r -i 2016-05-20-data/
-```
+<div class="codehilite"><pre><span></span>$ cp -r <span class="m">2016</span>-05-18-data/ <span class="m">2016</span>-05-20-data/
+$ rm -r -i <span class="m">2016</span>-05-20-data/
+</pre></div>
 
 </div>
 
@@ -1033,25 +999,22 @@ $ rm -r -i 2016-05-20-data/
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-The first set of commands achieves this objective.
+<p>The first set of commands achieves this objective.
 First we have a recursive copy of a data folder.
-Then two `rm` commands which remove all files in the specified directories.
-The shell expands the '*' wild card to match all files and subdirectories.
-
-The second set of commands have the wrong order: 
+Then two <code>rm</code> commands which remove all files in the specified directories.
+The shell expands the '*' wild card to match all files and subdirectories.</p>
+<p>The second set of commands have the wrong order: 
 attempting to delete files which haven't yet been copied,
-followed by the recursive copy command which would copy them.
-
-The third set of commands would achieve the objective, but in a time-consuming way:
+followed by the recursive copy command which would copy them.</p>
+<p>The third set of commands would achieve the objective, but in a time-consuming way:
 the first command copies the directory recursively, but the second command deletes
-interactively, prompting for confirmation for each file and directory.
+interactively, prompting for confirmation for each file and directory.</p>
 
 </div>
 

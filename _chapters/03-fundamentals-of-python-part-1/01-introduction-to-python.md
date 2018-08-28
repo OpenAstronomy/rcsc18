@@ -251,30 +251,28 @@ are their daily inflammation measurements.
 
 <section class="callout panel panel-warning">
 <div class="panel-heading">
-<h2 class="fa fa-thumb-tack"> Data Type</h2>
+<h2><span class="fa fa-thumb-tack"></span> Data Type</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-A Numpy array contains one or more elements
-of the same type. The `type` function will only tell you that
+<p>A Numpy array contains one or more elements
+of the same type. The <code>type</code> function will only tell you that
 a variable is a NumPy array but won't tell you the type of
 thing inside the array.
 We can find out the type
-of the data contained in the NumPy array.
+of the data contained in the NumPy array.</p>
+<div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
+</pre></div>
 
-```python
-print(data.dtype)
-```
 
-```
-dtype('float64')
-```
+<div class="codehilite"><pre><span></span>dtype(&#39;float64&#39;)
+</pre></div>
 
-This tells us that the NumPy array's elements are
-floating-point numbers.
+
+<p>This tells us that the NumPy array's elements are
+floating-point numbers.</p>
 
 </div>
 
@@ -444,31 +442,28 @@ print(numpy.mean(data))
 
 <section class="callout panel panel-warning">
 <div class="panel-heading">
-<h2 class="fa fa-thumb-tack"> Not All Functions Have Input</h2>
+<h2><span class="fa fa-thumb-tack"></span> Not All Functions Have Input</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-Generally, a function uses inputs to produce outputs.
+<p>Generally, a function uses inputs to produce outputs.
 However, some functions produce outputs without
 needing any input. For example, checking the current time
-doesn't require any input.
+doesn't require any input.</p>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
+<span class="k">print</span><span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">ctime</span><span class="p">())</span>
+</pre></div>
 
-```python
-import time
-print(time.ctime())
-```
 
-```
-'Sat Mar 26 13:07:33 2016'
-```
+<div class="codehilite"><pre><span></span>&#39;Sat Mar 26 13:07:33 2016&#39;
+</pre></div>
 
-For functions that don't take in any arguments,
-we still need parentheses (`()`)
-to tell Python to go and do something for us.
 
+<p>For functions that don't take in any arguments,
+we still need parentheses (<code>()</code>)
+to tell Python to go and do something for us.</p>
 
 </div>
 
@@ -496,20 +491,19 @@ from `numpy.min(data)` to `minval`, and so on.
 
 <section class="callout panel panel-warning">
 <div class="panel-heading">
-<h2 class="fa fa-thumb-tack"> Mystery Functions in IPython</h2>
+<h2><span class="fa fa-thumb-tack"></span> Mystery Functions in IPython</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-How did we know what functions NumPy has and how to use them?
+<p>How did we know what functions NumPy has and how to use them?
 If you are working in the IPython/Jupyter Notebook, there is an easy way to find out.
 If you type the name of something followed by a dot, then you can use tab completion
-(e.g. type `numpy.` and then press tab)
+(e.g. type <code>numpy.</code> and then press tab)
 to see a list of all functions and attributes that you can use. After selecting one, you
-can also add a question mark (e.g. `numpy.cumprod?`), and IPython will return an
-explanation of the method! This is the same as doing `help(numpy.cumprod)`.
+can also add a question mark (e.g. <code>numpy.cumprod?</code>), and IPython will return an
+explanation of the method! This is the same as doing <code>help(numpy.cumprod)</code>.</p>
 
 </div>
 
@@ -643,20 +637,16 @@ themselves without visualization tools.
 
 <section class="callout panel panel-warning">
 <div class="panel-heading">
-<h2 class="fa fa-thumb-tack"> Scientists Dislike Typing</h2>
+<h2><span class="fa fa-thumb-tack"></span> Scientists Dislike Typing</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-We have just been importing NumPy and matplotlib using `import numpy` and `import matplotlib.pyplot`.
-
-From here on we are going to shorten these imports, you can either adopt this or continue using the long version. The reason we are going to start using the shortened versions is that that is the way that the majority of open source scientific python libraries use these imports, so we want to get you used to them now.
-
-When working with other people, it is important to agree on a convention of how common libraries
-are imported.
-
+<p>We have just been importing NumPy and matplotlib using <code>import numpy</code> and <code>import matplotlib.pyplot</code>.</p>
+<p>From here on we are going to shorten these imports, you can either adopt this or continue using the long version. The reason we are going to start using the shortened versions is that that is the way that the majority of open source scientific python libraries use these imports, so we want to get you used to them now.</p>
+<p>When working with other people, it is important to agree on a convention of how common libraries
+are imported.</p>
 
 </div>
 
@@ -720,23 +710,19 @@ the graphs will actually be squeezed together more closely.)
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Challenge: Check Your Understanding</h2>
+<h2><span class="fa fa-pencil"></span> Challenge: Check Your Understanding</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-What values do the variables `mass` and `age` have after each statement in the following program?
-Test your answers by executing the commands.
-
-```python
-mass = 47.5
-age = 122
-mass = mass * 2.0
-age = age - 20
-```
-
+<p>What values do the variables <code>mass</code> and <code>age</code> have after each statement in the following program?
+Test your answers by executing the commands.</p>
+<div class="codehilite"><pre><span></span><span class="n">mass</span> <span class="o">=</span> <span class="mf">47.5</span>
+<span class="n">age</span> <span class="o">=</span> <span class="mi">122</span>
+<span class="n">mass</span> <span class="o">=</span> <span class="n">mass</span> <span class="o">*</span> <span class="mf">2.0</span>
+<span class="n">age</span> <span class="o">=</span> <span class="n">age</span> <span class="o">-</span> <span class="mi">20</span>
+</pre></div>
 
 </div>
 
@@ -746,20 +732,17 @@ age = age - 20
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Challenge: Sorting Out References</h2>
+<h2><span class="fa fa-pencil"></span> Challenge: Sorting Out References</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-What does the following program print out?
-
-```
-first, second = 'Grace', 'Hopper'
+<p>What does the following program print out?</p>
+<div class="codehilite"><pre><span></span>first, second = &#39;Grace&#39;, &#39;Hopper&#39;
 third, fourth = second, first
 print(third, fourth)
-```
+</pre></div>
 
 </div>
 
@@ -769,15 +752,14 @@ print(third, fourth)
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 
 <div class="panel-body">
 
-```
-Hopper Grace
-```
+<div class="codehilite"><pre><span></span>Hopper Grace
+</pre></div>
 
 </div>
 
@@ -787,30 +769,28 @@ Hopper Grace
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Challenge: Slicing Strings</h2>
+<h2><span class="fa fa-pencil"></span> Challenge: Slicing Strings</h2>
 </div>
 
 
 <div class="panel-body">
 
-A section of an array is called a slice.
-We can take slices of character strings as well:
+<p>A section of an array is called a slice.
+We can take slices of character strings as well:</p>
+<div class="codehilite"><pre><span></span><span class="n">element</span> <span class="o">=</span> <span class="s1">&#39;oxygen&#39;</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;first three characters:&#39;</span><span class="p">,</span> <span class="n">element</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">])</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;last three characters:&#39;</span><span class="p">,</span> <span class="n">element</span><span class="p">[</span><span class="mi">3</span><span class="p">:</span><span class="mi">6</span><span class="p">])</span>
+</pre></div>
 
-```python
-element = 'oxygen'
-print('first three characters:', element[0:3])
-print('last three characters:', element[3:6])
-```
 
-```
-first three characters: oxy
+<div class="codehilite"><pre><span></span>first three characters: oxy
 last three characters: gen
-```
+</pre></div>
 
-What is the value of `element[:4]`?
-What about `element[4:]`?
-Or `element[:]`?
 
+<p>What is the value of <code>element[:4]</code>?
+What about <code>element[4:]</code>?
+Or <code>element[:]</code>?</p>
 
 </div>
 
@@ -820,17 +800,16 @@ Or `element[:]`?
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 
 <div class="panel-body">
 
-```
-oxyg
+<div class="codehilite"><pre><span></span>oxyg
 en
 oxygen
-```
+</pre></div>
 
 </div>
 
@@ -840,15 +819,14 @@ oxygen
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Challenge:</h2>
+<h2><span class="fa fa-pencil"></span> Challenge:</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-What is `element[-1]`?
-What is `element[-2]`?
+<p>What is <code>element[-1]</code>?
+What is <code>element[-2]</code>?</p>
 
 </div>
 
@@ -858,16 +836,15 @@ What is `element[-2]`?
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 
 <div class="panel-body">
 
-```
-n
+<div class="codehilite"><pre><span></span>n
 e
-```
+</pre></div>
 
 </div>
 
@@ -877,13 +854,13 @@ e
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Challenge:</h2>
+<h2><span class="fa fa-pencil"></span> Challenge:</h2>
 </div>
 
 
 <div class="panel-body">
 
-Given those answers, explain what `element[1:-1]` does.
+<p>Given those answers, explain what <code>element[1:-1]</code> does.</p>
 
 </div>
 
@@ -893,15 +870,14 @@ Given those answers, explain what `element[1:-1]` does.
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 
 <div class="panel-body">
 
-Creates a substring from index 1 up to (not including) the final index,
-effectively removing the first and last letters from 'oxygen'
-
+<p>Creates a substring from index 1 up to (not including) the final index,
+effectively removing the first and last letters from 'oxygen'</p>
 
 </div>
 
@@ -911,19 +887,17 @@ effectively removing the first and last letters from 'oxygen'
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Challenge:  Thin Slices</h2>
+<h2><span class="fa fa-pencil"></span> Challenge:  Thin Slices</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-The expression `element[3:3]` produces an empty string,
+<p>The expression <code>element[3:3]</code> produces an empty string,
 i.e., a string that contains no characters.
-If `data` holds our array of patient data,
-what does `data[3:3, 4:4]` produce?
-What about `data[3:3, :]`?
-
+If <code>data</code> holds our array of patient data,
+what does <code>data[3:3, 4:4]</code> produce?
+What about <code>data[3:3, :]</code>?</p>
 
 </div>
 
@@ -933,17 +907,15 @@ What about `data[3:3, :]`?
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 
 <div class="panel-body">
 
-```
+<div class="codehilite"><pre><span></span>[]
 []
-[]
-```
-
+</pre></div>
 
 </div>
 
@@ -953,14 +925,13 @@ What about `data[3:3, :]`?
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Challenge: Plot Scaling</h2>
+<h2><span class="fa fa-pencil"></span> Challenge: Plot Scaling</h2>
 </div>
 
 
 <div class="panel-body">
 
-Why do all of our plots stop just short of the upper end of our graph?
-
+<p>Why do all of our plots stop just short of the upper end of our graph?</p>
 
 </div>
 
@@ -970,21 +941,18 @@ Why do all of our plots stop just short of the upper end of our graph?
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 
 <div class="panel-body">
 
-Because matplotlib normally sets x and y axes limits to the min and max of our data
-(depending on data range)
-
-If we want to change this, we can use the `set_ylim(min, max)` method of each 'axes',
-for example:
-
-```python
-axes3.set_ylim(0,6)
-```
+<p>Because matplotlib normally sets x and y axes limits to the min and max of our data
+(depending on data range)</p>
+<p>If we want to change this, we can use the <code>set_ylim(min, max)</code> method of each 'axes',
+for example:</p>
+<div class="codehilite"><pre><span></span><span class="n">axes3</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span>
+</pre></div>
 
 </div>
 
@@ -994,15 +962,14 @@ axes3.set_ylim(0,6)
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Challenge:</h2>
+<h2><span class="fa fa-pencil"></span> Challenge:</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-Update your plotting code to automatically set a more appropriate scale.
-(Hint: you can make use of the `max` and `min` methods to help.)
+<p>Update your plotting code to automatically set a more appropriate scale.
+(Hint: you can make use of the <code>max</code> and <code>min</code> methods to help.)</p>
 
 </div>
 
@@ -1012,28 +979,25 @@ Update your plotting code to automatically set a more appropriate scale.
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 
 <div class="panel-body">
 
+<div class="codehilite"><pre><span></span><span class="c1"># One method</span>
+<span class="n">axes3</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;min&#39;</span><span class="p">)</span>
+<span class="n">axes3</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">numpy</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">))</span>
+<span class="n">axes3</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span>
+</pre></div>
 
-```python
-# One method
-axes3.set_ylabel('min')
-axes3.plot(numpy.min(data, axis=0))
-axes3.set_ylim(0,6)
-```
 
-```python
-# A more automated approach
-min_data = numpy.min(data, axis=0)
-axes3.set_ylabel('min')
-axes3.plot(min_data)
-axes3.set_ylim(numpy.min(min_data), numpy.max(min_data) * 1.1)
-```
-
+<div class="codehilite"><pre><span></span><span class="c1"># A more automated approach</span>
+<span class="n">min_data</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">axes3</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;min&#39;</span><span class="p">)</span>
+<span class="n">axes3</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">min_data</span><span class="p">)</span>
+<span class="n">axes3</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="n">numpy</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">min_data</span><span class="p">),</span> <span class="n">numpy</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">min_data</span><span class="p">)</span> <span class="o">*</span> <span class="mf">1.1</span><span class="p">)</span>
+</pre></div>
 
 </div>
 
@@ -1043,18 +1007,16 @@ axes3.set_ylim(numpy.min(min_data), numpy.max(min_data) * 1.1)
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Challenge: Drawing Straight Lines</h2>
+<h2><span class="fa fa-pencil"></span> Challenge: Drawing Straight Lines</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-In the center and right subplots above, we expect all lines to look like step functions because
+<p>In the center and right subplots above, we expect all lines to look like step functions because
 non-integer value are not realistic for the minimum and maximum values. However, you can see
 that the lines are not always vertical or horizontal, and in particular the step function
-in the subplot on the right looks slanted. Why is this?
-
+in the subplot on the right looks slanted. Why is this?</p>
 
 </div>
 
@@ -1064,14 +1026,14 @@ in the subplot on the right looks slanted. Why is this?
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 
 <div class="panel-body">
 
-Because matplotlib interpolates (draws a straight line) between the points.
-One way to do avoid this is to use the Matplotlib `drawstyle` option:
+<p>Because matplotlib interpolates (draws a straight line) between the points.
+One way to do avoid this is to use the Matplotlib <code>drawstyle</code> option:</p>
 
 </div>
 
@@ -1109,15 +1071,14 @@ plt.show()
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Challenge: Make Your Own Plot</h2>
+<h2><span class="fa fa-pencil"></span> Challenge: Make Your Own Plot</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-Create a plot showing the standard deviation (`numpy.std`)
-of the inflammation data for each day across all patients.
+<p>Create a plot showing the standard deviation (<code>numpy.std</code>)
+of the inflammation data for each day across all patients.</p>
 
 </div>
 
@@ -1127,7 +1088,7 @@ of the inflammation data for each day across all patients.
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 </section>
@@ -1143,15 +1104,14 @@ plt.show()
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Challenge: Moving Plots Around</h2>
+<h2><span class="fa fa-pencil"></span> Challenge: Moving Plots Around</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-Modify the program to display the three plots on top of one another
-instead of side by side.
+<p>Modify the program to display the three plots on top of one another
+instead of side by side.</p>
 
 </div>
 
@@ -1161,7 +1121,7 @@ instead of side by side.
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 </section>
@@ -1224,16 +1184,15 @@ print(C)
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Challenge:</h2>
+<h2><span class="fa fa-pencil"></span> Challenge:</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-Write some additional code that slices the first and last columns of `A`,
+<p>Write some additional code that slices the first and last columns of <code>A</code>,
 and stacks them into a 3x2 array.
-Make sure to `print` the results to verify your solution.
+Make sure to <code>print</code> the results to verify your solution.</p>
 
 </div>
 
@@ -1243,19 +1202,18 @@ Make sure to `print` the results to verify your solution.
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 
 <div class="panel-body">
 
-A 'gotcha' with array indexing is that singleton dimensions
-are dropped by default. That means `A[:, 0]` is a one dimensional
+<p>A 'gotcha' with array indexing is that singleton dimensions
+are dropped by default. That means <code>A[:, 0]</code> is a one dimensional
 array, which won't stack as desired. To preserve singleton dimensions,
-the index itself can be a slice or array. For example, `A[:, :1]` returns
+the index itself can be a slice or array. For example, <code>A[:, :1]</code> returns
 a two dimensional array with one singleton dimension (i.e. a column
-vector).
-
+vector).</p>
 
 </div>
 
@@ -1273,16 +1231,14 @@ print(D)
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-An alternative way to achieve the same result is to use Numpy's
-delete function to remove the second column of A.
-
+<p>An alternative way to achieve the same result is to use Numpy's
+delete function to remove the second column of A.</p>
 
 </div>
 
@@ -1330,13 +1286,13 @@ array([2, 3, 4, 5])
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Challenge:</h2>
+<h2><span class="fa fa-pencil"></span> Challenge:</h2>
 </div>
 
 
 <div class="panel-body">
 
-Which axis would it make sense to use this function along?
+<p>Which axis would it make sense to use this function along?</p>
 
 </div>
 
@@ -1346,16 +1302,16 @@ Which axis would it make sense to use this function along?
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 
 <div class="panel-body">
 
-Since the row axis (0) is patients, it does not make sense to get the
+<p>Since the row axis (0) is patients, it does not make sense to get the
 difference between two arbitrary patients. The column axis (1) is in
 days, so the difference is the change in inflammation -- a meaningful
-concept.
+concept.</p>
 
 </div>
 
@@ -1371,16 +1327,15 @@ numpy.diff(data, axis=1)
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Challenge:</h2>
+<h2><span class="fa fa-pencil"></span> Challenge:</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-If the shape of an individual data file is `(60, 40)` (60 rows and 40
-columns), what would the shape of the array be after you run the `diff()`
-function and why?
+<p>If the shape of an individual data file is <code>(60, 40)</code> (60 rows and 40
+columns), what would the shape of the array be after you run the <code>diff()</code>
+function and why?</p>
 
 </div>
 
@@ -1390,15 +1345,14 @@ function and why?
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-The shape will be `(60, 39)` because there is one fewer difference between
-columns than there are columns in the data.
+<p>The shape will be <code>(60, 39)</code> because there is one fewer difference between
+columns than there are columns in the data.</p>
 
 </div>
 
@@ -1408,15 +1362,14 @@ columns than there are columns in the data.
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Challenge:</h2>
+<h2><span class="fa fa-pencil"></span> Challenge:</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-How would you find the largest change in inflammation for each patient? Does
-it matter if the change in inflammation is an increase or a decrease?
+<p>How would you find the largest change in inflammation for each patient? Does
+it matter if the change in inflammation is an increase or a decrease?</p>
 
 </div>
 
@@ -1426,15 +1379,14 @@ it matter if the change in inflammation is an increase or a decrease?
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-By using the `numpy.max()` function after you apply the `numpy.diff()`
-function, you will get the largest difference between days.
+<p>By using the <code>numpy.max()</code> function after you apply the <code>numpy.diff()</code>
+function, you will get the largest difference between days.</p>
 
 </div>
 
@@ -1450,19 +1402,18 @@ numpy.max(numpy.diff(data, axis=1), axis=1)
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> Challenge:</h2>
+<h2><span class="fa fa-pencil"></span> Challenge:</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-If inflammation values *decrease* along an axis, then the difference from
+<p>If inflammation values <em>decrease</em> along an axis, then the difference from
 one element to the next will be negative. If
-you are interested in the **magnitude** of the change and not the
-direction, the `numpy.absolute()` function will provide that.
-Notice the difference if you get the largest _absolute_ difference
-between readings.
+you are interested in the <strong>magnitude</strong> of the change and not the
+direction, the <code>numpy.absolute()</code> function will provide that.
+Notice the difference if you get the largest <em>absolute</em> difference
+between readings.</p>
 
 </div>
 

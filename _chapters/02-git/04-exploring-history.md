@@ -127,40 +127,38 @@ git checkout HEAD mars.txt
 
 <section class="callout panel panel-warning">
 <div class="panel-heading">
-<h2 class="fa fa-thumb-tack"> # Don’t Lose Your HEAD</h2>
+<h2><span class="fa fa-thumb-tack"></span> # Don’t Lose Your HEAD</h2>
 </div>
 
 
 <div class="panel-body">
 
+<p>Above we used</p>
+<div class="codehilite"><pre><span></span>$ git checkout f22b25e mars.txt
+</pre></div>
 
-Above we used
 
-```
-$ git checkout f22b25e mars.txt
-```
+<p>to revert mars.txt to its state after the commit f22b25e. But be careful! The command checkout has other important functionalities and Git will misunderstand your intentions if you are not accurate with the typing. For example, if you forget mars.txt in the previous command.</p>
+<div class="codehilite"><pre><span></span>$ git checkout f22b25e
+</pre></div>
 
-to revert mars.txt to its state after the commit f22b25e. But be careful! The command checkout has other important functionalities and Git will misunderstand your intentions if you are not accurate with the typing. For example, if you forget mars.txt in the previous command.
 
-```
-$ git checkout f22b25e
-```
-```
-Note: checking out 'f22b25e'.
+<div class="codehilite"><pre><span></span><span class="n">Note</span><span class="o">:</span> <span class="n">checking</span> <span class="n">out</span> <span class="s1">&#39;f22b25e&#39;</span><span class="o">.</span>
 
-You are in 'detached HEAD' state. You can look around, make experimental
-changes and commit them, and you can discard any commits you make in this
-state without impacting any branches by performing another checkout.
+<span class="n">You</span> <span class="n">are</span> <span class="k">in</span> <span class="s1">&#39;detached HEAD&#39;</span> <span class="n">state</span><span class="o">.</span> <span class="n">You</span> <span class="n">can</span> <span class="n">look</span> <span class="n">around</span><span class="o">,</span> <span class="n">make</span> <span class="n">experimental</span>
+<span class="n">changes</span> <span class="n">and</span> <span class="n">commit</span> <span class="n">them</span><span class="o">,</span> <span class="n">and</span> <span class="n">you</span> <span class="n">can</span> <span class="n">discard</span> <span class="n">any</span> <span class="n">commits</span> <span class="n">you</span> <span class="n">make</span> <span class="k">in</span> <span class="k">this</span>
+<span class="n">state</span> <span class="n">without</span> <span class="n">impacting</span> <span class="n">any</span> <span class="n">branches</span> <span class="n">by</span> <span class="n">performing</span> <span class="n">another</span> <span class="n">checkout</span><span class="o">.</span>
 
-If you want to create a new branch to retain commits you create, you may
-do so (now or later) by using -b with the checkout command again. Example:
+<span class="n">If</span> <span class="n">you</span> <span class="n">want</span> <span class="n">to</span> <span class="n">create</span> <span class="n">a</span> <span class="k">new</span> <span class="n">branch</span> <span class="n">to</span> <span class="n">retain</span> <span class="n">commits</span> <span class="n">you</span> <span class="n">create</span><span class="o">,</span> <span class="n">you</span> <span class="n">may</span>
+<span class="k">do</span> <span class="n">so</span> <span class="o">(</span><span class="n">now</span> <span class="n">or</span> <span class="n">later</span><span class="o">)</span> <span class="n">by</span> <span class="n">using</span> <span class="o">-</span><span class="n">b</span> <span class="k">with</span> <span class="n">the</span> <span class="n">checkout</span> <span class="n">command</span> <span class="n">again</span><span class="o">.</span> <span class="n">Example</span><span class="o">:</span>
 
- git checkout -b <new-branch-name>
+ <span class="n">git</span> <span class="n">checkout</span> <span class="o">-</span><span class="n">b</span> <span class="o">&lt;</span><span class="k">new</span><span class="o">-</span><span class="n">branch</span><span class="o">-</span><span class="n">name</span><span class="o">&gt;</span>
 
-HEAD is now at f22b25e Start notes on Mars as a base
-```
+<span class="n">HEAD</span> <span class="k">is</span> <span class="n">now</span> <span class="n">at</span> <span class="n">f22b25e</span> <span class="n">Start</span> <span class="n">notes</span> <span class="n">on</span> <span class="n">Mars</span> <span class="k">as</span> <span class="n">a</span> <span class="n">base</span>
+</pre></div>
 
-The “detached HEAD” is like “look, but don’t touch” here, so you shouldn’t make any changes in this state. After investigating your repo’s past state, reattach your HEAD with git checkout master.
+
+<p>The “detached HEAD” is like “look, but don’t touch” here, so you shouldn’t make any changes in this state. After investigating your repo’s past state, reattach your HEAD with git checkout master.</p>
 
 </div>
 
@@ -178,20 +176,18 @@ So, to put it all together, here’s how Git works in cartoon form:
 
 <section class="callout panel panel-warning">
 <div class="panel-heading">
-<h2 class="fa fa-thumb-tack"> # Simplifying the Common Case</h2>
+<h2><span class="fa fa-thumb-tack"></span> # Simplifying the Common Case</h2>
 </div>
 
 
 <div class="panel-body">
 
+<p>If you read the output of git status carefully, you’ll see that it includes this hint:</p>
+<div class="codehilite"><pre><span></span>(use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)
+</pre></div>
 
-If you read the output of git status carefully, you’ll see that it includes this hint:
 
-```
-(use "git checkout -- <file>..." to discard changes in working directory)
-```
-
-As it says, git checkout without a version identifier restores files to the state saved in HEAD. The double dash -- is needed to separate the names of the files being recovered from the command itself: without it, Git would try to use the name of the file as the commit identifier.
+<p>As it says, git checkout without a version identifier restores files to the state saved in HEAD. The double dash -- is needed to separate the names of the files being recovered from the command itself: without it, Git would try to use the name of the file as the commit identifier.</p>
 
 </div>
 
@@ -203,22 +199,21 @@ The fact that files can be reverted one by one tends to change the way people or
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> # Recovering Older Versions of a File</h2>
+<h2><span class="fa fa-pencil"></span> # Recovering Older Versions of a File</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-Jennifer has made changes to the Python script that she has been working on for weeks, and the modifications she made this morning “broke” the script and it no longer runs. She has spent ~ 1hr trying to fix it, with no luck…
-
-Luckily, she has been keeping track of her project’s versions using Git! Which commands below will let her recover the last committed version of her Python script called data_cruncher.py?
-
-1. `$ git checkout HEAD`
-1. `$ git checkout HEAD data_cruncher.py`
-1. `$ git checkout HEAD~1 data_cruncher.py`
-1. `$ git checkout <unique ID of last commit> data_cruncher.py`
-1. Both 2 and 4
+<p>Jennifer has made changes to the Python script that she has been working on for weeks, and the modifications she made this morning “broke” the script and it no longer runs. She has spent ~ 1hr trying to fix it, with no luck…</p>
+<p>Luckily, she has been keeping track of her project’s versions using Git! Which commands below will let her recover the last committed version of her Python script called data_cruncher.py?</p>
+<ol>
+<li><code>$ git checkout HEAD</code></li>
+<li><code>$ git checkout HEAD data_cruncher.py</code></li>
+<li><code>$ git checkout HEAD~1 data_cruncher.py</code></li>
+<li><code>$ git checkout &lt;unique ID of last commit&gt; data_cruncher.py</code></li>
+<li>Both 2 and 4</li>
+</ol>
 
 </div>
 
@@ -228,20 +223,20 @@ Luckily, she has been keeping track of her project’s versions using Git! Which
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> # Reverting a Commit</h2>
+<h2><span class="fa fa-pencil"></span> # Reverting a Commit</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-Jennifer is collaborating on her Python script with her colleagues and realizes her last commit to the group repository is wrong and wants to undo it. Jennifer needs to undo correctly so everyone in the group repository gets the correct change. git revert [wrong commit ID] will make a new commit that undoes Jennifer’s previous wrong commit. Therefore git revert is different than git checkout [commit ID] because checkout is for local changes not committed to the group repository. Below are the right steps and explanations for Jennifer to use git revert, what is the missing command?
-
-1. `________ # Look at the git history of the project to find the commit ID`
-1. Copy the ID (the first few characters of the ID, e.g. 0b1d055).
-1. `git revert [commit ID]`
-1. Type in the new commit message.
-1. Save and close
+<p>Jennifer is collaborating on her Python script with her colleagues and realizes her last commit to the group repository is wrong and wants to undo it. Jennifer needs to undo correctly so everyone in the group repository gets the correct change. git revert [wrong commit ID] will make a new commit that undoes Jennifer’s previous wrong commit. Therefore git revert is different than git checkout [commit ID] because checkout is for local changes not committed to the group repository. Below are the right steps and explanations for Jennifer to use git revert, what is the missing command?</p>
+<ol>
+<li><code>________ # Look at the git history of the project to find the commit ID</code></li>
+<li>Copy the ID (the first few characters of the ID, e.g. 0b1d055).</li>
+<li><code>git revert [commit ID]</code></li>
+<li>Type in the new commit message.</li>
+<li>Save and close</li>
+</ol>
 
 </div>
 
@@ -251,122 +246,30 @@ Jennifer is collaborating on her Python script with her colleagues and realizes 
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 class="fa fa-pencil"> # Understanding Workflow and History</h2>
+<h2><span class="fa fa-pencil"></span> # Understanding Workflow and History</h2>
 </div>
 
 
 <div class="panel-body">
 
-
-What is the output of the last command in
-
-```
-$ cd planets
-$ echo "Venus is beautiful and full of love" > venus.txt
+<p>What is the output of the last command in</p>
+<div class="codehilite"><pre><span></span>$ <span class="nb">cd</span> planets
+$ <span class="nb">echo</span> <span class="s2">&quot;Venus is beautiful and full of love&quot;</span> &gt; venus.txt
 $ git add venus.txt
-$ echo "Venus is too hot to be suitable as a base" >> venus.txt
-$ git commit -m "Comment on Venus as an unsuitable base"
+$ <span class="nb">echo</span> <span class="s2">&quot;Venus is too hot to be suitable as a base&quot;</span> &gt;&gt; venus.txt
+$ git commit -m <span class="s2">&quot;Comment on Venus as an unsuitable base&quot;</span>
 $ git checkout HEAD venus.txt
-$ cat venus.txt #this will print the contents of venus.txt to the screen
-```
-
-1. `Venus is too hot to be suitable as a base`
-1. `Venus is beautiful and full of love`
-1. 
-```Venus is beautiful and full of love
-   Venus is too hot to be suitable as a base
-```
-1. Error because you have changed venus.txt without committing the changes
-
-</div>
-
-</section>
+$ cat venus.txt <span class="c1">#this will print the contents of venus.txt to the screen</span>
+</pre></div>
 
 
-
-<section class="solution panel panel-primary">
-<div class="panel-heading">
-<h2 class="fa fa-eye"> Solution</h2>
-</div>
-
-
-<div class="panel-body">
-
-The answer is 2 because git add venus.txt was used only before add the line Venus is too hot to be suitable as a base which was lost when git checkout was executed. Using the flag -a with git commit would have prevented the lost.
-
-</div>
-
-</section>
-
-
-
-<section class="challenge panel panel-success">
-<div class="panel-heading">
-<h2 class="fa fa-pencil"> # Checking Understanding of git diff</h2>
-</div>
-
-
-<div class="panel-body">
-
-Consider this command: git diff HEAD~3 mars.txt. What do you predict this command will do if you execute it? What happens when you do execute it? Why?
-
-Try another command, git diff [ID] mars.txt, where [ID] is replaced with the unique identifier for your most recent commit. What do you think will happen, and what does happen?
-
-</div>
-
-</section>
-
-
-
-<section class="challenge panel panel-success">
-<div class="panel-heading">
-<h2 class="fa fa-pencil"> # Getting Rid of Staged Changes</h2>
-</div>
-
-
-<div class="panel-body">
-
-git checkout can be used to restore a previous commit when unstaged changes have been made, but will it also work for changes that have been staged but not committed? Make a change to mars.txt, add that change, and use git checkout to see if you can remove your change.
-
-</div>
-
-</section>
-
-
-
-<section class="challenge panel panel-success">
-<div class="panel-heading">
-<h2 class="fa fa-pencil"> # Explore and Summarize Histories</h2>
-</div>
-
-
-<div class="panel-body">
-
-Exploring history is an important part of git, often it is a challenge to find the right commit ID, especially if the commit is from several months ago.
-
-Imagine the planets project has more than 50 files. You would like to find a commit with specific text in mars.txt is modified. When you type git log, a very long list appeared, How can you narrow down the search?
-
-Recall that the git diff command allow us to explore one specific file, e.g. git diff mars.txt. We can apply a similar idea here.
-
-```
-$ git log mars.txt
-```
-
-Unfortunately some of these commit messages are very ambiguous e.g. update files. How can you search through these files?
-
-Both git diff and git log are very useful and they summarize a different part of the history for you. Is it possible to combine both? Let’s try the following:
-
-```
-$ git log --patch mars.txt
-```
-
-You should get a long list of output, and you should be able to see both commit messages and the difference between each commit.
-
-Question: What does the following command do?
-
-```
-$ git log --patch HEAD~3 *.txt
-```
+<ol>
+<li><code>Venus is too hot to be suitable as a base</code></li>
+<li><code>Venus is beautiful and full of love</code></li>
+<li><code>Venus is beautiful and full of love
+   Venus is too hot to be suitable as a base</code></li>
+<li>Error because you have changed venus.txt without committing the changes</li>
+</ol>
 
 </div>
 
@@ -376,15 +279,97 @@ $ git log --patch HEAD~3 *.txt
 
 <section class="solution panel panel-primary">
 <div class="panel-heading">
-<h2 class="fa fa-eye"> # Key Points</h2>
+<h2><span class="fa fa-eye"></span> Solution</h2>
 </div>
 
 
 <div class="panel-body">
 
+<p>The answer is 2 because git add venus.txt was used only before add the line Venus is too hot to be suitable as a base which was lost when git checkout was executed. Using the flag -a with git commit would have prevented the lost.</p>
 
-- git diff displays differences between commits.
-- git checkout recovers old versions of files.
+</div>
+
+</section>
+
+
+
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2><span class="fa fa-pencil"></span> # Checking Understanding of git diff</h2>
+</div>
+
+
+<div class="panel-body">
+
+<p>Consider this command: git diff HEAD~3 mars.txt. What do you predict this command will do if you execute it? What happens when you do execute it? Why?</p>
+<p>Try another command, git diff [ID] mars.txt, where [ID] is replaced with the unique identifier for your most recent commit. What do you think will happen, and what does happen?</p>
+
+</div>
+
+</section>
+
+
+
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2><span class="fa fa-pencil"></span> # Getting Rid of Staged Changes</h2>
+</div>
+
+
+<div class="panel-body">
+
+<p>git checkout can be used to restore a previous commit when unstaged changes have been made, but will it also work for changes that have been staged but not committed? Make a change to mars.txt, add that change, and use git checkout to see if you can remove your change.</p>
+
+</div>
+
+</section>
+
+
+
+<section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2><span class="fa fa-pencil"></span> # Explore and Summarize Histories</h2>
+</div>
+
+
+<div class="panel-body">
+
+<p>Exploring history is an important part of git, often it is a challenge to find the right commit ID, especially if the commit is from several months ago.</p>
+<p>Imagine the planets project has more than 50 files. You would like to find a commit with specific text in mars.txt is modified. When you type git log, a very long list appeared, How can you narrow down the search?</p>
+<p>Recall that the git diff command allow us to explore one specific file, e.g. git diff mars.txt. We can apply a similar idea here.</p>
+<div class="codehilite"><pre><span></span>$ git log mars.txt
+</pre></div>
+
+
+<p>Unfortunately some of these commit messages are very ambiguous e.g. update files. How can you search through these files?</p>
+<p>Both git diff and git log are very useful and they summarize a different part of the history for you. Is it possible to combine both? Let’s try the following:</p>
+<div class="codehilite"><pre><span></span>$ git log --patch mars.txt
+</pre></div>
+
+
+<p>You should get a long list of output, and you should be able to see both commit messages and the difference between each commit.</p>
+<p>Question: What does the following command do?</p>
+<div class="codehilite"><pre><span></span>$ git log --patch HEAD~3 *.txt
+</pre></div>
+
+</div>
+
+</section>
+
+
+
+<section class="solution panel panel-primary">
+<div class="panel-heading">
+<h2><span class="fa fa-eye"></span> # Key Points</h2>
+</div>
+
+
+<div class="panel-body">
+
+<ul>
+<li>git diff displays differences between commits.</li>
+<li>git checkout recovers old versions of files.</li>
+</ul>
 
 </div>
 
