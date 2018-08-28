@@ -68,6 +68,15 @@ chapters:
   title: Fundamentals Of Python Part 2
 - children:
   - class: level_1
+    title: Errors And Exceptions
+    url: chapters/06-writing-effective-tests/01-errors-and-exceptions
+  - class: level_1
+    title: Explicit Exceptions
+    url: chapters/06-writing-effective-tests/02-explicit-exceptions
+  class: level_0
+  title: Writing Effective Tests
+- children:
+  - class: level_1
     title: Calculating Pi
     url: chapters/07-approximating-pi/01-calculating-pi
   class: level_0

@@ -7,7 +7,7 @@ previouschapter:
   title: 'Functions'
 nextchapter:
   url: 
-  title: 'Approximating Pi'
+  title: 'Writing Effective Tests'
 redirect_from:
   - 'chapters/04-fundamentals-of-python-part-2/02-comments-and-docs'
 ---
