@@ -1,5 +1,7 @@
 import os
 import argparse
+import itertools
+
 DESCRIPTION = ("Automatically generate a SUMMARY.md file from a collection"
                " of Jupyter Notebooks/markdown files that make a textbook."
                " The alpha-numeric name of folders/files will be used to choose the order of chapters.")
@@ -11,8 +13,11 @@ parser.add_argument("--filename_split_char", default='_', help="The character us
 parser.add_argument("--overwrite", action='store_true', help="Overwrite SUMMARY.md if it already exists.")
 
 def files_to_markdown(files, indentation='  '):
+    def key(l):
+        return l[-1]
+    files = sorted(files, key=key)
     md = []
-    for title, link, level in files:
+    for title, link, level, order in files:
         md.append(level*indentation + '* [{}]({})'.format(title, link))
     md = [ii+'\n' for ii in md]
     return md
@@ -21,6 +26,7 @@ def files_to_markdown(files, indentation='  '):
 def notebooks_folder_to_files(notebooks_folder):
     last_folder = ''
     all_files = []
+    order = 0
     for ii, (dirpath, dirnames, filenames) in enumerate(os.walk(notebooks_folder)):
         if '.ipynb_checkpoints' in dirpath:
             continue
@@ -32,11 +38,11 @@ def notebooks_folder_to_files(notebooks_folder):
             sf_parts = subfolder_title.split()
             try:
                 # If first part of the filename is a number for ordering, remove it
-                int(sf_parts[0])
+                order = int(sf_parts[0])
                 subfolder_title = " ".join(sf_parts[1:])
             except Exception:
                 pass
-            all_files.append((subfolder_title, '', level-1))
+            all_files.append((subfolder_title, '', level-1, order))
 
         filenames.sort()
         for filename in filenames:
@@ -54,7 +60,7 @@ def notebooks_folder_to_files(notebooks_folder):
             title = title.replace(suffix, '')
             url = os.path.join(notebooks_folder, rel_folder, filename)
             last_folder = rel_folder
-            all_files.append((title, url, level))
+            all_files.append((title, url, level, order))
     # all_files = [ii for ii in all_files if len(ii[1]) > 0]
     return all_files
 
@@ -69,8 +75,8 @@ if __name__ == '__main__':
     files = notebooks_folder_to_files(args.textbook_folder)
     print('Found {} chapters'.format(len(files)))
     md = files_to_markdown(files)
-    
-    
+
+
     out_path_file = os.path.join(args.out_path, 'SUMMARY.md')
     if os.path.exists(out_path_file) and bool(args.overwrite) is False:
         raise ValueError('SUMMARY.md file exists, delete the file or set `overwrite=True`')

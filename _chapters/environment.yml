@@ -1,0 +1,11 @@
+name: stfc-summer-school
+
+channels:
+  - conda-forge
+
+dependencies:
+  - sunpy
+  - astropy
+  - jupyter
+  - matplotlib
+  - numpy
