@@ -11,5 +11,5 @@ git add notebooks/
 git commit -m "update notebooks before build"
 rm -r _chapters/*
 python scripts/generate_summary_from_folders.py notebooks/ --filename_split_char=- --overwrite
-# python scripts/execute_all_notebooks.py
+python scripts/execute_all_notebooks.py
 python scripts/generate_textbook.py

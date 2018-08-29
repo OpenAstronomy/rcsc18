@@ -48,7 +48,7 @@ def _prepare_link(link):
 
 def _strip_suffixes(string, suffixes=None):
     """Remove suffixes so we can create links."""
-    suffixes = ['.ipynb', '.md'] if suffixes is None else suffixes
+    suffixes = ['_instructor.ipynb', '.ipynb', '.md'] if suffixes is None else suffixes
     for suff in suffixes:
         string = string.replace(suff, '')
     return string

@@ -47,8 +47,13 @@ def notebooks_folder_to_files(notebooks_folder):
         filenames.sort()
         for filename in filenames:
             suffix = os.path.splitext(filename)[-1]
-            if not suffix in ['.ipynb', '.md']:
+            if suffix not in ['.ipynb', '.md']:
                 continue
+            if suffix == ".ipynb":
+                if "_instructor" not in filename:
+                    continue
+                else:
+                    suffix = "_instructor.ipynb"
             filename_parts = filename.split(args.filename_split_char)
             try:
                 # If first part of the filename is a number for ordering, remove it
