@@ -1,6 +1,7 @@
 import os
 import argparse
-import itertools
+
+from titlecase import titlecase
 
 DESCRIPTION = ("Automatically generate a SUMMARY.md file from a collection"
                " of Jupyter Notebooks/markdown files that make a textbook."
@@ -12,6 +13,7 @@ parser.add_argument("--out_path", default=None, help="Path to the folder where t
 parser.add_argument("--filename_split_char", default='_', help="The character used to split words in the file name. Used to generate titles from file names. Defaults to '_'")
 parser.add_argument("--overwrite", action='store_true', help="Overwrite SUMMARY.md if it already exists.")
 
+
 def files_to_markdown(files, indentation='  '):
     def key(l):
         return l[-1]
@@ -21,6 +23,13 @@ def files_to_markdown(files, indentation='  '):
         md.append(level*indentation + '* [{}]({})'.format(title, link))
     md = [ii+'\n' for ii in md]
     return md
+
+
+def titleize_list(segments, suffix=None):
+    title = ' '.join(segments)
+    if suffix:
+        title = title.replace(suffix, "")
+    return titlecase(title)
 
 
 def notebooks_folder_to_files(notebooks_folder):
@@ -34,7 +43,8 @@ def notebooks_folder_to_files(notebooks_folder):
         split_subfolders = rel_folder.split('/')
         level = len(split_subfolders) if split_subfolders[0] != '' else 0
         if last_folder != rel_folder:
-            subfolder_title = ' '.join(ii.capitalize() for ii in split_subfolders[-1].split(args.filename_split_char))
+            subfolder_title = titleize_list(split_subfolders[-1].split(
+                args.filename_split_char))
             sf_parts = subfolder_title.split()
             try:
                 # If first part of the filename is a number for ordering, remove it
@@ -61,8 +71,7 @@ def notebooks_folder_to_files(notebooks_folder):
                 filename_parts = filename_parts[1:]
             except Exception:
                 pass
-            title = ' '.join(ii.capitalize() for ii in filename_parts)
-            title = title.replace(suffix, '')
+            title = titleize_list(filename_parts, suffix)
             url = os.path.join(notebooks_folder, rel_folder, filename)
             last_folder = rel_folder
             all_files.append((title, url, level, order))
