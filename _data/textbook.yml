@@ -8,23 +8,23 @@ chapters:
   url: chapters/00-lessons
 - children:
   - class: level_1
-    title: Introduction
-    url: chapters/01-bash/01-Introduction
+    title: Introducing the Shell
+    url: chapters/01-bash/01-introducing-the-shell
   - class: level_1
-    title: Files And Directories
+    title: Files and Directories
     url: chapters/01-bash/02-files-and-directories
   - class: level_1
-    title: Working With Files And Directories
+    title: Working With Files and Directories
     url: chapters/01-bash/03-working-with-files-and-directories
   class: level_0
   title: Bash
 - children:
   - class: level_1
-    title: Introduction
-    url: chapters/02-git/01-introduction
+    title: Introduction to Version Control
+    url: chapters/02-git/01-introduction-to-version-control
   - class: level_1
-    title: Creating Repos
-    url: chapters/02-git/02-creating-repos
+    title: Creating Repositories
+    url: chapters/02-git/02-creating-repositories
   - class: level_1
     title: Tracking Changes
     url: chapters/02-git/03-tracking-changes
@@ -41,56 +41,79 @@ chapters:
   title: Git
 - children:
   - class: level_1
-    title: Introduction To Python
-    url: chapters/03-fundamentals-of-python-part-1/01-introduction-to-python
+    title: Introduction to Python
+    url: chapters/03-fundamentals-of-python/01-introduction-to-python
   - class: level_1
     title: Repeating Actions
-    url: chapters/03-fundamentals-of-python-part-1/02-repeating-actions
+    url: chapters/03-fundamentals-of-python/02-repeating-actions
   - class: level_1
     title: Lists
-    url: chapters/03-fundamentals-of-python-part-1/03-lists
+    url: chapters/03-fundamentals-of-python/03-lists
   - class: level_1
     title: Processing Files
-    url: chapters/03-fundamentals-of-python-part-1/04-processing-files
+    url: chapters/03-fundamentals-of-python/04-processing-files
   - class: level_1
     title: Making Choices
-    url: chapters/03-fundamentals-of-python-part-1/05-making-choices
-  class: level_0
-  title: Fundamentals Of Python Part 1
-- children:
+    url: chapters/03-fundamentals-of-python/05-making-choices
   - class: level_1
     title: Functions
-    url: chapters/04-fundamentals-of-python-part-2/01-functions
+    url: chapters/03-fundamentals-of-python/06-functions
   - class: level_1
-    title: Comments And Docs
-    url: chapters/04-fundamentals-of-python-part-2/02-comments-and-docs
+    title: Comments and Docs
+    url: chapters/03-fundamentals-of-python/07-comments-and-docs
   class: level_0
-  title: Fundamentals Of Python Part 2
+  title: Fundamentals of Python
 - children:
   - class: level_1
-    title: Errors And Exceptions
-    url: chapters/06-writing-effective-tests/01-errors-and-exceptions
+    title: Scripts
+    url: chapters/04-further-python/01-scripts
+  - class: level_1
+    title: Modules
+    url: chapters/04-further-python/02-modules
+  - class: level_1
+    title: Imports and Namespaces
+    url: chapters/04-further-python/03-imports-and-namespaces
+  class: level_0
+  title: Further Python
+- children:
+  - class: level_1
+    title: Errors and Exceptions
+    url: chapters/05-writing-effective-tests/01-errors-and-exceptions
   - class: level_1
     title: Explicit Exceptions
-    url: chapters/06-writing-effective-tests/02-explicit-exceptions
+    url: chapters/05-writing-effective-tests/02-explicit-exceptions
+  - class: level_1
+    title: Testing Your Code
+    url: chapters/05-writing-effective-tests/03-testing-your-code
+  - class: level_1
+    title: Testing Your Code With Pytest
+    url: chapters/05-writing-effective-tests/04-testing-your-code-with-pytest
   class: level_0
   title: Writing Effective Tests
 - children:
   - class: level_1
     title: Calculating Pi
-    url: chapters/07-approximating-pi/01-calculating-pi
+    url: chapters/06-approximating-pi/01-calculating-pi
   class: level_0
   title: Approximating Pi
 - children:
   - class: level_1
     title: Remotes
-    url: chapters/08-collaborating-with-git/01-remotes
+    url: chapters/07-collaborating-with-git/01-remotes
   - class: level_1
     title: Making Work Public
-    url: chapters/08-collaborating-with-git/02-making-work-public
+    url: chapters/07-collaborating-with-git/02-making-work-public
   - class: level_1
     title: Forks
-    url: chapters/08-collaborating-with-git/03-forks
+    url: chapters/07-collaborating-with-git/03-forks
   class: level_0
   title: Collaborating With Git
+- class: level_0
+  title: Collaborating With Git
+- children:
+  - class: level_1
+    title: Images
+    url: chapters/12-images-and-vis/01-images
+  class: level_0
+  title: Images and Vis
 first_chapter_url: chapters/00-lessons
