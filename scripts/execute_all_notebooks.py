@@ -6,6 +6,7 @@ import nbformat
 ipynb_files = glob('./notebooks/**/*_instructor.ipynb', recursive=True)
 failed_files = []
 for ifile in tqdm(ipynb_files):
+    print(ifile)
     call = 'jupyter nbconvert --inplace --to notebook --allow-errors --execute {}'.format(ifile)
     try:
         out = check_call(call.split())
