@@ -79,7 +79,7 @@
 {% if toc_items.size > 1 %}
   <aside class="sidebar__right">
     <nav class="toc">
-      <header><h4 class="nav__title"><i class="fas fa-{{ page.toc_icon | default: 'file-alt' }}"></i> {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label }}</h4></header>
+      <header><h4 class="nav__title"><i class="fa fa-{{ page.toc_icon | default: 'file-alt' }}"></i> {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label }}</h4></header>
       {{ my_toc | markdownify | strip }}
     </nav>
   </aside>
