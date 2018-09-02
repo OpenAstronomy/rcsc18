@@ -1185,8 +1185,8 @@ ls -F -a
 ./			     04-further-python/		   environment.yml
 ../			     05-writing-effective-tests/   .git
 00-lessons_instructor.ipynb  06-approximating-pi/	   .gitignore
-00-lessons.ipynb	     07-collaborating-with-git/    LICENCE.md
-01-bash/		     09-units/			   README.md
+00-lessons.ipynb	     07-collaborating-with-git/    LICENCE
+01-bash/		     09-units/			   README
 02-git/			     12-images-and-visualisation/
 03-fundamentals-of-python/   13-images-in-astronomy/
 

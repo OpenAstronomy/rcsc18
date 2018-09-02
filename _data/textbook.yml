@@ -6,12 +6,6 @@ chapters:
 - class: level_0
   title: Lessons
   url: chapters/00-lessons
-- class: level_0
-  title: Licence
-  url: chapters/LICENCE
-- class: level_0
-  title: Readme
-  url: chapters/README
 - children:
   - class: level_1
     title: Introducing the Shell

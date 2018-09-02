@@ -1,6 +1,4 @@
 * [Lessons](notebooks/00-lessons_instructor.ipynb)
-* [Licence](notebooks/LICENCE.md)
-* [Readme](notebooks/README.md)
 * [Bash]()
   * [Introducing the Shell](notebooks/01-bash/01-introducing-the-shell_instructor.ipynb)
   * [Files and Directories](notebooks/01-bash/02-files-and-directories_instructor.ipynb)

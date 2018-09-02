@@ -6,8 +6,8 @@ previouschapter:
   url: 
   title: ''
 nextchapter:
-  url: chapters/LICENCE
-  title: 'Licence'
+  url: 
+  title: 'Bash'
 redirect_from:
   - 'chapters/00-lessons'
 ---
