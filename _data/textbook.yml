@@ -6,6 +6,12 @@ chapters:
 - class: level_0
   title: Lessons
   url: chapters/00-lessons
+- class: level_0
+  title: Licence
+  url: chapters/LICENCE
+- class: level_0
+  title: Readme
+  url: chapters/README
 - children:
   - class: level_1
     title: Introducing the Shell
@@ -108,12 +114,22 @@ chapters:
     url: chapters/07-collaborating-with-git/03-forks
   class: level_0
   title: Collaborating With Git
-- class: level_0
-  title: Collaborating With Git
+- children:
+  - class: level_1
+    title: Units
+    url: chapters/09-units/01-units
+  class: level_0
+  title: Units
 - children:
   - class: level_1
     title: Images
-    url: chapters/12-images-and-vis/01-images
+    url: chapters/12-images-and-visualisation/01-images
   class: level_0
-  title: Images and Vis
+  title: Images and Visualisation
+- children:
+  - class: level_1
+    title: Images in Astronomy
+    url: chapters/13-images-in-astronomy/01-images-in-astronomy
+  class: level_0
+  title: Images in Astronomy
 first_chapter_url: chapters/00-lessons
