@@ -85,8 +85,8 @@ git remote -v
 
 {:.output_stream}
 ```
-origin	https://github.com/cadair/rcsc_notebooks (fetch)
-origin	https://github.com/cadair/rcsc_notebooks (push)
+origin	https://github.com/OpenAstronomy/rcsc18_lessons.git (fetch)
+origin	https://github.com/OpenAstronomy/rcsc18_lessons.git (push)
 
 
 ```

@@ -734,8 +734,13 @@ def another_function():
 
 <div class="panel-body">
 
-<p>3 <code>NameError</code>s for <code>number</code> being misspelled, for <code>message</code> not defined, and for <code>a</code> not being in quotes.
-Fixed version:</p>
+<p>3 <code>NameError</code>s for:</p>
+<ul>
+<li><code>number</code> being misspelled</li>
+<li><code>message</code> not defined</li>
+<li><code>a</code> not being in quotes.</li>
+</ul>
+<p>Fixed version:</p>
 
 </div>
 

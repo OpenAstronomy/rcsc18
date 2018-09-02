@@ -688,3 +688,8 @@ input. A call to your function should look like this:</p>
 - Specify default values for parameters when defining a function using `name=value` in the parameter list.
 - Parameters can be passed by matching based on name, by position, or by omitting them (in which case the default value is used).
 - Put code whose parameters change frequently in a function, then call it with different parameter values to customize its behavior.
+
+---
+The material in this notebook is derived from the Software Carpentry lessons
+&copy; [Software Carpentry](http://software-carpentry.org/) under the terms
+of the [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) license.

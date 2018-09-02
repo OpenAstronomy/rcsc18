@@ -259,3 +259,8 @@ plt.show()
 
 ![png](../../images/chapters/03-fundamentals-of-python/04-processing-files_instructor_16_0.png)
 
+
+---
+The material in this notebook is derived from the Software Carpentry lessons
+&copy; [Software Carpentry](http://software-carpentry.org/) under the terms
+of the [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) license.

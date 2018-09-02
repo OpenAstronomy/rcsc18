@@ -258,34 +258,34 @@ OSError                                   Traceback (most recent call last)
 
 {:.output_traceback_line}
 ```
-/opt/miniconda/envs/stfc/lib/python3.7/site-packages/numpy/lib/npyio.py in loadtxt(fname, dtype, comments, delimiter, converters, skiprows, usecols, unpack, ndmin, encoding)
-    915             fname = str(fname)
-    916         if _is_string_like(fname):
---> 917             fh = np.lib._datasource.open(fname, 'rt', encoding=encoding)
-    918             fencoding = getattr(fh, 'encoding', 'latin1')
-    919             fh = iter(fh)
+/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/lib/npyio.py in loadtxt(fname, dtype, comments, delimiter, converters, skiprows, usecols, unpack, ndmin, encoding)
+    924             fname = str(fname)
+    925         if _is_string_like(fname):
+--> 926             fh = np.lib._datasource.open(fname, 'rt', encoding=encoding)
+    927             fencoding = getattr(fh, 'encoding', 'latin1')
+    928             fh = iter(fh)
 
 ```
 
 {:.output_traceback_line}
 ```
-/opt/miniconda/envs/stfc/lib/python3.7/site-packages/numpy/lib/_datasource.py in open(path, mode, destpath, encoding, newline)
-    258 
-    259     ds = DataSource(destpath)
---> 260     return ds.open(path, mode, encoding=encoding, newline=newline)
-    261 
-    262 
+/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/lib/_datasource.py in open(path, mode, destpath, encoding, newline)
+    260 
+    261     ds = DataSource(destpath)
+--> 262     return ds.open(path, mode, encoding=encoding, newline=newline)
+    263 
+    264 
 
 ```
 
 {:.output_traceback_line}
 ```
-/opt/miniconda/envs/stfc/lib/python3.7/site-packages/numpy/lib/_datasource.py in open(self, path, mode, encoding, newline)
-    614                                       encoding=encoding, newline=newline)
-    615         else:
---> 616             raise IOError("%s not found." % path)
-    617 
-    618 
+/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/lib/_datasource.py in open(self, path, mode, encoding, newline)
+    616                                       encoding=encoding, newline=newline)
+    617         else:
+--> 618             raise IOError("%s not found." % path)
+    619 
+    620 
 
 ```
 
@@ -351,34 +351,34 @@ OSError                                   Traceback (most recent call last)
 
 {:.output_traceback_line}
 ```
-/opt/miniconda/envs/stfc/lib/python3.7/site-packages/numpy/lib/npyio.py in loadtxt(fname, dtype, comments, delimiter, converters, skiprows, usecols, unpack, ndmin, encoding)
-    915             fname = str(fname)
-    916         if _is_string_like(fname):
---> 917             fh = np.lib._datasource.open(fname, 'rt', encoding=encoding)
-    918             fencoding = getattr(fh, 'encoding', 'latin1')
-    919             fh = iter(fh)
+/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/lib/npyio.py in loadtxt(fname, dtype, comments, delimiter, converters, skiprows, usecols, unpack, ndmin, encoding)
+    924             fname = str(fname)
+    925         if _is_string_like(fname):
+--> 926             fh = np.lib._datasource.open(fname, 'rt', encoding=encoding)
+    927             fencoding = getattr(fh, 'encoding', 'latin1')
+    928             fh = iter(fh)
 
 ```
 
 {:.output_traceback_line}
 ```
-/opt/miniconda/envs/stfc/lib/python3.7/site-packages/numpy/lib/_datasource.py in open(path, mode, destpath, encoding, newline)
-    258 
-    259     ds = DataSource(destpath)
---> 260     return ds.open(path, mode, encoding=encoding, newline=newline)
-    261 
-    262 
+/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/lib/_datasource.py in open(path, mode, destpath, encoding, newline)
+    260 
+    261     ds = DataSource(destpath)
+--> 262     return ds.open(path, mode, encoding=encoding, newline=newline)
+    263 
+    264 
 
 ```
 
 {:.output_traceback_line}
 ```
-/opt/miniconda/envs/stfc/lib/python3.7/site-packages/numpy/lib/_datasource.py in open(self, path, mode, encoding, newline)
-    614                                       encoding=encoding, newline=newline)
-    615         else:
---> 616             raise IOError("%s not found." % path)
-    617 
-    618 
+/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/lib/_datasource.py in open(self, path, mode, encoding, newline)
+    616                                       encoding=encoding, newline=newline)
+    617         else:
+--> 618             raise IOError("%s not found." % path)
+    619 
+    620 
 
 ```
 
@@ -1469,34 +1469,34 @@ OSError                                   Traceback (most recent call last)
 
 {:.output_traceback_line}
 ```
-/opt/miniconda/envs/stfc/lib/python3.7/site-packages/numpy/lib/npyio.py in loadtxt(fname, dtype, comments, delimiter, converters, skiprows, usecols, unpack, ndmin, encoding)
-    915             fname = str(fname)
-    916         if _is_string_like(fname):
---> 917             fh = np.lib._datasource.open(fname, 'rt', encoding=encoding)
-    918             fencoding = getattr(fh, 'encoding', 'latin1')
-    919             fh = iter(fh)
+/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/lib/npyio.py in loadtxt(fname, dtype, comments, delimiter, converters, skiprows, usecols, unpack, ndmin, encoding)
+    924             fname = str(fname)
+    925         if _is_string_like(fname):
+--> 926             fh = np.lib._datasource.open(fname, 'rt', encoding=encoding)
+    927             fencoding = getattr(fh, 'encoding', 'latin1')
+    928             fh = iter(fh)
 
 ```
 
 {:.output_traceback_line}
 ```
-/opt/miniconda/envs/stfc/lib/python3.7/site-packages/numpy/lib/_datasource.py in open(path, mode, destpath, encoding, newline)
-    258 
-    259     ds = DataSource(destpath)
---> 260     return ds.open(path, mode, encoding=encoding, newline=newline)
-    261 
-    262 
+/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/lib/_datasource.py in open(path, mode, destpath, encoding, newline)
+    260 
+    261     ds = DataSource(destpath)
+--> 262     return ds.open(path, mode, encoding=encoding, newline=newline)
+    263 
+    264 
 
 ```
 
 {:.output_traceback_line}
 ```
-/opt/miniconda/envs/stfc/lib/python3.7/site-packages/numpy/lib/_datasource.py in open(self, path, mode, encoding, newline)
-    614                                       encoding=encoding, newline=newline)
-    615         else:
---> 616             raise IOError("%s not found." % path)
-    617 
-    618 
+/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/lib/_datasource.py in open(self, path, mode, encoding, newline)
+    616                                       encoding=encoding, newline=newline)
+    617         else:
+--> 618             raise IOError("%s not found." % path)
+    619 
+    620 
 
 ```
 
@@ -1900,34 +1900,34 @@ OSError                                   Traceback (most recent call last)
 
 {:.output_traceback_line}
 ```
-/opt/miniconda/envs/stfc/lib/python3.7/site-packages/numpy/lib/npyio.py in loadtxt(fname, dtype, comments, delimiter, converters, skiprows, usecols, unpack, ndmin, encoding)
-    915             fname = str(fname)
-    916         if _is_string_like(fname):
---> 917             fh = np.lib._datasource.open(fname, 'rt', encoding=encoding)
-    918             fencoding = getattr(fh, 'encoding', 'latin1')
-    919             fh = iter(fh)
+/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/lib/npyio.py in loadtxt(fname, dtype, comments, delimiter, converters, skiprows, usecols, unpack, ndmin, encoding)
+    924             fname = str(fname)
+    925         if _is_string_like(fname):
+--> 926             fh = np.lib._datasource.open(fname, 'rt', encoding=encoding)
+    927             fencoding = getattr(fh, 'encoding', 'latin1')
+    928             fh = iter(fh)
 
 ```
 
 {:.output_traceback_line}
 ```
-/opt/miniconda/envs/stfc/lib/python3.7/site-packages/numpy/lib/_datasource.py in open(path, mode, destpath, encoding, newline)
-    258 
-    259     ds = DataSource(destpath)
---> 260     return ds.open(path, mode, encoding=encoding, newline=newline)
-    261 
-    262 
+/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/lib/_datasource.py in open(path, mode, destpath, encoding, newline)
+    260 
+    261     ds = DataSource(destpath)
+--> 262     return ds.open(path, mode, encoding=encoding, newline=newline)
+    263 
+    264 
 
 ```
 
 {:.output_traceback_line}
 ```
-/opt/miniconda/envs/stfc/lib/python3.7/site-packages/numpy/lib/_datasource.py in open(self, path, mode, encoding, newline)
-    614                                       encoding=encoding, newline=newline)
-    615         else:
---> 616             raise IOError("%s not found." % path)
-    617 
-    618 
+/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/lib/_datasource.py in open(self, path, mode, encoding, newline)
+    616                                       encoding=encoding, newline=newline)
+    617         else:
+--> 618             raise IOError("%s not found." % path)
+    619 
+    620 
 
 ```
 
@@ -2075,34 +2075,34 @@ OSError                                   Traceback (most recent call last)
 
 {:.output_traceback_line}
 ```
-/opt/miniconda/envs/stfc/lib/python3.7/site-packages/numpy/lib/npyio.py in loadtxt(fname, dtype, comments, delimiter, converters, skiprows, usecols, unpack, ndmin, encoding)
-    915             fname = str(fname)
-    916         if _is_string_like(fname):
---> 917             fh = np.lib._datasource.open(fname, 'rt', encoding=encoding)
-    918             fencoding = getattr(fh, 'encoding', 'latin1')
-    919             fh = iter(fh)
+/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/lib/npyio.py in loadtxt(fname, dtype, comments, delimiter, converters, skiprows, usecols, unpack, ndmin, encoding)
+    924             fname = str(fname)
+    925         if _is_string_like(fname):
+--> 926             fh = np.lib._datasource.open(fname, 'rt', encoding=encoding)
+    927             fencoding = getattr(fh, 'encoding', 'latin1')
+    928             fh = iter(fh)
 
 ```
 
 {:.output_traceback_line}
 ```
-/opt/miniconda/envs/stfc/lib/python3.7/site-packages/numpy/lib/_datasource.py in open(path, mode, destpath, encoding, newline)
-    258 
-    259     ds = DataSource(destpath)
---> 260     return ds.open(path, mode, encoding=encoding, newline=newline)
-    261 
-    262 
+/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/lib/_datasource.py in open(path, mode, destpath, encoding, newline)
+    260 
+    261     ds = DataSource(destpath)
+--> 262     return ds.open(path, mode, encoding=encoding, newline=newline)
+    263 
+    264 
 
 ```
 
 {:.output_traceback_line}
 ```
-/opt/miniconda/envs/stfc/lib/python3.7/site-packages/numpy/lib/_datasource.py in open(self, path, mode, encoding, newline)
-    614                                       encoding=encoding, newline=newline)
-    615         else:
---> 616             raise IOError("%s not found." % path)
-    617 
-    618 
+/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/lib/_datasource.py in open(self, path, mode, encoding, newline)
+    616                                       encoding=encoding, newline=newline)
+    617         else:
+--> 618             raise IOError("%s not found." % path)
+    619 
+    620 
 
 ```
 

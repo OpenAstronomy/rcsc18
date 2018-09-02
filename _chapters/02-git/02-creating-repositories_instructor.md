@@ -210,3 +210,8 @@ $ ls -a          <span class="c1"># ensure the .git sub-directory is present ind
 
 </section>
 
+
+---
+The material in this notebook is derived from the Software Carpentry lessons
+&copy; [Software Carpentry](http://software-carpentry.org/) under the terms
+of the [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) license.

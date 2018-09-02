@@ -328,202 +328,202 @@ man ls
 ```
 LS(1)                            User Commands                           LS(1)
 
-NNAAMMEE
+[1mNAME[0m
        ls - list directory contents
 
-SSYYNNOOPPSSIISS
-       llss [_O_P_T_I_O_N]... [_F_I_L_E]...
+[1mSYNOPSIS[0m
+       [1mls [22m[[4mOPTION[24m]... [[4mFILE[24m]...
 
-DDEESSCCRRIIPPTTIIOONN
+[1mDESCRIPTION[0m
        List  information  about  the FILEs (the current directory by default).
-       Sort entries alphabetically if none of --ccffttuuvvSSUUXX nor ----ssoorrtt  is  speci‐
+       Sort entries alphabetically if none of [1m-cftuvSUX [22mnor [1m--sort  [22mis  speci‐
        fied.
 
        Mandatory  arguments  to  long  options are mandatory for short options
        too.
 
-       --aa, ----aallll
+       [1m-a[22m, [1m--all[0m
               do not ignore entries starting with .
 
-       --AA, ----aallmmoosstt--aallll
+       [1m-A[22m, [1m--almost-all[0m
               do not list implied . and ..
 
-       ----aauutthhoorr
-              with --ll, print the author of each file
+       [1m--author[0m
+              with [1m-l[22m, print the author of each file
 
-       --bb, ----eessccaappee
+       [1m-b[22m, [1m--escape[0m
               print C-style escapes for nongraphic characters
 
-       ----bblloocckk--ssiizzee=_S_I_Z_E
-              with  --ll,  scale  sizes  by  SIZE  when  printing  them;   e.g.,
+       [1m--block-size[22m=[4mSIZE[0m
+              with  [1m-l[22m,  scale  sizes  by  SIZE  when  printing  them;   e.g.,
               '--block-size=M'; see SIZE format below
 
-       --BB, ----iiggnnoorree--bbaacckkuuppss
+       [1m-B[22m, [1m--ignore-backups[0m
               do not list implied entries ending with ~
 
-       --cc     with --lltt: sort by, and show, ctime (time of last modification of
-              file status information); with --ll: show ctime and sort by  name;
+       [1m-c     [22mwith [1m-lt[22m: sort by, and show, ctime (time of last modification of
+              file status information); with [1m-l[22m: show ctime and sort by  name;
               otherwise: sort by ctime, newest first
 
-       --CC     list entries by columns
+       [1m-C     [22mlist entries by columns
 
-       ----ccoolloorr[=_W_H_E_N]
+       [1m--color[22m[=[4mWHEN[24m]
               colorize  the output; WHEN can be 'always' (default if omitted),
               'auto', or 'never'; more info below
 
-       --dd, ----ddiirreeccttoorryy
+       [1m-d[22m, [1m--directory[0m
               list directories themselves, not their contents
 
-       --DD, ----ddiirreedd
+       [1m-D[22m, [1m--dired[0m
               generate output designed for Emacs' dired mode
 
-       --ff     do not sort, enable --aaUU, disable --llss ----ccoolloorr
+       [1m-f     [22mdo not sort, enable [1m-aU[22m, disable [1m-ls --color[0m
 
-       --FF, ----ccllaassssiiffyy
+       [1m-F[22m, [1m--classify[0m
               append indicator (one of */=>@|) to entries
 
-       ----ffiillee--ttyyppee
+       [1m--file-type[0m
               likewise, except do not append '*'
 
-       ----ffoorrmmaatt=_W_O_R_D
-              across --xx, commas --mm, horizontal --xx, long --ll, single-column  --11,
-              verbose --ll, vertical --CC
+       [1m--format[22m=[4mWORD[0m
+              across [1m-x[22m, commas [1m-m[22m, horizontal [1m-x[22m, long [1m-l[22m, single-column  [1m-1[22m,
+              verbose [1m-l[22m, vertical [1m-C[0m
 
-       ----ffuullll--ttiimmee
-              like --ll ----ttiimmee--ssttyyllee=_f_u_l_l_-_i_s_o
+       [1m--full-time[0m
+              like [1m-l --time-style[22m=[4mfull-iso[0m
 
-       --gg     like --ll, but do not list owner
+       [1m-g     [22mlike [1m-l[22m, but do not list owner
 
-       ----ggrroouupp--ddiirreeccttoorriieess--ffiirrsstt
+       [1m--group-directories-first[0m
               group directories before files;
 
-              can   be  augmented  with  a  ----ssoorrtt  option,  but  any  use  of
-              ----ssoorrtt=_n_o_n_e (--UU) disables grouping
+              can   be  augmented  with  a  [1m--sort  [22moption,  but  any  use  of
+              [1m--sort[22m=[4mnone[24m ([1m-U[22m) disables grouping
 
-       --GG, ----nnoo--ggrroouupp
+       [1m-G[22m, [1m--no-group[0m
               in a long listing, don't print group names
 
-       --hh, ----hhuummaann--rreeaaddaabbllee
-              with --ll and --ss, print sizes like 1K 234M 2G etc.
+       [1m-h[22m, [1m--human-readable[0m
+              with [1m-l [22mand [1m-s[22m, print sizes like 1K 234M 2G etc.
 
-       ----ssii   likewise, but use powers of 1000 not 1024
+       [1m--si   [22mlikewise, but use powers of 1000 not 1024
 
-       --HH, ----ddeerreeffeerreennccee--ccoommmmaanndd--lliinnee
+       [1m-H[22m, [1m--dereference-command-line[0m
               follow symbolic links listed on the command line
 
-       ----ddeerreeffeerreennccee--ccoommmmaanndd--lliinnee--ssyymmlliinnkk--ttoo--ddiirr
+       [1m--dereference-command-line-symlink-to-dir[0m
               follow each command line symbolic link
 
               that points to a directory
 
-       ----hhiiddee=_P_A_T_T_E_R_N
+       [1m--hide[22m=[4mPATTERN[0m
               do not list implied entries matching shell  PATTERN  (overridden
-              by --aa or --AA)
+              by [1m-a [22mor [1m-A[22m)
 
-       ----hhyyppeerrlliinnkk[=_W_H_E_N]
+       [1m--hyperlink[22m[=[4mWHEN[24m]
               hyperlink file names; WHEN can be 'always' (default if omitted),
               'auto', or 'never'
 
-       ----iinnddiiccaattoorr--ssttyyllee=_W_O_R_D
+       [1m--indicator-style[22m=[4mWORD[0m
               append indicator with style WORD to entry names: none (default),
-              slash (--pp), file-type (----ffiillee--ttyyppee), classify (--FF)
+              slash ([1m-p[22m), file-type ([1m--file-type[22m), classify ([1m-F[22m)
 
-       --ii, ----iinnooddee
+       [1m-i[22m, [1m--inode[0m
               print the index number of each file
 
-       --II, ----iiggnnoorree=_P_A_T_T_E_R_N
+       [1m-I[22m, [1m--ignore[22m=[4mPATTERN[0m
               do not list implied entries matching shell PATTERN
 
-       --kk, ----kkiibbiibbyytteess
-              default  to  1024-byte  blocks for disk usage; used only with --ss
+       [1m-k[22m, [1m--kibibytes[0m
+              default  to  1024-byte  blocks for disk usage; used only with [1m-s[0m
               and per directory totals
 
-       --ll     use a long listing format
+       [1m-l     [22muse a long listing format
 
-       --LL, ----ddeerreeffeerreennccee
+       [1m-L[22m, [1m--dereference[0m
               when showing file information for a symbolic link, show informa‐
               tion  for  the file the link references rather than for the link
               itself
 
-       --mm     fill width with a comma separated list of entries
+       [1m-m     [22mfill width with a comma separated list of entries
 
-       --nn, ----nnuummeerriicc--uuiidd--ggiidd
-              like --ll, but list numeric user and group IDs
+       [1m-n[22m, [1m--numeric-uid-gid[0m
+              like [1m-l[22m, but list numeric user and group IDs
 
-       --NN, ----lliitteerraall
+       [1m-N[22m, [1m--literal[0m
               print entry names without quoting
 
-       --oo     like --ll, but do not list group information
+       [1m-o     [22mlike [1m-l[22m, but do not list group information
 
-       --pp, ----iinnddiiccaattoorr--ssttyyllee=_s_l_a_s_h
+       [1m-p[22m, [1m--indicator-style[22m=[4mslash[0m
               append / indicator to directories
 
-       --qq, ----hhiiddee--ccoonnttrrooll--cchhaarrss
+       [1m-q[22m, [1m--hide-control-chars[0m
               print ? instead of nongraphic characters
 
-       ----sshhooww--ccoonnttrrooll--cchhaarrss
+       [1m--show-control-chars[0m
               show nongraphic characters as-is (the default, unless program is
               'ls' and output is a terminal)
 
-       --QQ, ----qquuoottee--nnaammee
+       [1m-Q[22m, [1m--quote-name[0m
               enclose entry names in double quotes
 
-       ----qquuoottiinngg--ssttyyllee=_W_O_R_D
+       [1m--quoting-style[22m=[4mWORD[0m
               use  quoting style WORD for entry names: literal, locale, shell,
               shell-always,  shell-escape,  shell-escape-always,   c,   escape
               (overrides QUOTING_STYLE environment variable)
 
-       --rr, ----rreevveerrssee
+       [1m-r[22m, [1m--reverse[0m
               reverse order while sorting
 
-       --RR, ----rreeccuurrssiivvee
+       [1m-R[22m, [1m--recursive[0m
               list subdirectories recursively
 
-       --ss, ----ssiizzee
+       [1m-s[22m, [1m--size[0m
               print the allocated size of each file, in blocks
 
-       --SS     sort by file size, largest first
+       [1m-S     [22msort by file size, largest first
 
-       ----ssoorrtt=_W_O_R_D
-              sort  by  WORD instead of name: none (--UU), size (--SS), time (--tt),
-              version (--vv), extension (--XX)
+       [1m--sort[22m=[4mWORD[0m
+              sort  by  WORD instead of name: none ([1m-U[22m), size ([1m-S[22m), time ([1m-t[22m),
+              version ([1m-v[22m), extension ([1m-X[22m)
 
-       ----ttiimmee=_W_O_R_D
-              with --ll, show time as WORD instead of default modification time:
-              atime  or  access  or  use  (--uu); ctime or status (--cc); also use
-              specified time as sort key if ----ssoorrtt=_t_i_m_e (newest first)
+       [1m--time[22m=[4mWORD[0m
+              with [1m-l[22m, show time as WORD instead of default modification time:
+              atime  or  access  or  use  ([1m-u[22m); ctime or status ([1m-c[22m); also use
+              specified time as sort key if [1m--sort[22m=[4mtime[24m (newest first)
 
-       ----ttiimmee--ssttyyllee=_T_I_M_E___S_T_Y_L_E
-              time/date format with --ll; see TIME_STYLE below
+       [1m--time-style[22m=[4mTIME_STYLE[0m
+              time/date format with [1m-l[22m; see TIME_STYLE below
 
-       --tt     sort by modification time, newest first
+       [1m-t     [22msort by modification time, newest first
 
-       --TT, ----ttaabbssiizzee=_C_O_L_S
+       [1m-T[22m, [1m--tabsize[22m=[4mCOLS[0m
               assume tab stops at each COLS instead of 8
 
-       --uu     with --lltt: sort by, and show, access time; with --ll:  show  access
+       [1m-u     [22mwith [1m-lt[22m: sort by, and show, access time; with [1m-l[22m:  show  access
               time  and  sort  by name; otherwise: sort by access time, newest
               first
 
-       --UU     do not sort; list entries in directory order
+       [1m-U     [22mdo not sort; list entries in directory order
 
-       --vv     natural sort of (version) numbers within text
+       [1m-v     [22mnatural sort of (version) numbers within text
 
-       --ww, ----wwiiddtthh=_C_O_L_S
+       [1m-w[22m, [1m--width[22m=[4mCOLS[0m
               set output width to COLS.  0 means no limit
 
-       --xx     list entries by lines instead of by columns
+       [1m-x     [22mlist entries by lines instead of by columns
 
-       --XX     sort alphabetically by entry extension
+       [1m-X     [22msort alphabetically by entry extension
 
-       --ZZ, ----ccoonntteexxtt
+       [1m-Z[22m, [1m--context[0m
               print any security context of each file
 
-       --11     list one file per line.  Avoid '\n' with --qq or --bb
+       [1m-1     [22mlist one file per line.  Avoid '\n' with [1m-q [22mor [1m-b[0m
 
-       ----hheellpp display this help and exit
+       [1m--help [22mdisplay this help and exit
 
-       ----vveerrssiioonn
+       [1m--version[0m
               output version information and exit
 
        The SIZE argument is an integer and  optional  unit  (example:  10K  is
@@ -538,31 +538,31 @@ DDEESSCCRRIIPPTTIIOONN
        able sets the default style to use.
 
        Using  color  to distinguish file types is disabled both by default and
-       with ----ccoolloorr=_n_e_v_e_r.  With ----ccoolloorr=_a_u_t_o, ls emits color codes only  when
+       with [1m--color[22m=[4mnever[24m.  With [1m--color[22m=[4mauto[24m, ls emits color codes only  when
        standard  output is connected to a terminal.  The LS_COLORS environment
        variable can change the settings.  Use the dircolors command to set it.
 
-   EExxiitt ssttaattuuss::
+   [1mExit status:[0m
        0      if OK,
 
        1      if minor problems (e.g., cannot access subdirectory),
 
        2      if serious trouble (e.g., cannot access command-line argument).
 
-AAUUTTHHOORR
+[1mAUTHOR[0m
        Written by Richard M. Stallman and David MacKenzie.
 
-RREEPPOORRTTIINNGG BBUUGGSS
+[1mREPORTING BUGS[0m
        GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
        Report ls translation bugs to <https://translationproject.org/team/>
 
-CCOOPPYYRRIIGGHHTT
+[1mCOPYRIGHT[0m
        Copyright © 2017 Free Software Foundation, Inc.   License  GPLv3+:  GNU
        GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
        This  is  free  software:  you  are free to change and redistribute it.
        There is NO WARRANTY, to the extent permitted by law.
 
-SSEEEE AALLSSOO
+[1mSEE ALSO[0m
        Full documentation at: <https://www.gnu.org/software/coreutils/ls>
        or available locally via: info '(coreutils) ls invocation'
 
@@ -757,202 +757,202 @@ man ls
 ```
 LS(1)                            User Commands                           LS(1)
 
-NNAAMMEE
+[1mNAME[0m
        ls - list directory contents
 
-SSYYNNOOPPSSIISS
-       llss [_O_P_T_I_O_N]... [_F_I_L_E]...
+[1mSYNOPSIS[0m
+       [1mls [22m[[4mOPTION[24m]... [[4mFILE[24m]...
 
-DDEESSCCRRIIPPTTIIOONN
+[1mDESCRIPTION[0m
        List  information  about  the FILEs (the current directory by default).
-       Sort entries alphabetically if none of --ccffttuuvvSSUUXX nor ----ssoorrtt  is  speci‐
+       Sort entries alphabetically if none of [1m-cftuvSUX [22mnor [1m--sort  [22mis  speci‐
        fied.
 
        Mandatory  arguments  to  long  options are mandatory for short options
        too.
 
-       --aa, ----aallll
+       [1m-a[22m, [1m--all[0m
               do not ignore entries starting with .
 
-       --AA, ----aallmmoosstt--aallll
+       [1m-A[22m, [1m--almost-all[0m
               do not list implied . and ..
 
-       ----aauutthhoorr
-              with --ll, print the author of each file
+       [1m--author[0m
+              with [1m-l[22m, print the author of each file
 
-       --bb, ----eessccaappee
+       [1m-b[22m, [1m--escape[0m
               print C-style escapes for nongraphic characters
 
-       ----bblloocckk--ssiizzee=_S_I_Z_E
-              with  --ll,  scale  sizes  by  SIZE  when  printing  them;   e.g.,
+       [1m--block-size[22m=[4mSIZE[0m
+              with  [1m-l[22m,  scale  sizes  by  SIZE  when  printing  them;   e.g.,
               '--block-size=M'; see SIZE format below
 
-       --BB, ----iiggnnoorree--bbaacckkuuppss
+       [1m-B[22m, [1m--ignore-backups[0m
               do not list implied entries ending with ~
 
-       --cc     with --lltt: sort by, and show, ctime (time of last modification of
-              file status information); with --ll: show ctime and sort by  name;
+       [1m-c     [22mwith [1m-lt[22m: sort by, and show, ctime (time of last modification of
+              file status information); with [1m-l[22m: show ctime and sort by  name;
               otherwise: sort by ctime, newest first
 
-       --CC     list entries by columns
+       [1m-C     [22mlist entries by columns
 
-       ----ccoolloorr[=_W_H_E_N]
+       [1m--color[22m[=[4mWHEN[24m]
               colorize  the output; WHEN can be 'always' (default if omitted),
               'auto', or 'never'; more info below
 
-       --dd, ----ddiirreeccttoorryy
+       [1m-d[22m, [1m--directory[0m
               list directories themselves, not their contents
 
-       --DD, ----ddiirreedd
+       [1m-D[22m, [1m--dired[0m
               generate output designed for Emacs' dired mode
 
-       --ff     do not sort, enable --aaUU, disable --llss ----ccoolloorr
+       [1m-f     [22mdo not sort, enable [1m-aU[22m, disable [1m-ls --color[0m
 
-       --FF, ----ccllaassssiiffyy
+       [1m-F[22m, [1m--classify[0m
               append indicator (one of */=>@|) to entries
 
-       ----ffiillee--ttyyppee
+       [1m--file-type[0m
               likewise, except do not append '*'
 
-       ----ffoorrmmaatt=_W_O_R_D
-              across --xx, commas --mm, horizontal --xx, long --ll, single-column  --11,
-              verbose --ll, vertical --CC
+       [1m--format[22m=[4mWORD[0m
+              across [1m-x[22m, commas [1m-m[22m, horizontal [1m-x[22m, long [1m-l[22m, single-column  [1m-1[22m,
+              verbose [1m-l[22m, vertical [1m-C[0m
 
-       ----ffuullll--ttiimmee
-              like --ll ----ttiimmee--ssttyyllee=_f_u_l_l_-_i_s_o
+       [1m--full-time[0m
+              like [1m-l --time-style[22m=[4mfull-iso[0m
 
-       --gg     like --ll, but do not list owner
+       [1m-g     [22mlike [1m-l[22m, but do not list owner
 
-       ----ggrroouupp--ddiirreeccttoorriieess--ffiirrsstt
+       [1m--group-directories-first[0m
               group directories before files;
 
-              can   be  augmented  with  a  ----ssoorrtt  option,  but  any  use  of
-              ----ssoorrtt=_n_o_n_e (--UU) disables grouping
+              can   be  augmented  with  a  [1m--sort  [22moption,  but  any  use  of
+              [1m--sort[22m=[4mnone[24m ([1m-U[22m) disables grouping
 
-       --GG, ----nnoo--ggrroouupp
+       [1m-G[22m, [1m--no-group[0m
               in a long listing, don't print group names
 
-       --hh, ----hhuummaann--rreeaaddaabbllee
-              with --ll and --ss, print sizes like 1K 234M 2G etc.
+       [1m-h[22m, [1m--human-readable[0m
+              with [1m-l [22mand [1m-s[22m, print sizes like 1K 234M 2G etc.
 
-       ----ssii   likewise, but use powers of 1000 not 1024
+       [1m--si   [22mlikewise, but use powers of 1000 not 1024
 
-       --HH, ----ddeerreeffeerreennccee--ccoommmmaanndd--lliinnee
+       [1m-H[22m, [1m--dereference-command-line[0m
               follow symbolic links listed on the command line
 
-       ----ddeerreeffeerreennccee--ccoommmmaanndd--lliinnee--ssyymmlliinnkk--ttoo--ddiirr
+       [1m--dereference-command-line-symlink-to-dir[0m
               follow each command line symbolic link
 
               that points to a directory
 
-       ----hhiiddee=_P_A_T_T_E_R_N
+       [1m--hide[22m=[4mPATTERN[0m
               do not list implied entries matching shell  PATTERN  (overridden
-              by --aa or --AA)
+              by [1m-a [22mor [1m-A[22m)
 
-       ----hhyyppeerrlliinnkk[=_W_H_E_N]
+       [1m--hyperlink[22m[=[4mWHEN[24m]
               hyperlink file names; WHEN can be 'always' (default if omitted),
               'auto', or 'never'
 
-       ----iinnddiiccaattoorr--ssttyyllee=_W_O_R_D
+       [1m--indicator-style[22m=[4mWORD[0m
               append indicator with style WORD to entry names: none (default),
-              slash (--pp), file-type (----ffiillee--ttyyppee), classify (--FF)
+              slash ([1m-p[22m), file-type ([1m--file-type[22m), classify ([1m-F[22m)
 
-       --ii, ----iinnooddee
+       [1m-i[22m, [1m--inode[0m
               print the index number of each file
 
-       --II, ----iiggnnoorree=_P_A_T_T_E_R_N
+       [1m-I[22m, [1m--ignore[22m=[4mPATTERN[0m
               do not list implied entries matching shell PATTERN
 
-       --kk, ----kkiibbiibbyytteess
-              default  to  1024-byte  blocks for disk usage; used only with --ss
+       [1m-k[22m, [1m--kibibytes[0m
+              default  to  1024-byte  blocks for disk usage; used only with [1m-s[0m
               and per directory totals
 
-       --ll     use a long listing format
+       [1m-l     [22muse a long listing format
 
-       --LL, ----ddeerreeffeerreennccee
+       [1m-L[22m, [1m--dereference[0m
               when showing file information for a symbolic link, show informa‐
               tion  for  the file the link references rather than for the link
               itself
 
-       --mm     fill width with a comma separated list of entries
+       [1m-m     [22mfill width with a comma separated list of entries
 
-       --nn, ----nnuummeerriicc--uuiidd--ggiidd
-              like --ll, but list numeric user and group IDs
+       [1m-n[22m, [1m--numeric-uid-gid[0m
+              like [1m-l[22m, but list numeric user and group IDs
 
-       --NN, ----lliitteerraall
+       [1m-N[22m, [1m--literal[0m
               print entry names without quoting
 
-       --oo     like --ll, but do not list group information
+       [1m-o     [22mlike [1m-l[22m, but do not list group information
 
-       --pp, ----iinnddiiccaattoorr--ssttyyllee=_s_l_a_s_h
+       [1m-p[22m, [1m--indicator-style[22m=[4mslash[0m
               append / indicator to directories
 
-       --qq, ----hhiiddee--ccoonnttrrooll--cchhaarrss
+       [1m-q[22m, [1m--hide-control-chars[0m
               print ? instead of nongraphic characters
 
-       ----sshhooww--ccoonnttrrooll--cchhaarrss
+       [1m--show-control-chars[0m
               show nongraphic characters as-is (the default, unless program is
               'ls' and output is a terminal)
 
-       --QQ, ----qquuoottee--nnaammee
+       [1m-Q[22m, [1m--quote-name[0m
               enclose entry names in double quotes
 
-       ----qquuoottiinngg--ssttyyllee=_W_O_R_D
+       [1m--quoting-style[22m=[4mWORD[0m
               use  quoting style WORD for entry names: literal, locale, shell,
               shell-always,  shell-escape,  shell-escape-always,   c,   escape
               (overrides QUOTING_STYLE environment variable)
 
-       --rr, ----rreevveerrssee
+       [1m-r[22m, [1m--reverse[0m
               reverse order while sorting
 
-       --RR, ----rreeccuurrssiivvee
+       [1m-R[22m, [1m--recursive[0m
               list subdirectories recursively
 
-       --ss, ----ssiizzee
+       [1m-s[22m, [1m--size[0m
               print the allocated size of each file, in blocks
 
-       --SS     sort by file size, largest first
+       [1m-S     [22msort by file size, largest first
 
-       ----ssoorrtt=_W_O_R_D
-              sort  by  WORD instead of name: none (--UU), size (--SS), time (--tt),
-              version (--vv), extension (--XX)
+       [1m--sort[22m=[4mWORD[0m
+              sort  by  WORD instead of name: none ([1m-U[22m), size ([1m-S[22m), time ([1m-t[22m),
+              version ([1m-v[22m), extension ([1m-X[22m)
 
-       ----ttiimmee=_W_O_R_D
-              with --ll, show time as WORD instead of default modification time:
-              atime  or  access  or  use  (--uu); ctime or status (--cc); also use
-              specified time as sort key if ----ssoorrtt=_t_i_m_e (newest first)
+       [1m--time[22m=[4mWORD[0m
+              with [1m-l[22m, show time as WORD instead of default modification time:
+              atime  or  access  or  use  ([1m-u[22m); ctime or status ([1m-c[22m); also use
+              specified time as sort key if [1m--sort[22m=[4mtime[24m (newest first)
 
-       ----ttiimmee--ssttyyllee=_T_I_M_E___S_T_Y_L_E
-              time/date format with --ll; see TIME_STYLE below
+       [1m--time-style[22m=[4mTIME_STYLE[0m
+              time/date format with [1m-l[22m; see TIME_STYLE below
 
-       --tt     sort by modification time, newest first
+       [1m-t     [22msort by modification time, newest first
 
-       --TT, ----ttaabbssiizzee=_C_O_L_S
+       [1m-T[22m, [1m--tabsize[22m=[4mCOLS[0m
               assume tab stops at each COLS instead of 8
 
-       --uu     with --lltt: sort by, and show, access time; with --ll:  show  access
+       [1m-u     [22mwith [1m-lt[22m: sort by, and show, access time; with [1m-l[22m:  show  access
               time  and  sort  by name; otherwise: sort by access time, newest
               first
 
-       --UU     do not sort; list entries in directory order
+       [1m-U     [22mdo not sort; list entries in directory order
 
-       --vv     natural sort of (version) numbers within text
+       [1m-v     [22mnatural sort of (version) numbers within text
 
-       --ww, ----wwiiddtthh=_C_O_L_S
+       [1m-w[22m, [1m--width[22m=[4mCOLS[0m
               set output width to COLS.  0 means no limit
 
-       --xx     list entries by lines instead of by columns
+       [1m-x     [22mlist entries by lines instead of by columns
 
-       --XX     sort alphabetically by entry extension
+       [1m-X     [22msort alphabetically by entry extension
 
-       --ZZ, ----ccoonntteexxtt
+       [1m-Z[22m, [1m--context[0m
               print any security context of each file
 
-       --11     list one file per line.  Avoid '\n' with --qq or --bb
+       [1m-1     [22mlist one file per line.  Avoid '\n' with [1m-q [22mor [1m-b[0m
 
-       ----hheellpp display this help and exit
+       [1m--help [22mdisplay this help and exit
 
-       ----vveerrssiioonn
+       [1m--version[0m
               output version information and exit
 
        The SIZE argument is an integer and  optional  unit  (example:  10K  is
@@ -967,31 +967,31 @@ DDEESSCCRRIIPPTTIIOONN
        able sets the default style to use.
 
        Using  color  to distinguish file types is disabled both by default and
-       with ----ccoolloorr=_n_e_v_e_r.  With ----ccoolloorr=_a_u_t_o, ls emits color codes only  when
+       with [1m--color[22m=[4mnever[24m.  With [1m--color[22m=[4mauto[24m, ls emits color codes only  when
        standard  output is connected to a terminal.  The LS_COLORS environment
        variable can change the settings.  Use the dircolors command to set it.
 
-   EExxiitt ssttaattuuss::
+   [1mExit status:[0m
        0      if OK,
 
        1      if minor problems (e.g., cannot access subdirectory),
 
        2      if serious trouble (e.g., cannot access command-line argument).
 
-AAUUTTHHOORR
+[1mAUTHOR[0m
        Written by Richard M. Stallman and David MacKenzie.
 
-RREEPPOORRTTIINNGG BBUUGGSS
+[1mREPORTING BUGS[0m
        GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
        Report ls translation bugs to <https://translationproject.org/team/>
 
-CCOOPPYYRRIIGGHHTT
+[1mCOPYRIGHT[0m
        Copyright © 2017 Free Software Foundation, Inc.   License  GPLv3+:  GNU
        GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
        This  is  free  software:  you  are free to change and redistribute it.
        There is NO WARRANTY, to the extent permitted by law.
 
-SSEEEE AALLSSOO
+[1mSEE ALSO[0m
        Full documentation at: <https://www.gnu.org/software/coreutils/ls>
        or available locally via: info '(coreutils) ls invocation'
 
@@ -1182,12 +1182,13 @@ ls -F -a
 
 {:.output_stream}
 ```
-./			     03-fundamentals-of-python/   12-images-and-vis/
-../			     04-further-python/		  environment.yml
-00-lessons_instructor.ipynb  05-writing-effective-tests/  .git
-00-lessons.ipynb	     06-approximating-pi/	  .gitignore
-01-bash/		     07-collaborating-with-git/
-02-git/			     08-collaborating-with-git/
+./			     04-further-python/		   environment.yml
+../			     05-writing-effective-tests/   .git
+00-lessons_instructor.ipynb  06-approximating-pi/	   .gitignore
+00-lessons.ipynb	     07-collaborating-with-git/    LICENCE.md
+01-bash/		     09-units/			   README.md
+02-git/			     12-images-and-visualisation/
+03-fundamentals-of-python/   13-images-in-astronomy/
 
 ```
 

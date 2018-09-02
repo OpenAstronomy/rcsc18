@@ -9,3 +9,6 @@ dependencies:
   - jupyter
   - matplotlib
   - numpy
+  - xonsh
+  - pip:
+      - bash_kernel

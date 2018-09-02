@@ -47,11 +47,9 @@ Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git checkout -- <file>..." to discard changes in working directory)
 
-	[31mmodified:   ../01-bash/01-introducing-the-shell_instructor.ipynb[m
-	[31mmodified:   ../01-bash/02-files-and-directories_instructor.ipynb[m
-	[31mmodified:   ../01-bash/03-working-with-files-and-directories_instructor.ipynb[m
-	[31mmodified:   01-introduction-to-version-control_instructor.ipynb[m
+	[31mmodified:   02-creating-repositories_instructor.ipynb[m
 	[31mmodified:   03-tracking-changes_instructor.ipynb[m
+	[31mmodified:   04-exploring-history_instructor.ipynb[m
 
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
@@ -103,11 +101,9 @@ Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git checkout -- <file>..." to discard changes in working directory)
 
-	[31mmodified:   ../01-bash/01-introducing-the-shell_instructor.ipynb[m
-	[31mmodified:   ../01-bash/02-files-and-directories_instructor.ipynb[m
-	[31mmodified:   ../01-bash/03-working-with-files-and-directories_instructor.ipynb[m
-	[31mmodified:   01-introduction-to-version-control_instructor.ipynb[m
+	[31mmodified:   02-creating-repositories_instructor.ipynb[m
 	[31mmodified:   03-tracking-changes_instructor.ipynb[m
+	[31mmodified:   04-exploring-history_instructor.ipynb[m
 
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
@@ -139,11 +135,9 @@ On branch master
 Your branch is up to date with 'origin/master'.
 
 Changes not staged for commit:
-	[31mmodified:   ../01-bash/01-introducing-the-shell_instructor.ipynb[m
-	[31mmodified:   ../01-bash/02-files-and-directories_instructor.ipynb[m
-	[31mmodified:   ../01-bash/03-working-with-files-and-directories_instructor.ipynb[m
-	[31mmodified:   01-introduction-to-version-control_instructor.ipynb[m
+	[31mmodified:   02-creating-repositories_instructor.ipynb[m
 	[31mmodified:   03-tracking-changes_instructor.ipynb[m
+	[31mmodified:   04-exploring-history_instructor.ipynb[m
 
 Untracked files:
 	[31ma.dat[m
@@ -160,11 +154,9 @@ Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git checkout -- <file>..." to discard changes in working directory)
 
-	[31mmodified:   ../01-bash/01-introducing-the-shell_instructor.ipynb[m
-	[31mmodified:   ../01-bash/02-files-and-directories_instructor.ipynb[m
-	[31mmodified:   ../01-bash/03-working-with-files-and-directories_instructor.ipynb[m
-	[31mmodified:   01-introduction-to-version-control_instructor.ipynb[m
+	[31mmodified:   02-creating-repositories_instructor.ipynb[m
 	[31mmodified:   03-tracking-changes_instructor.ipynb[m
+	[31mmodified:   04-exploring-history_instructor.ipynb[m
 
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
@@ -215,11 +207,9 @@ Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git checkout -- <file>..." to discard changes in working directory)
 
-	[31mmodified:   ../01-bash/01-introducing-the-shell_instructor.ipynb[m
-	[31mmodified:   ../01-bash/02-files-and-directories_instructor.ipynb[m
-	[31mmodified:   ../01-bash/03-working-with-files-and-directories_instructor.ipynb[m
-	[31mmodified:   01-introduction-to-version-control_instructor.ipynb[m
+	[31mmodified:   02-creating-repositories_instructor.ipynb[m
 	[31mmodified:   03-tracking-changes_instructor.ipynb[m
+	[31mmodified:   04-exploring-history_instructor.ipynb[m
 
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
@@ -227,11 +217,6 @@ Untracked files:
 	[31mb.dat[m
 	[31mc.dat[m
 	[31mresults/[m
-
-Ignored files:
-  (use "git add -f <file>..." to include in what will be committed)
-
-	[31m../01-bash/thesis/[m
 
 
 
@@ -461,3 +446,8 @@ results/plots
 
 </section>
 
+
+---
+The material in this notebook is derived from the Software Carpentry lessons
+&copy; [Software Carpentry](http://software-carpentry.org/) under the terms
+of the [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) license.

@@ -7,7 +7,7 @@ previouschapter:
   title: 'Making Work Public'
 nextchapter:
   url: 
-  title: 'Collaborating With Git'
+  title: 'Units'
 redirect_from:
   - 'chapters/07-collaborating-with-git/03-forks'
 ---
@@ -105,8 +105,8 @@ git remote -v
 
 {:.output_stream}
 ```
-origin	https://github.com/cadair/rcsc_notebooks (fetch)
-origin	https://github.com/cadair/rcsc_notebooks (push)
+origin	https://github.com/OpenAstronomy/rcsc18_lessons.git (fetch)
+origin	https://github.com/OpenAstronomy/rcsc18_lessons.git (push)
 
 
 ```

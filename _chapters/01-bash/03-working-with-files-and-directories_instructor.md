@@ -22,6 +22,20 @@ and use `ls -F` to see what it contains:
 
 {:.input_area}
 ```bash
+cd data-shell
+```
+
+{:.output_stream}
+```
+bash: cd: data-shell: No such file or directory
+
+```
+
+
+
+
+{:.input_area}
+```bash
 pwd
 ```
 
