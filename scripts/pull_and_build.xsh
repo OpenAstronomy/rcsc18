@@ -22,3 +22,6 @@ python scripts/generate_textbook.py
 cd notebooks
 git reset --hard origin/master
 git clean -fxd
+
+if "--web" in $ARGS:
+    git push web master
