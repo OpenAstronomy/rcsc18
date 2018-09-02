@@ -147,7 +147,7 @@ plt.imshow(sunspot)
 
 {:.output_data_text}
 ```
-<matplotlib.image.AxesImage at 0x7f30bbe2c240>
+<matplotlib.image.AxesImage at 0x7efeda9bd240>
 ```
 
 
@@ -170,7 +170,7 @@ plt.colorbar()
 
 {:.output_data_text}
 ```
-<matplotlib.colorbar.Colorbar at 0x7f30bba47748>
+<matplotlib.colorbar.Colorbar at 0x7efeda5d8748>
 ```
 
 
@@ -194,7 +194,7 @@ plt.colorbar()
 
 {:.output_data_text}
 ```
-<matplotlib.colorbar.Colorbar at 0x7f30bb9751d0>
+<matplotlib.colorbar.Colorbar at 0x7efeda5091d0>
 ```
 
 
@@ -264,7 +264,7 @@ plt.imshow(cube[:,720,:].T, aspect='auto')
 
 {:.output_data_text}
 ```
-<matplotlib.image.AxesImage at 0x7f30bb8dbb38>
+<matplotlib.image.AxesImage at 0x7efeda46eb38>
 ```
 
 
@@ -317,7 +317,7 @@ plt.colorbar()
 
 {:.output_data_text}
 ```
-<matplotlib.colorbar.Colorbar at 0x7f30bbf19ac8>
+<matplotlib.colorbar.Colorbar at 0x7efedaab0400>
 ```
 
 
@@ -343,7 +343,7 @@ plt.imshow(sunspot, cmap='gray', origin='lower')
 
 {:.output_data_text}
 ```
-<matplotlib.image.AxesImage at 0x7f30bb74f2b0>
+<matplotlib.image.AxesImage at 0x7efeda2e1278>
 ```
 
 
@@ -365,7 +365,7 @@ plt.imshow(sunspot, cmap='gray', origin='lower', extent=[413, 470, 223, 277])
 
 {:.output_data_text}
 ```
-<matplotlib.image.AxesImage at 0x7f30bb71dba8>
+<matplotlib.image.AxesImage at 0x7efeda2aeb70>
 ```
 
 
@@ -414,7 +414,7 @@ plt.colorbar()
 
 {:.output_data_text}
 ```
-<matplotlib.colorbar.Colorbar at 0x7f30b9039080>
+<matplotlib.colorbar.Colorbar at 0x7efed83cd080>
 ```
 
 
@@ -443,7 +443,7 @@ ax[1, 1].imshow(smallim, interpolation='none') # No interpolation
 
 {:.output_data_text}
 ```
-<matplotlib.image.AxesImage at 0x7f30b8f24668>
+<matplotlib.image.AxesImage at 0x7efed82b8630>
 ```
 
 
@@ -477,7 +477,7 @@ ImageAnimator(cube, colorbar=True, cmap="plasma")
 
 {:.output_data_text}
 ```
-<sunpy.visualization.imageanimator.ImageAnimator at 0x7f30b84c5668>
+<sunpy.visualization.imageanimator.ImageAnimator at 0x7efed3027828>
 ```
 
 

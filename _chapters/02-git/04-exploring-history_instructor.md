@@ -134,39 +134,14 @@ git status
 {:.output_stream}
 ```
 On branch master
-Your branch is ahead of 'origin/master' by 1 commit.
-  (use "git push" to publish your local commits)
+Your branch is up to date with 'origin/master'.
 
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git checkout -- <file>..." to discard changes in working directory)
 
-	[31mmodified:   ../01-bash/01-introducing-the-shell_instructor.ipynb[m
-	[31mmodified:   ../01-bash/02-files-and-directories_instructor.ipynb[m
-	[31mmodified:   ../01-bash/03-working-with-files-and-directories_instructor.ipynb[m
 	[31mmodified:   02-creating-repositories_instructor.ipynb[m
 	[31mmodified:   03-tracking-changes_instructor.ipynb[m
-	[31mmodified:   04-exploring-history_instructor.ipynb[m
-	[31mmodified:   05-ignoring_instructor.ipynb[m
-	[31mmodified:   06-cloning_instructor.ipynb[m
-	[31mmodified:   ../03-fundamentals-of-python/01-introduction-to-python_instructor.ipynb[m
-	[31mmodified:   ../03-fundamentals-of-python/02-repeating-actions_instructor.ipynb[m
-	[31mmodified:   ../03-fundamentals-of-python/03-lists_instructor.ipynb[m
-	[31mmodified:   ../03-fundamentals-of-python/04-processing-files_instructor.ipynb[m
-	[31mmodified:   ../03-fundamentals-of-python/06-functions_instructor.ipynb[m
-	[31mmodified:   ../03-fundamentals-of-python/07-comments-and-docs_instructor.ipynb[m
-	[31mmodified:   ../04-further-python/01-scripts_instructor.ipynb[m
-	[31mmodified:   ../04-further-python/02-modules_instructor.ipynb[m
-	[31mmodified:   ../04-further-python/03-imports-and-namespaces_instructor.ipynb[m
-	[31mmodified:   ../05-writing-effective-tests/01-errors-and-exceptions_instructor.ipynb[m
-	[31mmodified:   ../05-writing-effective-tests/02-explicit-exceptions_instructor.ipynb[m
-	[31mmodified:   ../05-writing-effective-tests/03-testing-your-code_instructor.ipynb[m
-	[31mmodified:   ../05-writing-effective-tests/04-testing-your-code-with-pytest_instructor.ipynb[m
-	[31mmodified:   ../07-collaborating-with-git/01-remotes_instructor.ipynb[m
-	[31mmodified:   ../07-collaborating-with-git/03-forks_instructor.ipynb[m
-	[31mmodified:   ../09-units/01-units_instructor.ipynb[m
-	[31mmodified:   ../12-images-and-visualisation/01-images_instructor.ipynb[m
-	[31mmodified:   ../13-images-in-astronomy/01-images-in-astronomy_instructor.ipynb[m
 
 no changes added to commit (use "git add" and/or "git commit -a")
 
@@ -224,39 +199,14 @@ git status
 {:.output_stream}
 ```
 On branch master
-Your branch is ahead of 'origin/master' by 1 commit.
-  (use "git push" to publish your local commits)
+Your branch is up to date with 'origin/master'.
 
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git checkout -- <file>..." to discard changes in working directory)
 
-	[31mmodified:   ../01-bash/01-introducing-the-shell_instructor.ipynb[m
-	[31mmodified:   ../01-bash/02-files-and-directories_instructor.ipynb[m
-	[31mmodified:   ../01-bash/03-working-with-files-and-directories_instructor.ipynb[m
 	[31mmodified:   02-creating-repositories_instructor.ipynb[m
 	[31mmodified:   03-tracking-changes_instructor.ipynb[m
-	[31mmodified:   04-exploring-history_instructor.ipynb[m
-	[31mmodified:   05-ignoring_instructor.ipynb[m
-	[31mmodified:   06-cloning_instructor.ipynb[m
-	[31mmodified:   ../03-fundamentals-of-python/01-introduction-to-python_instructor.ipynb[m
-	[31mmodified:   ../03-fundamentals-of-python/02-repeating-actions_instructor.ipynb[m
-	[31mmodified:   ../03-fundamentals-of-python/03-lists_instructor.ipynb[m
-	[31mmodified:   ../03-fundamentals-of-python/04-processing-files_instructor.ipynb[m
-	[31mmodified:   ../03-fundamentals-of-python/06-functions_instructor.ipynb[m
-	[31mmodified:   ../03-fundamentals-of-python/07-comments-and-docs_instructor.ipynb[m
-	[31mmodified:   ../04-further-python/01-scripts_instructor.ipynb[m
-	[31mmodified:   ../04-further-python/02-modules_instructor.ipynb[m
-	[31mmodified:   ../04-further-python/03-imports-and-namespaces_instructor.ipynb[m
-	[31mmodified:   ../05-writing-effective-tests/01-errors-and-exceptions_instructor.ipynb[m
-	[31mmodified:   ../05-writing-effective-tests/02-explicit-exceptions_instructor.ipynb[m
-	[31mmodified:   ../05-writing-effective-tests/03-testing-your-code_instructor.ipynb[m
-	[31mmodified:   ../05-writing-effective-tests/04-testing-your-code-with-pytest_instructor.ipynb[m
-	[31mmodified:   ../07-collaborating-with-git/01-remotes_instructor.ipynb[m
-	[31mmodified:   ../07-collaborating-with-git/03-forks_instructor.ipynb[m
-	[31mmodified:   ../09-units/01-units_instructor.ipynb[m
-	[31mmodified:   ../12-images-and-visualisation/01-images_instructor.ipynb[m
-	[31mmodified:   ../13-images-in-astronomy/01-images-in-astronomy_instructor.ipynb[m
 
 no changes added to commit (use "git add" and/or "git commit -a")
 
