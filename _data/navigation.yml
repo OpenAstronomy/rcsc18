@@ -6,6 +6,8 @@ main:
     url: /setup-instructions/
   - title: "Help"
     url: /help/
+  - title: "Local Info"
+    url: http://www.milne.hull.ac.uk/stfc-summer-school-2018/local-info/
 
 setup:
   - class: level_0
