@@ -219,7 +219,13 @@ git log
 
 {:.output_stream}
 ```
-[33mcommit d3568a1b07b9bf76d89803e610c8ece8d4b94a81[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+[33mcommit dd2848367dff52dd13db252e688a085b0638d2c7[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Stuart Mumford <stuart@cadair.com>
+Date:   Mon Sep 3 13:24:05 2018 +0100
+
+    update notebooks
+
+[33mcommit d3568a1b07b9bf76d89803e610c8ece8d4b94a81[m
 Author: Stuart Mumford <stuart@cadair.com>
 Date:   Sun Sep 2 19:25:16 2018 +0100
 
@@ -892,7 +898,13 @@ git log
 
 {:.output_stream}
 ```
-[33mcommit d3568a1b07b9bf76d89803e610c8ece8d4b94a81[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+[33mcommit dd2848367dff52dd13db252e688a085b0638d2c7[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Stuart Mumford <stuart@cadair.com>
+Date:   Mon Sep 3 13:24:05 2018 +0100
+
+    update notebooks
+
+[33mcommit d3568a1b07b9bf76d89803e610c8ece8d4b94a81[m
 Author: Stuart Mumford <stuart@cadair.com>
 Date:   Sun Sep 2 19:25:16 2018 +0100
 

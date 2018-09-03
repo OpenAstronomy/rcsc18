@@ -239,60 +239,19 @@ numpy.loadtxt(fname='inflammation-01.csv', delimiter=',')
 ```
 
 
-{:.output_traceback_line}
+
+
+{:.output_data_text}
 ```
----------------------------------------------------------------------------
+array([[0., 0., 1., ..., 3., 0., 0.],
+       [0., 1., 2., ..., 1., 0., 1.],
+       [0., 1., 1., ..., 2., 1., 1.],
+       ...,
+       [0., 1., 1., ..., 1., 1., 1.],
+       [0., 0., 0., ..., 0., 2., 0.],
+       [0., 0., 1., ..., 1., 1., 0.]])
 ```
 
-{:.output_traceback_line}
-```
-OSError                                   Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-13-d944542c2834> in <module>()
-----> 1 numpy.loadtxt(fname='inflammation-01.csv', delimiter=',')
-
-```
-
-{:.output_traceback_line}
-```
-/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/lib/npyio.py in loadtxt(fname, dtype, comments, delimiter, converters, skiprows, usecols, unpack, ndmin, encoding)
-    924             fname = str(fname)
-    925         if _is_string_like(fname):
---> 926             fh = np.lib._datasource.open(fname, 'rt', encoding=encoding)
-    927             fencoding = getattr(fh, 'encoding', 'latin1')
-    928             fh = iter(fh)
-
-```
-
-{:.output_traceback_line}
-```
-/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/lib/_datasource.py in open(path, mode, destpath, encoding, newline)
-    260 
-    261     ds = DataSource(destpath)
---> 262     return ds.open(path, mode, encoding=encoding, newline=newline)
-    263 
-    264 
-
-```
-
-{:.output_traceback_line}
-```
-/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/lib/_datasource.py in open(self, path, mode, encoding, newline)
-    616                                       encoding=encoding, newline=newline)
-    617         else:
---> 618             raise IOError("%s not found." % path)
-    619 
-    620 
-
-```
-
-{:.output_traceback_line}
-```
-OSError: inflammation-01.csv not found.
-```
 
 
 The expression `numpy.loadtxt(...)` is a function call that asks Python to run
@@ -331,63 +290,6 @@ can also assign an array of values to a variable using the same syntax.  Let's r
 data = numpy.loadtxt(fname='inflammation-01.csv', delimiter=',')
 ```
 
-
-{:.output_traceback_line}
-```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-OSError                                   Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-14-4e66da606a9a> in <module>()
-----> 1 data = numpy.loadtxt(fname='inflammation-01.csv', delimiter=',')
-
-```
-
-{:.output_traceback_line}
-```
-/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/lib/npyio.py in loadtxt(fname, dtype, comments, delimiter, converters, skiprows, usecols, unpack, ndmin, encoding)
-    924             fname = str(fname)
-    925         if _is_string_like(fname):
---> 926             fh = np.lib._datasource.open(fname, 'rt', encoding=encoding)
-    927             fencoding = getattr(fh, 'encoding', 'latin1')
-    928             fh = iter(fh)
-
-```
-
-{:.output_traceback_line}
-```
-/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/lib/_datasource.py in open(path, mode, destpath, encoding, newline)
-    260 
-    261     ds = DataSource(destpath)
---> 262     return ds.open(path, mode, encoding=encoding, newline=newline)
-    263 
-    264 
-
-```
-
-{:.output_traceback_line}
-```
-/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/lib/_datasource.py in open(self, path, mode, encoding, newline)
-    616                                       encoding=encoding, newline=newline)
-    617         else:
---> 618             raise IOError("%s not found." % path)
-    619 
-    620 
-
-```
-
-{:.output_traceback_line}
-```
-OSError: inflammation-01.csv not found.
-```
-
-
 If we want to check that the data have been loaded,
 we can print the variable's value:
 
@@ -397,29 +299,17 @@ we can print the variable's value:
 print(data)
 ```
 
-
-{:.output_traceback_line}
+{:.output_stream}
 ```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-15-dbd883db58b7> in <module>()
-----> 1 print(data)
+[[0. 0. 1. ... 3. 0. 0.]
+ [0. 1. 2. ... 1. 0. 1.]
+ [0. 1. 1. ... 2. 1. 1.]
+ ...
+ [0. 1. 1. ... 1. 1. 1.]
+ [0. 0. 0. ... 0. 2. 0.]
+ [0. 0. 1. ... 1. 1. 0.]]
 
 ```
-
-{:.output_traceback_line}
-```
-NameError: name 'data' is not defined
-```
-
 
 Now that the data are in memory,
 we can manipulate them.
@@ -432,29 +322,11 @@ let's ask what type of thing `data` refers to:
 print(type(data))
 ```
 
-
-{:.output_traceback_line}
+{:.output_stream}
 ```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-16-ea83332336b0> in <module>()
-----> 1 print(type(data))
+<class 'numpy.ndarray'>
 
 ```
-
-{:.output_traceback_line}
-```
-NameError: name 'data' is not defined
-```
-
 
 The output tells us that `data` currently refers to
 an N-dimensional array, the functionality for which is provided by the NumPy library.
@@ -501,29 +373,11 @@ With the following command, we can see the array's shape:
 print(data.shape)
 ```
 
-
-{:.output_traceback_line}
+{:.output_stream}
 ```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-17-25a56bb3f532> in <module>()
-----> 1 print(data.shape)
+(60, 40)
 
 ```
-
-{:.output_traceback_line}
-```
-NameError: name 'data' is not defined
-```
-
 
 The output tells us that the `data` array variable contains 60 rows and 40 columns. When we
 created the variable `data` to store our arthritis data, we didn't just create the array; we also
@@ -544,29 +398,11 @@ we will need to use two indices to refer to one specific value:
 print('first value in data:', data[0, 0])
 ```
 
-
-{:.output_traceback_line}
+{:.output_stream}
 ```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-18-6108f9c7e4f7> in <module>()
-----> 1 print('first value in data:', data[0, 0])
+first value in data: 0.0
 
 ```
-
-{:.output_traceback_line}
-```
-NameError: name 'data' is not defined
-```
-
 
 
 {:.input_area}
@@ -574,29 +410,11 @@ NameError: name 'data' is not defined
 print('middle value in data:', data[30, 20])
 ```
 
-
-{:.output_traceback_line}
+{:.output_stream}
 ```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-19-17bba79ede20> in <module>()
-----> 1 print('middle value in data:', data[30, 20])
+middle value in data: 13.0
 
 ```
-
-{:.output_traceback_line}
-```
-NameError: name 'data' is not defined
-```
-
 
 
 {:.input_area}
@@ -604,29 +422,14 @@ NameError: name 'data' is not defined
 print(data[0:4, 0:10])
 ```
 
-
-{:.output_traceback_line}
+{:.output_stream}
 ```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-20-431bb02b7055> in <module>()
-----> 1 print(data[0:4, 0:10])
+[[0. 0. 1. 3. 1. 2. 4. 7. 8. 3.]
+ [0. 1. 2. 1. 2. 1. 3. 2. 2. 6.]
+ [0. 1. 1. 3. 3. 2. 6. 2. 5. 9.]
+ [0. 0. 2. 0. 4. 2. 2. 1. 6. 7.]]
 
 ```
-
-{:.output_traceback_line}
-```
-NameError: name 'data' is not defined
-```
-
 
 The expression `data[30, 20]` accesses the element at row 30, column 20. While this expression may
 not surprise you,
@@ -680,29 +483,15 @@ We don't have to start slices at 0:
 print(data[5:10, 0:10])
 ```
 
-
-{:.output_traceback_line}
+{:.output_stream}
 ```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-21-c6e5cb76298a> in <module>()
-----> 1 print(data[5:10, 0:10])
+[[0. 0. 1. 2. 2. 4. 2. 1. 6. 4.]
+ [0. 0. 2. 2. 4. 2. 2. 5. 5. 8.]
+ [0. 0. 1. 2. 3. 1. 2. 3. 5. 3.]
+ [0. 0. 0. 3. 1. 5. 6. 5. 5. 8.]
+ [0. 1. 1. 2. 1. 3. 5. 3. 5. 8.]]
 
 ```
-
-{:.output_traceback_line}
-```
-NameError: name 'data' is not defined
-```
-
 
 We also don't have to include the upper and lower bound on the slice.  If we don't include the lower
 bound, Python uses 0 by default; if we don't include the upper, the slice runs to the end of the
@@ -717,31 +506,14 @@ print('small is:')
 print(small)
 ```
 
-
-{:.output_traceback_line}
+{:.output_stream}
 ```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-22-1050f2ec7891> in <module>()
-----> 1 small = data[:3, 36:]
-      2 print('small is:')
-      3 print(small)
+small is:
+[[2. 3. 0. 0.]
+ [1. 1. 0. 1.]
+ [2. 2. 1. 1.]]
 
 ```
-
-{:.output_traceback_line}
-```
-NameError: name 'data' is not defined
-```
-
 
 The above example selects rows 0 through 2 and columns 36 through to the end of the array.
 
@@ -754,30 +526,6 @@ do such operations on arrays, the operation is done element-by-element.  Thus:
 ```python
 doubledata = data * 2.0
 ```
-
-
-{:.output_traceback_line}
-```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-23-33e77a4abaa0> in <module>()
-----> 1 doubledata = data * 2.0
-
-```
-
-{:.output_traceback_line}
-```
-NameError: name 'data' is not defined
-```
-
 
 will create a new array `doubledata`
 each element of which is twice the value of the corresponding element in `data`:
@@ -794,35 +542,15 @@ print(doubledata[:3, 36:])
 {:.output_stream}
 ```
 original:
+[[2. 3. 0. 0.]
+ [1. 1. 0. 1.]
+ [2. 2. 1. 1.]]
+doubledata:
+[[4. 6. 0. 0.]
+ [2. 2. 0. 2.]
+ [4. 4. 2. 2.]]
 
 ```
-
-
-{:.output_traceback_line}
-```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-24-2b79aa20e232> in <module>()
-      1 print('original:')
-----> 2 print(data[:3, 36:])
-      3 print('doubledata:')
-      4 print(doubledata[:3, 36:])
-
-```
-
-{:.output_traceback_line}
-```
-NameError: name 'data' is not defined
-```
-
 
 If, instead of taking an array and doing arithmetic with a single value (as above), you did the
 arithmetic operation with another array of the same shape, the operation will be done on
@@ -833,30 +561,6 @@ corresponding elements of the two arrays.  Thus:
 ```python
 tripledata = doubledata + data
 ```
-
-
-{:.output_traceback_line}
-```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-25-2111ec23c680> in <module>()
-----> 1 tripledata = doubledata + data
-
-```
-
-{:.output_traceback_line}
-```
-NameError: name 'doubledata' is not defined
-```
-
 
 will give you an array where `tripledata[0,0]` will equal `doubledata[0,0]` plus `data[0,0]`,
 and so on for all other elements of the arrays.
@@ -871,33 +575,11 @@ print(tripledata[:3, 36:])
 {:.output_stream}
 ```
 tripledata:
+[[6. 9. 0. 0.]
+ [3. 3. 0. 3.]
+ [6. 6. 3. 3.]]
 
 ```
-
-
-{:.output_traceback_line}
-```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-26-9208583a15a7> in <module>()
-      1 print('tripledata:')
-----> 2 print(tripledata[:3, 36:])
-
-```
-
-{:.output_traceback_line}
-```
-NameError: name 'tripledata' is not defined
-```
-
 
 Often, we want to do more than add, subtract, multiply, and divide array elements.  NumPy knows how
 to do more complex operations, too.  If we want to find the average inflammation for all patients on
@@ -909,29 +591,11 @@ all days, for example, we can ask NumPy to compute `data`'s mean value:
 print(numpy.mean(data))
 ```
 
-
-{:.output_traceback_line}
+{:.output_stream}
 ```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-27-5c9e3ce072aa> in <module>()
-----> 1 print(numpy.mean(data))
+6.14875
 
 ```
-
-{:.output_traceback_line}
-```
-NameError: name 'data' is not defined
-```
-
 
 `mean` is a function that takes an array as an argument.
 
@@ -981,33 +645,13 @@ print('minimum inflammation:', minval)
 print('standard deviation:', stdval)
 ```
 
-
-{:.output_traceback_line}
+{:.output_stream}
 ```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-28-82d757cd05d7> in <module>()
-----> 1 maxval, minval, stdval = numpy.max(data), numpy.min(data), numpy.std(data)
-      2 
-      3 print('maximum inflammation:', maxval)
-      4 print('minimum inflammation:', minval)
-      5 print('standard deviation:', stdval)
+maximum inflammation: 20.0
+minimum inflammation: 0.0
+standard deviation: 4.613833197118566
 
 ```
-
-{:.output_traceback_line}
-```
-NameError: name 'data' is not defined
-```
-
 
 Here we've assigned the return value from `numpy.max(data)` to the variable `maxval`, the value
 from `numpy.min(data)` to `minval`, and so on.
@@ -1048,30 +692,11 @@ patient_0 = data[0, :] # 0 on the first axis (rows), everything on the second (c
 print('maximum inflammation for patient 0:', patient_0.max())
 ```
 
-
-{:.output_traceback_line}
+{:.output_stream}
 ```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-29-9317cbdae06b> in <module>()
-----> 1 patient_0 = data[0, :] # 0 on the first axis (rows), everything on the second (columns)
-      2 print('maximum inflammation for patient 0:', patient_0.max())
+maximum inflammation for patient 0: 18.0
 
 ```
-
-{:.output_traceback_line}
-```
-NameError: name 'data' is not defined
-```
-
 
 Everything in a line of code following the '#' symbol is a
 comment that is ignored by Python.
@@ -1087,29 +712,11 @@ Instead, we can combine the selection and the function call:
 print('maximum inflammation for patient 2:', numpy.max(data[2, :]))
 ```
 
-
-{:.output_traceback_line}
+{:.output_stream}
 ```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-30-b2a03edc5f06> in <module>()
-----> 1 print('maximum inflammation for patient 2:', numpy.max(data[2, :]))
+maximum inflammation for patient 2: 19.0
 
 ```
-
-{:.output_traceback_line}
-```
-NameError: name 'data' is not defined
-```
-
 
 What if we need the maximum inflammation for each patient over all days (as in the
 next diagram on the left) or the average for each day (as in the
@@ -1129,29 +736,17 @@ we get:
 print(numpy.mean(data, axis=0))
 ```
 
-
-{:.output_traceback_line}
+{:.output_stream}
 ```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-31-557d7ee15719> in <module>()
-----> 1 print(numpy.mean(data, axis=0))
+[ 0.          0.45        1.11666667  1.75        2.43333333  3.15
+  3.8         3.88333333  5.23333333  5.51666667  5.95        5.9
+  8.35        7.73333333  8.36666667  9.5         9.58333333 10.63333333
+ 11.56666667 12.35       13.25       11.96666667 11.03333333 10.16666667
+ 10.          8.66666667  9.15        7.25        7.33333333  6.58333333
+  6.06666667  5.95        5.11666667  3.6         3.3         3.56666667
+  2.48333333  1.5         1.13333333  0.56666667]
 
 ```
-
-{:.output_traceback_line}
-```
-NameError: name 'data' is not defined
-```
-
 
 As a quick check,
 we can ask this array what its shape is:
@@ -1162,29 +757,11 @@ we can ask this array what its shape is:
 print(numpy.mean(data, axis=0).shape)
 ```
 
-
-{:.output_traceback_line}
+{:.output_stream}
 ```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-32-49d4487aea2a> in <module>()
-----> 1 print(numpy.mean(data, axis=0).shape)
+(40,)
 
 ```
-
-{:.output_traceback_line}
-```
-NameError: name 'data' is not defined
-```
-
 
 The expression `(40,)` tells us we have an N×1 vector,
 so this is the average inflammation per day for all patients.
@@ -1196,29 +773,15 @@ If we average across axis 1 (columns in our 2D example), we get:
 print(numpy.mean(data, axis=1))
 ```
 
-
-{:.output_traceback_line}
+{:.output_stream}
 ```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-33-89900eb493dd> in <module>()
-----> 1 print(numpy.mean(data, axis=1))
+[5.45  5.425 6.1   5.9   5.55  6.225 5.975 6.65  6.625 6.525 6.775 5.8
+ 6.225 5.75  5.225 6.3   6.55  5.7   5.85  6.55  5.775 5.825 6.175 6.1
+ 5.8   6.425 6.05  6.025 6.175 6.55  6.175 6.35  6.725 6.125 7.075 5.725
+ 5.925 6.15  6.075 5.75  5.975 5.725 6.3   5.9   6.75  5.925 7.225 6.15
+ 5.95  6.275 5.7   6.1   6.825 5.975 6.725 5.7   6.25  6.4   7.05  5.9  ]
 
 ```
-
-{:.output_traceback_line}
-```
-NameError: name 'data' is not defined
-```
-
 
 which is the average inflammation per patient across all days.
 
@@ -1245,29 +808,7 @@ matplotlib.pyplot.show()
 ```
 
 
-{:.output_traceback_line}
-```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-35-dc49c52bbe1c> in <module>()
-      1 import matplotlib.pyplot
-----> 2 image = matplotlib.pyplot.imshow(data)
-      3 matplotlib.pyplot.show()
-
-```
-
-{:.output_traceback_line}
-```
-NameError: name 'data' is not defined
-```
+![png](../../images/chapters/03-fundamentals-of-python/01-introduction-to-python_instructor_82_0.png)
 
 
 Blue pixels in this heat map represent low values, while yellow pixels represent high values.  As we
@@ -1282,29 +823,7 @@ matplotlib.pyplot.show()
 ```
 
 
-{:.output_traceback_line}
-```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-36-a73656b49c9e> in <module>()
-----> 1 ave_inflammation = numpy.mean(data, axis=0)
-      2 ave_plot = matplotlib.pyplot.plot(ave_inflammation)
-      3 matplotlib.pyplot.show()
-
-```
-
-{:.output_traceback_line}
-```
-NameError: name 'data' is not defined
-```
+![png](../../images/chapters/03-fundamentals-of-python/01-introduction-to-python_instructor_84_0.png)
 
 
 Here, we have put the average per day across all patients in the variable `ave_inflammation`, then
@@ -1320,28 +839,7 @@ matplotlib.pyplot.show()
 ```
 
 
-{:.output_traceback_line}
-```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-37-9b8b3cfdca4d> in <module>()
-----> 1 max_plot = matplotlib.pyplot.plot(numpy.max(data, axis=0))
-      2 matplotlib.pyplot.show()
-
-```
-
-{:.output_traceback_line}
-```
-NameError: name 'data' is not defined
-```
+![png](../../images/chapters/03-fundamentals-of-python/01-introduction-to-python_instructor_86_0.png)
 
 
 
@@ -1352,28 +850,7 @@ matplotlib.pyplot.show()
 ```
 
 
-{:.output_traceback_line}
-```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-38-09425c0628c1> in <module>()
-----> 1 min_plot = matplotlib.pyplot.plot(numpy.min(data, axis=0))
-      2 matplotlib.pyplot.show()
-
-```
-
-{:.output_traceback_line}
-```
-NameError: name 'data' is not defined
-```
+![png](../../images/chapters/03-fundamentals-of-python/01-introduction-to-python_instructor_87_0.png)
 
 
 The maximum value rises and falls smoothly, while the minimum seems to be a step function.  Neither
@@ -1446,64 +923,7 @@ plt.show()
 ```
 
 
-{:.output_traceback_line}
-```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-OSError                                   Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-40-4abfdf3be087> in <module>()
-----> 1 data = np.loadtxt(fname='inflammation-01.csv', delimiter=',')
-      2 
-      3 fig = plt.figure(figsize=(10.0, 3.0))
-      4 
-      5 axes1 = fig.add_subplot(1, 3, 1)
-
-```
-
-{:.output_traceback_line}
-```
-/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/lib/npyio.py in loadtxt(fname, dtype, comments, delimiter, converters, skiprows, usecols, unpack, ndmin, encoding)
-    924             fname = str(fname)
-    925         if _is_string_like(fname):
---> 926             fh = np.lib._datasource.open(fname, 'rt', encoding=encoding)
-    927             fencoding = getattr(fh, 'encoding', 'latin1')
-    928             fh = iter(fh)
-
-```
-
-{:.output_traceback_line}
-```
-/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/lib/_datasource.py in open(path, mode, destpath, encoding, newline)
-    260 
-    261     ds = DataSource(destpath)
---> 262     return ds.open(path, mode, encoding=encoding, newline=newline)
-    263 
-    264 
-
-```
-
-{:.output_traceback_line}
-```
-/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/lib/_datasource.py in open(self, path, mode, encoding, newline)
-    616                                       encoding=encoding, newline=newline)
-    617         else:
---> 618             raise IOError("%s not found." % path)
-    619 
-    620 
-
-```
-
-{:.output_traceback_line}
-```
-OSError: inflammation-01.csv not found.
-```
+![png](../../images/chapters/03-fundamentals-of-python/01-introduction-to-python_instructor_92_0.png)
 
 
 The call to `loadtxt` reads our data,
@@ -1877,64 +1297,7 @@ plt.show()
 ```
 
 
-{:.output_traceback_line}
-```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-OSError                                   Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-41-545445258129> in <module>()
-      2 import matplotlib.pyplot as plt
-      3 
-----> 4 data = numpy.loadtxt(fname='inflammation-01.csv', delimiter=',')
-      5 
-      6 fig = plt.figure(figsize=(10.0, 3.0))
-
-```
-
-{:.output_traceback_line}
-```
-/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/lib/npyio.py in loadtxt(fname, dtype, comments, delimiter, converters, skiprows, usecols, unpack, ndmin, encoding)
-    924             fname = str(fname)
-    925         if _is_string_like(fname):
---> 926             fh = np.lib._datasource.open(fname, 'rt', encoding=encoding)
-    927             fencoding = getattr(fh, 'encoding', 'latin1')
-    928             fh = iter(fh)
-
-```
-
-{:.output_traceback_line}
-```
-/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/lib/_datasource.py in open(path, mode, destpath, encoding, newline)
-    260 
-    261     ds = DataSource(destpath)
---> 262     return ds.open(path, mode, encoding=encoding, newline=newline)
-    263 
-    264 
-
-```
-
-{:.output_traceback_line}
-```
-/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/lib/_datasource.py in open(self, path, mode, encoding, newline)
-    616                                       encoding=encoding, newline=newline)
-    617         else:
---> 618             raise IOError("%s not found." % path)
-    619 
-    620 
-
-```
-
-{:.output_traceback_line}
-```
-OSError: inflammation-01.csv not found.
-```
+![png](../../images/chapters/03-fundamentals-of-python/01-introduction-to-python_instructor_111_0.png)
 
 
 
@@ -1971,28 +1334,7 @@ plt.show()
 ```
 
 
-{:.output_traceback_line}
-```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-42-4737097e47ab> in <module>()
-----> 1 std_plot = plt.plot(numpy.std(data, axis=0))
-      2 plt.show()
-
-```
-
-{:.output_traceback_line}
-```
-NameError: name 'data' is not defined
-```
+![png](../../images/chapters/03-fundamentals-of-python/01-introduction-to-python_instructor_114_0.png)
 
 
 
@@ -2052,64 +1394,7 @@ plt.show()
 ```
 
 
-{:.output_traceback_line}
-```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-OSError                                   Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-43-920f0c389ae7> in <module>()
-      2 import matplotlib.pyplot as plt
-      3 
-----> 4 data = numpy.loadtxt(fname='inflammation-01.csv', delimiter=',')
-      5 
-      6 # change figsize (swap width and height)
-
-```
-
-{:.output_traceback_line}
-```
-/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/lib/npyio.py in loadtxt(fname, dtype, comments, delimiter, converters, skiprows, usecols, unpack, ndmin, encoding)
-    924             fname = str(fname)
-    925         if _is_string_like(fname):
---> 926             fh = np.lib._datasource.open(fname, 'rt', encoding=encoding)
-    927             fencoding = getattr(fh, 'encoding', 'latin1')
-    928             fh = iter(fh)
-
-```
-
-{:.output_traceback_line}
-```
-/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/lib/_datasource.py in open(path, mode, destpath, encoding, newline)
-    260 
-    261     ds = DataSource(destpath)
---> 262     return ds.open(path, mode, encoding=encoding, newline=newline)
-    263 
-    264 
-
-```
-
-{:.output_traceback_line}
-```
-/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/lib/_datasource.py in open(self, path, mode, encoding, newline)
-    616                                       encoding=encoding, newline=newline)
-    617         else:
---> 618             raise IOError("%s not found." % path)
-    619 
-    620 
-
-```
-
-{:.output_traceback_line}
-```
-OSError: inflammation-01.csv not found.
-```
+![png](../../images/chapters/03-fundamentals-of-python/01-introduction-to-python_instructor_117_0.png)
 
 
 ## Stacking Arrays
@@ -2318,27 +1603,19 @@ numpy.diff(data, axis=1)
 ```
 
 
-{:.output_traceback_line}
+
+
+{:.output_data_text}
 ```
----------------------------------------------------------------------------
+array([[ 0.,  1.,  2., ...,  1., -3.,  0.],
+       [ 1.,  1., -1., ...,  0., -1.,  1.],
+       [ 1.,  0.,  2., ...,  0., -1.,  0.],
+       ...,
+       [ 1.,  0.,  0., ..., -1.,  0.,  0.],
+       [ 0.,  0.,  1., ..., -2.,  2., -2.],
+       [ 0.,  1., -1., ..., -2.,  0., -1.]])
 ```
 
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-47-7715c8746a51> in <module>()
-----> 1 numpy.diff(data, axis=1)
-
-```
-
-{:.output_traceback_line}
-```
-NameError: name 'data' is not defined
-```
 
 
 
@@ -2417,27 +1694,17 @@ numpy.max(numpy.diff(data, axis=1), axis=1)
 ```
 
 
-{:.output_traceback_line}
+
+
+{:.output_data_text}
 ```
----------------------------------------------------------------------------
+array([ 7., 12., 11., 10., 11., 13., 10.,  8., 10., 10.,  7.,  7., 13.,
+        7., 10., 10.,  8., 10.,  9., 10., 13.,  7., 12.,  9., 12., 11.,
+       10., 10.,  7., 10., 11., 10.,  8., 11., 12., 10.,  9., 10., 13.,
+       10.,  7.,  7., 10., 13., 12.,  8.,  8., 10., 10.,  9.,  8., 13.,
+       10.,  7., 10.,  8., 12., 10.,  7., 12.])
 ```
 
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-48-8945fe20e522> in <module>()
-----> 1 numpy.max(numpy.diff(data, axis=1), axis=1)
-
-```
-
-{:.output_traceback_line}
-```
-NameError: name 'data' is not defined
-```
 
 
 
@@ -2468,27 +1735,17 @@ numpy.max(numpy.absolute(numpy.diff(data, axis=1)), axis=1)
 ```
 
 
-{:.output_traceback_line}
+
+
+{:.output_data_text}
 ```
----------------------------------------------------------------------------
+array([12., 14., 11., 13., 11., 13., 10., 12., 10., 10., 10., 12., 13.,
+       10., 11., 10., 12., 13.,  9., 10., 13.,  9., 12.,  9., 12., 11.,
+       10., 13.,  9., 13., 11., 11.,  8., 11., 12., 13.,  9., 10., 13.,
+       11., 11., 13., 11., 13., 13., 10.,  9., 10., 10.,  9.,  9., 13.,
+       10.,  9., 10., 11., 13., 10., 10., 12.])
 ```
 
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-49-b255048db683> in <module>()
-----> 1 numpy.max(numpy.absolute(numpy.diff(data, axis=1)), axis=1)
-
-```
-
-{:.output_traceback_line}
-```
-NameError: name 'data' is not defined
-```
 
 
 ---

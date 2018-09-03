@@ -158,63 +158,6 @@ import numpy as np
 data = np.loadtxt(fname='inflammation-01.csv', delimiter=',')
 ```
 
-
-{:.output_traceback_line}
-```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-OSError                                   Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-7-7ad694d53aff> in <module>()
-----> 1 data = np.loadtxt(fname='inflammation-01.csv', delimiter=',')
-
-```
-
-{:.output_traceback_line}
-```
-/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/lib/npyio.py in loadtxt(fname, dtype, comments, delimiter, converters, skiprows, usecols, unpack, ndmin, encoding)
-    924             fname = str(fname)
-    925         if _is_string_like(fname):
---> 926             fh = np.lib._datasource.open(fname, 'rt', encoding=encoding)
-    927             fencoding = getattr(fh, 'encoding', 'latin1')
-    928             fh = iter(fh)
-
-```
-
-{:.output_traceback_line}
-```
-/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/lib/_datasource.py in open(path, mode, destpath, encoding, newline)
-    260 
-    261     ds = DataSource(destpath)
---> 262     return ds.open(path, mode, encoding=encoding, newline=newline)
-    263 
-    264 
-
-```
-
-{:.output_traceback_line}
-```
-/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/lib/_datasource.py in open(self, path, mode, encoding, newline)
-    616                                       encoding=encoding, newline=newline)
-    617         else:
---> 618             raise IOError("%s not found." % path)
-    619 
-    620 
-
-```
-
-{:.output_traceback_line}
-```
-OSError: inflammation-01.csv not found.
-```
-
-
 From the first couple of plots, we saw that maximum daily inflammation exhibits
 a strange behavior and raises one unit a day.
 Wouldn't it be a good idea to detect such behavior and report it as suspicious?
@@ -233,33 +176,11 @@ if max_inflammation_0 == 0 and max_inflammation_20 == 20:
     print('Suspicious looking maxima!')
 ```
 
-
-{:.output_traceback_line}
+{:.output_stream}
 ```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-8-c4e2d7ef3971> in <module>()
-----> 1 max_inflammation_0 = np.max(data, axis=0)[0]
-      2 max_inflammation_20 = np.max(data, axis=0)[20]
-      3 
-      4 if max_inflammation_0 == 0 and max_inflammation_20 == 20:
-      5     print('Suspicious looking maxima!')
+Suspicious looking maxima!
 
 ```
-
-{:.output_traceback_line}
-```
-NameError: name 'data' is not defined
-```
-
 
 We also saw a different problem in the third dataset;
 the minima per day were all zero (looks like a healthy person snuck into our study).
@@ -274,32 +195,11 @@ elif np.sum(np.min(data, axis=0)) == 0:
     print('Minima add up to zero!')
 ```
 
-
-{:.output_traceback_line}
+{:.output_stream}
 ```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-9-b50e51cf5286> in <module>()
-----> 1 if max_inflammation_0 == 0 and max_inflammation_20 == 20:
-      2     print('Suspicious looking maxima!')
-      3 elif np.sum(np.min(data, axis=0)) == 0:
-      4     print('Minima add up to zero!')
+Suspicious looking maxima!
 
 ```
-
-{:.output_traceback_line}
-```
-NameError: name 'max_inflammation_0' is not defined
-```
-
 
 And if neither of these conditions are true, we can use `else` to give the all-clear:
 
@@ -314,33 +214,11 @@ else:
     print('Seems OK!')
 ```
 
-
-{:.output_traceback_line}
+{:.output_stream}
 ```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-10-d6411099f0d0> in <module>()
-----> 1 if max_inflammation_0 == 0 and max_inflammation_20 == 20:
-      2     print('Suspicious looking maxima!')
-      3 elif np.sum(np.min(data, axis=0)) == 0:
-      4     print('Minima add up to zero!')
-      5 else:
+Suspicious looking maxima!
 
 ```
-
-{:.output_traceback_line}
-```
-NameError: name 'max_inflammation_0' is not defined
-```
-
 
 In this way,
 we have asked Python to do something different depending on the condition of our data.

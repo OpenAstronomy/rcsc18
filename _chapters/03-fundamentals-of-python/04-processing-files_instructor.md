@@ -38,7 +38,7 @@ print(glob.glob('inflammation*.csv'))
 
 {:.output_stream}
 ```
-[]
+['inflammation-01.csv', 'inflammation-06.csv', 'inflammation-04.csv', 'inflammation-03.csv', 'inflammation-05.csv', 'inflammation-07.csv', 'inflammation-02.csv', 'inflammation-08.csv', 'inflammation-12.csv', 'inflammation-09.csv', 'inflammation-11.csv', 'inflammation-10.csv']
 
 ```
 
@@ -87,6 +87,36 @@ for f in filenames:
     fig.tight_layout()
     plt.show()
 ```
+
+{:.output_stream}
+```
+inflammation-01.csv
+
+```
+
+
+![png](../../images/chapters/03-fundamentals-of-python/04-processing-files_instructor_7_1.png)
+
+
+{:.output_stream}
+```
+inflammation-02.csv
+
+```
+
+
+![png](../../images/chapters/03-fundamentals-of-python/04-processing-files_instructor_7_3.png)
+
+
+{:.output_stream}
+```
+inflammation-03.csv
+
+```
+
+
+![png](../../images/chapters/03-fundamentals-of-python/04-processing-files_instructor_7_5.png)
+
 
 Sure enough,
 the maxima of the first two data sets show exactly the same ramp as the first,
@@ -143,31 +173,7 @@ plt.show()
 ```
 
 
-{:.output_traceback_line}
-```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-IndexError                                Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-5-c67da6b1e673> in <module>()
-      5 filenames = sorted(glob.glob('inflammation*.csv'))
-      6 
-----> 7 data0 = np.loadtxt(fname=filenames[0], delimiter=',')
-      8 data1 = np.loadtxt(fname=filenames[1], delimiter=',')
-      9 
-
-```
-
-{:.output_traceback_line}
-```
-IndexError: list index out of range
-```
+![png](../../images/chapters/03-fundamentals-of-python/04-processing-files_instructor_11_0.png)
 
 
 
