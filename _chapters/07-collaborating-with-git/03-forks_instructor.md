@@ -164,7 +164,7 @@ git remote -v
 
 <section class="callout panel panel-warning">
 <div class="panel-heading">
-<h2><span class="fa fa-thumb-tack"></span> # Other ways to handle remotes</h2>
+<h2><span class="fa fa-thumb-tack"></span> Other ways to handle remotes</h2>
 </div>
 
 

@@ -114,6 +114,8 @@ Changes not staged for commit:
   (use "git checkout -- <file>..." to discard changes in working directory)
 
 	[31mmodified:   02-git/02-creating-repositories_instructor.ipynb[m
+	[31mmodified:   02-git/03-tracking-changes_instructor.ipynb[m
+	[31mmodified:   02-git/04-exploring-history_instructor.ipynb[m
 
 no changes added to commit (use "git add" and/or "git commit -a")
 
@@ -152,6 +154,8 @@ Changes not staged for commit:
   (use "git checkout -- <file>..." to discard changes in working directory)
 
 	[31mmodified:   02-git/02-creating-repositories_instructor.ipynb[m
+	[31mmodified:   02-git/03-tracking-changes_instructor.ipynb[m
+	[31mmodified:   02-git/04-exploring-history_instructor.ipynb[m
 
 no changes added to commit (use "git add" and/or "git commit -a")
 
@@ -173,6 +177,8 @@ Your branch is up to date with 'origin/master'.
 
 Changes not staged for commit:
 	[31mmodified:   02-git/02-creating-repositories_instructor.ipynb[m
+	[31mmodified:   02-git/03-tracking-changes_instructor.ipynb[m
+	[31mmodified:   02-git/04-exploring-history_instructor.ipynb[m
 
 no changes added to commit
 
@@ -203,6 +209,8 @@ Changes not staged for commit:
   (use "git checkout -- <file>..." to discard changes in working directory)
 
 	[31mmodified:   02-git/02-creating-repositories_instructor.ipynb[m
+	[31mmodified:   02-git/03-tracking-changes_instructor.ipynb[m
+	[31mmodified:   02-git/04-exploring-history_instructor.ipynb[m
 
 no changes added to commit (use "git add" and/or "git commit -a")
 
@@ -219,7 +227,13 @@ git log
 
 {:.output_stream}
 ```
-[33mcommit dd2848367dff52dd13db252e688a085b0638d2c7[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+[33mcommit 5bb6f9a228823fb5890d2c0d6b2e9c0b03673668[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Stuart Mumford <stuart@cadair.com>
+Date:   Tue Sep 4 08:41:44 2018 +0100
+
+    update notebooks
+
+[33mcommit dd2848367dff52dd13db252e688a085b0638d2c7[m
 Author: Stuart Mumford <stuart@cadair.com>
 Date:   Mon Sep 3 13:24:05 2018 +0100
 
@@ -321,6 +335,8 @@ Changes not staged for commit:
   (use "git checkout -- <file>..." to discard changes in working directory)
 
 	[31mmodified:   02-git/02-creating-repositories_instructor.ipynb[m
+	[31mmodified:   02-git/03-tracking-changes_instructor.ipynb[m
+	[31mmodified:   02-git/04-exploring-history_instructor.ipynb[m
 
 no changes added to commit (use "git add" and/or "git commit -a")
 
@@ -463,6 +479,1489 @@ git diff
     "source": [[m
      "git status"[m
     ][m
+[1mdiff --git a/02-git/03-tracking-changes_instructor.ipynb b/02-git/03-tracking-changes_instructor.ipynb[m
+[1mindex 1f99d29..c9b6cac 100644[m
+[1m--- a/02-git/03-tracking-changes_instructor.ipynb[m
+[1m+++ b/02-git/03-tracking-changes_instructor.ipynb[m
+[36m@@ -23,9 +23,18 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 1,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "/home/stuart/Git/Aperio/stfc_website/notebooks/02-git\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "pwd"[m
+    ][m
+[36m@@ -39,18 +48,35 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 2,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "/home/stuart/Git/Aperio/stfc_website/notebooks/02-git\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "pwd"[m
+    ][m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 3,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "cd .."[m
+    ][m
+[36m@@ -74,18 +100,43 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 4,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "00-lessons.ipynb             \u001b[0m\u001b[01;34m01-bash\u001b[0m  \u001b[01;34m03-fundamentals-of-python\u001b[0m  \u001b[01;34m05-writing-effective-tests\u001b[0m  \u001b[01;34m07-collaborating-with-git\u001b[0m  \u001b[01;34m12-images-and-visualisation\u001b[0m  LICENCE  environment.yml\n",[m
+[32m+[m[32m      "00-lessons_instructor.ipynb  \u001b[01;34m02-git\u001b[0m   \u001b[01;34m04-further-python\u001b[0m          \u001b[01;34m06-approximating-pi\u001b[0m         \u001b[01;34m09-units\u001b[0m                   \u001b[01;34m13-images-in-astronomy\u001b[0m       README\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "ls"[m
+    ][m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 5,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "cat: No such file or directory: mars.txt\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "cat mars.txt"[m
+    ][m
+[36m@@ -99,9 +150,27 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 6,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "On branch master\n",[m
+[32m+[m[32m      "Your branch is up to date with 'origin/master'.\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "Changes not staged for commit:\n",[m
+[32m+[m[32m      "  (use \"git add <file>...\" to update what will be committed)\n",[m
+[32m+[m[32m      "  (use \"git checkout -- <file>...\" to discard changes in working directory)\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\t\u001b[31mmodified:   02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "no changes added to commit (use \"git add\" and/or \"git commit -a\")\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git status"[m
+    ][m
+[36m@@ -115,9 +184,24 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 7,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "fatal: pathspec 'mars.txt' did not match any files\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git add mars.txt"[m
+    ][m
+[36m@@ -131,9 +215,27 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 8,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "On branch master\n",[m
+[32m+[m[32m      "Your branch is up to date with 'origin/master'.\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "Changes not staged for commit:\n",[m
+[32m+[m[32m      "  (use \"git add <file>...\" to update what will be committed)\n",[m
+[32m+[m[32m      "  (use \"git checkout -- <file>...\" to discard changes in working directory)\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\t\u001b[31mmodified:   02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "no changes added to commit (use \"git add\" and/or \"git commit -a\")\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git status"[m
+    ][m
+[36m@@ -147,9 +249,24 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 9,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "On branch master\n",[m
+[32m+[m[32m      "Your branch is up to date with 'origin/master'.\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "Changes not staged for commit:\n",[m
+[32m+[m[32m      "\t\u001b[31mmodified:   02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "no changes added to commit\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git commit -m \"Start notes on Mars as a base\""[m
+    ][m
+[36m@@ -169,9 +286,27 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 10,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "On branch master\n",[m
+[32m+[m[32m      "Your branch is up to date with 'origin/master'.\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "Changes not staged for commit:\n",[m
+[32m+[m[32m      "  (use \"git add <file>...\" to update what will be committed)\n",[m
+[32m+[m[32m      "  (use \"git checkout -- <file>...\" to discard changes in working directory)\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\t\u001b[31mmodified:   02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "no changes added to commit (use \"git add\" and/or \"git commit -a\")\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git status"[m
+    ][m
+[36m@@ -185,9 +320,64 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 11,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\u001b[33mcommit 5bb6f9a228823fb5890d2c0d6b2e9c0b03673668\u001b[m\u001b[33m (\u001b[m\u001b[1;36mHEAD -> \u001b[m\u001b[1;32mmaster\u001b[m\u001b[33m, \u001b[m\u001b[1;31morigin/master\u001b[m\u001b[33m, \u001b[m\u001b[1;31morigin/HEAD\u001b[m\u001b[33m)\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Tue Sep 4 08:41:44 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    update notebooks\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\u001b[33mcommit dd2848367dff52dd13db252e688a085b0638d2c7\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Mon Sep 3 13:24:05 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    update notebooks\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\u001b[33mcommit d3568a1b07b9bf76d89803e610c8ece8d4b94a81\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Sun Sep 2 19:25:16 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    update notebooks\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\u001b[33mcommit f5844e2671a8c7a2b212214a4f6c8bd72428f7c3\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Sun Sep 2 14:51:57 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    rename to avoid website issues\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\u001b[33mcommit ffe8c9dd48510cd2dcbb964c8ead21b93912be21\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Sun Sep 2 14:43:57 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    update notebooks\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\u001b[33mcommit 801632edee8fc310d8500bfaeea8651f099283b3\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Sun Sep 2 14:43:13 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    update notebooks\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\u001b[33mcommit 9c74198bf838b7f7127d8fab527e4d96aab72e08\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Sun Sep 2 13:46:49 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    Add licence and readme to the lessons repo\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\u001b[33mcommit 08b3d7073b526396de7e31ec6e8bd65d075207b6\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Sun Sep 2 12:59:07 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    Add initial dump of rendered lessons\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git log"[m
+    ][m
+[36m@@ -228,9 +418,31 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 12,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "cat: No such file or directory: mars.txt\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "nano mars.txt\n",[m
+     "cat mars.txt"[m
+[36m@@ -255,9 +467,27 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 13,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "On branch master\n",[m
+[32m+[m[32m      "Your branch is up to date with 'origin/master'.\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "Changes not staged for commit:\n",[m
+[32m+[m[32m      "  (use \"git add <file>...\" to update what will be committed)\n",[m
+[32m+[m[32m      "  (use \"git checkout -- <file>...\" to discard changes in working directory)\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\t\u001b[31mmodified:   02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "no changes added to commit (use \"git add\" and/or \"git commit -a\")\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git status"[m
+    ][m
+[36m@@ -271,9 +501,143 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 14,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\u001b[1mdiff --git a/02-git/02-creating-repositories_instructor.ipynb b/02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\u001b[1mindex 0a7156d..4996fde 100644\u001b[m\n",[m
+[32m+[m[32m      "\u001b[1m--- a/02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\u001b[1m+++ b/02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\u001b[36m@@ -22,9 +22,32 @@\u001b[m\n",[m
+[32m+[m[32m      "   },\u001b[m\n",[m
+[32m+[m[32m      "   {\u001b[m\n",[m
+[32m+[m[32m      "    \"cell_type\": \"code\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"execution_count\": null,\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"execution_count\": 1,\u001b[m\n",[m
+[32m+[m[32m      "    \"metadata\": {},\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"outputs\": [],\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"outputs\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    },\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stderr\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"/bin/mkdir: cannot create directory ‘planets’: File exists\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    },\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    }\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   ],\u001b[m\n",[m
+[32m+[m[32m      "    \"source\": [\u001b[m\n",[m
+[32m+[m[32m      "     \"cd ~/Desktop\\n\",\u001b[m\n",[m
+[32m+[m[32m      "     \"mkdir planets\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[36m@@ -40,9 +63,18 @@\u001b[m\n",[m
+[32m+[m[32m      "   },\u001b[m\n",[m
+[32m+[m[32m      "   {\u001b[m\n",[m
+[32m+[m[32m      "    \"cell_type\": \"code\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"execution_count\": null,\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"execution_count\": 2,\u001b[m\n",[m
+[32m+[m[32m      "    \"metadata\": {},\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"outputs\": [],\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"outputs\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"Reinitialized existing Git repository in /home/stuart/Desktop/planets/.git/\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    }\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   ],\u001b[m\n",[m
+[32m+[m[32m      "    \"source\": [\u001b[m\n",[m
+[32m+[m[32m      "     \"git init\"\u001b[m\n",[m
+[32m+[m[32m      "    ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[36m@@ -56,9 +88,17 @@\u001b[m\n",[m
+[32m+[m[32m      "   },\u001b[m\n",[m
+[32m+[m[32m      "   {\u001b[m\n",[m
+[32m+[m[32m      "    \"cell_type\": \"code\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"execution_count\": null,\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"execution_count\": 3,\u001b[m\n",[m
+[32m+[m[32m      "    \"metadata\": {},\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"outputs\": [],\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"outputs\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    }\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   ],\u001b[m\n",[m
+[32m+[m[32m      "    \"source\": [\u001b[m\n",[m
+[32m+[m[32m      "     \"ls\"\u001b[m\n",[m
+[32m+[m[32m      "    ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[36m@@ -72,9 +112,18 @@\u001b[m\n",[m
+[32m+[m[32m      "   },\u001b[m\n",[m
+[32m+[m[32m      "   {\u001b[m\n",[m
+[32m+[m[32m      "    \"cell_type\": \"code\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"execution_count\": null,\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"execution_count\": 4,\u001b[m\n",[m
+[32m+[m[32m      "    \"metadata\": {},\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"outputs\": [],\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"outputs\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\u001b[0m\\u001b[01;34m.\\u001b[0m  \\u001b[01;34m..\\u001b[0m  \\u001b[01;34m.git\\u001b[0m\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    }\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   ],\u001b[m\n",[m
+[32m+[m[32m      "    \"source\": [\u001b[m\n",[m
+[32m+[m[32m      "     \"ls -a\"\u001b[m\n",[m
+[32m+[m[32m      "    ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[36m@@ -90,9 +139,22 @@\u001b[m\n",[m
+[32m+[m[32m      "   },\u001b[m\n",[m
+[32m+[m[32m      "   {\u001b[m\n",[m
+[32m+[m[32m      "    \"cell_type\": \"code\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"execution_count\": null,\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"execution_count\": 5,\u001b[m\n",[m
+[32m+[m[32m      "    \"metadata\": {},\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"outputs\": [],\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"outputs\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"On branch master\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"No commits yet\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"nothing to commit (create/copy files and use \\\"git add\\\" to track)\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    }\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   ],\u001b[m\n",[m
+[32m+[m[32m      "    \"source\": [\u001b[m\n",[m
+[32m+[m[32m      "     \"git status\"\u001b[m\n",[m
+[32m+[m[32m      "    ]\u001b[m\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git diff"[m
+    ][m
+[36m@@ -294,9 +658,35 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 15,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "On branch master\n",[m
+[32m+[m[32m      "Your branch is up to date with 'origin/master'.\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "Changes not staged for commit:\n",[m
+[32m+[m[32m      "\t\u001b[31mmodified:   02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "no changes added to commit\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "On branch master\n",[m
+[32m+[m[32m      "Your branch is up to date with 'origin/master'.\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "Changes not staged for commit:\n",[m
+[32m+[m[32m      "  (use \"git add <file>...\" to update what will be committed)\n",[m
+[32m+[m[32m      "  (use \"git checkout -- <file>...\" to discard changes in working directory)\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\t\u001b[31mmodified:   02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "no changes added to commit (use \"git add\" and/or \"git commit -a\")\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git commit -m \"Add concerns about effects of Mars' moons on Wolfman\"\n",[m
+     "git status"[m
+[36m@@ -356,9 +746,31 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 16,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "cat: No such file or directory: mars.txt\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "nano mars.txt\n",[m
+     "cat mars.txt"[m
+[36m@@ -366,9 +778,143 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 17,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\u001b[1mdiff --git a/02-git/02-creating-repositories_instructor.ipynb b/02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\u001b[1mindex 0a7156d..4996fde 100644\u001b[m\n",[m
+[32m+[m[32m      "\u001b[1m--- a/02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\u001b[1m+++ b/02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\u001b[36m@@ -22,9 +22,32 @@\u001b[m\n",[m
+[32m+[m[32m      "   },\u001b[m\n",[m
+[32m+[m[32m      "   {\u001b[m\n",[m
+[32m+[m[32m      "    \"cell_type\": \"code\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"execution_count\": null,\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"execution_count\": 1,\u001b[m\n",[m
+[32m+[m[32m      "    \"metadata\": {},\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"outputs\": [],\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"outputs\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    },\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stderr\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"/bin/mkdir: cannot create directory ‘planets’: File exists\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    },\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    }\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   ],\u001b[m\n",[m
+[32m+[m[32m      "    \"source\": [\u001b[m\n",[m
+[32m+[m[32m      "     \"cd ~/Desktop\\n\",\u001b[m\n",[m
+[32m+[m[32m      "     \"mkdir planets\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[36m@@ -40,9 +63,18 @@\u001b[m\n",[m
+[32m+[m[32m      "   },\u001b[m\n",[m
+[32m+[m[32m      "   {\u001b[m\n",[m
+[32m+[m[32m      "    \"cell_type\": \"code\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"execution_count\": null,\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"execution_count\": 2,\u001b[m\n",[m
+[32m+[m[32m      "    \"metadata\": {},\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"outputs\": [],\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"outputs\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"Reinitialized existing Git repository in /home/stuart/Desktop/planets/.git/\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    }\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   ],\u001b[m\n",[m
+[32m+[m[32m      "    \"source\": [\u001b[m\n",[m
+[32m+[m[32m      "     \"git init\"\u001b[m\n",[m
+[32m+[m[32m      "    ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[36m@@ -56,9 +88,17 @@\u001b[m\n",[m
+[32m+[m[32m      "   },\u001b[m\n",[m
+[32m+[m[32m      "   {\u001b[m\n",[m
+[32m+[m[32m      "    \"cell_type\": \"code\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"execution_count\": null,\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"execution_count\": 3,\u001b[m\n",[m
+[32m+[m[32m      "    \"metadata\": {},\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"outputs\": [],\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"outputs\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    }\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   ],\u001b[m\n",[m
+[32m+[m[32m      "    \"source\": [\u001b[m\n",[m
+[32m+[m[32m      "     \"ls\"\u001b[m\n",[m
+[32m+[m[32m      "    ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[36m@@ -72,9 +112,18 @@\u001b[m\n",[m
+[32m+[m[32m      "   },\u001b[m\n",[m
+[32m+[m[32m      "   {\u001b[m\n",[m
+[32m+[m[32m      "    \"cell_type\": \"code\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"execution_count\": null,\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"execution_count\": 4,\u001b[m\n",[m
+[32m+[m[32m      "    \"metadata\": {},\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"outputs\": [],\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"outputs\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\u001b[0m\\u001b[01;34m.\\u001b[0m  \\u001b[01;34m..\\u001b[0m  \\u001b[01;34m.git\\u001b[0m\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    }\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   ],\u001b[m\n",[m
+[32m+[m[32m      "    \"source\": [\u001b[m\n",[m
+[32m+[m[32m      "     \"ls -a\"\u001b[m\n",[m
+[32m+[m[32m      "    ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[36m@@ -90,9 +139,22 @@\u001b[m\n",[m
+[32m+[m[32m      "   },\u001b[m\n",[m
+[32m+[m[32m      "   {\u001b[m\n",[m
+[32m+[m[32m      "    \"cell_type\": \"code\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"execution_count\": null,\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"execution_count\": 5,\u001b[m\n",[m
+[32m+[m[32m      "    \"metadata\": {},\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"outputs\": [],\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"outputs\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"On branch master\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"No commits yet\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"nothing to commit (create/copy files and use \\\"git add\\\" to track)\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    }\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   ],\u001b[m\n",[m
+[32m+[m[32m      "    \"source\": [\u001b[m\n",[m
+[32m+[m[32m      "     \"git status\"\u001b[m\n",[m
+[32m+[m[32m      "    ]\u001b[m\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git diff"[m
+    ][m
+[36m@@ -382,9 +928,151 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 18,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "fatal: pathspec 'mars.txt' did not match any files\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\u001b[1mdiff --git a/02-git/02-creating-repositories_instructor.ipynb b/02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\u001b[1mindex 0a7156d..4996fde 100644\u001b[m\n",[m
+[32m+[m[32m      "\u001b[1m--- a/02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\u001b[1m+++ b/02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\u001b[36m@@ -22,9 +22,32 @@\u001b[m\n",[m
+[32m+[m[32m      "   },\u001b[m\n",[m
+[32m+[m[32m      "   {\u001b[m\n",[m
+[32m+[m[32m      "    \"cell_type\": \"code\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"execution_count\": null,\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"execution_count\": 1,\u001b[m\n",[m
+[32m+[m[32m      "    \"metadata\": {},\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"outputs\": [],\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"outputs\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    },\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stderr\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"/bin/mkdir: cannot create directory ‘planets’: File exists\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    },\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    }\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   ],\u001b[m\n",[m
+[32m+[m[32m      "    \"source\": [\u001b[m\n",[m
+[32m+[m[32m      "     \"cd ~/Desktop\\n\",\u001b[m\n",[m
+[32m+[m[32m      "     \"mkdir planets\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[36m@@ -40,9 +63,18 @@\u001b[m\n",[m
+[32m+[m[32m      "   },\u001b[m\n",[m
+[32m+[m[32m      "   {\u001b[m\n",[m
+[32m+[m[32m      "    \"cell_type\": \"code\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"execution_count\": null,\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"execution_count\": 2,\u001b[m\n",[m
+[32m+[m[32m      "    \"metadata\": {},\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"outputs\": [],\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"outputs\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"Reinitialized existing Git repository in /home/stuart/Desktop/planets/.git/\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    }\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   ],\u001b[m\n",[m
+[32m+[m[32m      "    \"source\": [\u001b[m\n",[m
+[32m+[m[32m      "     \"git init\"\u001b[m\n",[m
+[32m+[m[32m      "    ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[36m@@ -56,9 +88,17 @@\u001b[m\n",[m
+[32m+[m[32m      "   },\u001b[m\n",[m
+[32m+[m[32m      "   {\u001b[m\n",[m
+[32m+[m[32m      "    \"cell_type\": \"code\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"execution_count\": null,\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"execution_count\": 3,\u001b[m\n",[m
+[32m+[m[32m      "    \"metadata\": {},\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"outputs\": [],\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"outputs\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    }\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   ],\u001b[m\n",[m
+[32m+[m[32m      "    \"source\": [\u001b[m\n",[m
+[32m+[m[32m      "     \"ls\"\u001b[m\n",[m
+[32m+[m[32m      "    ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[36m@@ -72,9 +112,18 @@\u001b[m\n",[m
+[32m+[m[32m      "   },\u001b[m\n",[m
+[32m+[m[32m      "   {\u001b[m\n",[m
+[32m+[m[32m      "    \"cell_type\": \"code\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"execution_count\": null,\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"execution_count\": 4,\u001b[m\n",[m
+[32m+[m[32m      "    \"metadata\": {},\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"outputs\": [],\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"outputs\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\u001b[0m\\u001b[01;34m.\\u001b[0m  \\u001b[01;34m..\\u001b[0m  \\u001b[01;34m.git\\u001b[0m\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    }\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   ],\u001b[m\n",[m
+[32m+[m[32m      "    \"source\": [\u001b[m\n",[m
+[32m+[m[32m      "     \"ls -a\"\u001b[m\n",[m
+[32m+[m[32m      "    ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[36m@@ -90,9 +139,22 @@\u001b[m\n",[m
+[32m+[m[32m      "   },\u001b[m\n",[m
+[32m+[m[32m      "   {\u001b[m\n",[m
+[32m+[m[32m      "    \"cell_type\": \"code\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"execution_count\": null,\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"execution_count\": 5,\u001b[m\n",[m
+[32m+[m[32m      "    \"metadata\": {},\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"outputs\": [],\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"outputs\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"On branch master\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"No commits yet\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"nothing to commit (create/copy files and use \\\"git add\\\" to track)\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    }\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   ],\u001b[m\n",[m
+[32m+[m[32m      "    \"source\": [\u001b[m\n",[m
+[32m+[m[32m      "     \"git status\"\u001b[m\n",[m
+[32m+[m[32m      "    ]\u001b[m\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git add mars.txt\n",[m
+     "git diff"[m
+[36m@@ -399,9 +1087,17 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 19,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git diff --staged"[m
+    ][m
+[36m@@ -415,9 +1111,24 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 20,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "On branch master\n",[m
+[32m+[m[32m      "Your branch is up to date with 'origin/master'.\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "Changes not staged for commit:\n",[m
+[32m+[m[32m      "\t\u001b[31mmodified:   02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "no changes added to commit\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git commit -m \"Discuss concerns about Mars' climate for Mummy\""[m
+    ][m
+[36m@@ -431,9 +1142,27 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 21,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "On branch master\n",[m
+[32m+[m[32m      "Your branch is up to date with 'origin/master'.\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "Changes not staged for commit:\n",[m
+[32m+[m[32m      "  (use \"git add <file>...\" to update what will be committed)\n",[m
+[32m+[m[32m      "  (use \"git checkout -- <file>...\" to discard changes in working directory)\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\t\u001b[31mmodified:   02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "no changes added to commit (use \"git add\" and/or \"git commit -a\")\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git status"[m
+    ][m
+[36m@@ -447,9 +1176,64 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 22,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\u001b[33mcommit 5bb6f9a228823fb5890d2c0d6b2e9c0b03673668\u001b[m\u001b[33m (\u001b[m\u001b[1;36mHEAD -> \u001b[m\u001b[1;32mmaster\u001b[m\u001b[33m, \u001b[m\u001b[1;31morigin/master\u001b[m\u001b[33m, \u001b[m\u001b[1;31morigin/HEAD\u001b[m\u001b[33m)\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Tue Sep 4 08:41:44 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    update notebooks\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\u001b[33mcommit dd2848367dff52dd13db252e688a085b0638d2c7\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Mon Sep 3 13:24:05 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    update notebooks\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\u001b[33mcommit d3568a1b07b9bf76d89803e610c8ece8d4b94a81\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Sun Sep 2 19:25:16 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    update notebooks\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\u001b[33mcommit f5844e2671a8c7a2b212214a4f6c8bd72428f7c3\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Sun Sep 2 14:51:57 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    rename to avoid website issues\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\u001b[33mcommit ffe8c9dd48510cd2dcbb964c8ead21b93912be21\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Sun Sep 2 14:43:57 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    update notebooks\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\u001b[33mcommit 801632edee8fc310d8500bfaeea8651f099283b3\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Sun Sep 2 14:43:13 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    update notebooks\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\u001b[33mcommit 9c74198bf838b7f7127d8fab527e4d96aab72e08\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Sun Sep 2 13:46:49 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    Add licence and readme to the lessons repo\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\u001b[33mcommit 08b3d7073b526396de7e31ec6e8bd65d075207b6\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Sun Sep 2 12:59:07 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    Add initial dump of rendered lessons\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git log"[m
+    ][m
+[1mdiff --git a/02-git/04-exploring-history_instructor.ipynb b/02-git/04-exploring-history_instructor.ipynb[m
+[1mindex 24e0c80..e766d19 100644[m
+[1m--- a/02-git/04-exploring-history_instructor.ipynb[m
+[1m+++ b/02-git/04-exploring-history_instructor.ipynb[m
+[36m@@ -18,9 +18,31 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 1,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "cat: No such file or directory: mars.txt\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "nano mars.txt\n",[m
+     "cat mars.txt"[m
+[36m@@ -35,9 +57,26 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 2,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "fatal: ambiguous argument 'mars.txt': unknown revision or path not in the working tree.\n",[m
+[32m+[m[32m      "Use '--' to separate paths from revisions, like this:\n",[m
+[32m+[m[32m      "'git <command> [<revision>...] -- [<file>...]'\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git diff HEAD mars.txt"[m
+    ][m
+[36m@@ -51,9 +90,26 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 3,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "fatal: ambiguous argument 'mars.txt': unknown revision or path not in the working tree.\n",[m
+[32m+[m[32m      "Use '--' to separate paths from revisions, like this:\n",[m
+[32m+[m[32m      "'git <command> [<revision>...] -- [<file>...]'\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git diff HEAD~1 mars.txt"[m
+    ][m
+[36m@@ -67,9 +123,26 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 4,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "fatal: ambiguous argument 'mars.txt': unknown revision or path not in the working tree.\n",[m
+[32m+[m[32m      "Use '--' to separate paths from revisions, like this:\n",[m
+[32m+[m[32m      "'git <command> [<revision>...] -- [<file>...]'\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git diff HEAD~2 mars.txt"[m
+    ][m
+[36m@@ -93,9 +166,24 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 5,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "fatal: bad object f22b25e3233b4645dabd0d81e651fe074bd8e73b\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git diff f22b25e3233b4645dabd0d81e651fe074bd8e73b mars.txt"[m
+    ][m
+[36m@@ -109,9 +197,26 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 6,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "fatal: ambiguous argument 'f22b25e': unknown revision or path not in the working tree.\n",[m
+[32m+[m[32m      "Use '--' to separate paths from revisions, like this:\n",[m
+[32m+[m[32m      "'git <command> [<revision>...] -- [<file>...]'\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git diff f22b25e mars.txt"[m
+    ][m
+[36m@@ -125,9 +230,31 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 7,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "cat: No such file or directory: mars.txt\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "nano mars.txt\n",[m
+     "cat mars.txt"[m
+[36m@@ -142,9 +269,28 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 8,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "On branch master\n",[m
+[32m+[m[32m      "Your branch is up to date with 'origin/master'.\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "Changes not staged for commit:\n",[m
+[32m+[m[32m      "  (use \"git add <file>...\" to update what will be committed)\n",[m
+[32m+[m[32m      "  (use \"git checkout -- <file>...\" to discard changes in working directory)\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\t\u001b[31mmodified:   02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\t\u001b[31mmodified:   03-tracking-changes_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "no changes added to commit (use \"git add\" and/or \"git commit -a\")\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git status"[m
+    ][m
+[36m@@ -158,9 +304,38 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 9,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "error: pathspec 'mars.txt' did not match any file(s) known to git.\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "cat: No such file or directory: mars.txt\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git checkout HEAD mars.txt\n",[m
+     "cat mars.txt"[m
+[36m@@ -175,27 +350,77 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 10,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "error: pathspec 'f22b25e' did not match any file(s) known to git.\n",[m
+[32m+[m[32m      "error: pathspec 'mars.txt' did not match any file(s) known to git.\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git checkout f22b25e mars.txt"[m
+    ][m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 11,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "cat: No such file or directory: mars.txt\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "cat mars.txt"[m
+    ][m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 12,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "On branch master\n",[m
+[32m+[m[32m      "Your branch is up to date with 'origin/master'.\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "Changes not staged for commit:\n",[m
+[32m+[m[32m      "  (use \"git add <file>...\" to update what will be committed)\n",[m
+[32m+[m[32m      "  (use \"git checkout -- <file>...\" to discard changes in working directory)\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\t\u001b[31mmodified:   02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\t\u001b[31mmodified:   03-tracking-changes_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "no changes added to commit (use \"git add\" and/or \"git commit -a\")\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git status"[m
+    ][m
+[36m@@ -209,9 +434,24 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 13,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "error: pathspec 'mars.txt' did not match any file(s) known to git.\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git checkout HEAD mars.txt"[m
+    ][m
 
 
 ```
@@ -490,6 +1989,8 @@ Your branch is up to date with 'origin/master'.
 
 Changes not staged for commit:
 	[31mmodified:   02-git/02-creating-repositories_instructor.ipynb[m
+	[31mmodified:   02-git/03-tracking-changes_instructor.ipynb[m
+	[31mmodified:   02-git/04-exploring-history_instructor.ipynb[m
 
 no changes added to commit
 
@@ -501,6 +2002,8 @@ Changes not staged for commit:
   (use "git checkout -- <file>..." to discard changes in working directory)
 
 	[31mmodified:   02-git/02-creating-repositories_instructor.ipynb[m
+	[31mmodified:   02-git/03-tracking-changes_instructor.ipynb[m
+	[31mmodified:   02-git/04-exploring-history_instructor.ipynb[m
 
 no changes added to commit (use "git add" and/or "git commit -a")
 
@@ -683,6 +2186,1489 @@ git diff
     "source": [[m
      "git status"[m
     ][m
+[1mdiff --git a/02-git/03-tracking-changes_instructor.ipynb b/02-git/03-tracking-changes_instructor.ipynb[m
+[1mindex 1f99d29..c9b6cac 100644[m
+[1m--- a/02-git/03-tracking-changes_instructor.ipynb[m
+[1m+++ b/02-git/03-tracking-changes_instructor.ipynb[m
+[36m@@ -23,9 +23,18 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 1,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "/home/stuart/Git/Aperio/stfc_website/notebooks/02-git\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "pwd"[m
+    ][m
+[36m@@ -39,18 +48,35 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 2,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "/home/stuart/Git/Aperio/stfc_website/notebooks/02-git\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "pwd"[m
+    ][m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 3,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "cd .."[m
+    ][m
+[36m@@ -74,18 +100,43 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 4,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "00-lessons.ipynb             \u001b[0m\u001b[01;34m01-bash\u001b[0m  \u001b[01;34m03-fundamentals-of-python\u001b[0m  \u001b[01;34m05-writing-effective-tests\u001b[0m  \u001b[01;34m07-collaborating-with-git\u001b[0m  \u001b[01;34m12-images-and-visualisation\u001b[0m  LICENCE  environment.yml\n",[m
+[32m+[m[32m      "00-lessons_instructor.ipynb  \u001b[01;34m02-git\u001b[0m   \u001b[01;34m04-further-python\u001b[0m          \u001b[01;34m06-approximating-pi\u001b[0m         \u001b[01;34m09-units\u001b[0m                   \u001b[01;34m13-images-in-astronomy\u001b[0m       README\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "ls"[m
+    ][m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 5,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "cat: No such file or directory: mars.txt\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "cat mars.txt"[m
+    ][m
+[36m@@ -99,9 +150,27 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 6,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "On branch master\n",[m
+[32m+[m[32m      "Your branch is up to date with 'origin/master'.\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "Changes not staged for commit:\n",[m
+[32m+[m[32m      "  (use \"git add <file>...\" to update what will be committed)\n",[m
+[32m+[m[32m      "  (use \"git checkout -- <file>...\" to discard changes in working directory)\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\t\u001b[31mmodified:   02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "no changes added to commit (use \"git add\" and/or \"git commit -a\")\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git status"[m
+    ][m
+[36m@@ -115,9 +184,24 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 7,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "fatal: pathspec 'mars.txt' did not match any files\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git add mars.txt"[m
+    ][m
+[36m@@ -131,9 +215,27 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 8,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "On branch master\n",[m
+[32m+[m[32m      "Your branch is up to date with 'origin/master'.\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "Changes not staged for commit:\n",[m
+[32m+[m[32m      "  (use \"git add <file>...\" to update what will be committed)\n",[m
+[32m+[m[32m      "  (use \"git checkout -- <file>...\" to discard changes in working directory)\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\t\u001b[31mmodified:   02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "no changes added to commit (use \"git add\" and/or \"git commit -a\")\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git status"[m
+    ][m
+[36m@@ -147,9 +249,24 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 9,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "On branch master\n",[m
+[32m+[m[32m      "Your branch is up to date with 'origin/master'.\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "Changes not staged for commit:\n",[m
+[32m+[m[32m      "\t\u001b[31mmodified:   02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "no changes added to commit\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git commit -m \"Start notes on Mars as a base\""[m
+    ][m
+[36m@@ -169,9 +286,27 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 10,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "On branch master\n",[m
+[32m+[m[32m      "Your branch is up to date with 'origin/master'.\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "Changes not staged for commit:\n",[m
+[32m+[m[32m      "  (use \"git add <file>...\" to update what will be committed)\n",[m
+[32m+[m[32m      "  (use \"git checkout -- <file>...\" to discard changes in working directory)\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\t\u001b[31mmodified:   02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "no changes added to commit (use \"git add\" and/or \"git commit -a\")\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git status"[m
+    ][m
+[36m@@ -185,9 +320,64 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 11,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\u001b[33mcommit 5bb6f9a228823fb5890d2c0d6b2e9c0b03673668\u001b[m\u001b[33m (\u001b[m\u001b[1;36mHEAD -> \u001b[m\u001b[1;32mmaster\u001b[m\u001b[33m, \u001b[m\u001b[1;31morigin/master\u001b[m\u001b[33m, \u001b[m\u001b[1;31morigin/HEAD\u001b[m\u001b[33m)\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Tue Sep 4 08:41:44 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    update notebooks\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\u001b[33mcommit dd2848367dff52dd13db252e688a085b0638d2c7\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Mon Sep 3 13:24:05 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    update notebooks\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\u001b[33mcommit d3568a1b07b9bf76d89803e610c8ece8d4b94a81\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Sun Sep 2 19:25:16 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    update notebooks\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\u001b[33mcommit f5844e2671a8c7a2b212214a4f6c8bd72428f7c3\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Sun Sep 2 14:51:57 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    rename to avoid website issues\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\u001b[33mcommit ffe8c9dd48510cd2dcbb964c8ead21b93912be21\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Sun Sep 2 14:43:57 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    update notebooks\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\u001b[33mcommit 801632edee8fc310d8500bfaeea8651f099283b3\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Sun Sep 2 14:43:13 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    update notebooks\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\u001b[33mcommit 9c74198bf838b7f7127d8fab527e4d96aab72e08\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Sun Sep 2 13:46:49 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    Add licence and readme to the lessons repo\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\u001b[33mcommit 08b3d7073b526396de7e31ec6e8bd65d075207b6\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Sun Sep 2 12:59:07 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    Add initial dump of rendered lessons\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git log"[m
+    ][m
+[36m@@ -228,9 +418,31 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 12,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "cat: No such file or directory: mars.txt\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "nano mars.txt\n",[m
+     "cat mars.txt"[m
+[36m@@ -255,9 +467,27 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 13,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "On branch master\n",[m
+[32m+[m[32m      "Your branch is up to date with 'origin/master'.\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "Changes not staged for commit:\n",[m
+[32m+[m[32m      "  (use \"git add <file>...\" to update what will be committed)\n",[m
+[32m+[m[32m      "  (use \"git checkout -- <file>...\" to discard changes in working directory)\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\t\u001b[31mmodified:   02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "no changes added to commit (use \"git add\" and/or \"git commit -a\")\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git status"[m
+    ][m
+[36m@@ -271,9 +501,143 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 14,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\u001b[1mdiff --git a/02-git/02-creating-repositories_instructor.ipynb b/02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\u001b[1mindex 0a7156d..4996fde 100644\u001b[m\n",[m
+[32m+[m[32m      "\u001b[1m--- a/02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\u001b[1m+++ b/02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\u001b[36m@@ -22,9 +22,32 @@\u001b[m\n",[m
+[32m+[m[32m      "   },\u001b[m\n",[m
+[32m+[m[32m      "   {\u001b[m\n",[m
+[32m+[m[32m      "    \"cell_type\": \"code\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"execution_count\": null,\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"execution_count\": 1,\u001b[m\n",[m
+[32m+[m[32m      "    \"metadata\": {},\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"outputs\": [],\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"outputs\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    },\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stderr\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"/bin/mkdir: cannot create directory ‘planets’: File exists\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    },\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    }\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   ],\u001b[m\n",[m
+[32m+[m[32m      "    \"source\": [\u001b[m\n",[m
+[32m+[m[32m      "     \"cd ~/Desktop\\n\",\u001b[m\n",[m
+[32m+[m[32m      "     \"mkdir planets\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[36m@@ -40,9 +63,18 @@\u001b[m\n",[m
+[32m+[m[32m      "   },\u001b[m\n",[m
+[32m+[m[32m      "   {\u001b[m\n",[m
+[32m+[m[32m      "    \"cell_type\": \"code\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"execution_count\": null,\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"execution_count\": 2,\u001b[m\n",[m
+[32m+[m[32m      "    \"metadata\": {},\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"outputs\": [],\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"outputs\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"Reinitialized existing Git repository in /home/stuart/Desktop/planets/.git/\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    }\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   ],\u001b[m\n",[m
+[32m+[m[32m      "    \"source\": [\u001b[m\n",[m
+[32m+[m[32m      "     \"git init\"\u001b[m\n",[m
+[32m+[m[32m      "    ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[36m@@ -56,9 +88,17 @@\u001b[m\n",[m
+[32m+[m[32m      "   },\u001b[m\n",[m
+[32m+[m[32m      "   {\u001b[m\n",[m
+[32m+[m[32m      "    \"cell_type\": \"code\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"execution_count\": null,\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"execution_count\": 3,\u001b[m\n",[m
+[32m+[m[32m      "    \"metadata\": {},\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"outputs\": [],\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"outputs\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    }\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   ],\u001b[m\n",[m
+[32m+[m[32m      "    \"source\": [\u001b[m\n",[m
+[32m+[m[32m      "     \"ls\"\u001b[m\n",[m
+[32m+[m[32m      "    ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[36m@@ -72,9 +112,18 @@\u001b[m\n",[m
+[32m+[m[32m      "   },\u001b[m\n",[m
+[32m+[m[32m      "   {\u001b[m\n",[m
+[32m+[m[32m      "    \"cell_type\": \"code\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"execution_count\": null,\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"execution_count\": 4,\u001b[m\n",[m
+[32m+[m[32m      "    \"metadata\": {},\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"outputs\": [],\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"outputs\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\u001b[0m\\u001b[01;34m.\\u001b[0m  \\u001b[01;34m..\\u001b[0m  \\u001b[01;34m.git\\u001b[0m\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    }\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   ],\u001b[m\n",[m
+[32m+[m[32m      "    \"source\": [\u001b[m\n",[m
+[32m+[m[32m      "     \"ls -a\"\u001b[m\n",[m
+[32m+[m[32m      "    ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[36m@@ -90,9 +139,22 @@\u001b[m\n",[m
+[32m+[m[32m      "   },\u001b[m\n",[m
+[32m+[m[32m      "   {\u001b[m\n",[m
+[32m+[m[32m      "    \"cell_type\": \"code\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"execution_count\": null,\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"execution_count\": 5,\u001b[m\n",[m
+[32m+[m[32m      "    \"metadata\": {},\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"outputs\": [],\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"outputs\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"On branch master\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"No commits yet\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"nothing to commit (create/copy files and use \\\"git add\\\" to track)\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    }\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   ],\u001b[m\n",[m
+[32m+[m[32m      "    \"source\": [\u001b[m\n",[m
+[32m+[m[32m      "     \"git status\"\u001b[m\n",[m
+[32m+[m[32m      "    ]\u001b[m\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git diff"[m
+    ][m
+[36m@@ -294,9 +658,35 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 15,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "On branch master\n",[m
+[32m+[m[32m      "Your branch is up to date with 'origin/master'.\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "Changes not staged for commit:\n",[m
+[32m+[m[32m      "\t\u001b[31mmodified:   02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "no changes added to commit\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "On branch master\n",[m
+[32m+[m[32m      "Your branch is up to date with 'origin/master'.\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "Changes not staged for commit:\n",[m
+[32m+[m[32m      "  (use \"git add <file>...\" to update what will be committed)\n",[m
+[32m+[m[32m      "  (use \"git checkout -- <file>...\" to discard changes in working directory)\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\t\u001b[31mmodified:   02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "no changes added to commit (use \"git add\" and/or \"git commit -a\")\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git commit -m \"Add concerns about effects of Mars' moons on Wolfman\"\n",[m
+     "git status"[m
+[36m@@ -356,9 +746,31 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 16,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "cat: No such file or directory: mars.txt\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "nano mars.txt\n",[m
+     "cat mars.txt"[m
+[36m@@ -366,9 +778,143 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 17,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\u001b[1mdiff --git a/02-git/02-creating-repositories_instructor.ipynb b/02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\u001b[1mindex 0a7156d..4996fde 100644\u001b[m\n",[m
+[32m+[m[32m      "\u001b[1m--- a/02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\u001b[1m+++ b/02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\u001b[36m@@ -22,9 +22,32 @@\u001b[m\n",[m
+[32m+[m[32m      "   },\u001b[m\n",[m
+[32m+[m[32m      "   {\u001b[m\n",[m
+[32m+[m[32m      "    \"cell_type\": \"code\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"execution_count\": null,\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"execution_count\": 1,\u001b[m\n",[m
+[32m+[m[32m      "    \"metadata\": {},\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"outputs\": [],\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"outputs\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    },\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stderr\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"/bin/mkdir: cannot create directory ‘planets’: File exists\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    },\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    }\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   ],\u001b[m\n",[m
+[32m+[m[32m      "    \"source\": [\u001b[m\n",[m
+[32m+[m[32m      "     \"cd ~/Desktop\\n\",\u001b[m\n",[m
+[32m+[m[32m      "     \"mkdir planets\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[36m@@ -40,9 +63,18 @@\u001b[m\n",[m
+[32m+[m[32m      "   },\u001b[m\n",[m
+[32m+[m[32m      "   {\u001b[m\n",[m
+[32m+[m[32m      "    \"cell_type\": \"code\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"execution_count\": null,\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"execution_count\": 2,\u001b[m\n",[m
+[32m+[m[32m      "    \"metadata\": {},\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"outputs\": [],\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"outputs\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"Reinitialized existing Git repository in /home/stuart/Desktop/planets/.git/\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    }\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   ],\u001b[m\n",[m
+[32m+[m[32m      "    \"source\": [\u001b[m\n",[m
+[32m+[m[32m      "     \"git init\"\u001b[m\n",[m
+[32m+[m[32m      "    ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[36m@@ -56,9 +88,17 @@\u001b[m\n",[m
+[32m+[m[32m      "   },\u001b[m\n",[m
+[32m+[m[32m      "   {\u001b[m\n",[m
+[32m+[m[32m      "    \"cell_type\": \"code\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"execution_count\": null,\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"execution_count\": 3,\u001b[m\n",[m
+[32m+[m[32m      "    \"metadata\": {},\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"outputs\": [],\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"outputs\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    }\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   ],\u001b[m\n",[m
+[32m+[m[32m      "    \"source\": [\u001b[m\n",[m
+[32m+[m[32m      "     \"ls\"\u001b[m\n",[m
+[32m+[m[32m      "    ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[36m@@ -72,9 +112,18 @@\u001b[m\n",[m
+[32m+[m[32m      "   },\u001b[m\n",[m
+[32m+[m[32m      "   {\u001b[m\n",[m
+[32m+[m[32m      "    \"cell_type\": \"code\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"execution_count\": null,\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"execution_count\": 4,\u001b[m\n",[m
+[32m+[m[32m      "    \"metadata\": {},\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"outputs\": [],\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"outputs\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\u001b[0m\\u001b[01;34m.\\u001b[0m  \\u001b[01;34m..\\u001b[0m  \\u001b[01;34m.git\\u001b[0m\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    }\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   ],\u001b[m\n",[m
+[32m+[m[32m      "    \"source\": [\u001b[m\n",[m
+[32m+[m[32m      "     \"ls -a\"\u001b[m\n",[m
+[32m+[m[32m      "    ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[36m@@ -90,9 +139,22 @@\u001b[m\n",[m
+[32m+[m[32m      "   },\u001b[m\n",[m
+[32m+[m[32m      "   {\u001b[m\n",[m
+[32m+[m[32m      "    \"cell_type\": \"code\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"execution_count\": null,\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"execution_count\": 5,\u001b[m\n",[m
+[32m+[m[32m      "    \"metadata\": {},\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"outputs\": [],\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"outputs\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"On branch master\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"No commits yet\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"nothing to commit (create/copy files and use \\\"git add\\\" to track)\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    }\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   ],\u001b[m\n",[m
+[32m+[m[32m      "    \"source\": [\u001b[m\n",[m
+[32m+[m[32m      "     \"git status\"\u001b[m\n",[m
+[32m+[m[32m      "    ]\u001b[m\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git diff"[m
+    ][m
+[36m@@ -382,9 +928,151 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 18,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "fatal: pathspec 'mars.txt' did not match any files\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\u001b[1mdiff --git a/02-git/02-creating-repositories_instructor.ipynb b/02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\u001b[1mindex 0a7156d..4996fde 100644\u001b[m\n",[m
+[32m+[m[32m      "\u001b[1m--- a/02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\u001b[1m+++ b/02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\u001b[36m@@ -22,9 +22,32 @@\u001b[m\n",[m
+[32m+[m[32m      "   },\u001b[m\n",[m
+[32m+[m[32m      "   {\u001b[m\n",[m
+[32m+[m[32m      "    \"cell_type\": \"code\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"execution_count\": null,\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"execution_count\": 1,\u001b[m\n",[m
+[32m+[m[32m      "    \"metadata\": {},\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"outputs\": [],\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"outputs\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    },\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stderr\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"/bin/mkdir: cannot create directory ‘planets’: File exists\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    },\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    }\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   ],\u001b[m\n",[m
+[32m+[m[32m      "    \"source\": [\u001b[m\n",[m
+[32m+[m[32m      "     \"cd ~/Desktop\\n\",\u001b[m\n",[m
+[32m+[m[32m      "     \"mkdir planets\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[36m@@ -40,9 +63,18 @@\u001b[m\n",[m
+[32m+[m[32m      "   },\u001b[m\n",[m
+[32m+[m[32m      "   {\u001b[m\n",[m
+[32m+[m[32m      "    \"cell_type\": \"code\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"execution_count\": null,\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"execution_count\": 2,\u001b[m\n",[m
+[32m+[m[32m      "    \"metadata\": {},\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"outputs\": [],\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"outputs\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"Reinitialized existing Git repository in /home/stuart/Desktop/planets/.git/\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    }\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   ],\u001b[m\n",[m
+[32m+[m[32m      "    \"source\": [\u001b[m\n",[m
+[32m+[m[32m      "     \"git init\"\u001b[m\n",[m
+[32m+[m[32m      "    ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[36m@@ -56,9 +88,17 @@\u001b[m\n",[m
+[32m+[m[32m      "   },\u001b[m\n",[m
+[32m+[m[32m      "   {\u001b[m\n",[m
+[32m+[m[32m      "    \"cell_type\": \"code\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"execution_count\": null,\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"execution_count\": 3,\u001b[m\n",[m
+[32m+[m[32m      "    \"metadata\": {},\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"outputs\": [],\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"outputs\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    }\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   ],\u001b[m\n",[m
+[32m+[m[32m      "    \"source\": [\u001b[m\n",[m
+[32m+[m[32m      "     \"ls\"\u001b[m\n",[m
+[32m+[m[32m      "    ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[36m@@ -72,9 +112,18 @@\u001b[m\n",[m
+[32m+[m[32m      "   },\u001b[m\n",[m
+[32m+[m[32m      "   {\u001b[m\n",[m
+[32m+[m[32m      "    \"cell_type\": \"code\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"execution_count\": null,\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"execution_count\": 4,\u001b[m\n",[m
+[32m+[m[32m      "    \"metadata\": {},\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"outputs\": [],\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"outputs\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\u001b[0m\\u001b[01;34m.\\u001b[0m  \\u001b[01;34m..\\u001b[0m  \\u001b[01;34m.git\\u001b[0m\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    }\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   ],\u001b[m\n",[m
+[32m+[m[32m      "    \"source\": [\u001b[m\n",[m
+[32m+[m[32m      "     \"ls -a\"\u001b[m\n",[m
+[32m+[m[32m      "    ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[36m@@ -90,9 +139,22 @@\u001b[m\n",[m
+[32m+[m[32m      "   },\u001b[m\n",[m
+[32m+[m[32m      "   {\u001b[m\n",[m
+[32m+[m[32m      "    \"cell_type\": \"code\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"execution_count\": null,\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"execution_count\": 5,\u001b[m\n",[m
+[32m+[m[32m      "    \"metadata\": {},\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"outputs\": [],\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"outputs\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"On branch master\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"No commits yet\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"nothing to commit (create/copy files and use \\\"git add\\\" to track)\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    }\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   ],\u001b[m\n",[m
+[32m+[m[32m      "    \"source\": [\u001b[m\n",[m
+[32m+[m[32m      "     \"git status\"\u001b[m\n",[m
+[32m+[m[32m      "    ]\u001b[m\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git add mars.txt\n",[m
+     "git diff"[m
+[36m@@ -399,9 +1087,17 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 19,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git diff --staged"[m
+    ][m
+[36m@@ -415,9 +1111,24 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 20,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "On branch master\n",[m
+[32m+[m[32m      "Your branch is up to date with 'origin/master'.\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "Changes not staged for commit:\n",[m
+[32m+[m[32m      "\t\u001b[31mmodified:   02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "no changes added to commit\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git commit -m \"Discuss concerns about Mars' climate for Mummy\""[m
+    ][m
+[36m@@ -431,9 +1142,27 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 21,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "On branch master\n",[m
+[32m+[m[32m      "Your branch is up to date with 'origin/master'.\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "Changes not staged for commit:\n",[m
+[32m+[m[32m      "  (use \"git add <file>...\" to update what will be committed)\n",[m
+[32m+[m[32m      "  (use \"git checkout -- <file>...\" to discard changes in working directory)\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\t\u001b[31mmodified:   02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "no changes added to commit (use \"git add\" and/or \"git commit -a\")\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git status"[m
+    ][m
+[36m@@ -447,9 +1176,64 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 22,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\u001b[33mcommit 5bb6f9a228823fb5890d2c0d6b2e9c0b03673668\u001b[m\u001b[33m (\u001b[m\u001b[1;36mHEAD -> \u001b[m\u001b[1;32mmaster\u001b[m\u001b[33m, \u001b[m\u001b[1;31morigin/master\u001b[m\u001b[33m, \u001b[m\u001b[1;31morigin/HEAD\u001b[m\u001b[33m)\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Tue Sep 4 08:41:44 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    update notebooks\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\u001b[33mcommit dd2848367dff52dd13db252e688a085b0638d2c7\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Mon Sep 3 13:24:05 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    update notebooks\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\u001b[33mcommit d3568a1b07b9bf76d89803e610c8ece8d4b94a81\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Sun Sep 2 19:25:16 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    update notebooks\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\u001b[33mcommit f5844e2671a8c7a2b212214a4f6c8bd72428f7c3\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Sun Sep 2 14:51:57 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    rename to avoid website issues\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\u001b[33mcommit ffe8c9dd48510cd2dcbb964c8ead21b93912be21\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Sun Sep 2 14:43:57 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    update notebooks\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\u001b[33mcommit 801632edee8fc310d8500bfaeea8651f099283b3\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Sun Sep 2 14:43:13 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    update notebooks\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\u001b[33mcommit 9c74198bf838b7f7127d8fab527e4d96aab72e08\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Sun Sep 2 13:46:49 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    Add licence and readme to the lessons repo\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\u001b[33mcommit 08b3d7073b526396de7e31ec6e8bd65d075207b6\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Sun Sep 2 12:59:07 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    Add initial dump of rendered lessons\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git log"[m
+    ][m
+[1mdiff --git a/02-git/04-exploring-history_instructor.ipynb b/02-git/04-exploring-history_instructor.ipynb[m
+[1mindex 24e0c80..e766d19 100644[m
+[1m--- a/02-git/04-exploring-history_instructor.ipynb[m
+[1m+++ b/02-git/04-exploring-history_instructor.ipynb[m
+[36m@@ -18,9 +18,31 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 1,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "cat: No such file or directory: mars.txt\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "nano mars.txt\n",[m
+     "cat mars.txt"[m
+[36m@@ -35,9 +57,26 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 2,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "fatal: ambiguous argument 'mars.txt': unknown revision or path not in the working tree.\n",[m
+[32m+[m[32m      "Use '--' to separate paths from revisions, like this:\n",[m
+[32m+[m[32m      "'git <command> [<revision>...] -- [<file>...]'\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git diff HEAD mars.txt"[m
+    ][m
+[36m@@ -51,9 +90,26 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 3,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "fatal: ambiguous argument 'mars.txt': unknown revision or path not in the working tree.\n",[m
+[32m+[m[32m      "Use '--' to separate paths from revisions, like this:\n",[m
+[32m+[m[32m      "'git <command> [<revision>...] -- [<file>...]'\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git diff HEAD~1 mars.txt"[m
+    ][m
+[36m@@ -67,9 +123,26 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 4,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "fatal: ambiguous argument 'mars.txt': unknown revision or path not in the working tree.\n",[m
+[32m+[m[32m      "Use '--' to separate paths from revisions, like this:\n",[m
+[32m+[m[32m      "'git <command> [<revision>...] -- [<file>...]'\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git diff HEAD~2 mars.txt"[m
+    ][m
+[36m@@ -93,9 +166,24 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 5,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "fatal: bad object f22b25e3233b4645dabd0d81e651fe074bd8e73b\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git diff f22b25e3233b4645dabd0d81e651fe074bd8e73b mars.txt"[m
+    ][m
+[36m@@ -109,9 +197,26 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 6,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "fatal: ambiguous argument 'f22b25e': unknown revision or path not in the working tree.\n",[m
+[32m+[m[32m      "Use '--' to separate paths from revisions, like this:\n",[m
+[32m+[m[32m      "'git <command> [<revision>...] -- [<file>...]'\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git diff f22b25e mars.txt"[m
+    ][m
+[36m@@ -125,9 +230,31 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 7,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "cat: No such file or directory: mars.txt\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "nano mars.txt\n",[m
+     "cat mars.txt"[m
+[36m@@ -142,9 +269,28 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 8,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "On branch master\n",[m
+[32m+[m[32m      "Your branch is up to date with 'origin/master'.\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "Changes not staged for commit:\n",[m
+[32m+[m[32m      "  (use \"git add <file>...\" to update what will be committed)\n",[m
+[32m+[m[32m      "  (use \"git checkout -- <file>...\" to discard changes in working directory)\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\t\u001b[31mmodified:   02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\t\u001b[31mmodified:   03-tracking-changes_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "no changes added to commit (use \"git add\" and/or \"git commit -a\")\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git status"[m
+    ][m
+[36m@@ -158,9 +304,38 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 9,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "error: pathspec 'mars.txt' did not match any file(s) known to git.\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "cat: No such file or directory: mars.txt\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git checkout HEAD mars.txt\n",[m
+     "cat mars.txt"[m
+[36m@@ -175,27 +350,77 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 10,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "error: pathspec 'f22b25e' did not match any file(s) known to git.\n",[m
+[32m+[m[32m      "error: pathspec 'mars.txt' did not match any file(s) known to git.\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git checkout f22b25e mars.txt"[m
+    ][m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 11,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "cat: No such file or directory: mars.txt\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "cat mars.txt"[m
+    ][m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 12,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "On branch master\n",[m
+[32m+[m[32m      "Your branch is up to date with 'origin/master'.\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "Changes not staged for commit:\n",[m
+[32m+[m[32m      "  (use \"git add <file>...\" to update what will be committed)\n",[m
+[32m+[m[32m      "  (use \"git checkout -- <file>...\" to discard changes in working directory)\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\t\u001b[31mmodified:   02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\t\u001b[31mmodified:   03-tracking-changes_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "no changes added to commit (use \"git add\" and/or \"git commit -a\")\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git status"[m
+    ][m
+[36m@@ -209,9 +434,24 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 13,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "error: pathspec 'mars.txt' did not match any file(s) known to git.\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git checkout HEAD mars.txt"[m
+    ][m
 
 
 ```
@@ -825,6 +3811,1489 @@ git diff
     "source": [[m
      "git status"[m
     ][m
+[1mdiff --git a/02-git/03-tracking-changes_instructor.ipynb b/02-git/03-tracking-changes_instructor.ipynb[m
+[1mindex 1f99d29..c9b6cac 100644[m
+[1m--- a/02-git/03-tracking-changes_instructor.ipynb[m
+[1m+++ b/02-git/03-tracking-changes_instructor.ipynb[m
+[36m@@ -23,9 +23,18 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 1,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "/home/stuart/Git/Aperio/stfc_website/notebooks/02-git\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "pwd"[m
+    ][m
+[36m@@ -39,18 +48,35 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 2,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "/home/stuart/Git/Aperio/stfc_website/notebooks/02-git\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "pwd"[m
+    ][m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 3,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "cd .."[m
+    ][m
+[36m@@ -74,18 +100,43 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 4,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "00-lessons.ipynb             \u001b[0m\u001b[01;34m01-bash\u001b[0m  \u001b[01;34m03-fundamentals-of-python\u001b[0m  \u001b[01;34m05-writing-effective-tests\u001b[0m  \u001b[01;34m07-collaborating-with-git\u001b[0m  \u001b[01;34m12-images-and-visualisation\u001b[0m  LICENCE  environment.yml\n",[m
+[32m+[m[32m      "00-lessons_instructor.ipynb  \u001b[01;34m02-git\u001b[0m   \u001b[01;34m04-further-python\u001b[0m          \u001b[01;34m06-approximating-pi\u001b[0m         \u001b[01;34m09-units\u001b[0m                   \u001b[01;34m13-images-in-astronomy\u001b[0m       README\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "ls"[m
+    ][m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 5,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "cat: No such file or directory: mars.txt\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "cat mars.txt"[m
+    ][m
+[36m@@ -99,9 +150,27 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 6,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "On branch master\n",[m
+[32m+[m[32m      "Your branch is up to date with 'origin/master'.\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "Changes not staged for commit:\n",[m
+[32m+[m[32m      "  (use \"git add <file>...\" to update what will be committed)\n",[m
+[32m+[m[32m      "  (use \"git checkout -- <file>...\" to discard changes in working directory)\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\t\u001b[31mmodified:   02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "no changes added to commit (use \"git add\" and/or \"git commit -a\")\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git status"[m
+    ][m
+[36m@@ -115,9 +184,24 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 7,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "fatal: pathspec 'mars.txt' did not match any files\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git add mars.txt"[m
+    ][m
+[36m@@ -131,9 +215,27 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 8,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "On branch master\n",[m
+[32m+[m[32m      "Your branch is up to date with 'origin/master'.\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "Changes not staged for commit:\n",[m
+[32m+[m[32m      "  (use \"git add <file>...\" to update what will be committed)\n",[m
+[32m+[m[32m      "  (use \"git checkout -- <file>...\" to discard changes in working directory)\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\t\u001b[31mmodified:   02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "no changes added to commit (use \"git add\" and/or \"git commit -a\")\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git status"[m
+    ][m
+[36m@@ -147,9 +249,24 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 9,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "On branch master\n",[m
+[32m+[m[32m      "Your branch is up to date with 'origin/master'.\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "Changes not staged for commit:\n",[m
+[32m+[m[32m      "\t\u001b[31mmodified:   02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "no changes added to commit\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git commit -m \"Start notes on Mars as a base\""[m
+    ][m
+[36m@@ -169,9 +286,27 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 10,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "On branch master\n",[m
+[32m+[m[32m      "Your branch is up to date with 'origin/master'.\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "Changes not staged for commit:\n",[m
+[32m+[m[32m      "  (use \"git add <file>...\" to update what will be committed)\n",[m
+[32m+[m[32m      "  (use \"git checkout -- <file>...\" to discard changes in working directory)\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\t\u001b[31mmodified:   02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "no changes added to commit (use \"git add\" and/or \"git commit -a\")\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git status"[m
+    ][m
+[36m@@ -185,9 +320,64 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 11,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\u001b[33mcommit 5bb6f9a228823fb5890d2c0d6b2e9c0b03673668\u001b[m\u001b[33m (\u001b[m\u001b[1;36mHEAD -> \u001b[m\u001b[1;32mmaster\u001b[m\u001b[33m, \u001b[m\u001b[1;31morigin/master\u001b[m\u001b[33m, \u001b[m\u001b[1;31morigin/HEAD\u001b[m\u001b[33m)\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Tue Sep 4 08:41:44 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    update notebooks\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\u001b[33mcommit dd2848367dff52dd13db252e688a085b0638d2c7\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Mon Sep 3 13:24:05 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    update notebooks\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\u001b[33mcommit d3568a1b07b9bf76d89803e610c8ece8d4b94a81\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Sun Sep 2 19:25:16 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    update notebooks\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\u001b[33mcommit f5844e2671a8c7a2b212214a4f6c8bd72428f7c3\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Sun Sep 2 14:51:57 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    rename to avoid website issues\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\u001b[33mcommit ffe8c9dd48510cd2dcbb964c8ead21b93912be21\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Sun Sep 2 14:43:57 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    update notebooks\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\u001b[33mcommit 801632edee8fc310d8500bfaeea8651f099283b3\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Sun Sep 2 14:43:13 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    update notebooks\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\u001b[33mcommit 9c74198bf838b7f7127d8fab527e4d96aab72e08\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Sun Sep 2 13:46:49 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    Add licence and readme to the lessons repo\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\u001b[33mcommit 08b3d7073b526396de7e31ec6e8bd65d075207b6\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Sun Sep 2 12:59:07 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    Add initial dump of rendered lessons\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git log"[m
+    ][m
+[36m@@ -228,9 +418,31 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 12,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "cat: No such file or directory: mars.txt\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "nano mars.txt\n",[m
+     "cat mars.txt"[m
+[36m@@ -255,9 +467,27 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 13,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "On branch master\n",[m
+[32m+[m[32m      "Your branch is up to date with 'origin/master'.\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "Changes not staged for commit:\n",[m
+[32m+[m[32m      "  (use \"git add <file>...\" to update what will be committed)\n",[m
+[32m+[m[32m      "  (use \"git checkout -- <file>...\" to discard changes in working directory)\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\t\u001b[31mmodified:   02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "no changes added to commit (use \"git add\" and/or \"git commit -a\")\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git status"[m
+    ][m
+[36m@@ -271,9 +501,143 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 14,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\u001b[1mdiff --git a/02-git/02-creating-repositories_instructor.ipynb b/02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\u001b[1mindex 0a7156d..4996fde 100644\u001b[m\n",[m
+[32m+[m[32m      "\u001b[1m--- a/02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\u001b[1m+++ b/02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\u001b[36m@@ -22,9 +22,32 @@\u001b[m\n",[m
+[32m+[m[32m      "   },\u001b[m\n",[m
+[32m+[m[32m      "   {\u001b[m\n",[m
+[32m+[m[32m      "    \"cell_type\": \"code\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"execution_count\": null,\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"execution_count\": 1,\u001b[m\n",[m
+[32m+[m[32m      "    \"metadata\": {},\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"outputs\": [],\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"outputs\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    },\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stderr\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"/bin/mkdir: cannot create directory ‘planets’: File exists\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    },\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    }\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   ],\u001b[m\n",[m
+[32m+[m[32m      "    \"source\": [\u001b[m\n",[m
+[32m+[m[32m      "     \"cd ~/Desktop\\n\",\u001b[m\n",[m
+[32m+[m[32m      "     \"mkdir planets\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[36m@@ -40,9 +63,18 @@\u001b[m\n",[m
+[32m+[m[32m      "   },\u001b[m\n",[m
+[32m+[m[32m      "   {\u001b[m\n",[m
+[32m+[m[32m      "    \"cell_type\": \"code\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"execution_count\": null,\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"execution_count\": 2,\u001b[m\n",[m
+[32m+[m[32m      "    \"metadata\": {},\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"outputs\": [],\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"outputs\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"Reinitialized existing Git repository in /home/stuart/Desktop/planets/.git/\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    }\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   ],\u001b[m\n",[m
+[32m+[m[32m      "    \"source\": [\u001b[m\n",[m
+[32m+[m[32m      "     \"git init\"\u001b[m\n",[m
+[32m+[m[32m      "    ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[36m@@ -56,9 +88,17 @@\u001b[m\n",[m
+[32m+[m[32m      "   },\u001b[m\n",[m
+[32m+[m[32m      "   {\u001b[m\n",[m
+[32m+[m[32m      "    \"cell_type\": \"code\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"execution_count\": null,\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"execution_count\": 3,\u001b[m\n",[m
+[32m+[m[32m      "    \"metadata\": {},\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"outputs\": [],\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"outputs\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    }\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   ],\u001b[m\n",[m
+[32m+[m[32m      "    \"source\": [\u001b[m\n",[m
+[32m+[m[32m      "     \"ls\"\u001b[m\n",[m
+[32m+[m[32m      "    ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[36m@@ -72,9 +112,18 @@\u001b[m\n",[m
+[32m+[m[32m      "   },\u001b[m\n",[m
+[32m+[m[32m      "   {\u001b[m\n",[m
+[32m+[m[32m      "    \"cell_type\": \"code\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"execution_count\": null,\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"execution_count\": 4,\u001b[m\n",[m
+[32m+[m[32m      "    \"metadata\": {},\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"outputs\": [],\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"outputs\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\u001b[0m\\u001b[01;34m.\\u001b[0m  \\u001b[01;34m..\\u001b[0m  \\u001b[01;34m.git\\u001b[0m\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    }\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   ],\u001b[m\n",[m
+[32m+[m[32m      "    \"source\": [\u001b[m\n",[m
+[32m+[m[32m      "     \"ls -a\"\u001b[m\n",[m
+[32m+[m[32m      "    ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[36m@@ -90,9 +139,22 @@\u001b[m\n",[m
+[32m+[m[32m      "   },\u001b[m\n",[m
+[32m+[m[32m      "   {\u001b[m\n",[m
+[32m+[m[32m      "    \"cell_type\": \"code\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"execution_count\": null,\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"execution_count\": 5,\u001b[m\n",[m
+[32m+[m[32m      "    \"metadata\": {},\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"outputs\": [],\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"outputs\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"On branch master\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"No commits yet\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"nothing to commit (create/copy files and use \\\"git add\\\" to track)\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    }\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   ],\u001b[m\n",[m
+[32m+[m[32m      "    \"source\": [\u001b[m\n",[m
+[32m+[m[32m      "     \"git status\"\u001b[m\n",[m
+[32m+[m[32m      "    ]\u001b[m\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git diff"[m
+    ][m
+[36m@@ -294,9 +658,35 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 15,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "On branch master\n",[m
+[32m+[m[32m      "Your branch is up to date with 'origin/master'.\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "Changes not staged for commit:\n",[m
+[32m+[m[32m      "\t\u001b[31mmodified:   02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "no changes added to commit\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "On branch master\n",[m
+[32m+[m[32m      "Your branch is up to date with 'origin/master'.\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "Changes not staged for commit:\n",[m
+[32m+[m[32m      "  (use \"git add <file>...\" to update what will be committed)\n",[m
+[32m+[m[32m      "  (use \"git checkout -- <file>...\" to discard changes in working directory)\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\t\u001b[31mmodified:   02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "no changes added to commit (use \"git add\" and/or \"git commit -a\")\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git commit -m \"Add concerns about effects of Mars' moons on Wolfman\"\n",[m
+     "git status"[m
+[36m@@ -356,9 +746,31 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 16,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "cat: No such file or directory: mars.txt\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "nano mars.txt\n",[m
+     "cat mars.txt"[m
+[36m@@ -366,9 +778,143 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 17,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\u001b[1mdiff --git a/02-git/02-creating-repositories_instructor.ipynb b/02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\u001b[1mindex 0a7156d..4996fde 100644\u001b[m\n",[m
+[32m+[m[32m      "\u001b[1m--- a/02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\u001b[1m+++ b/02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\u001b[36m@@ -22,9 +22,32 @@\u001b[m\n",[m
+[32m+[m[32m      "   },\u001b[m\n",[m
+[32m+[m[32m      "   {\u001b[m\n",[m
+[32m+[m[32m      "    \"cell_type\": \"code\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"execution_count\": null,\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"execution_count\": 1,\u001b[m\n",[m
+[32m+[m[32m      "    \"metadata\": {},\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"outputs\": [],\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"outputs\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    },\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stderr\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"/bin/mkdir: cannot create directory ‘planets’: File exists\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    },\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    }\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   ],\u001b[m\n",[m
+[32m+[m[32m      "    \"source\": [\u001b[m\n",[m
+[32m+[m[32m      "     \"cd ~/Desktop\\n\",\u001b[m\n",[m
+[32m+[m[32m      "     \"mkdir planets\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[36m@@ -40,9 +63,18 @@\u001b[m\n",[m
+[32m+[m[32m      "   },\u001b[m\n",[m
+[32m+[m[32m      "   {\u001b[m\n",[m
+[32m+[m[32m      "    \"cell_type\": \"code\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"execution_count\": null,\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"execution_count\": 2,\u001b[m\n",[m
+[32m+[m[32m      "    \"metadata\": {},\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"outputs\": [],\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"outputs\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"Reinitialized existing Git repository in /home/stuart/Desktop/planets/.git/\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    }\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   ],\u001b[m\n",[m
+[32m+[m[32m      "    \"source\": [\u001b[m\n",[m
+[32m+[m[32m      "     \"git init\"\u001b[m\n",[m
+[32m+[m[32m      "    ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[36m@@ -56,9 +88,17 @@\u001b[m\n",[m
+[32m+[m[32m      "   },\u001b[m\n",[m
+[32m+[m[32m      "   {\u001b[m\n",[m
+[32m+[m[32m      "    \"cell_type\": \"code\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"execution_count\": null,\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"execution_count\": 3,\u001b[m\n",[m
+[32m+[m[32m      "    \"metadata\": {},\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"outputs\": [],\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"outputs\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    }\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   ],\u001b[m\n",[m
+[32m+[m[32m      "    \"source\": [\u001b[m\n",[m
+[32m+[m[32m      "     \"ls\"\u001b[m\n",[m
+[32m+[m[32m      "    ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[36m@@ -72,9 +112,18 @@\u001b[m\n",[m
+[32m+[m[32m      "   },\u001b[m\n",[m
+[32m+[m[32m      "   {\u001b[m\n",[m
+[32m+[m[32m      "    \"cell_type\": \"code\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"execution_count\": null,\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"execution_count\": 4,\u001b[m\n",[m
+[32m+[m[32m      "    \"metadata\": {},\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"outputs\": [],\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"outputs\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\u001b[0m\\u001b[01;34m.\\u001b[0m  \\u001b[01;34m..\\u001b[0m  \\u001b[01;34m.git\\u001b[0m\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    }\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   ],\u001b[m\n",[m
+[32m+[m[32m      "    \"source\": [\u001b[m\n",[m
+[32m+[m[32m      "     \"ls -a\"\u001b[m\n",[m
+[32m+[m[32m      "    ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[36m@@ -90,9 +139,22 @@\u001b[m\n",[m
+[32m+[m[32m      "   },\u001b[m\n",[m
+[32m+[m[32m      "   {\u001b[m\n",[m
+[32m+[m[32m      "    \"cell_type\": \"code\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"execution_count\": null,\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"execution_count\": 5,\u001b[m\n",[m
+[32m+[m[32m      "    \"metadata\": {},\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"outputs\": [],\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"outputs\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"On branch master\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"No commits yet\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"nothing to commit (create/copy files and use \\\"git add\\\" to track)\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    }\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   ],\u001b[m\n",[m
+[32m+[m[32m      "    \"source\": [\u001b[m\n",[m
+[32m+[m[32m      "     \"git status\"\u001b[m\n",[m
+[32m+[m[32m      "    ]\u001b[m\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git diff"[m
+    ][m
+[36m@@ -382,9 +928,151 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 18,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "fatal: pathspec 'mars.txt' did not match any files\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\u001b[1mdiff --git a/02-git/02-creating-repositories_instructor.ipynb b/02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\u001b[1mindex 0a7156d..4996fde 100644\u001b[m\n",[m
+[32m+[m[32m      "\u001b[1m--- a/02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\u001b[1m+++ b/02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\u001b[36m@@ -22,9 +22,32 @@\u001b[m\n",[m
+[32m+[m[32m      "   },\u001b[m\n",[m
+[32m+[m[32m      "   {\u001b[m\n",[m
+[32m+[m[32m      "    \"cell_type\": \"code\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"execution_count\": null,\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"execution_count\": 1,\u001b[m\n",[m
+[32m+[m[32m      "    \"metadata\": {},\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"outputs\": [],\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"outputs\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    },\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stderr\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"/bin/mkdir: cannot create directory ‘planets’: File exists\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    },\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    }\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   ],\u001b[m\n",[m
+[32m+[m[32m      "    \"source\": [\u001b[m\n",[m
+[32m+[m[32m      "     \"cd ~/Desktop\\n\",\u001b[m\n",[m
+[32m+[m[32m      "     \"mkdir planets\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[36m@@ -40,9 +63,18 @@\u001b[m\n",[m
+[32m+[m[32m      "   },\u001b[m\n",[m
+[32m+[m[32m      "   {\u001b[m\n",[m
+[32m+[m[32m      "    \"cell_type\": \"code\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"execution_count\": null,\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"execution_count\": 2,\u001b[m\n",[m
+[32m+[m[32m      "    \"metadata\": {},\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"outputs\": [],\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"outputs\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"Reinitialized existing Git repository in /home/stuart/Desktop/planets/.git/\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    }\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   ],\u001b[m\n",[m
+[32m+[m[32m      "    \"source\": [\u001b[m\n",[m
+[32m+[m[32m      "     \"git init\"\u001b[m\n",[m
+[32m+[m[32m      "    ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[36m@@ -56,9 +88,17 @@\u001b[m\n",[m
+[32m+[m[32m      "   },\u001b[m\n",[m
+[32m+[m[32m      "   {\u001b[m\n",[m
+[32m+[m[32m      "    \"cell_type\": \"code\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"execution_count\": null,\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"execution_count\": 3,\u001b[m\n",[m
+[32m+[m[32m      "    \"metadata\": {},\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"outputs\": [],\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"outputs\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    }\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   ],\u001b[m\n",[m
+[32m+[m[32m      "    \"source\": [\u001b[m\n",[m
+[32m+[m[32m      "     \"ls\"\u001b[m\n",[m
+[32m+[m[32m      "    ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[36m@@ -72,9 +112,18 @@\u001b[m\n",[m
+[32m+[m[32m      "   },\u001b[m\n",[m
+[32m+[m[32m      "   {\u001b[m\n",[m
+[32m+[m[32m      "    \"cell_type\": \"code\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"execution_count\": null,\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"execution_count\": 4,\u001b[m\n",[m
+[32m+[m[32m      "    \"metadata\": {},\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"outputs\": [],\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"outputs\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\u001b[0m\\u001b[01;34m.\\u001b[0m  \\u001b[01;34m..\\u001b[0m  \\u001b[01;34m.git\\u001b[0m\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    }\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   ],\u001b[m\n",[m
+[32m+[m[32m      "    \"source\": [\u001b[m\n",[m
+[32m+[m[32m      "     \"ls -a\"\u001b[m\n",[m
+[32m+[m[32m      "    ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[36m@@ -90,9 +139,22 @@\u001b[m\n",[m
+[32m+[m[32m      "   },\u001b[m\n",[m
+[32m+[m[32m      "   {\u001b[m\n",[m
+[32m+[m[32m      "    \"cell_type\": \"code\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"execution_count\": null,\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"execution_count\": 5,\u001b[m\n",[m
+[32m+[m[32m      "    \"metadata\": {},\u001b[m\n",[m
+[32m+[m[32m      "\u001b[31m-   \"outputs\": [],\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   \"outputs\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    {\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"name\": \"stdout\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"output_type\": \"stream\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     \"text\": [\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"On branch master\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"No commits yet\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"nothing to commit (create/copy files and use \\\"git add\\\" to track)\\n\",\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m      \"\\n\"\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m     ]\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m    }\u001b[m\n",[m
+[32m+[m[32m      "\u001b[32m+\u001b[m\u001b[32m   ],\u001b[m\n",[m
+[32m+[m[32m      "    \"source\": [\u001b[m\n",[m
+[32m+[m[32m      "     \"git status\"\u001b[m\n",[m
+[32m+[m[32m      "    ]\u001b[m\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git add mars.txt\n",[m
+     "git diff"[m
+[36m@@ -399,9 +1087,17 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 19,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git diff --staged"[m
+    ][m
+[36m@@ -415,9 +1111,24 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 20,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "On branch master\n",[m
+[32m+[m[32m      "Your branch is up to date with 'origin/master'.\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "Changes not staged for commit:\n",[m
+[32m+[m[32m      "\t\u001b[31mmodified:   02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "no changes added to commit\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git commit -m \"Discuss concerns about Mars' climate for Mummy\""[m
+    ][m
+[36m@@ -431,9 +1142,27 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 21,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "On branch master\n",[m
+[32m+[m[32m      "Your branch is up to date with 'origin/master'.\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "Changes not staged for commit:\n",[m
+[32m+[m[32m      "  (use \"git add <file>...\" to update what will be committed)\n",[m
+[32m+[m[32m      "  (use \"git checkout -- <file>...\" to discard changes in working directory)\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\t\u001b[31mmodified:   02-git/02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "no changes added to commit (use \"git add\" and/or \"git commit -a\")\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git status"[m
+    ][m
+[36m@@ -447,9 +1176,64 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 22,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\u001b[33mcommit 5bb6f9a228823fb5890d2c0d6b2e9c0b03673668\u001b[m\u001b[33m (\u001b[m\u001b[1;36mHEAD -> \u001b[m\u001b[1;32mmaster\u001b[m\u001b[33m, \u001b[m\u001b[1;31morigin/master\u001b[m\u001b[33m, \u001b[m\u001b[1;31morigin/HEAD\u001b[m\u001b[33m)\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Tue Sep 4 08:41:44 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    update notebooks\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\u001b[33mcommit dd2848367dff52dd13db252e688a085b0638d2c7\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Mon Sep 3 13:24:05 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    update notebooks\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\u001b[33mcommit d3568a1b07b9bf76d89803e610c8ece8d4b94a81\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Sun Sep 2 19:25:16 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    update notebooks\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\u001b[33mcommit f5844e2671a8c7a2b212214a4f6c8bd72428f7c3\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Sun Sep 2 14:51:57 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    rename to avoid website issues\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\u001b[33mcommit ffe8c9dd48510cd2dcbb964c8ead21b93912be21\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Sun Sep 2 14:43:57 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    update notebooks\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\u001b[33mcommit 801632edee8fc310d8500bfaeea8651f099283b3\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Sun Sep 2 14:43:13 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    update notebooks\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\u001b[33mcommit 9c74198bf838b7f7127d8fab527e4d96aab72e08\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Sun Sep 2 13:46:49 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    Add licence and readme to the lessons repo\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\u001b[33mcommit 08b3d7073b526396de7e31ec6e8bd65d075207b6\u001b[m\n",[m
+[32m+[m[32m      "Author: Stuart Mumford <stuart@cadair.com>\n",[m
+[32m+[m[32m      "Date:   Sun Sep 2 12:59:07 2018 +0100\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "    Add initial dump of rendered lessons\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git log"[m
+    ][m
+[1mdiff --git a/02-git/04-exploring-history_instructor.ipynb b/02-git/04-exploring-history_instructor.ipynb[m
+[1mindex 24e0c80..e766d19 100644[m
+[1m--- a/02-git/04-exploring-history_instructor.ipynb[m
+[1m+++ b/02-git/04-exploring-history_instructor.ipynb[m
+[36m@@ -18,9 +18,31 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 1,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "cat: No such file or directory: mars.txt\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "nano mars.txt\n",[m
+     "cat mars.txt"[m
+[36m@@ -35,9 +57,26 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 2,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "fatal: ambiguous argument 'mars.txt': unknown revision or path not in the working tree.\n",[m
+[32m+[m[32m      "Use '--' to separate paths from revisions, like this:\n",[m
+[32m+[m[32m      "'git <command> [<revision>...] -- [<file>...]'\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git diff HEAD mars.txt"[m
+    ][m
+[36m@@ -51,9 +90,26 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 3,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "fatal: ambiguous argument 'mars.txt': unknown revision or path not in the working tree.\n",[m
+[32m+[m[32m      "Use '--' to separate paths from revisions, like this:\n",[m
+[32m+[m[32m      "'git <command> [<revision>...] -- [<file>...]'\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git diff HEAD~1 mars.txt"[m
+    ][m
+[36m@@ -67,9 +123,26 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 4,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "fatal: ambiguous argument 'mars.txt': unknown revision or path not in the working tree.\n",[m
+[32m+[m[32m      "Use '--' to separate paths from revisions, like this:\n",[m
+[32m+[m[32m      "'git <command> [<revision>...] -- [<file>...]'\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git diff HEAD~2 mars.txt"[m
+    ][m
+[36m@@ -93,9 +166,24 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 5,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "fatal: bad object f22b25e3233b4645dabd0d81e651fe074bd8e73b\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git diff f22b25e3233b4645dabd0d81e651fe074bd8e73b mars.txt"[m
+    ][m
+[36m@@ -109,9 +197,26 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 6,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "fatal: ambiguous argument 'f22b25e': unknown revision or path not in the working tree.\n",[m
+[32m+[m[32m      "Use '--' to separate paths from revisions, like this:\n",[m
+[32m+[m[32m      "'git <command> [<revision>...] -- [<file>...]'\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git diff f22b25e mars.txt"[m
+    ][m
+[36m@@ -125,9 +230,31 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 7,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "cat: No such file or directory: mars.txt\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "nano mars.txt\n",[m
+     "cat mars.txt"[m
+[36m@@ -142,9 +269,28 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 8,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "On branch master\n",[m
+[32m+[m[32m      "Your branch is up to date with 'origin/master'.\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "Changes not staged for commit:\n",[m
+[32m+[m[32m      "  (use \"git add <file>...\" to update what will be committed)\n",[m
+[32m+[m[32m      "  (use \"git checkout -- <file>...\" to discard changes in working directory)\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\t\u001b[31mmodified:   02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\t\u001b[31mmodified:   03-tracking-changes_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "no changes added to commit (use \"git add\" and/or \"git commit -a\")\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git status"[m
+    ][m
+[36m@@ -158,9 +304,38 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 9,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "error: pathspec 'mars.txt' did not match any file(s) known to git.\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "cat: No such file or directory: mars.txt\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git checkout HEAD mars.txt\n",[m
+     "cat mars.txt"[m
+[36m@@ -175,27 +350,77 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 10,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "error: pathspec 'f22b25e' did not match any file(s) known to git.\n",[m
+[32m+[m[32m      "error: pathspec 'mars.txt' did not match any file(s) known to git.\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git checkout f22b25e mars.txt"[m
+    ][m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 11,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "cat: No such file or directory: mars.txt\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "cat mars.txt"[m
+    ][m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 12,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "On branch master\n",[m
+[32m+[m[32m      "Your branch is up to date with 'origin/master'.\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "Changes not staged for commit:\n",[m
+[32m+[m[32m      "  (use \"git add <file>...\" to update what will be committed)\n",[m
+[32m+[m[32m      "  (use \"git checkout -- <file>...\" to discard changes in working directory)\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "\t\u001b[31mmodified:   02-creating-repositories_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\t\u001b[31mmodified:   03-tracking-changes_instructor.ipynb\u001b[m\n",[m
+[32m+[m[32m      "\n",[m
+[32m+[m[32m      "no changes added to commit (use \"git add\" and/or \"git commit -a\")\n",[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git status"[m
+    ][m
+[36m@@ -209,9 +434,24 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": null,[m
+[31m-   "metadata": {},[m
+[31m-   "outputs": [],[m
+[32m+[m[32m   "execution_count": 13,[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stderr",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "error: pathspec 'mars.txt' did not match any file(s) known to git.\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+    "source": [[m
+     "git checkout HEAD mars.txt"[m
+    ][m
 
 
 ```
@@ -858,6 +5327,8 @@ Your branch is up to date with 'origin/master'.
 
 Changes not staged for commit:
 	[31mmodified:   02-git/02-creating-repositories_instructor.ipynb[m
+	[31mmodified:   02-git/03-tracking-changes_instructor.ipynb[m
+	[31mmodified:   02-git/04-exploring-history_instructor.ipynb[m
 
 no changes added to commit
 
@@ -882,6 +5353,8 @@ Changes not staged for commit:
   (use "git checkout -- <file>..." to discard changes in working directory)
 
 	[31mmodified:   02-git/02-creating-repositories_instructor.ipynb[m
+	[31mmodified:   02-git/03-tracking-changes_instructor.ipynb[m
+	[31mmodified:   02-git/04-exploring-history_instructor.ipynb[m
 
 no changes added to commit (use "git add" and/or "git commit -a")
 
@@ -898,7 +5371,13 @@ git log
 
 {:.output_stream}
 ```
-[33mcommit dd2848367dff52dd13db252e688a085b0638d2c7[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+[33mcommit 5bb6f9a228823fb5890d2c0d6b2e9c0b03673668[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Stuart Mumford <stuart@cadair.com>
+Date:   Tue Sep 4 08:41:44 2018 +0100
+
+    update notebooks
+
+[33mcommit dd2848367dff52dd13db252e688a085b0638d2c7[m
 Author: Stuart Mumford <stuart@cadair.com>
 Date:   Mon Sep 3 13:24:05 2018 +0100
 

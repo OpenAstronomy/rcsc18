@@ -103,13 +103,12 @@ AssertionError:
 
 <section class="challange panel panel-success">
 <div class="panel-heading">
-<h2><span class="fa fa-pencil"></span> </h2>
+<h2><span class="fa fa-pencil"></span> Writing Tests</h2>
 </div>
 
 
 <div class="panel-body">
 
-<h1>Writing Tests</h1>
 <p>The following function has bugs in it. Write some tests below the function to find all the bugs.</p>
 
 </div>
@@ -139,7 +138,7 @@ def test_quadratic():
 test_quadratic()
 ```
 
-# Running Tests Automatically with pytest
+## Running Tests Automatically with pytest
 
 Once you have a few test functions written, you will probably start getting bored with typing out their names and running them one-by-one. There are a few different modules to help you write and run tests. The one we will be using is called [`pytest`](https://docs.pytest.org/en/latest/). 
 

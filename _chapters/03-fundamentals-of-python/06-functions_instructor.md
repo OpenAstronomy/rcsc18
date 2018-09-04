@@ -14,18 +14,6 @@ redirect_from:
 
 # Working with functions
 
-- Why and when to use functions
-    - repeat blocks of code
-    - if you're doing the same (or similar) thing several times
-- Mention functions we've used already?
-- demo basic function with no input to tidy up code
-- make function with an input
-- -> multiple inputs
-- -> default inputs
-- -> multiple outputs?
-
-This whole notebook needs going over and realigning with whatever science we end up doing in the first lesson. Also look over the challenges and the ones on the SWC website because there are loads of them now.
-
 
 <section class="objectives panel panel-warning">
 <div class="panel-heading">
@@ -83,7 +71,7 @@ We've successfully called the function that we defined, and we have access to th
 
 <section class="callout panel panel-warning">
 <div class="panel-heading">
-<h2><span class="fa fa-thumb-tack"></span> # Integer division</h2>
+<h2><span class="fa fa-thumb-tack"></span> Integer division</h2>
 </div>
 
 
@@ -244,6 +232,8 @@ We have passed parameters to functions in two ways: directly, as in `type(data)`
 
 {:.input_area}
 ```python
+import numpy as np
+
 np.loadtxt('data/inflammation-01.csv', delimiter=',')
 ```
 
@@ -255,19 +245,54 @@ np.loadtxt('data/inflammation-01.csv', delimiter=',')
 
 {:.output_traceback_line}
 ```
-NameError                                 Traceback (most recent call last)
+OSError                                   Traceback (most recent call last)
 ```
 
 {:.output_traceback_line}
 ```
-<ipython-input-8-cb2538bce50b> in <module>()
-----> 1 np.loadtxt('data/inflammation-01.csv', delimiter=',')
+<ipython-input-8-9470a9548300> in <module>()
+      1 import numpy as np
+      2 
+----> 3 np.loadtxt('data/inflammation-01.csv', delimiter=',')
 
 ```
 
 {:.output_traceback_line}
 ```
-NameError: name 'np' is not defined
+/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/lib/npyio.py in loadtxt(fname, dtype, comments, delimiter, converters, skiprows, usecols, unpack, ndmin, encoding)
+    924             fname = str(fname)
+    925         if _is_string_like(fname):
+--> 926             fh = np.lib._datasource.open(fname, 'rt', encoding=encoding)
+    927             fencoding = getattr(fh, 'encoding', 'latin1')
+    928             fh = iter(fh)
+
+```
+
+{:.output_traceback_line}
+```
+/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/lib/_datasource.py in open(path, mode, destpath, encoding, newline)
+    260 
+    261     ds = DataSource(destpath)
+--> 262     return ds.open(path, mode, encoding=encoding, newline=newline)
+    263 
+    264 
+
+```
+
+{:.output_traceback_line}
+```
+/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/lib/_datasource.py in open(self, path, mode, encoding, newline)
+    616                                       encoding=encoding, newline=newline)
+    617         else:
+--> 618             raise IOError("%s not found." % path)
+    619 
+    620 
+
+```
+
+{:.output_traceback_line}
+```
+OSError: data/inflammation-01.csv not found.
 ```
 
 
@@ -287,7 +312,7 @@ np.loadtxt('data/inflammation-01.csv', ',')
 
 {:.output_traceback_line}
 ```
-NameError                                 Traceback (most recent call last)
+OSError                                   Traceback (most recent call last)
 ```
 
 {:.output_traceback_line}
@@ -299,7 +324,40 @@ NameError                                 Traceback (most recent call last)
 
 {:.output_traceback_line}
 ```
-NameError: name 'np' is not defined
+/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/lib/npyio.py in loadtxt(fname, dtype, comments, delimiter, converters, skiprows, usecols, unpack, ndmin, encoding)
+    924             fname = str(fname)
+    925         if _is_string_like(fname):
+--> 926             fh = np.lib._datasource.open(fname, 'rt', encoding=encoding)
+    927             fencoding = getattr(fh, 'encoding', 'latin1')
+    928             fh = iter(fh)
+
+```
+
+{:.output_traceback_line}
+```
+/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/lib/_datasource.py in open(path, mode, destpath, encoding, newline)
+    260 
+    261     ds = DataSource(destpath)
+--> 262     return ds.open(path, mode, encoding=encoding, newline=newline)
+    263 
+    264 
+
+```
+
+{:.output_traceback_line}
+```
+/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/lib/_datasource.py in open(self, path, mode, encoding, newline)
+    616                                       encoding=encoding, newline=newline)
+    617         else:
+--> 618             raise IOError("%s not found." % path)
+    619 
+    620 
+
+```
+
+{:.output_traceback_line}
+```
+OSError: data/inflammation-01.csv not found.
 ```
 
 
@@ -323,30 +381,12 @@ test_data = np.zeros((2, 2))
 print(centre(test_data, 3))
 ```
 
-
-{:.output_traceback_line}
+{:.output_stream}
 ```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-11-86208dbfeedb> in <module>()
-----> 1 test_data = np.zeros((2, 2))
-      2 print(centre(test_data, 3))
+[[3. 3.]
+ [3. 3.]]
 
 ```
-
-{:.output_traceback_line}
-```
-NameError: name 'np' is not defined
-```
-
 
 But we can also now call it with just one parameter, in which case `desired` is automatically assigned the default value of 0.0:
 
@@ -360,33 +400,16 @@ print('centered data:')
 print(centre(more_data))
 ```
 
-
-{:.output_traceback_line}
+{:.output_stream}
 ```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-12-383682a2a483> in <module>()
-----> 1 more_data = 5 + np.zeros((2, 2))
-      2 print('data before centering:')
-      3 print(more_data)
-      4 print('centered data:')
-      5 print(centre(more_data))
+data before centering:
+[[5. 5.]
+ [5. 5.]]
+centered data:
+[[0. 0.]
+ [0. 0.]]
 
 ```
-
-{:.output_traceback_line}
-```
-NameError: name 'np' is not defined
-```
-
 
 This is handy: if we usually want a function to work one way, but occasionally need it to do something else, we can allow people to pass a parameter when they need to but provide a default to make the normal case easier. The example below shows how Python matches values to parameters:
 
@@ -439,29 +462,117 @@ With that in hand, let's look at the help for numpy.loadtxt:
 help(np.loadtxt)
 ```
 
+{:.output_stream}
+```
+Help on function loadtxt in module numpy.lib.npyio:
 
-{:.output_traceback_line}
-```
----------------------------------------------------------------------------
-```
+loadtxt(fname, dtype=<class 'float'>, comments='#', delimiter=None, converters=None, skiprows=0, usecols=None, unpack=False, ndmin=0, encoding='bytes')
+    Load data from a text file.
+    
+    Each row in the text file must have the same number of values.
+    
+    Parameters
+    ----------
+    fname : file, str, or pathlib.Path
+        File, filename, or generator to read.  If the filename extension is
+        ``.gz`` or ``.bz2``, the file is first decompressed. Note that
+        generators should return byte strings for Python 3k.
+    dtype : data-type, optional
+        Data-type of the resulting array; default: float.  If this is a
+        structured data-type, the resulting array will be 1-dimensional, and
+        each row will be interpreted as an element of the array.  In this
+        case, the number of columns used must match the number of fields in
+        the data-type.
+    comments : str or sequence of str, optional
+        The characters or list of characters used to indicate the start of a
+        comment. None implies no comments. For backwards compatibility, byte
+        strings will be decoded as 'latin1'. The default is '#'.
+    delimiter : str, optional
+        The string used to separate values. For backwards compatibility, byte
+        strings will be decoded as 'latin1'. The default is whitespace.
+    converters : dict, optional
+        A dictionary mapping column number to a function that will parse the
+        column string into the desired value.  E.g., if column 0 is a date
+        string: ``converters = {0: datestr2num}``.  Converters can also be
+        used to provide a default value for missing data (but see also
+        `genfromtxt`): ``converters = {3: lambda s: float(s.strip() or 0)}``.
+        Default: None.
+    skiprows : int, optional
+        Skip the first `skiprows` lines; default: 0.
+    usecols : int or sequence, optional
+        Which columns to read, with 0 being the first. For example,
+        ``usecols = (1,4,5)`` will extract the 2nd, 5th and 6th columns.
+        The default, None, results in all columns being read.
+    
+        .. versionchanged:: 1.11.0
+            When a single column has to be read it is possible to use
+            an integer instead of a tuple. E.g ``usecols = 3`` reads the
+            fourth column the same way as ``usecols = (3,)`` would.
+    unpack : bool, optional
+        If True, the returned array is transposed, so that arguments may be
+        unpacked using ``x, y, z = loadtxt(...)``.  When used with a structured
+        data-type, arrays are returned for each field.  Default is False.
+    ndmin : int, optional
+        The returned array will have at least `ndmin` dimensions.
+        Otherwise mono-dimensional axes will be squeezed.
+        Legal values: 0 (default), 1 or 2.
+    
+        .. versionadded:: 1.6.0
+    encoding : str, optional
+        Encoding used to decode the inputfile. Does not apply to input streams.
+        The special value 'bytes' enables backward compatibility workarounds
+        that ensures you receive byte arrays as results if possible and passes
+        'latin1' encoded strings to converters. Override this value to receive
+        unicode arrays and pass strings as input to converters.  If set to None
+        the system default is used. The default value is 'bytes'.
+    
+        .. versionadded:: 1.14.0
+    
+    Returns
+    -------
+    out : ndarray
+        Data read from the text file.
+    
+    See Also
+    --------
+    load, fromstring, fromregex
+    genfromtxt : Load data with missing values handled as specified.
+    scipy.io.loadmat : reads MATLAB data files
+    
+    Notes
+    -----
+    This function aims to be a fast reader for simply formatted files.  The
+    `genfromtxt` function provides more sophisticated handling of, e.g.,
+    lines with missing values.
+    
+    .. versionadded:: 1.10.0
+    
+    The strings produced by the Python float.hex method can be used as
+    input for floats.
+    
+    Examples
+    --------
+    >>> from io import StringIO   # StringIO behaves like a file object
+    >>> c = StringIO(u"0 1\n2 3")
+    >>> np.loadtxt(c)
+    array([[ 0.,  1.],
+           [ 2.,  3.]])
+    
+    >>> d = StringIO(u"M 21 72\nF 35 58")
+    >>> np.loadtxt(d, dtype={'names': ('gender', 'age', 'weight'),
+    ...                      'formats': ('S1', 'i4', 'f4')})
+    array([('M', 21, 72.0), ('F', 35, 58.0)],
+          dtype=[('gender', '|S1'), ('age', '<i4'), ('weight', '<f4')])
+    
+    >>> c = StringIO(u"1,0,2\n3,0,4")
+    >>> x, y = np.loadtxt(c, delimiter=',', usecols=(0, 2), unpack=True)
+    >>> x
+    array([ 1.,  3.])
+    >>> y
+    array([ 2.,  4.])
 
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-15-04ab122d212d> in <module>()
-----> 1 help(np.loadtxt)
 
 ```
-
-{:.output_traceback_line}
-```
-NameError: name 'np' is not defined
-```
-
 
 There's a lot of information here, but the most important part is the first couple of lines:
 
@@ -486,7 +597,7 @@ np.loadtxt('data/inflammation-01.csv', ',')
 
 {:.output_traceback_line}
 ```
-NameError                                 Traceback (most recent call last)
+OSError                                   Traceback (most recent call last)
 ```
 
 {:.output_traceback_line}
@@ -498,7 +609,40 @@ NameError                                 Traceback (most recent call last)
 
 {:.output_traceback_line}
 ```
-NameError: name 'np' is not defined
+/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/lib/npyio.py in loadtxt(fname, dtype, comments, delimiter, converters, skiprows, usecols, unpack, ndmin, encoding)
+    924             fname = str(fname)
+    925         if _is_string_like(fname):
+--> 926             fh = np.lib._datasource.open(fname, 'rt', encoding=encoding)
+    927             fencoding = getattr(fh, 'encoding', 'latin1')
+    928             fh = iter(fh)
+
+```
+
+{:.output_traceback_line}
+```
+/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/lib/_datasource.py in open(path, mode, destpath, encoding, newline)
+    260 
+    261     ds = DataSource(destpath)
+--> 262     return ds.open(path, mode, encoding=encoding, newline=newline)
+    263 
+    264 
+
+```
+
+{:.output_traceback_line}
+```
+/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/lib/_datasource.py in open(self, path, mode, encoding, newline)
+    616                                       encoding=encoding, newline=newline)
+    617         else:
+--> 618             raise IOError("%s not found." % path)
+    619 
+    620 
+
+```
+
+{:.output_traceback_line}
+```
+OSError: data/inflammation-01.csv not found.
 ```
 
 
@@ -677,17 +821,31 @@ input. A call to your function should look like this:</p>
 </section>
 
 
-## Key Points
 
-- Define a function using `def function_name(parameter)`.
-- The body of a function must be indented.
-- Call a function using `function_name(value)`.
-- Numbers are stored as integers or floating-point numbers.
-- Variables defined within a function can only be seen and used within the body of the function.
-- If a variable is not defined within the function it is used, Python looks for a definition before the function call
-- Specify default values for parameters when defining a function using `name=value` in the parameter list.
-- Parameters can be passed by matching based on name, by position, or by omitting them (in which case the default value is used).
-- Put code whose parameters change frequently in a function, then call it with different parameter values to customize its behavior.
+<section class="keypoints panel panel-success">
+<div class="panel-heading">
+<h2><span class="fa fa-exclamation-circle"></span> Key Points</h2>
+</div>
+
+
+<div class="panel-body">
+
+<ul>
+<li>Define a function using <code>def function_name(parameter)</code>.</li>
+<li>The body of a function must be indented.</li>
+<li>Call a function using <code>function_name(value)</code>.</li>
+<li>Numbers are stored as integers or floating-point numbers.</li>
+<li>Variables defined within a function can only be seen and used within the body of the function.</li>
+<li>If a variable is not defined within the function it is used, Python looks for a definition before the function call</li>
+<li>Specify default values for parameters when defining a function using <code>name=value</code> in the parameter list.</li>
+<li>Parameters can be passed by matching based on name, by position, or by omitting them (in which case the default value is used).</li>
+<li>Put code whose parameters change frequently in a function, then call it with different parameter values to customize its behavior.</li>
+</ul>
+
+</div>
+
+</section>
+
 
 ---
 The material in this notebook is derived from the Software Carpentry lessons

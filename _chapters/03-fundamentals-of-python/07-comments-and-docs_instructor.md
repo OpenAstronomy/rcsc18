@@ -284,10 +284,24 @@ As this example illustrates, both documentation and a programmer’s _coding sty
 </section>
 
 
-Key Points
 
-- Use `help(thing)` to view help for something.
-- Put docstrings in functions to provide help for that function.
+<section class="keypoints panel panel-success">
+<div class="panel-heading">
+<h2><span class="fa fa-exclamation-circle"></span> Key Points</h2>
+</div>
+
+
+<div class="panel-body">
+
+<ul>
+<li>Use <code>help(thing)</code> to view help for something.</li>
+<li>Put docstrings in functions to provide help for that function.</li>
+</ul>
+
+</div>
+
+</section>
+
 
 ---
 The material in this notebook is derived from the Software Carpentry lessons

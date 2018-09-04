@@ -21,7 +21,7 @@ Systems like Git allow us to move work between any two repositories. In practice
 
 <section class="callout panel panel-warning">
 <div class="panel-heading">
-<h2><span class="fa fa-thumb-tack"></span> # Getting a GitHub account</h2>
+<h2><span class="fa fa-thumb-tack"></span> Getting a GitHub account</h2>
 </div>
 
 
@@ -139,7 +139,7 @@ git push origin master
 
 <section class="callout panel panel-warning">
 <div class="panel-heading">
-<h2><span class="fa fa-thumb-tack"></span> # Proxy</h2>
+<h2><span class="fa fa-thumb-tack"></span> Proxy</h2>
 </div>
 
 
@@ -164,7 +164,7 @@ $ git config --global --unset https.proxy
 
 <section class="callout panel panel-warning">
 <div class="panel-heading">
-<h2><span class="fa fa-thumb-tack"></span> # Password Managers</h2>
+<h2><span class="fa fa-thumb-tack"></span> Password Managers</h2>
 </div>
 
 
@@ -190,7 +190,7 @@ Our local and remote repositories are now in this state:
 
 <section class="callout panel panel-warning">
 <div class="panel-heading">
-<h2><span class="fa fa-thumb-tack"></span> # The ‘-u’ Flag</h2>
+<h2><span class="fa fa-thumb-tack"></span> The ‘-u’ Flag</h2>
 </div>
 
 
@@ -223,7 +223,7 @@ Pulling has no effect in this case because the two repositories are already sync
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2><span class="fa fa-pencil"></span> # GitHub GUI</h2>
+<h2><span class="fa fa-pencil"></span> GitHub GUI</h2>
 </div>
 
 
@@ -257,7 +257,7 @@ Pulling has no effect in this case because the two repositories are already sync
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2><span class="fa fa-pencil"></span> # GitHub Timestamp</h2>
+<h2><span class="fa fa-pencil"></span> GitHub Timestamp</h2>
 </div>
 
 
@@ -289,7 +289,7 @@ Pulling has no effect in this case because the two repositories are already sync
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2><span class="fa fa-pencil"></span> # Push vs. Commit</h2>
+<h2><span class="fa fa-pencil"></span> Push vs. Commit</h2>
 </div>
 
 
@@ -321,7 +321,7 @@ Pulling has no effect in this case because the two repositories are already sync
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2><span class="fa fa-pencil"></span> # Fixing Remote Settings</h2>
+<h2><span class="fa fa-pencil"></span> Fixing Remote Settings</h2>
 </div>
 
 
@@ -358,7 +358,7 @@ Pulling has no effect in this case because the two repositories are already sync
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2><span class="fa fa-pencil"></span> # GitHub License and README files</h2>
+<h2><span class="fa fa-pencil"></span> GitHub License and README files</h2>
 </div>
 
 
@@ -390,7 +390,7 @@ Pulling has no effect in this case because the two repositories are already sync
 
 <section class="keypoints panel panel-success">
 <div class="panel-heading">
-<h2><span class="fa fa-exclamation-circle"></span> # Key Points</h2>
+<h2><span class="fa fa-exclamation-circle"></span> Key Points</h2>
 </div>
 
 

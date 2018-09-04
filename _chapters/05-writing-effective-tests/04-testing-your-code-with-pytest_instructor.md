@@ -33,6 +33,14 @@ print(f.fib(15))
 print(f.fib_numpy(15))
 ```
 
+{:.output_stream}
+```
+[1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610]
+[  1.   1.   2.   3.   5.   8.  13.  21.  34.  55.  89. 144. 233. 377.
+ 610.]
+
+```
+
 Once you've had a look at these functions and are happy with using them, let's move on to testing them.
 
 
@@ -132,6 +140,16 @@ fib_3(10)
 ```
 
 
+
+
+{:.output_data_text}
+```
+[2, 2, 4, 8, 16, 32, 64, 128, 256]
+```
+
+
+
+
 <section class="challenge panel panel-success">
 <div class="panel-heading">
 <h2><span class="fa fa-pencil"></span> Testing a Third Implementation</h2>
@@ -181,6 +199,20 @@ The most basic way to use `pytest` is with the command-line tool it provides. Th
 !pytest test_fibonacci1.py
 ```
 
+{:.output_stream}
+```
+[1m============================= test session starts ==============================[0m
+platform linux -- Python 3.6.6, pytest-3.7.3, py-1.5.4, pluggy-0.7.1
+rootdir: /home/stuart/Git/Aperio/stfc_website/notebooks/05-writing-effective-tests, inifile:
+plugins: xonsh-0.7.7, remotedata-0.3.0, openfiles-0.3.0, mock-1.10.0, doctestplus-0.1.3, arraydiff-0.2, hypothesis-3.68.0
+collected 2 items                                                              [0m
+
+test_fibonacci1.py ..[36m                                                    [100%][0m
+
+[32m[1m=========================== 2 passed in 0.04 seconds ===========================[0m
+
+```
+
 This works in this example because I've used a file containing only our first versions of the tests, which took no input. Using the new combined test, `pytest` doesn't know what input to provide, so it reports the test as having failed. However, there is a commonly-used feature in `pytest` which addresses this, which is the `parametrize` decorator. This allows you to specify inputs for the input parameters of your test functions. What makes it particularly useful though, is that you can specify several for each parameter and `pytest` will automatically run the test with all of those inputs. In this way you can automate testing your functions with a wide range of inputs without having to type out many different function calls yourself.
 
 For our example, we can use this decorator to pass in the functions we wish to test, like this:
@@ -213,37 +245,18 @@ Now when we run this script with `pytest`, you'll notice that even though we hav
 !pytest test_fibonacci3.py
 ```
 
+{:.output_stream}
+```
+[1m============================= test session starts ==============================[0m
+platform linux -- Python 3.6.6, pytest-3.7.3, py-1.5.4, pluggy-0.7.1
+rootdir: /home/stuart/Git/Aperio/stfc_website/notebooks/05-writing-effective-tests, inifile:
+plugins: xonsh-0.7.7, remotedata-0.3.0, openfiles-0.3.0, mock-1.10.0, doctestplus-0.1.3, arraydiff-0.2, hypothesis-3.68.0
+collected 2 items                                                              [0m
+
+test_fibonacci3.py ..[36m                                                    [100%][0m
+
+[32m[1m=========================== 2 passed in 0.03 seconds ===========================[0m
+
+```
+
 This should also pass all the previous tests written. You may have also wanted to add tests that detect the `RecursionError` when $n==0$.
-
-One other useful thing to do when testing is to provide conditions under which you expect your function to fail in a particular way, because not failing when it should can be just as problematic as failing when it shouldn't. For instance, for our recursive Fibonacci implementation, we would expect the function to raise a `RecursionError` when $n == 0$, and if it doesn't then our implementation is wrong in some way. We can use `pytest` to check for this as well, using `pytest.raises`:
-
-
-{:.input_area}
-```python
-# %load test_fibonacci4.py
-import pytest
-
-import numpy as np
-
-from fibonacci import fib, fib_numpy, fib_3, fib_recursive
-
-
-@pytest.mark.parametrize("f_fib", (fib, fib_numpy, fib_3))
-def test_random_fib(f_fib):
-    n = np.random.randint(1, 1000)
-    a = f_fib(n)
-    n2 = np.random.randint(3, n)
-    assert a[n2] == a[n2-1] + a[n2-2]
-
-
-def test_recursion_error():
-    with pytest.raises(RecursionError):
-        fib_recursive(0)
-
-```
-
-
-{:.input_area}
-```python
-!pytest test_fibonacci4.py
-```

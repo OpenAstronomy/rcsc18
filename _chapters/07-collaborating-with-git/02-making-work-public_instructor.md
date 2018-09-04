@@ -34,7 +34,7 @@ At the end of the day what matters is that there is a clear statement as to what
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2><span class="fa fa-pencil"></span> # Can I Use Open License?</h2>
+<h2><span class="fa fa-pencil"></span> Can I Use Open License?</h2>
 </div>
 
 
@@ -50,7 +50,7 @@ At the end of the day what matters is that there is a clear statement as to what
 
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2><span class="fa fa-pencil"></span> # What licenses have I already accepted?</h2>
+<h2><span class="fa fa-pencil"></span> What licenses have I already accepted?</h2>
 </div>
 
 
@@ -72,7 +72,7 @@ At the end of the day what matters is that there is a clear statement as to what
 
 <section class="keypoints panel panel-success">
 <div class="panel-heading">
-<h2><span class="fa fa-exclamation-circle"></span> # Key Points</h2>
+<h2><span class="fa fa-exclamation-circle"></span> Key Points</h2>
 </div>
 
 
@@ -130,7 +130,7 @@ There is also an `@software{...` BibTeX entry type in case no “umbrella” cit
 
 <section class="keypoints panel panel-success">
 <div class="panel-heading">
-<h2><span class="fa fa-exclamation-circle"></span> # Key Points</h2>
+<h2><span class="fa fa-exclamation-circle"></span> Key Points</h2>
 </div>
 
 
