@@ -73,8 +73,8 @@ hpc
 
 {:.output_data_text}
 ```
-<SkyCoord (Helioprojective: obstime=2018-09-05 16:32:12.039703, rsun=695508.0 km, observer=<HeliographicStonyhurst Coordinate (obstime=2018-09-05 16:32:12.039703): (lon, lat, radius) in (deg, deg, AU)
-    (0., 7.24258301, 1.00820494)>): (Tx, Ty) in arcsec
+<SkyCoord (Helioprojective: obstime=2018-09-05 22:30:58.610093, rsun=695508.0 km, observer=<HeliographicStonyhurst Coordinate (obstime=2018-09-05 22:30:58.610093): (lon, lat, radius) in (deg, deg, AU)
+    (0., 7.24408442, 1.00814436)>): (Tx, Ty) in arcsec
     (100., 700.)>
 ```
 
@@ -91,8 +91,8 @@ hpc.transform_to('heliographic_stonyhurst')
 
 {:.output_data_text}
 ```
-<SkyCoord (HeliographicStonyhurst: obstime=2018-09-05 16:32:12.039703): (lon, lat, radius) in (deg, deg, km)
-    (10.35630578, 54.33656833, 695508.0000005)>
+<SkyCoord (HeliographicStonyhurst: obstime=2018-09-05 22:30:58.610093): (lon, lat, radius) in (deg, deg, km)
+    (10.35510256, 54.33433101, 695508.00000173)>
 ```
 
 
@@ -601,7 +601,7 @@ hdulist
 
 {:.output_data_text}
 ```
-[<astropy.io.fits.hdu.image.PrimaryHDU object at 0x7fa699064c50>]
+[<astropy.io.fits.hdu.image.PrimaryHDU object at 0x7fb8e67a1c18>]
 ```
 
 
@@ -630,7 +630,7 @@ ax.imshow(hdulist[0].data, cmap='gray', vmax=1000, interpolation=None, origin='l
 
 {:.output_data_text}
 ```
-<matplotlib.image.AxesImage at 0x7fa696ea2390>
+<matplotlib.image.AxesImage at 0x7fb8e45de2b0>
 ```
 
 
@@ -738,7 +738,7 @@ ax.plot(3000, 3000, 'o')
 
 {:.output_data_text}
 ```
-[<matplotlib.lines.Line2D at 0x7fa68d81be10>]
+[<matplotlib.lines.Line2D at 0x7fb8daf57eb8>]
 ```
 
 
@@ -772,7 +772,7 @@ ax.plot(189.25, 14.23, 'o', transform=ax.get_transform('fk5'))
 
 {:.output_data_text}
 ```
-[<matplotlib.lines.Line2D at 0x7fa68d7fc8d0>]
+[<matplotlib.lines.Line2D at 0x7fb8daf3b908>]
 ```
 
 
@@ -826,7 +826,7 @@ ax.plot(287.5, 76.65, 'o', transform=ax.get_transform('galactic'))
 
 {:.output_data_text}
 ```
-[<matplotlib.lines.Line2D at 0x7fa68d75f2b0>]
+[<matplotlib.lines.Line2D at 0x7fb8dae9c240>]
 ```
 
 

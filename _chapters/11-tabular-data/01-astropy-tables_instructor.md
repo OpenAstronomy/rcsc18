@@ -72,7 +72,7 @@ t1
 
 <div markdown="0">
 <i>Table length=3</i>
-<table id="table139977240499760" class="table-striped table-bordered table-condensed">
+<table id="table140152145569328" class="table-striped table-bordered table-condensed">
 <thead><tr><th>name</th><th>flux</th></tr></thead>
 <thead><tr><th>str8</th><th>float64</th></tr></thead>
 <tr><td>source 1</td><td>1.2</td></tr>
@@ -96,7 +96,7 @@ t1
 
 <div markdown="0">
 <i>Table length=3</i>
-<table id="table139977240499760" class="table-striped table-bordered table-condensed">
+<table id="table140152145569328" class="table-striped table-bordered table-condensed">
 <thead><tr><th>name</th><th>flux</th><th>size</th></tr></thead>
 <thead><tr><th>str8</th><th>float64</th><th>int64</th></tr></thead>
 <tr><td>source 1</td><td>1.2</td><td>1</td></tr>
@@ -174,7 +174,7 @@ t1[0]
 
 <div markdown="0">
 <i>Row index=0</i>
-<table id="table139977240499760">
+<table id="table140152145569328">
 <thead><tr><th>name</th><th>flux</th><th>size</th></tr></thead>
 <thead><tr><th>str8</th><th>float64</th><th>int64</th></tr></thead>
 <tr><td>source 1</td><td>1.2</td><td>1</td></tr>
@@ -198,7 +198,7 @@ t1
 
 <div markdown="0">
 <i>Table length=3</i>
-<table id="table139977240499760" class="table-striped table-bordered table-condensed">
+<table id="table140152145569328" class="table-striped table-bordered table-condensed">
 <thead><tr><th>name</th><th>flux</th><th>size</th></tr></thead>
 <thead><tr><th></th><th></th><th>cm</th></tr></thead>
 <thead><tr><th>str8</th><th>float64</th><th>int64</th></tr></thead>
@@ -299,7 +299,7 @@ t
 
 <div markdown="0">
 <i>QTable length=5</i>
-<table id="table139977237666616" class="table-striped table-bordered table-condensed">
+<table id="table140152142724008" class="table-striped table-bordered table-condensed">
 <thead><tr><th>spectral type</th><th>radius</th><th>temperature</th></tr></thead>
 <thead><tr><th></th><th>solRad</th><th>K</th></tr></thead>
 <thead><tr><th>str2</th><th>float64</th><th>float64</th></tr></thead>
@@ -344,7 +344,7 @@ t
 
 <div markdown="0">
 <i>QTable length=5</i>
-<table id="table139977237666616" class="table-striped table-bordered table-condensed">
+<table id="table140152142724008" class="table-striped table-bordered table-condensed">
 <thead><tr><th>spectral type</th><th>radius</th><th>temperature</th></tr></thead>
 <thead><tr><th></th><th>solRad</th><th>K</th></tr></thead>
 <thead><tr><th>str2</th><th>float64</th><th>float64</th></tr></thead>
@@ -373,7 +373,7 @@ t
 
 <div markdown="0">
 <i>QTable length=5</i>
-<table id="table139977237666616" class="table-striped table-bordered table-condensed">
+<table id="table140152142724008" class="table-striped table-bordered table-condensed">
 <thead><tr><th>spectral type</th><th>radius</th><th>temperature</th><th>luminosity</th></tr></thead>
 <thead><tr><th></th><th>solRad</th><th>K</th><th>solLum</th></tr></thead>
 <thead><tr><th>str2</th><th>float64</th><th>float64</th><th>float64</th></tr></thead>
@@ -509,7 +509,7 @@ t3
 
 <div markdown="0">
 <i>Table masked=True length=3</i>
-<table id="table139977237665496" class="table-striped table-bordered table-condensed">
+<table id="table140152142724624" class="table-striped table-bordered table-condensed">
 <thead><tr><th>name</th><th>flux</th><th>size</th><th>flux2</th></tr></thead>
 <thead><tr><th></th><th></th><th>cm</th><th></th></tr></thead>
 <thead><tr><th>str8</th><th>float64</th><th>int64</th><th>int64</th></tr></thead>
@@ -559,7 +559,7 @@ t4
 
 <div markdown="0">
 <i>Table masked=True length=3</i>
-<table id="table139977237689792" class="table-striped table-bordered table-condensed">
+<table id="table140152142763680" class="table-striped table-bordered table-condensed">
 <thead><tr><th>name</th><th>flux</th></tr></thead>
 <thead><tr><th>str8</th><th>float64</th></tr></thead>
 <tr><td>source 1</td><td>--</td></tr>
@@ -602,7 +602,7 @@ obs[1:4]
 
 <div markdown="0">
 <i>Table length=3</i>
-<table id="table139977237665104" class="table-striped table-bordered table-condensed">
+<table id="table140152142722832" class="table-striped table-bordered table-condensed">
 <thead><tr><th>name</th><th>obs_date</th><th>mag_b</th><th>mag_v</th></tr></thead>
 <thead><tr><th>str4</th><th>str10</th><th>float64</th><th>float64</th></tr></thead>
 <tr><td>M31</td><td>2012-01-02</td><td>17.1</td><td>17.4</td></tr>
@@ -624,7 +624,7 @@ obs[obs['mag_b'] > 16]
 
 <div markdown="0">
 <i>Table length=4</i>
-<table id="table139977237689064" class="table-striped table-bordered table-condensed">
+<table id="table140152142764632" class="table-striped table-bordered table-condensed">
 <thead><tr><th>name</th><th>obs_date</th><th>mag_b</th><th>mag_v</th></tr></thead>
 <thead><tr><th>str4</th><th>str10</th><th>float64</th><th>float64</th></tr></thead>
 <tr><td>M31</td><td>2012-01-02</td><td>17.0</td><td>17.5</td></tr>
@@ -647,7 +647,7 @@ obs['mag_b', 'mag_v']
 
 <div markdown="0">
 <i>Table length=10</i>
-<table id="table139977237690632" class="table-striped table-bordered table-condensed">
+<table id="table140152142764520" class="table-striped table-bordered table-condensed">
 <thead><tr><th>mag_b</th><th>mag_v</th></tr></thead>
 <thead><tr><th>float64</th><th>float64</th></tr></thead>
 <tr><td>17.0</td><td>17.5</td></tr>
@@ -698,7 +698,7 @@ subset1
 
 <div markdown="0">
 <i>Table length=5</i>
-<table id="table139977237692144" class="table-striped table-bordered table-condensed">
+<table id="table140152142765752" class="table-striped table-bordered table-condensed">
 <thead><tr><th>name</th><th>obs_date</th><th>mag_b</th><th>mag_v</th></tr></thead>
 <thead><tr><th>str4</th><th>str10</th><th>float64</th><th>float64</th></tr></thead>
 <tr><td>M31</td><td>2012-01-02</td><td>17.1</td><td>17.4</td></tr>
@@ -724,7 +724,7 @@ subset2
 
 <div markdown="0">
 <i>Table length=3</i>
-<table id="table139977237691192" class="table-striped table-bordered table-condensed">
+<table id="table140152142764072" class="table-striped table-bordered table-condensed">
 <thead><tr><th>name</th><th>obs_date</th><th>mag_b</th><th>mag_v</th></tr></thead>
 <thead><tr><th>str4</th><th>str10</th><th>float64</th><th>float64</th></tr></thead>
 <tr><td>M31</td><td>2012-01-02</td><td>17.0</td><td>17.5</td></tr>
@@ -754,7 +754,7 @@ obs_by_name
 
 <div markdown="0">
 <i>Table length=10</i>
-<table id="table139977237861096" class="table-striped table-bordered table-condensed">
+<table id="table140152142914224" class="table-striped table-bordered table-condensed">
 <thead><tr><th>name</th><th>obs_date</th><th>mag_b</th><th>mag_v</th></tr></thead>
 <thead><tr><th>str4</th><th>str10</th><th>float64</th><th>float64</th></tr></thead>
 <tr><td>M101</td><td>2012-01-02</td><td>15.1</td><td>13.5</td></tr>
@@ -815,7 +815,7 @@ obs_by_name.groups.aggregate(np.mean)
 
 <div markdown="0">
 <i>Table length=3</i>
-<table id="table139977237862104" class="table-striped table-bordered table-condensed">
+<table id="table140152142914336" class="table-striped table-bordered table-condensed">
 <thead><tr><th>name</th><th>mag_b</th><th>mag_v</th></tr></thead>
 <thead><tr><th>str4</th><th>float64</th><th>float64</th></tr></thead>
 <tr><td>M101</td><td>15.000000000000002</td><td>13.725000000000001</td></tr>
@@ -971,7 +971,7 @@ t4
 
 <div markdown="0">
 <i>Table masked=True length=3</i>
-<table id="table139977237689792" class="table-striped table-bordered table-condensed">
+<table id="table140152142763680" class="table-striped table-bordered table-condensed">
 <thead><tr><th>name</th><th>flux</th></tr></thead>
 <thead><tr><th>str8</th><th>float64</th></tr></thead>
 <tr><td>source 1</td><td>--</td></tr>

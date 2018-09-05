@@ -681,7 +681,7 @@ plt.plot(angle, np.sin(angle))
 
 {:.output_data_text}
 ```
-[<matplotlib.lines.Line2D at 0x7f1c02aa8390>]
+[<matplotlib.lines.Line2D at 0x7fb8ca1a53c8>]
 ```
 
 
