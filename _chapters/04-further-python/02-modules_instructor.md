@@ -60,6 +60,30 @@ Now that we have a separate file which defines the functions for our analysis, w
 import analysis_tools
 ```
 
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+ModuleNotFoundError                       Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-2-98aae75b2896> in <module>()
+----> 1 import analysis_tools
+
+```
+
+{:.output_traceback_line}
+```
+ModuleNotFoundError: No module named 'analysis_tools'
+```
+
+
 And we can interact with the functions we've defined there:
 
 
@@ -68,25 +92,29 @@ And we can interact with the functions we've defined there:
 help(analysis_tools.detect_problems)
 ```
 
-{:.output_stream}
+
+{:.output_traceback_line}
 ```
-Help on function detect_problems in module analysis_tools:
+---------------------------------------------------------------------------
+```
 
-detect_problems(filename)
-    Tests data stored in the specified file for spurious or unexpected values.
-    
-    Parameters
-    ----------
-    filename : str
-        Name or path to a file containing data to tested. Data should be 2-dimensional and values
-        should be separated by commas.
-    
-    Examples
-    --------
-    >>> detect_problems('/path/to/mydata.csv')
+{:.output_traceback_line}
+```
+NameError                                 Traceback (most recent call last)
+```
 
+{:.output_traceback_line}
+```
+<ipython-input-3-ebd8962fd933> in <module>()
+----> 1 help(analysis_tools.detect_problems)
 
 ```
+
+{:.output_traceback_line}
+```
+NameError: name 'analysis_tools' is not defined
+```
+
 
 
 {:.input_area}
@@ -103,7 +131,7 @@ analysis_tools.detect_problems('somedata.dat')
 
 {:.output_traceback_line}
 ```
-OSError                                   Traceback (most recent call last)
+NameError                                 Traceback (most recent call last)
 ```
 
 {:.output_traceback_line}
@@ -116,51 +144,7 @@ OSError                                   Traceback (most recent call last)
 
 {:.output_traceback_line}
 ```
-~/Git/Aperio/stfc_website/notebooks/04-further-python/analysis_tools.py in analyse(filename)
-     19     """
-     20 
----> 21     data = np.loadtxt(fname=filename, delimiter=',')
-     22 
-     23     fig = plt.figure(figsize=(10.0, 3.0))
-
-```
-
-{:.output_traceback_line}
-```
-/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/lib/npyio.py in loadtxt(fname, dtype, comments, delimiter, converters, skiprows, usecols, unpack, ndmin, encoding)
-    924             fname = str(fname)
-    925         if _is_string_like(fname):
---> 926             fh = np.lib._datasource.open(fname, 'rt', encoding=encoding)
-    927             fencoding = getattr(fh, 'encoding', 'latin1')
-    928             fh = iter(fh)
-
-```
-
-{:.output_traceback_line}
-```
-/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/lib/_datasource.py in open(path, mode, destpath, encoding, newline)
-    260 
-    261     ds = DataSource(destpath)
---> 262     return ds.open(path, mode, encoding=encoding, newline=newline)
-    263 
-    264 
-
-```
-
-{:.output_traceback_line}
-```
-/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/lib/_datasource.py in open(self, path, mode, encoding, newline)
-    616                                       encoding=encoding, newline=newline)
-    617         else:
---> 618             raise IOError("%s not found." % path)
-    619 
-    620 
-
-```
-
-{:.output_traceback_line}
-```
-OSError: somedata.dat not found.
+NameError: name 'analysis_tools' is not defined
 ```
 
 
@@ -174,17 +158,7 @@ So we can see this setup works in the notebook, but it's supposed to help us wit
 
 {:.output_stream}
 ```
-import glob
-
-import analysis_tools
-
-
-filenames = sorted(glob.glob('inflammation*.csv'))
-
-for f in filenames[:3]:
-    print(f)
-    analysis_tools.analyse(f)
-    analysis_tools.detect_problems(f)
+cat: rcsc18-data-analysis.py: No such file or directory
 
 ```
 

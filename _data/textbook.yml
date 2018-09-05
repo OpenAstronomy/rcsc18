@@ -110,10 +110,28 @@ chapters:
   title: Collaborating With Git
 - children:
   - class: level_1
+    title: Introduction to Open Development
+    url: chapters/08-sunpy-and-astropy/01-introduction-to-open-development
+  class: level_0
+  title: Sunpy and Astropy
+- children:
+  - class: level_1
+    title: Time Series Data
+    url: chapters/09-time-series-data/01-time-series-data
+  class: level_0
+  title: Time Series Data
+- children:
+  - class: level_1
     title: Units
-    url: chapters/09-units/01-units
+    url: chapters/10-units/01-units
   class: level_0
   title: Units
+- children:
+  - class: level_1
+    title: Astropy Tables
+    url: chapters/11-tabular-data/01-astropy-tables
+  class: level_0
+  title: Tabular Data
 - children:
   - class: level_1
     title: Images
@@ -126,4 +144,10 @@ chapters:
     url: chapters/13-images-in-astronomy/01-images-in-astronomy
   class: level_0
   title: Images in Astronomy
+- children:
+  - class: level_1
+    title: Final Exercise
+    url: chapters/15-final-exercise/01-final-exercise
+  class: level_0
+  title: Final Exercise
 first_chapter_url: chapters/00-lessons

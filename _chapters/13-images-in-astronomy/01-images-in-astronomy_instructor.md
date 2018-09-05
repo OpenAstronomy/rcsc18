@@ -7,7 +7,7 @@ previouschapter:
   title: 'Images in Astronomy'
 nextchapter:
   url: 
-  title: ''
+  title: 'Final Exercise'
 redirect_from:
   - 'chapters/13-images-in-astronomy/01-images-in-astronomy'
 ---
@@ -73,8 +73,8 @@ hpc
 
 {:.output_data_text}
 ```
-<SkyCoord (Helioprojective: obstime=2018-09-04 08:45:06.544000, rsun=695508.0 km, observer=<HeliographicStonyhurst Coordinate (obstime=2018-09-04 08:45:06.544000): (lon, lat, radius) in (deg, deg, AU)
-    (0., 7.2324308, 1.00852362)>): (Tx, Ty) in arcsec
+<SkyCoord (Helioprojective: obstime=2018-09-05 16:32:12.039703, rsun=695508.0 km, observer=<HeliographicStonyhurst Coordinate (obstime=2018-09-05 16:32:12.039703): (lon, lat, radius) in (deg, deg, AU)
+    (0., 7.24258301, 1.00820494)>): (Tx, Ty) in arcsec
     (100., 700.)>
 ```
 
@@ -91,8 +91,8 @@ hpc.transform_to('heliographic_stonyhurst')
 
 {:.output_data_text}
 ```
-<SkyCoord (HeliographicStonyhurst: obstime=2018-09-04 08:45:06.544000): (lon, lat, radius) in (deg, deg, km)
-    (10.36207309, 54.34612347, 695507.99999798)>
+<SkyCoord (HeliographicStonyhurst: obstime=2018-09-05 16:32:12.039703): (lon, lat, radius) in (deg, deg, km)
+    (10.35630578, 54.33656833, 695508.0000005)>
 ```
 
 
@@ -601,7 +601,7 @@ hdulist
 
 {:.output_data_text}
 ```
-[<astropy.io.fits.hdu.image.PrimaryHDU object at 0x7fd841001710>]
+[<astropy.io.fits.hdu.image.PrimaryHDU object at 0x7fa699064c50>]
 ```
 
 
@@ -630,7 +630,7 @@ ax.imshow(hdulist[0].data, cmap='gray', vmax=1000, interpolation=None, origin='l
 
 {:.output_data_text}
 ```
-<matplotlib.image.AxesImage at 0x7fd83ee2bd68>
+<matplotlib.image.AxesImage at 0x7fa696ea2390>
 ```
 
 
@@ -738,7 +738,7 @@ ax.plot(3000, 3000, 'o')
 
 {:.output_data_text}
 ```
-[<matplotlib.lines.Line2D at 0x7fd8357b7978>]
+[<matplotlib.lines.Line2D at 0x7fa68d81be10>]
 ```
 
 
@@ -772,7 +772,7 @@ ax.plot(189.25, 14.23, 'o', transform=ax.get_transform('fk5'))
 
 {:.output_data_text}
 ```
-[<matplotlib.lines.Line2D at 0x7fd83579d3c8>]
+[<matplotlib.lines.Line2D at 0x7fa68d7fc8d0>]
 ```
 
 
@@ -826,7 +826,7 @@ ax.plot(287.5, 76.65, 'o', transform=ax.get_transform('galactic'))
 
 {:.output_data_text}
 ```
-[<matplotlib.lines.Line2D at 0x7fd8356f2d68>]
+[<matplotlib.lines.Line2D at 0x7fa68d75f2b0>]
 ```
 
 
@@ -1008,5 +1008,114 @@ mr.peek()
 ```
 
 
-![png](../../images/chapters/13-images-in-astronomy/01-images-in-astronomy_instructor_80_0.png)
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+MemoryError                               Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-38-194907119f42> in <module>()
+----> 1 mr = amap.rotate()
+      2 mr.peek()
+
+```
+
+{:.output_traceback_line}
+```
+/opt/miniconda/envs/stfc/lib/python3.6/site-packages/sunpy/map/mapbase.py in rotate(self, angle, rmatrix, order, scale, recenter, missing, use_scipy)
+   1150                                     image_center=np.flipud(pixel_center),
+   1151                                     recenter=recenter, missing=missing,
+-> 1152                                     use_scipy=use_scipy).T
+   1153 
+   1154         if recenter:
+
+```
+
+{:.output_traceback_line}
+```
+/opt/miniconda/envs/stfc/lib/python3.6/site-packages/sunpy/image/transform.py in affine_transform(image, rmatrix, order, scale, image_center, recenter, missing, use_scipy)
+    130 
+    131         rotated_image = skimage.transform.warp(adjusted_image, tform, order=order,
+--> 132                                                mode='constant', cval=missing)
+    133 
+    134     return rotated_image
+
+```
+
+{:.output_traceback_line}
+```
+/opt/miniconda/envs/stfc/lib/python3.6/site-packages/skimage/transform/_warps.py in warp(image, inverse_map, map_args, output_shape, order, mode, cval, clip, preserve_range)
+    883                                 input_shape[2])
+    884 
+--> 885             coords = warp_coords(coord_map, output_shape)
+    886 
+    887         # Pre-filtering not necessary for order 0, 1 interpolation
+
+```
+
+{:.output_traceback_line}
+```
+/opt/miniconda/envs/stfc/lib/python3.6/site-packages/skimage/transform/_warps.py in warp_coords(coord_map, shape, dtype)
+    596     # Map each (row, col) pair to the source image according to
+    597     # the user-provided mapping
+--> 598     tf_coords = coord_map(tf_coords)
+    599 
+    600     # Reshape back to a (2, M, N) coordinate grid
+
+```
+
+{:.output_traceback_line}
+```
+/opt/miniconda/envs/stfc/lib/python3.6/site-packages/skimage/transform/_warps.py in coord_map(*args)
+    874 
+    875             def coord_map(*args):
+--> 876                 return inverse_map(*args, **map_args)
+    877 
+    878             if len(input_shape) == 3 and len(output_shape) == 2:
+
+```
+
+{:.output_traceback_line}
+```
+/opt/miniconda/envs/stfc/lib/python3.6/site-packages/skimage/transform/_geometric.py in __call__(self, coords)
+    571 
+    572         """
+--> 573         return self._apply_mat(coords, self.params)
+    574 
+    575     def inverse(self, coords):
+
+```
+
+{:.output_traceback_line}
+```
+/opt/miniconda/envs/stfc/lib/python3.6/site-packages/skimage/transform/_geometric.py in _apply_mat(self, coords, matrix)
+    548 
+    549         x, y = np.transpose(coords)
+--> 550         src = np.vstack((x, y, np.ones_like(x)))
+    551         dst = np.dot(src.transpose(), matrix.transpose())
+    552 
+
+```
+
+{:.output_traceback_line}
+```
+/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/core/shape_base.py in vstack(tup)
+    232 
+    233     """
+--> 234     return _nx.concatenate([atleast_2d(_m) for _m in tup], 0)
+    235 
+    236 def hstack(tup):
+
+```
+
+{:.output_traceback_line}
+```
+MemoryError: 
+```
 

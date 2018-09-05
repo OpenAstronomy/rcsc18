@@ -1,15 +1,15 @@
 ---
-interact_link: 09-units/01-units_instructor.ipynb
+interact_link: 10-units/01-units_instructor.ipynb
 title: 'Units'
-permalink: 'chapters/09-units/01-units'
+permalink: 'chapters/10-units/01-units'
 previouschapter:
   url: 
   title: 'Units'
 nextchapter:
   url: 
-  title: 'Images and Visualisation'
+  title: 'Tabular Data'
 redirect_from:
-  - 'chapters/09-units/01-units'
+  - 'chapters/10-units/01-units'
 ---
 
 # Units and Quantities
@@ -312,7 +312,7 @@ and others are already a composition:
 
 {:.output_data_text}
 ```
-[Unit("Bq"), Unit("Hz"), Unit("2.7027e-11 Ci")]
+[Unit("Hz"), Unit("Bq"), Unit("2.7027e-11 Ci")]
 ```
 
 
@@ -681,13 +681,13 @@ plt.plot(angle, np.sin(angle))
 
 {:.output_data_text}
 ```
-[<matplotlib.lines.Line2D at 0x7fcdea21fef0>]
+[<matplotlib.lines.Line2D at 0x7f1c02aa8390>]
 ```
 
 
 
 
-![png](../../images/chapters/09-units/01-units_instructor_45_1.png)
+![png](../../images/chapters/10-units/01-units_instructor_45_1.png)
 
 
 ## Creating functions with quantities as units

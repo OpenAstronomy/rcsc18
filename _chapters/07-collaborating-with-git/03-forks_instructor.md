@@ -7,7 +7,7 @@ previouschapter:
   title: 'Making Work Public'
 nextchapter:
   url: 
-  title: 'Units'
+  title: 'Sunpy and Astropy'
 redirect_from:
   - 'chapters/07-collaborating-with-git/03-forks'
 ---

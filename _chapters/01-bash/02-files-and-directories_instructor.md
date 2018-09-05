@@ -1182,13 +1182,18 @@ ls -F -a
 
 {:.output_stream}
 ```
-./			     04-further-python/		   environment.yml
-../			     05-writing-effective-tests/   .git
-00-lessons_instructor.ipynb  06-approximating-pi/	   .gitignore
-00-lessons.ipynb	     07-collaborating-with-git/    LICENCE
-01-bash/		     09-units/			   README
-02-git/			     12-images-and-visualisation/
-03-fundamentals-of-python/   13-images-in-astronomy/
+./			     09-time-series-data/
+../			     10-units/
+00-lessons_instructor.ipynb  11-tabular-data/
+00-lessons.ipynb	     12-images-and-visualisation/
+01-bash/		     13-images-in-astronomy/
+02-git/			     15-final-exercise/
+03-fundamentals-of-python/   environment.yml
+04-further-python/	     .git
+05-writing-effective-tests/  .gitignore
+06-approximating-pi/	     LICENCE
+07-collaborating-with-git/   README
+08-sunpy-and-astropy/
 
 ```
 

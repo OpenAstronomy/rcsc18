@@ -142,7 +142,6 @@ Changes not staged for commit:
 
 	[31mmodified:   02-creating-repositories_instructor.ipynb[m
 	[31mmodified:   03-tracking-changes_instructor.ipynb[m
-	[31mmodified:   04-exploring-history_instructor.ipynb[m
 
 no changes added to commit (use "git add" and/or "git commit -a")
 
@@ -208,7 +207,6 @@ Changes not staged for commit:
 
 	[31mmodified:   02-creating-repositories_instructor.ipynb[m
 	[31mmodified:   03-tracking-changes_instructor.ipynb[m
-	[31mmodified:   04-exploring-history_instructor.ipynb[m
 
 no changes added to commit (use "git add" and/or "git commit -a")
 
