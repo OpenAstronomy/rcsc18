@@ -39,16 +39,16 @@ There's a widespread trend in solar physics at the moment for correlation over a
 
 ## Sunpy Time Series
 
-SunPy provides a lightcurve object to handle this type of time series data. The module has a number of instruments associated with it, including:
+SunPy provides a timeseries object to handle this type of time series data. The module has a number of instruments associated with it, including:
 
-* GOES XRS LightCurve
-* SDO EVE LightCurve for level 0CS data
-* Proba-2 LYRA LightCurve
+* GOES XRS TimeSeries
+* SDO EVE TimeSeries for level 0CS data
+* Proba-2 LYRA TimeSeries
 * NOAA Solar Cycle monthly indices.
-* Nobeyama Radioheliograph Correlation LightCurve.
-* RHESSI X-ray Summary LightCurve.
+* Nobeyama Radioheliograph Correlation TimeSeries.
+* RHESSI X-ray Summary TimeSeries.
 
-We're going to examine the lightcurves created by a solar flare on June 7th 2011.
+We're going to examine the data created by a solar flare on June 7th 2011.
 
 Lets begin with the import statements:
 
@@ -119,7 +119,7 @@ goes_ts.peek()
 
 ### Accessing and using the data
 
-More custom plots can be made easily by accessing the data in the timeseries functionality. Both the time information and the data are contained within the lightcurve.data code, which is a pandas dataframe. We can see what data is contained in the dataframe by finding which columns it contains and also asking what's in the meta data: 
+More custom plots can be made easily by accessing the data in the timeseries functionality. Both the time information and the data are contained within the timeseries.data code, which is a pandas dataframe. We can see what data is contained in the dataframe by finding which columns it contains and also asking what's in the meta data: 
 
 
 {:.input_area}
@@ -216,7 +216,7 @@ plt.axvline(max_t_goes_short, color='black', linestyle='dashed',linewidth=2)
 
 {:.output_data_text}
 ```
-<matplotlib.lines.Line2D at 0x7f7869f74f98>
+<matplotlib.lines.Line2D at 0x7faec1668f60>
 ```
 
 
@@ -294,19 +294,7 @@ Unhelpful, so lets give them something more recognisable. We can use the docs to
 {:.input_area}
 ```python
 data.dtype.names = ('max_len', 'ltime', 'sample_time')
-data.
 ```
-
-
-{:.output_traceback_line}
-```
-  File "<ipython-input-11-b98b320362d9>", line 2
-    data.
-         ^
-SyntaxError: invalid syntax
-
-```
-
 
 ## DataFrame
 
@@ -353,33 +341,16 @@ df = pd.DataFrame(data=d, index=data['sample_time'])
 print(df.head())
 ```
 
-
-{:.output_traceback_line}
+{:.output_stream}
 ```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-ValueError                                Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-12-1f26293446d4> in <module>()
-      1 import pandas as pd
-      2 
-----> 3 d = {'max_len': data['max_len'], 'ltime': data['ltime']}
-      4 
-      5 df = pd.DataFrame(data=d, index=data['sample_time'])
+                                 max_len      ltime
+b'2010-06-01T13:00:14.120000'  27.022617  13.600000
+b'2010-06-01T12:58:02.120000'  36.208097   8.400000
+b'2010-06-15T12:55:02.110000'  62.932898  24.199833
+b'2010-07-07T12:23:50.110000'  38.970549  22.999667
+b'2010-07-07T13:28:50.120000'  53.589420  21.799833
 
 ```
-
-{:.output_traceback_line}
-```
-ValueError: no field of name max_len
-```
-
 
 ## Datetime Objects
 
@@ -406,8 +377,8 @@ print("When is dinner? {}".format(dinner))
 
 {:.output_stream}
 ```
-2018-09-05 22:30:35.407788
-2018-09-05 21:30:35.407909
+2018-09-05 23:05:52.258511
+2018-09-05 22:05:52.258645
 When is dinner? 2005-07-14 12:30:00
 
 ```
@@ -420,29 +391,11 @@ Looking back at when we discussed the first element of data, and the format of t
 print(df.index[0])
 ```
 
-
-{:.output_traceback_line}
+{:.output_stream}
 ```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-14-fbb9075eea54> in <module>()
-----> 1 print(df.index[0])
+b'2010-06-01T13:00:14.120000'
 
 ```
-
-{:.output_traceback_line}
-```
-NameError: name 'df' is not defined
-```
-
 
 So this is a byte rather than a string so we'll need to convert that using the string handling functionality in pandas
 
@@ -454,28 +407,13 @@ df.iloc[0].time
 ```
 
 
-{:.output_traceback_line}
+
+
+{:.output_data_text}
 ```
----------------------------------------------------------------------------
+'2010-06-01T13:00:14.120000'
 ```
 
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-15-35dba3aa50fc> in <module>()
-----> 1 df['time'] = df.index.astype(str)
-      2 df.iloc[0].time
-
-```
-
-{:.output_traceback_line}
-```
-NameError: name 'df' is not defined
-```
 
 
 This is a string and python will just treat it as such. We need to use datetime to pick this string appart and change it into an oject we can use.
@@ -491,30 +429,11 @@ dt_obj = datetime.datetime.strptime(df.iloc[0].time, '%Y-%m-%dT%H:%M:%S.%f')
 print(dt_obj)
 ```
 
-
-{:.output_traceback_line}
+{:.output_stream}
 ```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-16-59058002e7a5> in <module>()
-----> 1 dt_obj = datetime.datetime.strptime(df.iloc[0].time, '%Y-%m-%dT%H:%M:%S.%f')
-      2 print(dt_obj)
+2010-06-01 13:00:14.120000
 
 ```
-
-{:.output_traceback_line}
-```
-NameError: name 'df' is not defined
-```
-
 
 We can now get attributes from this such as the hour, month, second and so on
 
@@ -526,31 +445,13 @@ print(dt_obj.month)
 print(dt_obj.weekday())
 ```
 
-
-{:.output_traceback_line}
+{:.output_stream}
 ```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-17-61223efe8b52> in <module>()
-----> 1 print(dt_obj.second)
-      2 print(dt_obj.month)
-      3 print(dt_obj.weekday())
+14
+6
+1
 
 ```
-
-{:.output_traceback_line}
-```
-NameError: name 'dt_obj' is not defined
-```
-
 
 Now the next logical step would be to make a for loop and iterate over the index and reassign it.
 
@@ -562,30 +463,6 @@ Now the next logical step would be to make a for loop and iterate over the index
 df['datetime'] = pd.to_datetime(df.time)
 ```
 
-
-{:.output_traceback_line}
-```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-18-d77fa28270ad> in <module>()
-----> 1 df['datetime'] = pd.to_datetime(df.time)
-
-```
-
-{:.output_traceback_line}
-```
-NameError: name 'df' is not defined
-```
-
-
 There is also one of the most powerful featues of python, Apply. 
 Apply will take a function and apply it to all rows in a dataframe or column. The easiest way to do this is with a lambda function
 
@@ -596,57 +473,86 @@ df['other_datetime'] = df.time.apply(lambda x: datetime.datetime.strptime(x, '%Y
 ```
 
 
-{:.output_traceback_line}
-```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-19-311b6b5ab151> in <module>()
-----> 1 df['other_datetime'] = df.time.apply(lambda x: datetime.datetime.strptime(x, '%Y-%m-%dT%H:%M:%S.%f'))
-
-```
-
-{:.output_traceback_line}
-```
-NameError: name 'df' is not defined
-```
-
-
-
 {:.input_area}
 ```python
 df.head()
 ```
 
 
-{:.output_traceback_line}
-```
----------------------------------------------------------------------------
-```
 
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
 
-{:.output_traceback_line}
-```
-<ipython-input-20-c42a15b2c7cf> in <module>()
-----> 1 df.head()
+<div markdown="0">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-```
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
 
-{:.output_traceback_line}
-```
-NameError: name 'df' is not defined
-```
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>max_len</th>
+      <th>ltime</th>
+      <th>time</th>
+      <th>datetime</th>
+      <th>other_datetime</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>b'2010-06-01T13:00:14.120000'</th>
+      <td>27.022617</td>
+      <td>13.600000</td>
+      <td>2010-06-01T13:00:14.120000</td>
+      <td>2010-06-01 13:00:14.120</td>
+      <td>2010-06-01 13:00:14.120</td>
+    </tr>
+    <tr>
+      <th>b'2010-06-01T12:58:02.120000'</th>
+      <td>36.208097</td>
+      <td>8.400000</td>
+      <td>2010-06-01T12:58:02.120000</td>
+      <td>2010-06-01 12:58:02.120</td>
+      <td>2010-06-01 12:58:02.120</td>
+    </tr>
+    <tr>
+      <th>b'2010-06-15T12:55:02.110000'</th>
+      <td>62.932898</td>
+      <td>24.199833</td>
+      <td>2010-06-15T12:55:02.110000</td>
+      <td>2010-06-15 12:55:02.110</td>
+      <td>2010-06-15 12:55:02.110</td>
+    </tr>
+    <tr>
+      <th>b'2010-07-07T12:23:50.110000'</th>
+      <td>38.970549</td>
+      <td>22.999667</td>
+      <td>2010-07-07T12:23:50.110000</td>
+      <td>2010-07-07 12:23:50.110</td>
+      <td>2010-07-07 12:23:50.110</td>
+    </tr>
+    <tr>
+      <th>b'2010-07-07T13:28:50.120000'</th>
+      <td>53.589420</td>
+      <td>21.799833</td>
+      <td>2010-07-07T13:28:50.120000</td>
+      <td>2010-07-07 13:28:50.120</td>
+      <td>2010-07-07 13:28:50.120</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
 
 
 Both these are much cleaner and faster due to pandas' optimisation. We can now set one of these as the index
@@ -659,28 +565,81 @@ df.head()
 ```
 
 
-{:.output_traceback_line}
-```
----------------------------------------------------------------------------
-```
 
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
 
-{:.output_traceback_line}
-```
-<ipython-input-21-3c8de251e79c> in <module>()
-----> 1 df.set_index('datetime', inplace=True)
-      2 df.head()
+<div markdown="0">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-```
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
 
-{:.output_traceback_line}
-```
-NameError: name 'df' is not defined
-```
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>max_len</th>
+      <th>ltime</th>
+      <th>time</th>
+      <th>other_datetime</th>
+    </tr>
+    <tr>
+      <th>datetime</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2010-06-01 13:00:14.120</th>
+      <td>27.022617</td>
+      <td>13.600000</td>
+      <td>2010-06-01T13:00:14.120000</td>
+      <td>2010-06-01 13:00:14.120</td>
+    </tr>
+    <tr>
+      <th>2010-06-01 12:58:02.120</th>
+      <td>36.208097</td>
+      <td>8.400000</td>
+      <td>2010-06-01T12:58:02.120000</td>
+      <td>2010-06-01 12:58:02.120</td>
+    </tr>
+    <tr>
+      <th>2010-06-15 12:55:02.110</th>
+      <td>62.932898</td>
+      <td>24.199833</td>
+      <td>2010-06-15T12:55:02.110000</td>
+      <td>2010-06-15 12:55:02.110</td>
+    </tr>
+    <tr>
+      <th>2010-07-07 12:23:50.110</th>
+      <td>38.970549</td>
+      <td>22.999667</td>
+      <td>2010-07-07T12:23:50.110000</td>
+      <td>2010-07-07 12:23:50.110</td>
+    </tr>
+    <tr>
+      <th>2010-07-07 13:28:50.120</th>
+      <td>53.589420</td>
+      <td>21.799833</td>
+      <td>2010-07-07T13:28:50.120000</td>
+      <td>2010-07-07 13:28:50.120</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
 
 
 Now that there are official datetime objects on the index we can start operating based on the time of the frame
@@ -692,30 +651,11 @@ l_bins = df.groupby([df.index.year, df.index.month])
 print(len(l_bins))
 ```
 
-
-{:.output_traceback_line}
+{:.output_stream}
 ```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-22-702d9c2c6b00> in <module>()
-----> 1 l_bins = df.groupby([df.index.year, df.index.month])
-      2 print(len(l_bins))
+54
 
 ```
-
-{:.output_traceback_line}
-```
-NameError: name 'df' is not defined
-```
-
 
 Here we have used the groupby command to take the `'max_len'` column, called as a dictionary key, and create bins for our data to sit in according to year and then month. 
 
@@ -724,35 +664,10 @@ The object `l_bins` has `mean`, `max`, `std` etc. attributes in the same way as 
 
 {:.input_area}
 ```python
-agg_spicules = df.groupby([df.index.year, df.index.month]).agg({'max_len': np.mean,
-                                                                'max_len': np.std})
+agg_spicules = df.groupby([df.index.year, df.index.month]).agg({'max_len': [np.mean, np.std]})
+                                                                
 
 ```
-
-
-{:.output_traceback_line}
-```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-23-0184c60d6c05> in <module>()
-----> 1 agg_spicules = df.groupby([df.index.year, df.index.month]).agg({'max_len': np.mean,
-      2                                                                 'max_len': np.std})
-
-```
-
-{:.output_traceback_line}
-```
-NameError: name 'df' is not defined
-```
-
 
 
 {:.input_area}
@@ -761,27 +676,328 @@ agg_spicules
 ```
 
 
-{:.output_traceback_line}
-```
----------------------------------------------------------------------------
-```
 
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
 
-{:.output_traceback_line}
-```
-<ipython-input-24-3fc94dd5b3f0> in <module>()
-----> 1 agg_spicules
+<div markdown="0">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-```
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
 
-{:.output_traceback_line}
-```
-NameError: name 'agg_spicules' is not defined
-```
+    .dataframe thead tr th {
+        text-align: left;
+    }
+
+    .dataframe thead tr:last-of-type th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="2" halign="left">max_len</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>mean</th>
+      <th>std</th>
+    </tr>
+    <tr>
+      <th>datetime</th>
+      <th>datetime</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th rowspan="7" valign="top">2010</th>
+      <th>6</th>
+      <td>42.054537</td>
+      <td>18.655367</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>36.717821</td>
+      <td>10.618364</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>41.311295</td>
+      <td>5.440305</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>34.696942</td>
+      <td>6.979722</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>38.709587</td>
+      <td>3.391356</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>45.177555</td>
+      <td>10.337633</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>40.924916</td>
+      <td>11.664923</td>
+    </tr>
+    <tr>
+      <th rowspan="11" valign="top">2011</th>
+      <th>1</th>
+      <td>41.170836</td>
+      <td>13.310975</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>38.385196</td>
+      <td>10.294977</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>37.007258</td>
+      <td>9.966492</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>45.966302</td>
+      <td>9.281308</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>39.049844</td>
+      <td>12.832214</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>45.736577</td>
+      <td>12.569426</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>42.089144</td>
+      <td>6.505276</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>37.181781</td>
+      <td>2.942115</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>45.276066</td>
+      <td>5.148206</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>39.070391</td>
+      <td>5.866478</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>34.882456</td>
+      <td>5.405979</td>
+    </tr>
+    <tr>
+      <th rowspan="12" valign="top">2012</th>
+      <th>1</th>
+      <td>50.059810</td>
+      <td>4.531475</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>32.477849</td>
+      <td>10.022291</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>39.154133</td>
+      <td>12.585824</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>32.305885</td>
+      <td>8.614694</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>31.951032</td>
+      <td>8.301316</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>30.973616</td>
+      <td>4.185172</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>28.897303</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>30.068358</td>
+      <td>7.679454</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>36.644022</td>
+      <td>6.678510</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>39.539804</td>
+      <td>6.273834</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>36.201343</td>
+      <td>5.908986</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>35.001790</td>
+      <td>7.305525</td>
+    </tr>
+    <tr>
+      <th rowspan="12" valign="top">2013</th>
+      <th>1</th>
+      <td>45.718231</td>
+      <td>6.730764</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>33.958883</td>
+      <td>3.328555</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>44.252989</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>41.490083</td>
+      <td>8.630605</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>38.047579</td>
+      <td>5.048431</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>53.229354</td>
+      <td>13.288040</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>44.728946</td>
+      <td>9.625425</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>33.382734</td>
+      <td>10.699844</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>37.055785</td>
+      <td>5.729928</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>31.258302</td>
+      <td>3.339021</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>28.063602</td>
+      <td>7.889644</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>32.474516</td>
+      <td>7.797334</td>
+    </tr>
+    <tr>
+      <th rowspan="12" valign="top">2014</th>
+      <th>1</th>
+      <td>42.680747</td>
+      <td>5.005861</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>26.620170</td>
+      <td>3.093437</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>25.922509</td>
+      <td>5.225323</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>31.924611</td>
+      <td>15.910663</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>27.203932</td>
+      <td>5.172536</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>30.948541</td>
+      <td>8.333880</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>38.049466</td>
+      <td>10.603654</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>33.752406</td>
+      <td>5.246553</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>32.567724</td>
+      <td>7.447101</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>39.904318</td>
+      <td>3.560158</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>36.937597</td>
+      <td>4.900183</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>40.789644</td>
+      <td>7.838396</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
 
 
 Now we have all this data we can build a lovely bargraph with error bars and wonderful things like that.
@@ -791,43 +1007,87 @@ Remember, these pandas objects have functions associated with them, and one of t
 
 {:.input_area}
 ```python
-fig, ax = plt.subplots()
+agg_spicules.max_len['std']
+```
+
+
+
+
+{:.output_data_text}
+```
+datetime  datetime
+2010      6           18.655367
+          7           10.618364
+          8            5.440305
+          9            6.979722
+          10           3.391356
+          11          10.337633
+          12          11.664923
+2011      1           13.310975
+          2           10.294977
+          3            9.966492
+          4            9.281308
+          5           12.832214
+          7           12.569426
+          8            6.505276
+          9            2.942115
+          10           5.148206
+          11           5.866478
+          12           5.405979
+2012      1            4.531475
+          2           10.022291
+          3           12.585824
+          4            8.614694
+          5            8.301316
+          6            4.185172
+          7                 NaN
+          8            7.679454
+          9            6.678510
+          10           6.273834
+          11           5.908986
+          12           7.305525
+2013      1            6.730764
+          2            3.328555
+          3                 NaN
+          4            8.630605
+          5            5.048431
+          6           13.288040
+          7            9.625425
+          8           10.699844
+          9            5.729928
+          10           3.339021
+          11           7.889644
+          12           7.797334
+2014      1            5.005861
+          2            3.093437
+          3            5.225323
+          4           15.910663
+          5            5.172536
+          6            8.333880
+          7           10.603654
+          8            5.246553
+          9            7.447101
+          10           3.560158
+          11           4.900183
+          12           7.838396
+Name: std, dtype: float64
+```
+
+
+
+
+{:.input_area}
+```python
+fig, ax = plt.subplots(figsize=(16,10))
 fig.autofmt_xdate()
-l_mean.plot(kind='bar', ax=ax, yerr=l_std, grid=False, legend=False)
+std_err = agg_spicules.max_len['std']
+agg_spicules.max_len['mean'].plot(kind='bar', ax=ax, yerr=std_err, grid=False, legend=False)
 
 plt.show()
 ```
 
 
-{:.output_traceback_line}
-```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-25-0e03c5148a98> in <module>()
-      1 fig, ax = plt.subplots()
-      2 fig.autofmt_xdate()
-----> 3 l_mean.plot(kind='bar', ax=ax, yerr=l_std, grid=False, legend=False)
-      4 
-      5 plt.show()
-
-```
-
-{:.output_traceback_line}
-```
-NameError: name 'l_mean' is not defined
-```
-
-
-
-![png](../../images/chapters/09-time-series-data/01-time-series-data_instructor_53_1.png)
+![png](../../images/chapters/09-time-series-data/01-time-series-data_instructor_54_0.png)
 
 
 Note that the date on the x-axis is a little messed up we can fix with `fig.autofmt_xdate()`
@@ -859,13 +1119,19 @@ Note that the date on the x-axis is a little messed up we can fix with `fig.auto
 
 <div class="panel-body">
 
-<p>Now, to all the astronomers out there, let us process some real data. We have some txt files containing the lightcurve from a recent paper. Can you process the data and show us the planet?</p>
+<p>Now, to all the astronomers out there, let us process some real data. We have some txt files containing the timeseries data from a recent paper. Can you process the data and show us the planet?</p>
 <p>HINT: You'll need to treat this data slightly differently. The date here is in Julian Day so you will need to use <a href="http://docs.astropy.org/en/v1.1.1/api/astropy.time.Time.html">these</a> docs to convert it to a sensible datetime object, before you make the DataFrame.</p>
 
 </div>
 
 </section>
 
+
+
+{:.input_area}
+```python
+import pandas as pd
+```
 
 
 {:.input_area}
@@ -888,7 +1154,7 @@ OSError                                   Traceback (most recent call last)
 
 {:.output_traceback_line}
 ```
-<ipython-input-26-9af143cb8fd6> in <module>()
+<ipython-input-28-9af143cb8fd6> in <module>()
       1 import numpy as np
 ----> 2 ep_data = np.loadtxt('data/XO1_wl_transit_FLUX.txt')
 
@@ -953,7 +1219,7 @@ NameError                                 Traceback (most recent call last)
 
 {:.output_traceback_line}
 ```
-<ipython-input-27-d45090fc219d> in <module>()
+<ipython-input-29-d45090fc219d> in <module>()
 ----> 1 ep_dict = {'flux':ep_data[:, 1], 
       2            'err_flux':ep_data[:, 2]}
 
@@ -985,7 +1251,7 @@ NameError                                 Traceback (most recent call last)
 
 {:.output_traceback_line}
 ```
-<ipython-input-28-cd9c5ddfe9fb> in <module>()
+<ipython-input-30-cd9c5ddfe9fb> in <module>()
 ----> 1 ep_df = pd.DataFrame(data=ep_dict, index=ep_data[:,0])
       2 ep_df.index = pd.to_datetime(ep_df.index)
 
@@ -1018,7 +1284,7 @@ NameError                                 Traceback (most recent call last)
 
 {:.output_traceback_line}
 ```
-<ipython-input-29-9b7b9b5c029b> in <module>()
+<ipython-input-31-9b7b9b5c029b> in <module>()
       1 from astropy.time import Time
 ----> 2 t = Time(ep_data[:, 0], format='jd')
       3 UTC = t.datetime
@@ -1050,7 +1316,7 @@ NameError                                 Traceback (most recent call last)
 
 {:.output_traceback_line}
 ```
-<ipython-input-30-74bafffb0dea> in <module>()
+<ipython-input-32-74bafffb0dea> in <module>()
 ----> 1 ep_df.index = UTC
 
 ```
@@ -1058,35 +1324,5 @@ NameError                                 Traceback (most recent call last)
 {:.output_traceback_line}
 ```
 NameError: name 'UTC' is not defined
-```
-
-
-
-{:.input_area}
-```python
-ep_df
-```
-
-
-{:.output_traceback_line}
-```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-31-ba24905120da> in <module>()
-----> 1 ep_df
-
-```
-
-{:.output_traceback_line}
-```
-NameError: name 'ep_df' is not defined
 ```
 

@@ -222,7 +222,7 @@ plt.plot(x, y, "o")
 
 {:.output_data_text}
 ```
-[<matplotlib.lines.Line2D at 0x7f4a64ed5278>]
+[<matplotlib.lines.Line2D at 0x7feb2e4bd208>]
 ```
 
 
@@ -261,7 +261,7 @@ plt.plot(x, gg(x))
 
 {:.output_data_text}
 ```
-[<matplotlib.lines.Line2D at 0x7f4a684d1898>]
+[<matplotlib.lines.Line2D at 0x7feb2e4bd8d0>]
 ```
 
 

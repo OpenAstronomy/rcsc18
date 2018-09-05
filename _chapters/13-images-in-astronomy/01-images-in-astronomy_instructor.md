@@ -73,8 +73,8 @@ hpc
 
 {:.output_data_text}
 ```
-<SkyCoord (Helioprojective: obstime=2018-09-05 22:30:58.610093, rsun=695508.0 km, observer=<HeliographicStonyhurst Coordinate (obstime=2018-09-05 22:30:58.610093): (lon, lat, radius) in (deg, deg, AU)
-    (0., 7.24408442, 1.00814436)>): (Tx, Ty) in arcsec
+<SkyCoord (Helioprojective: obstime=2018-09-05 23:06:16.042554, rsun=695508.0 km, observer=<HeliographicStonyhurst Coordinate (obstime=2018-09-05 23:06:16.042554): (lon, lat, radius) in (deg, deg, AU)
+    (0., 7.24422511, 1.00813839)>): (Tx, Ty) in arcsec
     (100., 700.)>
 ```
 
@@ -91,8 +91,8 @@ hpc.transform_to('heliographic_stonyhurst')
 
 {:.output_data_text}
 ```
-<SkyCoord (HeliographicStonyhurst: obstime=2018-09-05 22:30:58.610093): (lon, lat, radius) in (deg, deg, km)
-    (10.35510256, 54.33433101, 695508.00000173)>
+<SkyCoord (HeliographicStonyhurst: obstime=2018-09-05 23:06:16.042554): (lon, lat, radius) in (deg, deg, km)
+    (10.35498218, 54.33410338, 695508.00000359)>
 ```
 
 
@@ -601,7 +601,7 @@ hdulist
 
 {:.output_data_text}
 ```
-[<astropy.io.fits.hdu.image.PrimaryHDU object at 0x7fb8e67a1c18>]
+[<astropy.io.fits.hdu.image.PrimaryHDU object at 0x7f5132045b70>]
 ```
 
 
@@ -630,7 +630,7 @@ ax.imshow(hdulist[0].data, cmap='gray', vmax=1000, interpolation=None, origin='l
 
 {:.output_data_text}
 ```
-<matplotlib.image.AxesImage at 0x7fb8e45de2b0>
+<matplotlib.image.AxesImage at 0x7f512fe83240>
 ```
 
 
@@ -738,7 +738,7 @@ ax.plot(3000, 3000, 'o')
 
 {:.output_data_text}
 ```
-[<matplotlib.lines.Line2D at 0x7fb8daf57eb8>]
+[<matplotlib.lines.Line2D at 0x7f51267fbe80>]
 ```
 
 
@@ -772,7 +772,7 @@ ax.plot(189.25, 14.23, 'o', transform=ax.get_transform('fk5'))
 
 {:.output_data_text}
 ```
-[<matplotlib.lines.Line2D at 0x7fb8daf3b908>]
+[<matplotlib.lines.Line2D at 0x7f51267e18d0>]
 ```
 
 
@@ -826,7 +826,7 @@ ax.plot(287.5, 76.65, 'o', transform=ax.get_transform('galactic'))
 
 {:.output_data_text}
 ```
-[<matplotlib.lines.Line2D at 0x7fb8dae9c240>]
+[<matplotlib.lines.Line2D at 0x7f5126742208>]
 ```
 
 
@@ -1095,22 +1095,11 @@ MemoryError                               Traceback (most recent call last)
 {:.output_traceback_line}
 ```
 /opt/miniconda/envs/stfc/lib/python3.6/site-packages/skimage/transform/_geometric.py in _apply_mat(self, coords, matrix)
-    548 
     549         x, y = np.transpose(coords)
---> 550         src = np.vstack((x, y, np.ones_like(x)))
-    551         dst = np.dot(src.transpose(), matrix.transpose())
+    550         src = np.vstack((x, y, np.ones_like(x)))
+--> 551         dst = np.dot(src.transpose(), matrix.transpose())
     552 
-
-```
-
-{:.output_traceback_line}
-```
-/opt/miniconda/envs/stfc/lib/python3.6/site-packages/numpy/core/shape_base.py in vstack(tup)
-    232 
-    233     """
---> 234     return _nx.concatenate([atleast_2d(_m) for _m in tup], 0)
-    235 
-    236 def hstack(tup):
+    553         # rescale to homogeneous coordinates
 
 ```
 
