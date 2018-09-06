@@ -118,6 +118,9 @@ chapters:
   - class: level_1
     title: Time Series Data
     url: chapters/09-time-series-data/01-time-series-data
+  - class: level_1
+    title: Time Series Data
+    url: chapters/09-time-series-data/08-Time-Series-Data
   class: level_0
   title: Time Series Data
 - children:
@@ -144,6 +147,12 @@ chapters:
     url: chapters/13-images-in-astronomy/01-images-in-astronomy
   class: level_0
   title: Images in Astronomy
+- children:
+  - class: level_1
+    title: Searching and Downloading Data
+    url: chapters/14-searching-and-downloading-data/01-searching-and-downloading-data
+  class: level_0
+  title: Searching and Downloading Data
 - children:
   - class: level_1
     title: Final Exercise

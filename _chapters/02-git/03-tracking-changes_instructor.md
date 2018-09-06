@@ -78,9 +78,9 @@ ls
 
 {:.output_stream}
 ```
-00-lessons.ipynb             [0m[01;34m02-git[0m                     [01;34m05-writing-effective-tests[0m  [01;34m08-sunpy-and-astropy[0m  [01;34m11-tabular-data[0m              [01;34m15-final-exercise[0m  environment.yml
-00-lessons_instructor.ipynb  [01;34m03-fundamentals-of-python[0m  [01;34m06-approximating-pi[0m         [01;34m09-time-series-data[0m   [01;34m12-images-and-visualisation[0m  LICENCE
-[01;34m01-bash[0m                      [01;34m04-further-python[0m          [01;34m07-collaborating-with-git[0m   [01;34m10-units[0m              [01;34m13-images-in-astronomy[0m       README
+00-lessons.ipynb             [0m[01;34m02-git[0m                     [01;34m05-writing-effective-tests[0m  [01;34m08-sunpy-and-astropy[0m  [01;34m11-tabular-data[0m              [01;34m14-searching-and-downloading-data[0m  README
+00-lessons_instructor.ipynb  [01;34m03-fundamentals-of-python[0m  [01;34m06-approximating-pi[0m         [01;34m09-time-series-data[0m   [01;34m12-images-and-visualisation[0m  [01;34m15-final-exercise[0m                  environment.yml
+[01;34m01-bash[0m                      [01;34m04-further-python[0m          [01;34m07-collaborating-with-git[0m   [01;34m10-units[0m              [01;34m13-images-in-astronomy[0m       LICENCE
 
 
 ```
@@ -220,7 +220,31 @@ git log
 
 {:.output_stream}
 ```
-[33mcommit 35247321b5a0ac13471f18bb4703270d94432b73[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+[33mcommit 6053bb89d157b173dda754a895ca3f1076cde97d[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Stuart Mumford <stuart@cadair.com>
+Date:   Thu Sep 6 12:23:57 2018 +0100
+
+    update notebooks
+
+[33mcommit 51172805ab324552bca7a9427eb966a743b4fada[m
+Author: Stuart Mumford <stuart@cadair.com>
+Date:   Thu Sep 6 12:03:57 2018 +0100
+
+    update notebooks
+
+[33mcommit d26b47bc47fa5768ea2073e3b9683c49a6889908[m
+Author: Stuart Mumford <stuart@cadair.com>
+Date:   Thu Sep 6 11:28:09 2018 +0100
+
+    update notebooks
+
+[33mcommit 6637293dcb50ae76c9e4a0bf1e2b08dd5a6ce913[m
+Author: Stuart Mumford <stuart@cadair.com>
+Date:   Thu Sep 6 11:05:50 2018 +0100
+
+    update notebooks
+
+[33mcommit 35247321b5a0ac13471f18bb4703270d94432b73[m
 Author: Stuart Mumford <stuart@cadair.com>
 Date:   Wed Sep 5 23:03:45 2018 +0100
 
@@ -941,7 +965,31 @@ git log
 
 {:.output_stream}
 ```
-[33mcommit 35247321b5a0ac13471f18bb4703270d94432b73[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+[33mcommit 6053bb89d157b173dda754a895ca3f1076cde97d[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Stuart Mumford <stuart@cadair.com>
+Date:   Thu Sep 6 12:23:57 2018 +0100
+
+    update notebooks
+
+[33mcommit 51172805ab324552bca7a9427eb966a743b4fada[m
+Author: Stuart Mumford <stuart@cadair.com>
+Date:   Thu Sep 6 12:03:57 2018 +0100
+
+    update notebooks
+
+[33mcommit d26b47bc47fa5768ea2073e3b9683c49a6889908[m
+Author: Stuart Mumford <stuart@cadair.com>
+Date:   Thu Sep 6 11:28:09 2018 +0100
+
+    update notebooks
+
+[33mcommit 6637293dcb50ae76c9e4a0bf1e2b08dd5a6ce913[m
+Author: Stuart Mumford <stuart@cadair.com>
+Date:   Thu Sep 6 11:05:50 2018 +0100
+
+    update notebooks
+
+[33mcommit 35247321b5a0ac13471f18bb4703270d94432b73[m
 Author: Stuart Mumford <stuart@cadair.com>
 Date:   Wed Sep 5 23:03:45 2018 +0100
 

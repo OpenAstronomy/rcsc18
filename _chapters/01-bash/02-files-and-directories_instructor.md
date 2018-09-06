@@ -1187,13 +1187,13 @@ ls -F -a
 00-lessons_instructor.ipynb  11-tabular-data/
 00-lessons.ipynb	     12-images-and-visualisation/
 01-bash/		     13-images-in-astronomy/
-02-git/			     15-final-exercise/
-03-fundamentals-of-python/   environment.yml
-04-further-python/	     .git
-05-writing-effective-tests/  .gitignore
-06-approximating-pi/	     LICENCE
-07-collaborating-with-git/   README
-08-sunpy-and-astropy/
+02-git/			     14-searching-and-downloading-data/
+03-fundamentals-of-python/   15-final-exercise/
+04-further-python/	     environment.yml
+05-writing-effective-tests/  .git
+06-approximating-pi/	     .gitignore
+07-collaborating-with-git/   LICENCE
+08-sunpy-and-astropy/	     README
 
 ```
 

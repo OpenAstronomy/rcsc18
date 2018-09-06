@@ -72,7 +72,7 @@ t1
 
 <div markdown="0">
 <i>Table length=3</i>
-<table id="table140010623354304" class="table-striped table-bordered table-condensed">
+<table id="table140115330172464" class="table-striped table-bordered table-condensed">
 <thead><tr><th>name</th><th>flux</th></tr></thead>
 <thead><tr><th>str8</th><th>float64</th></tr></thead>
 <tr><td>source 1</td><td>1.2</td></tr>
@@ -96,7 +96,7 @@ t1
 
 <div markdown="0">
 <i>Table length=3</i>
-<table id="table140010623354304" class="table-striped table-bordered table-condensed">
+<table id="table140115330172464" class="table-striped table-bordered table-condensed">
 <thead><tr><th>name</th><th>flux</th><th>size</th></tr></thead>
 <thead><tr><th>str8</th><th>float64</th><th>int64</th></tr></thead>
 <tr><td>source 1</td><td>1.2</td><td>1</td></tr>
@@ -174,7 +174,7 @@ t1[0]
 
 <div markdown="0">
 <i>Row index=0</i>
-<table id="table140010623354304">
+<table id="table140115330172464">
 <thead><tr><th>name</th><th>flux</th><th>size</th></tr></thead>
 <thead><tr><th>str8</th><th>float64</th><th>int64</th></tr></thead>
 <tr><td>source 1</td><td>1.2</td><td>1</td></tr>
@@ -198,7 +198,7 @@ t1
 
 <div markdown="0">
 <i>Table length=3</i>
-<table id="table140010623354304" class="table-striped table-bordered table-condensed">
+<table id="table140115330172464" class="table-striped table-bordered table-condensed">
 <thead><tr><th>name</th><th>flux</th><th>size</th></tr></thead>
 <thead><tr><th></th><th></th><th>cm</th></tr></thead>
 <thead><tr><th>str8</th><th>float64</th><th>int64</th></tr></thead>
@@ -299,7 +299,7 @@ t
 
 <div markdown="0">
 <i>QTable length=5</i>
-<table id="table140010620508984" class="table-striped table-bordered table-condensed">
+<table id="table140115327339320" class="table-striped table-bordered table-condensed">
 <thead><tr><th>spectral type</th><th>radius</th><th>temperature</th></tr></thead>
 <thead><tr><th></th><th>solRad</th><th>K</th></tr></thead>
 <thead><tr><th>str2</th><th>float64</th><th>float64</th></tr></thead>
@@ -344,7 +344,7 @@ t
 
 <div markdown="0">
 <i>QTable length=5</i>
-<table id="table140010620508984" class="table-striped table-bordered table-condensed">
+<table id="table140115327339320" class="table-striped table-bordered table-condensed">
 <thead><tr><th>spectral type</th><th>radius</th><th>temperature</th></tr></thead>
 <thead><tr><th></th><th>solRad</th><th>K</th></tr></thead>
 <thead><tr><th>str2</th><th>float64</th><th>float64</th></tr></thead>
@@ -373,7 +373,7 @@ t
 
 <div markdown="0">
 <i>QTable length=5</i>
-<table id="table140010620508984" class="table-striped table-bordered table-condensed">
+<table id="table140115327339320" class="table-striped table-bordered table-condensed">
 <thead><tr><th>spectral type</th><th>radius</th><th>temperature</th><th>luminosity</th></tr></thead>
 <thead><tr><th></th><th>solRad</th><th>K</th><th>solLum</th></tr></thead>
 <thead><tr><th>str2</th><th>float64</th><th>float64</th><th>float64</th></tr></thead>
@@ -509,7 +509,7 @@ t3
 
 <div markdown="0">
 <i>Table masked=True length=3</i>
-<table id="table140010620506184" class="table-striped table-bordered table-condensed">
+<table id="table140115327338368" class="table-striped table-bordered table-condensed">
 <thead><tr><th>name</th><th>flux</th><th>size</th><th>flux2</th></tr></thead>
 <thead><tr><th></th><th></th><th>cm</th><th></th></tr></thead>
 <thead><tr><th>str8</th><th>float64</th><th>int64</th><th>int64</th></tr></thead>
@@ -559,7 +559,7 @@ t4
 
 <div markdown="0">
 <i>Table masked=True length=3</i>
-<table id="table140010620560664" class="table-striped table-bordered table-condensed">
+<table id="table140115327362496" class="table-striped table-bordered table-condensed">
 <thead><tr><th>name</th><th>flux</th></tr></thead>
 <thead><tr><th>str8</th><th>float64</th></tr></thead>
 <tr><td>source 1</td><td>--</td></tr>
@@ -602,7 +602,7 @@ obs[1:4]
 
 <div markdown="0">
 <i>Table length=3</i>
-<table id="table140010620509152" class="table-striped table-bordered table-condensed">
+<table id="table140115327339992" class="table-striped table-bordered table-condensed">
 <thead><tr><th>name</th><th>obs_date</th><th>mag_b</th><th>mag_v</th></tr></thead>
 <thead><tr><th>str4</th><th>str10</th><th>float64</th><th>float64</th></tr></thead>
 <tr><td>M31</td><td>2012-01-02</td><td>17.1</td><td>17.4</td></tr>
@@ -624,7 +624,7 @@ obs[obs['mag_b'] > 16]
 
 <div markdown="0">
 <i>Table length=4</i>
-<table id="table140010620561672" class="table-striped table-bordered table-condensed">
+<table id="table140115327363672" class="table-striped table-bordered table-condensed">
 <thead><tr><th>name</th><th>obs_date</th><th>mag_b</th><th>mag_v</th></tr></thead>
 <thead><tr><th>str4</th><th>str10</th><th>float64</th><th>float64</th></tr></thead>
 <tr><td>M31</td><td>2012-01-02</td><td>17.0</td><td>17.5</td></tr>
@@ -647,7 +647,7 @@ obs['mag_b', 'mag_v']
 
 <div markdown="0">
 <i>Table length=10</i>
-<table id="table140010620561280" class="table-striped table-bordered table-condensed">
+<table id="table140115327363560" class="table-striped table-bordered table-condensed">
 <thead><tr><th>mag_b</th><th>mag_v</th></tr></thead>
 <thead><tr><th>float64</th><th>float64</th></tr></thead>
 <tr><td>17.0</td><td>17.5</td></tr>
@@ -698,7 +698,7 @@ subset1
 
 <div markdown="0">
 <i>Table length=5</i>
-<table id="table140010620562848" class="table-striped table-bordered table-condensed">
+<table id="table140115327364176" class="table-striped table-bordered table-condensed">
 <thead><tr><th>name</th><th>obs_date</th><th>mag_b</th><th>mag_v</th></tr></thead>
 <thead><tr><th>str4</th><th>str10</th><th>float64</th><th>float64</th></tr></thead>
 <tr><td>M31</td><td>2012-01-02</td><td>17.1</td><td>17.4</td></tr>
@@ -724,7 +724,7 @@ subset2
 
 <div markdown="0">
 <i>Table length=3</i>
-<table id="table140010620562904" class="table-striped table-bordered table-condensed">
+<table id="table140115327362944" class="table-striped table-bordered table-condensed">
 <thead><tr><th>name</th><th>obs_date</th><th>mag_b</th><th>mag_v</th></tr></thead>
 <thead><tr><th>str4</th><th>str10</th><th>float64</th><th>float64</th></tr></thead>
 <tr><td>M31</td><td>2012-01-02</td><td>17.0</td><td>17.5</td></tr>
@@ -754,7 +754,7 @@ obs_by_name
 
 <div markdown="0">
 <i>Table length=10</i>
-<table id="table140010620563352" class="table-striped table-bordered table-condensed">
+<table id="table140115327537840" class="table-striped table-bordered table-condensed">
 <thead><tr><th>name</th><th>obs_date</th><th>mag_b</th><th>mag_v</th></tr></thead>
 <thead><tr><th>str4</th><th>str10</th><th>float64</th><th>float64</th></tr></thead>
 <tr><td>M101</td><td>2012-01-02</td><td>15.1</td><td>13.5</td></tr>
@@ -815,7 +815,7 @@ obs_by_name.groups.aggregate(np.mean)
 
 <div markdown="0">
 <i>Table length=3</i>
-<table id="table140010620704416" class="table-striped table-bordered table-condensed">
+<table id="table140115327537448" class="table-striped table-bordered table-condensed">
 <thead><tr><th>name</th><th>mag_b</th><th>mag_v</th></tr></thead>
 <thead><tr><th>str4</th><th>float64</th><th>float64</th></tr></thead>
 <tr><td>M101</td><td>15.000000000000002</td><td>13.725000000000001</td></tr>
@@ -849,118 +849,6 @@ t4 = Table.read('2mass.tbl', format='ascii.ipac')
 ```
 
 
-{:.output_traceback_line}
-```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-FileNotFoundError                         Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-39-18e675545f97> in <module>()
-----> 1 t4 = Table.read('2mass.tbl', format='ascii.ipac')
-
-```
-
-{:.output_traceback_line}
-```
-/opt/miniconda/envs/stfc/lib/python3.6/site-packages/astropy/table/table.py in read(cls, *args, **kwargs)
-   2531         passed through to the underlying data reader (e.g. `~astropy.io.ascii.read`).
-   2532         """
--> 2533         out = io_registry.read(cls, *args, **kwargs)
-   2534         # For some readers (e.g., ascii.ecsv), the returned `out` class is not
-   2535         # guaranteed to be the same as the desired output `cls`.  If so,
-
-```
-
-{:.output_traceback_line}
-```
-/opt/miniconda/envs/stfc/lib/python3.6/site-packages/astropy/io/registry.py in read(cls, format, *args, **kwargs)
-    515 
-    516         reader = get_reader(format, cls)
---> 517         data = reader(*args, **kwargs)
-    518 
-    519         if not isinstance(data, cls):
-
-```
-
-{:.output_traceback_line}
-```
-/opt/miniconda/envs/stfc/lib/python3.6/site-packages/astropy/io/ascii/connect.py in io_read(format, filename, **kwargs)
-     35     from .ui import read
-     36     format = re.sub(r'^ascii\.', '', format)
----> 37     return read(filename, format=format, **kwargs)
-     38 
-     39 
-
-```
-
-{:.output_traceback_line}
-```
-/opt/miniconda/envs/stfc/lib/python3.6/site-packages/astropy/io/ascii/ui.py in read(table, guess, **kwargs)
-    383                                              ' with fast (no guessing)'})
-    384         else:
---> 385             dat = reader.read(table)
-    386             _read_trace.append({'kwargs': new_kwargs,
-    387                                 'Reader': reader.__class__,
-
-```
-
-{:.output_traceback_line}
-```
-/opt/miniconda/envs/stfc/lib/python3.6/site-packages/astropy/io/ascii/core.py in read(self, table)
-   1144 
-   1145         # Get a list of the lines (rows) in the table
--> 1146         self.lines = self.inputter.get_lines(table)
-   1147 
-   1148         # Set self.data.data_lines to a slice of lines contain the data rows
-
-```
-
-{:.output_traceback_line}
-```
-/opt/miniconda/envs/stfc/lib/python3.6/site-packages/astropy/io/ascii/core.py in get_lines(self, table)
-    291                     ('\n' not in table + '' and '\r' not in table + '')):
-    292                 with get_readable_fileobj(table,
---> 293                                           encoding=self.encoding) as fileobj:
-    294                     table = fileobj.read()
-    295             lines = table.splitlines()
-
-```
-
-{:.output_traceback_line}
-```
-/opt/miniconda/envs/stfc/lib/python3.6/contextlib.py in __enter__(self)
-     79     def __enter__(self):
-     80         try:
----> 81             return next(self.gen)
-     82         except StopIteration:
-     83             raise RuntimeError("generator didn't yield") from None
-
-```
-
-{:.output_traceback_line}
-```
-/opt/miniconda/envs/stfc/lib/python3.6/site-packages/astropy/utils/data.py in get_readable_fileobj(name_or_obj, encoding, cache, show_progress, remote_timeout)
-    191                 name_or_obj, cache=cache, show_progress=show_progress,
-    192                 timeout=remote_timeout)
---> 193         fileobj = io.FileIO(name_or_obj, 'r')
-    194         if is_url and not cache:
-    195             delete_fds.append(fileobj)
-
-```
-
-{:.output_traceback_line}
-```
-FileNotFoundError: [Errno 2] No such file or directory: '2mass.tbl'
-```
-
-
-
 {:.input_area}
 ```python
 t4
@@ -970,13 +858,31 @@ t4
 
 
 <div markdown="0">
-<i>Table masked=True length=3</i>
-<table id="table140010620560664" class="table-striped table-bordered table-condensed">
-<thead><tr><th>name</th><th>flux</th></tr></thead>
-<thead><tr><th>str8</th><th>float64</th></tr></thead>
-<tr><td>source 1</td><td>--</td></tr>
-<tr><td>source 2</td><td>2.2</td></tr>
-<tr><td>source 3</td><td>--</td></tr>
+<i>Table masked=True length=929</i>
+<table id="table140115327129584" class="table-striped table-bordered table-condensed">
+<thead><tr><th>ra</th><th>dec</th><th>clon</th><th>clat</th><th>err_maj</th><th>err_min</th><th>err_ang</th><th>designation</th><th>j_m</th><th>j_cmsig</th><th>j_msigcom</th><th>j_snr</th><th>h_m</th><th>h_cmsig</th><th>h_msigcom</th><th>h_snr</th><th>k_m</th><th>k_cmsig</th><th>k_msigcom</th><th>k_snr</th><th>ph_qual</th><th>rd_flg</th><th>bl_flg</th><th>cc_flg</th><th>ndet</th><th>gal_contam</th><th>mp_flg</th><th>dist</th><th>angle</th><th>j_h</th><th>h_k</th><th>j_k</th></tr></thead>
+<thead><tr><th>deg</th><th>deg</th><th></th><th></th><th>arcsec</th><th>arcsec</th><th>deg</th><th></th><th>mag</th><th>mag</th><th>mag</th><th></th><th>mag</th><th>mag</th><th>mag</th><th></th><th>mag</th><th>mag</th><th>mag</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr></thead>
+<thead><tr><th>float64</th><th>float64</th><th>str12</th><th>str13</th><th>float64</th><th>float64</th><th>int64</th><th>str16</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>str3</th><th>str3</th><th>str3</th><th>str3</th><th>str6</th><th>int64</th><th>int64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th></tr></thead>
+<tr><td>274.429506</td><td>-13.870547</td><td>18h17m43.08s</td><td>-13d52m13.97s</td><td>0.08</td><td>0.08</td><td>45</td><td>18174308-1352139</td><td>16.305</td><td>0.142</td><td>0.143</td><td>6.7</td><td>14.048</td><td>0.107</td><td>0.108</td><td>13.6</td><td>13.257</td><td>0.066</td><td>0.066</td><td>16.5</td><td>CAA</td><td>222</td><td>111</td><td>0ss</td><td>066655</td><td>0</td><td>0</td><td>975.080151</td><td>256.448</td><td>2.257</td><td>0.791</td><td>3.048</td></tr>
+<tr><td>274.423821</td><td>-13.86974</td><td>18h17m41.72s</td><td>-13d52m11.06s</td><td>0.06</td><td>0.06</td><td>90</td><td>18174171-1352110</td><td>14.802</td><td>0.058</td><td>0.059</td><td>26.7</td><td>12.635</td><td>0.059</td><td>0.06</td><td>50.1</td><td>11.768</td><td>0.045</td><td>0.046</td><td>65.2</td><td>AAA</td><td>222</td><td>111</td><td>0ss</td><td>666666</td><td>0</td><td>0</td><td>993.752042</td><td>256.878</td><td>2.167</td><td>0.867</td><td>3.034</td></tr>
+<tr><td>274.424587</td><td>-13.739629</td><td>18h17m41.90s</td><td>-13d44m22.66s</td><td>0.08</td><td>0.08</td><td>45</td><td>18174190-1344226</td><td>16.328</td><td>--</td><td>--</td><td>--</td><td>14.345</td><td>0.059</td><td>0.06</td><td>10.4</td><td>13.405</td><td>0.046</td><td>0.047</td><td>14.4</td><td>UAA</td><td>022</td><td>011</td><td>0cc</td><td>003666</td><td>0</td><td>0</td><td>995.726698</td><td>284.113</td><td>--</td><td>0.94</td><td>--</td></tr>
+<tr><td>274.433933</td><td>-13.769502</td><td>18h17m44.14s</td><td>-13d46m10.21s</td><td>0.08</td><td>0.08</td><td>45</td><td>18174414-1346102</td><td>16.281</td><td>0.098</td><td>0.099</td><td>6.8</td><td>14.057</td><td>0.035</td><td>0.036</td><td>13.5</td><td>12.956</td><td>0.032</td><td>0.033</td><td>21.8</td><td>CAA</td><td>222</td><td>111</td><td>000</td><td>065566</td><td>0</td><td>0</td><td>942.627418</td><td>278.252</td><td>2.224</td><td>1.101</td><td>3.325</td></tr>
+<tr><td>274.437013</td><td>-13.885698</td><td>18h17m44.88s</td><td>-13d53m08.51s</td><td>0.09</td><td>0.09</td><td>45</td><td>18174488-1353085</td><td>15.171</td><td>--</td><td>--</td><td>--</td><td>14.412</td><td>0.152</td><td>0.152</td><td>9.8</td><td>13.742</td><td>0.095</td><td>0.095</td><td>10.6</td><td>UBA</td><td>622</td><td>022</td><td>0cc</td><td>005566</td><td>0</td><td>0</td><td>964.105389</td><td>252.93</td><td>--</td><td>0.67</td><td>--</td></tr>
+<tr><td>274.433996</td><td>-13.752446</td><td>18h17m44.16s</td><td>-13d45m08.81s</td><td>0.08</td><td>0.08</td><td>90</td><td>18174415-1345088</td><td>16.54</td><td>--</td><td>--</td><td>--</td><td>14.519</td><td>0.083</td><td>0.083</td><td>8.8</td><td>13.604</td><td>0.043</td><td>0.044</td><td>12.0</td><td>UBA</td><td>022</td><td>011</td><td>0cc</td><td>005666</td><td>0</td><td>0</td><td>953.230532</td><td>281.908</td><td>--</td><td>0.915</td><td>--</td></tr>
+<tr><td>274.418138</td><td>-13.77215</td><td>18h17m40.35s</td><td>-13d46m19.74s</td><td>0.08</td><td>0.08</td><td>90</td><td>18174035-1346197</td><td>17.98</td><td>--</td><td>--</td><td>--</td><td>14.61</td><td>0.043</td><td>0.044</td><td>8.1</td><td>13.456</td><td>0.056</td><td>0.057</td><td>13.8</td><td>UBA</td><td>022</td><td>011</td><td>000</td><td>001645</td><td>0</td><td>0</td><td>996.047248</td><td>277.25</td><td>--</td><td>1.154</td><td>--</td></tr>
+<tr><td>274.433695</td><td>-13.899049</td><td>18h17m44.09s</td><td>-13d53m56.58s</td><td>0.06</td><td>0.06</td><td>90</td><td>18174408-1353565</td><td>13.011</td><td>0.021</td><td>0.024</td><td>139.0</td><td>10.917</td><td>0.02</td><td>0.021</td><td>243.8</td><td>10.013</td><td>0.017</td><td>0.019</td><td>328.3</td><td>AAA</td><td>222</td><td>111</td><td>000</td><td>666666</td><td>0</td><td>0</td><td>990.166399</td><td>250.466</td><td>2.094</td><td>0.904</td><td>2.998</td></tr>
+<tr><td>274.425482</td><td>-13.77149</td><td>18h17m42.12s</td><td>-13d46m17.36s</td><td>0.08</td><td>0.08</td><td>135</td><td>18174211-1346173</td><td>16.086</td><td>--</td><td>--</td><td>--</td><td>13.709</td><td>0.065</td><td>0.066</td><td>18.6</td><td>12.503</td><td>0.044</td><td>0.045</td><td>33.1</td><td>UAA</td><td>622</td><td>012</td><td>00c</td><td>005555</td><td>0</td><td>0</td><td>970.896919</td><td>277.582</td><td>--</td><td>1.206</td><td>--</td></tr>
+<tr><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td>274.81801</td><td>-14.001245</td><td>18h19m16.32s</td><td>-14d00m04.48s</td><td>0.18</td><td>0.16</td><td>1</td><td>18191632-1400044</td><td>16.24</td><td>0.113</td><td>0.113</td><td>5.6</td><td>15.531</td><td>0.164</td><td>0.164</td><td>2.5</td><td>15.252</td><td>--</td><td>--</td><td>--</td><td>CDU</td><td>220</td><td>110</td><td>000</td><td>060600</td><td>0</td><td>0</td><td>809.817146</td><td>149.61</td><td>0.709</td><td>--</td><td>--</td></tr>
+<tr><td>274.822709</td><td>-14.037254</td><td>18h19m17.45s</td><td>-14d02m14.11s</td><td>0.07</td><td>0.07</td><td>45</td><td>18191745-1402141</td><td>15.999</td><td>0.097</td><td>0.098</td><td>7.0</td><td>14.009</td><td>0.032</td><td>0.033</td><td>10.0</td><td>13.077</td><td>0.035</td><td>0.036</td><td>16.4</td><td>CAA</td><td>222</td><td>111</td><td>000</td><td>062656</td><td>0</td><td>0</td><td>931.339773</td><td>152.779</td><td>1.99</td><td>0.932</td><td>2.922</td></tr>
+<tr><td>274.880758</td><td>-13.99956</td><td>18h19m31.38s</td><td>-13d59m58.42s</td><td>0.06</td><td>0.06</td><td>90</td><td>18193138-1359584</td><td>14.163</td><td>0.035</td><td>0.037</td><td>37.8</td><td>11.179</td><td>0.02</td><td>0.021</td><td>135.6</td><td>9.765</td><td>0.017</td><td>0.019</td><td>347.1</td><td>AAA</td><td>222</td><td>111</td><td>000</td><td>556666</td><td>0</td><td>0</td><td>935.512452</td><td>137.762</td><td>2.984</td><td>1.414</td><td>4.398</td></tr>
+<tr><td>274.652526</td><td>-14.055106</td><td>18h18m36.61s</td><td>-14d03m18.38s</td><td>0.06</td><td>0.06</td><td>90</td><td>18183660-1403183</td><td>15.035</td><td>0.052</td><td>0.054</td><td>19.4</td><td>13.099</td><td>0.04</td><td>0.041</td><td>27.5</td><td>12.254</td><td>0.041</td><td>0.041</td><td>41.7</td><td>AAA</td><td>222</td><td>111</td><td>c00</td><td>566666</td><td>0</td><td>0</td><td>908.109808</td><td>190.682</td><td>1.936</td><td>0.845</td><td>2.781</td></tr>
+<tr><td>274.760586</td><td>-13.999927</td><td>18h19m02.54s</td><td>-13d59m59.74s</td><td>0.08</td><td>0.08</td><td>90</td><td>18190254-1359597</td><td>16.329</td><td>0.122</td><td>0.123</td><td>5.5</td><td>14.488</td><td>0.067</td><td>0.067</td><td>6.4</td><td>13.617</td><td>0.051</td><td>0.052</td><td>11.1</td><td>CCA</td><td>222</td><td>111</td><td>000</td><td>060616</td><td>0</td><td>0</td><td>724.557553</td><td>163.227</td><td>1.841</td><td>0.871</td><td>2.712</td></tr>
+<tr><td>274.831132</td><td>-14.020027</td><td>18h19m19.47s</td><td>-14d01m12.10s</td><td>0.08</td><td>0.08</td><td>45</td><td>18191947-1401120</td><td>16.203</td><td>--</td><td>--</td><td>--</td><td>13.238</td><td>0.02</td><td>0.021</td><td>20.4</td><td>12.016</td><td>0.023</td><td>0.024</td><td>43.6</td><td>UAA</td><td>022</td><td>011</td><td>000</td><td>006666</td><td>0</td><td>0</td><td>891.347132</td><td>149.27</td><td>--</td><td>1.222</td><td>--</td></tr>
+<tr><td>274.972435</td><td>-13.760374</td><td>18h19m53.38s</td><td>-13d45m37.35s</td><td>0.12</td><td>0.11</td><td>10</td><td>18195338-1345373</td><td>17.472</td><td>--</td><td>--</td><td>--</td><td>16.755</td><td>--</td><td>--</td><td>--</td><td>14.413</td><td>0.084</td><td>0.084</td><td>4.8</td><td>UUD</td><td>002</td><td>001</td><td>000</td><td>000006</td><td>0</td><td>0</td><td>964.828933</td><td>79.963</td><td>--</td><td>--</td><td>--</td></tr>
+<tr><td>274.870009</td><td>-13.817775</td><td>18h19m28.80s</td><td>-13d49m03.99s</td><td>0.08</td><td>0.08</td><td>45</td><td>18192880-1349039</td><td>16.933</td><td>--</td><td>--</td><td>--</td><td>14.514</td><td>0.064</td><td>0.065</td><td>6.3</td><td>12.957</td><td>0.041</td><td>0.041</td><td>18.4</td><td>UCA</td><td>022</td><td>011</td><td>000</td><td>002666</td><td>0</td><td>0</td><td>592.998058</td><td>93.69</td><td>--</td><td>1.557</td><td>--</td></tr>
+<tr><td>274.735323</td><td>-13.941575</td><td>18h18m56.48s</td><td>-13d56m29.67s</td><td>0.14</td><td>0.14</td><td>45</td><td>18185647-1356296</td><td>16.643</td><td>--</td><td>--</td><td>--</td><td>14.88</td><td>--</td><td>--</td><td>--</td><td>14.291</td><td>0.116</td><td>0.117</td><td>6.0</td><td>UUC</td><td>002</td><td>001</td><td>000</td><td>000004</td><td>0</td><td>0</td><td>498.524438</td><td>165.968</td><td>--</td><td>--</td><td>--</td></tr>
+<tr><td>274.866294</td><td>-13.841778</td><td>18h19m27.91s</td><td>-13d50m30.40s</td><td>0.08</td><td>0.08</td><td>45</td><td>18192791-1350304</td><td>15.615</td><td>--</td><td>--</td><td>--</td><td>13.911</td><td>0.075</td><td>0.075</td><td>10.9</td><td>12.765</td><td>0.134</td><td>0.134</td><td>21.9</td><td>UAE</td><td>022</td><td>011</td><td>0cc</td><td>005545</td><td>0</td><td>0</td><td>591.97725</td><td>102.147</td><td>--</td><td>1.146</td><td>--</td></tr>
 </table>
 </div>
 
@@ -1018,51 +924,13 @@ plt.scatter(t4['j_m'] - t4['h_m'], t4['h_m'] - t4['k_m'], )
 ```
 
 
-{:.output_traceback_line}
+
+
+{:.output_data_text}
 ```
----------------------------------------------------------------------------
+<matplotlib.collections.PathCollection at 0x7f6f21b00470>
 ```
 
-{:.output_traceback_line}
-```
-KeyError                                  Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-41-cdf60162d075> in <module>()
-      1 #1
-      2 import matplotlib.pyplot as plt
-----> 3 plt.scatter(t4['j_m'] - t4['h_m'], t4['h_m'] - t4['k_m'], )
-
-```
-
-{:.output_traceback_line}
-```
-/opt/miniconda/envs/stfc/lib/python3.6/site-packages/astropy/table/table.py in __getitem__(self, item)
-   1220     def __getitem__(self, item):
-   1221         if isinstance(item, str):
--> 1222             return self.columns[item]
-   1223         elif isinstance(item, (int, np.integer)):
-   1224             return self.Row(self, item)
-
-```
-
-{:.output_traceback_line}
-```
-/opt/miniconda/envs/stfc/lib/python3.6/site-packages/astropy/table/table.py in __getitem__(self, item)
-    104         """
-    105         if isinstance(item, str):
---> 106             return OrderedDict.__getitem__(self, item)
-    107         elif isinstance(item, (int, np.integer)):
-    108             return self.values()[item]
-
-```
-
-{:.output_traceback_line}
-```
-KeyError: 'j_m'
-```
 
 
 
@@ -1074,51 +942,37 @@ subset
 ```
 
 
-{:.output_traceback_line}
-```
----------------------------------------------------------------------------
-```
 
-{:.output_traceback_line}
-```
-KeyError                                  Traceback (most recent call last)
-```
 
-{:.output_traceback_line}
-```
-<ipython-input-42-9b689e5db8db> in <module>()
-      1 #2
-----> 2 subset = t4[(t4['j_snr'] > 10) & (t4['h_snr'] > 10) & (t4['k_snr'] > 10)]
-      3 subset
+<div markdown="0">
+<i>Table masked=True length=264</i>
+<table id="table140115282631088" class="table-striped table-bordered table-condensed">
+<thead><tr><th>ra</th><th>dec</th><th>clon</th><th>clat</th><th>err_maj</th><th>err_min</th><th>err_ang</th><th>designation</th><th>j_m</th><th>j_cmsig</th><th>j_msigcom</th><th>j_snr</th><th>h_m</th><th>h_cmsig</th><th>h_msigcom</th><th>h_snr</th><th>k_m</th><th>k_cmsig</th><th>k_msigcom</th><th>k_snr</th><th>ph_qual</th><th>rd_flg</th><th>bl_flg</th><th>cc_flg</th><th>ndet</th><th>gal_contam</th><th>mp_flg</th><th>dist</th><th>angle</th><th>j_h</th><th>h_k</th><th>j_k</th></tr></thead>
+<thead><tr><th>deg</th><th>deg</th><th></th><th></th><th>arcsec</th><th>arcsec</th><th>deg</th><th></th><th>mag</th><th>mag</th><th>mag</th><th></th><th>mag</th><th>mag</th><th>mag</th><th></th><th>mag</th><th>mag</th><th>mag</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr></thead>
+<thead><tr><th>float64</th><th>float64</th><th>str12</th><th>str13</th><th>float64</th><th>float64</th><th>int64</th><th>str16</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>str3</th><th>str3</th><th>str3</th><th>str3</th><th>str6</th><th>int64</th><th>int64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th></tr></thead>
+<tr><td>274.423821</td><td>-13.86974</td><td>18h17m41.72s</td><td>-13d52m11.06s</td><td>0.06</td><td>0.06</td><td>90</td><td>18174171-1352110</td><td>14.802</td><td>0.058</td><td>0.059</td><td>26.7</td><td>12.635</td><td>0.059</td><td>0.06</td><td>50.1</td><td>11.768</td><td>0.045</td><td>0.046</td><td>65.2</td><td>AAA</td><td>222</td><td>111</td><td>0ss</td><td>666666</td><td>0</td><td>0</td><td>993.752042</td><td>256.878</td><td>2.167</td><td>0.867</td><td>3.034</td></tr>
+<tr><td>274.433695</td><td>-13.899049</td><td>18h17m44.09s</td><td>-13d53m56.58s</td><td>0.06</td><td>0.06</td><td>90</td><td>18174408-1353565</td><td>13.011</td><td>0.021</td><td>0.024</td><td>139.0</td><td>10.917</td><td>0.02</td><td>0.021</td><td>243.8</td><td>10.013</td><td>0.017</td><td>0.019</td><td>328.3</td><td>AAA</td><td>222</td><td>111</td><td>000</td><td>666666</td><td>0</td><td>0</td><td>990.166399</td><td>250.466</td><td>2.094</td><td>0.904</td><td>2.998</td></tr>
+<tr><td>274.431606</td><td>-13.781877</td><td>18h17m43.59s</td><td>-13d46m54.76s</td><td>0.06</td><td>0.06</td><td>45</td><td>18174358-1346547</td><td>13.87</td><td>0.032</td><td>0.034</td><td>63.0</td><td>13.406</td><td>0.06</td><td>0.061</td><td>24.6</td><td>13.365</td><td>0.087</td><td>0.088</td><td>15.0</td><td>AAA</td><td>222</td><td>111</td><td>ccc</td><td>666666</td><td>0</td><td>0</td><td>945.318343</td><td>275.508</td><td>0.464</td><td>0.041</td><td>0.505</td></tr>
+<tr><td>274.433361</td><td>-13.892246</td><td>18h17m44.01s</td><td>-13d53m32.09s</td><td>0.06</td><td>0.06</td><td>45</td><td>18174400-1353320</td><td>15.151</td><td>0.059</td><td>0.06</td><td>19.4</td><td>13.37</td><td>0.064</td><td>0.065</td><td>25.5</td><td>12.599</td><td>0.048</td><td>0.049</td><td>30.3</td><td>AAA</td><td>222</td><td>111</td><td>000</td><td>566666</td><td>0</td><td>0</td><td>983.384329</td><td>251.834</td><td>1.781</td><td>0.771</td><td>2.552</td></tr>
+<tr><td>274.427483</td><td>-13.768612</td><td>18h17m42.60s</td><td>-13d46m07.00s</td><td>0.06</td><td>0.06</td><td>90</td><td>18174259-1346070</td><td>14.423</td><td>0.041</td><td>0.043</td><td>37.9</td><td>13.926</td><td>0.064</td><td>0.065</td><td>15.3</td><td>13.744</td><td>0.052</td><td>0.053</td><td>10.6</td><td>AAA</td><td>222</td><td>222</td><td>ccc</td><td>666666</td><td>0</td><td>0</td><td>965.406417</td><td>278.247</td><td>0.497</td><td>0.182</td><td>0.679</td></tr>
+<tr><td>274.43155</td><td>-13.883111</td><td>18h17m43.57s</td><td>-13d52m59.20s</td><td>0.06</td><td>0.06</td><td>90</td><td>18174357-1352591</td><td>15.702</td><td>0.084</td><td>0.085</td><td>11.7</td><td>13.725</td><td>0.091</td><td>0.091</td><td>18.4</td><td>12.908</td><td>0.069</td><td>0.07</td><td>22.8</td><td>AAA</td><td>222</td><td>222</td><td>ccc</td><td>266666</td><td>0</td><td>0</td><td>979.746164</td><td>253.778</td><td>1.977</td><td>0.817</td><td>2.794</td></tr>
+<tr><td>274.432195</td><td>-13.723433</td><td>18h17m43.73s</td><td>-13d43m24.36s</td><td>0.06</td><td>0.06</td><td>90</td><td>18174372-1343243</td><td>13.843</td><td>0.019</td><td>0.023</td><td>64.6</td><td>11.363</td><td>0.02</td><td>0.021</td><td>161.7</td><td>10.243</td><td>0.019</td><td>0.021</td><td>265.6</td><td>AAA</td><td>222</td><td>111</td><td>000</td><td>666666</td><td>0</td><td>0</td><td>986.230333</td><td>287.779</td><td>2.48</td><td>1.12</td><td>3.6</td></tr>
+<tr><td>274.429849</td><td>-13.838672</td><td>18h17m43.16s</td><td>-13d50m19.22s</td><td>0.06</td><td>0.06</td><td>45</td><td>18174316-1350192</td><td>15.726</td><td>0.069</td><td>0.07</td><td>11.4</td><td>13.911</td><td>0.053</td><td>0.053</td><td>15.5</td><td>13.025</td><td>0.069</td><td>0.07</td><td>20.5</td><td>AAA</td><td>222</td><td>111</td><td>c00</td><td>166666</td><td>0</td><td>0</td><td>953.670451</td><td>263.151</td><td>1.815</td><td>0.886</td><td>2.701</td></tr>
+<tr><td>274.427993</td><td>-13.829856</td><td>18h17m42.72s</td><td>-13d49m47.48s</td><td>0.06</td><td>0.06</td><td>90</td><td>18174271-1349474</td><td>13.307</td><td>0.029</td><td>0.032</td><td>105.8</td><td>12.919</td><td>0.063</td><td>0.063</td><td>38.6</td><td>12.795</td><td>0.065</td><td>0.065</td><td>25.3</td><td>AEA</td><td>222</td><td>212</td><td>c0c</td><td>665566</td><td>0</td><td>0</td><td>956.908469</td><td>265.084</td><td>0.388</td><td>0.124</td><td>0.512</td></tr>
+<tr><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td>274.788401</td><td>-13.953847</td><td>18h19m09.22s</td><td>-13d57m13.85s</td><td>0.06</td><td>0.06</td><td>90</td><td>18190921-1357138</td><td>14.991</td><td>0.041</td><td>0.043</td><td>18.9</td><td>12.716</td><td>0.036</td><td>0.037</td><td>32.9</td><td>11.688</td><td>0.024</td><td>0.026</td><td>65.5</td><td>AAA</td><td>222</td><td>111</td><td>ccc</td><td>666655</td><td>0</td><td>0</td><td>610.307615</td><td>149.875</td><td>2.275</td><td>1.028</td><td>3.303</td></tr>
+<tr><td>274.797491</td><td>-14.066624</td><td>18h19m11.40s</td><td>-14d03m59.85s</td><td>0.06</td><td>0.06</td><td>90</td><td>18191139-1403598</td><td>13.965</td><td>0.036</td><td>0.038</td><td>48.6</td><td>13.019</td><td>0.053</td><td>0.053</td><td>24.9</td><td>12.61</td><td>0.042</td><td>0.043</td><td>28.0</td><td>AAA</td><td>222</td><td>111</td><td>000</td><td>555566</td><td>0</td><td>0</td><td>993.135358</td><td>160.109</td><td>0.946</td><td>0.409</td><td>1.355</td></tr>
+<tr><td>274.804877</td><td>-13.91268</td><td>18h19m13.17s</td><td>-13d54m45.65s</td><td>0.06</td><td>0.06</td><td>45</td><td>18191317-1354456</td><td>14.356</td><td>0.035</td><td>0.037</td><td>33.9</td><td>13.504</td><td>0.055</td><td>0.056</td><td>15.9</td><td>13.273</td><td>0.049</td><td>0.05</td><td>15.2</td><td>AAA</td><td>222</td><td>111</td><td>000</td><td>666656</td><td>0</td><td>0</td><td>525.943465</td><td>136.214</td><td>0.852</td><td>0.231</td><td>1.083</td></tr>
+<tr><td>274.900945</td><td>-13.903238</td><td>18h19m36.23s</td><td>-13d54m11.66s</td><td>0.06</td><td>0.06</td><td>90</td><td>18193622-1354116</td><td>12.454</td><td>0.028</td><td>0.03</td><td>182.3</td><td>11.81</td><td>0.03</td><td>0.031</td><td>75.8</td><td>11.36</td><td>0.024</td><td>0.026</td><td>79.9</td><td>AAA</td><td>222</td><td>111</td><td>000</td><td>556655</td><td>0</td><td>0</td><td>780.501247</td><td>116.308</td><td>0.644</td><td>0.45</td><td>1.094</td></tr>
+<tr><td>274.836101</td><td>-14.037536</td><td>18h19m20.66s</td><td>-14d02m15.13s</td><td>0.06</td><td>0.06</td><td>45</td><td>18192066-1402151</td><td>15.217</td><td>0.061</td><td>0.062</td><td>14.3</td><td>13.358</td><td>0.062</td><td>0.062</td><td>18.2</td><td>12.489</td><td>0.051</td><td>0.052</td><td>28.2</td><td>AAA</td><td>222</td><td>111</td><td>000</td><td>266666</td><td>0</td><td>0</td><td>954.544823</td><td>150.31</td><td>1.859</td><td>0.869</td><td>2.728</td></tr>
+<tr><td>274.862392</td><td>-13.84573</td><td>18h19m26.97s</td><td>-13d50m44.63s</td><td>0.06</td><td>0.06</td><td>90</td><td>18192697-1350446</td><td>14.369</td><td>0.041</td><td>0.043</td><td>31.2</td><td>12.46</td><td>0.03</td><td>0.031</td><td>41.7</td><td>11.561</td><td>0.026</td><td>0.027</td><td>66.4</td><td>AAA</td><td>222</td><td>111</td><td>000</td><td>666633</td><td>0</td><td>0</td><td>581.867714</td><td>103.799</td><td>1.909</td><td>0.899</td><td>2.808</td></tr>
+<tr><td>274.858201</td><td>-13.918294</td><td>18h19m25.97s</td><td>-13d55m05.86s</td><td>0.06</td><td>0.06</td><td>45</td><td>18192596-1355058</td><td>14.156</td><td>0.052</td><td>0.054</td><td>38.0</td><td>12.13</td><td>0.051</td><td>0.052</td><td>56.5</td><td>11.215</td><td>0.037</td><td>0.038</td><td>91.3</td><td>AAA</td><td>222</td><td>111</td><td>ccc</td><td>666666</td><td>0</td><td>0</td><td>680.283673</td><td>126.015</td><td>2.026</td><td>0.915</td><td>2.941</td></tr>
+<tr><td>274.611341</td><td>-14.056347</td><td>18h18m26.72s</td><td>-14d03m22.85s</td><td>0.06</td><td>0.06</td><td>90</td><td>18182672-1403228</td><td>15.066</td><td>0.07</td><td>0.071</td><td>18.9</td><td>13.367</td><td>0.091</td><td>0.091</td><td>21.5</td><td>12.634</td><td>0.065</td><td>0.065</td><td>29.4</td><td>AAA</td><td>222</td><td>111</td><td>ccc</td><td>666666</td><td>0</td><td>0</td><td>949.652829</td><td>199.19</td><td>1.699</td><td>0.733</td><td>2.432</td></tr>
+<tr><td>274.880758</td><td>-13.99956</td><td>18h19m31.38s</td><td>-13d59m58.42s</td><td>0.06</td><td>0.06</td><td>90</td><td>18193138-1359584</td><td>14.163</td><td>0.035</td><td>0.037</td><td>37.8</td><td>11.179</td><td>0.02</td><td>0.021</td><td>135.6</td><td>9.765</td><td>0.017</td><td>0.019</td><td>347.1</td><td>AAA</td><td>222</td><td>111</td><td>000</td><td>556666</td><td>0</td><td>0</td><td>935.512452</td><td>137.762</td><td>2.984</td><td>1.414</td><td>4.398</td></tr>
+<tr><td>274.652526</td><td>-14.055106</td><td>18h18m36.61s</td><td>-14d03m18.38s</td><td>0.06</td><td>0.06</td><td>90</td><td>18183660-1403183</td><td>15.035</td><td>0.052</td><td>0.054</td><td>19.4</td><td>13.099</td><td>0.04</td><td>0.041</td><td>27.5</td><td>12.254</td><td>0.041</td><td>0.041</td><td>41.7</td><td>AAA</td><td>222</td><td>111</td><td>c00</td><td>566666</td><td>0</td><td>0</td><td>908.109808</td><td>190.682</td><td>1.936</td><td>0.845</td><td>2.781</td></tr>
+</table>
+</div>
 
-```
-
-{:.output_traceback_line}
-```
-/opt/miniconda/envs/stfc/lib/python3.6/site-packages/astropy/table/table.py in __getitem__(self, item)
-   1220     def __getitem__(self, item):
-   1221         if isinstance(item, str):
--> 1222             return self.columns[item]
-   1223         elif isinstance(item, (int, np.integer)):
-   1224             return self.Row(self, item)
-
-```
-
-{:.output_traceback_line}
-```
-/opt/miniconda/envs/stfc/lib/python3.6/site-packages/astropy/table/table.py in __getitem__(self, item)
-    104         """
-    105         if isinstance(item, str):
---> 106             return OrderedDict.__getitem__(self, item)
-    107         elif isinstance(item, (int, np.integer)):
-    108             return self.values()[item]
-
-```
-
-{:.output_traceback_line}
-```
-KeyError: 'j_snr'
-```
 
 
 
@@ -1135,53 +989,17 @@ plt.scatter(subset['j_m'] - subset['h_m'],
 ```
 
 
-{:.output_traceback_line}
+
+
+{:.output_data_text}
 ```
----------------------------------------------------------------------------
+<matplotlib.collections.PathCollection at 0x7f6f219f4a20>
 ```
 
-{:.output_traceback_line}
-```
-KeyError                                  Traceback (most recent call last)
-```
 
-{:.output_traceback_line}
-```
-<ipython-input-43-5fb859521933> in <module>()
-      1 #2 (continued)
-      2 import matplotlib.pyplot as plt
-----> 3 plt.scatter(t4['j_m'] - t4['h_m'],
-      4             t4['h_m'] - t4['k_m'],
-      5             s=5, color='black')
 
-```
 
-{:.output_traceback_line}
-```
-/opt/miniconda/envs/stfc/lib/python3.6/site-packages/astropy/table/table.py in __getitem__(self, item)
-   1220     def __getitem__(self, item):
-   1221         if isinstance(item, str):
--> 1222             return self.columns[item]
-   1223         elif isinstance(item, (int, np.integer)):
-   1224             return self.Row(self, item)
-
-```
-
-{:.output_traceback_line}
-```
-/opt/miniconda/envs/stfc/lib/python3.6/site-packages/astropy/table/table.py in __getitem__(self, item)
-    104         """
-    105         if isinstance(item, str):
---> 106             return OrderedDict.__getitem__(self, item)
-    107         elif isinstance(item, (int, np.integer)):
-    108             return self.values()[item]
-
-```
-
-{:.output_traceback_line}
-```
-KeyError: 'j_m'
-```
+![png](../../images/chapters/11-tabular-data/01-astropy-tables_instructor_64_1.png)
 
 
 
@@ -1193,73 +1011,37 @@ simple
 ```
 
 
-{:.output_traceback_line}
-```
----------------------------------------------------------------------------
-```
 
-{:.output_traceback_line}
-```
-KeyError                                  Traceback (most recent call last)
-```
 
-{:.output_traceback_line}
-```
-<ipython-input-44-031ed6fa7e5f> in <module>()
-      1 #3
-----> 2 simple = t4['ra', 'dec', 'j_m', 'h_m', 'k_m']
-      3 simple
+<div markdown="0">
+<i>Table masked=True length=929</i>
+<table id="table140115281866536" class="table-striped table-bordered table-condensed">
+<thead><tr><th>ra</th><th>dec</th><th>j_m</th><th>h_m</th><th>k_m</th></tr></thead>
+<thead><tr><th>deg</th><th>deg</th><th>mag</th><th>mag</th><th>mag</th></tr></thead>
+<thead><tr><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th></tr></thead>
+<tr><td>274.429506</td><td>-13.870547</td><td>16.305</td><td>14.048</td><td>13.257</td></tr>
+<tr><td>274.423821</td><td>-13.86974</td><td>14.802</td><td>12.635</td><td>11.768</td></tr>
+<tr><td>274.424587</td><td>-13.739629</td><td>16.328</td><td>14.345</td><td>13.405</td></tr>
+<tr><td>274.433933</td><td>-13.769502</td><td>16.281</td><td>14.057</td><td>12.956</td></tr>
+<tr><td>274.437013</td><td>-13.885698</td><td>15.171</td><td>14.412</td><td>13.742</td></tr>
+<tr><td>274.433996</td><td>-13.752446</td><td>16.54</td><td>14.519</td><td>13.604</td></tr>
+<tr><td>274.418138</td><td>-13.77215</td><td>17.98</td><td>14.61</td><td>13.456</td></tr>
+<tr><td>274.433695</td><td>-13.899049</td><td>13.011</td><td>10.917</td><td>10.013</td></tr>
+<tr><td>274.425482</td><td>-13.77149</td><td>16.086</td><td>13.709</td><td>12.503</td></tr>
+<tr><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td>274.81801</td><td>-14.001245</td><td>16.24</td><td>15.531</td><td>15.252</td></tr>
+<tr><td>274.822709</td><td>-14.037254</td><td>15.999</td><td>14.009</td><td>13.077</td></tr>
+<tr><td>274.880758</td><td>-13.99956</td><td>14.163</td><td>11.179</td><td>9.765</td></tr>
+<tr><td>274.652526</td><td>-14.055106</td><td>15.035</td><td>13.099</td><td>12.254</td></tr>
+<tr><td>274.760586</td><td>-13.999927</td><td>16.329</td><td>14.488</td><td>13.617</td></tr>
+<tr><td>274.831132</td><td>-14.020027</td><td>16.203</td><td>13.238</td><td>12.016</td></tr>
+<tr><td>274.972435</td><td>-13.760374</td><td>17.472</td><td>16.755</td><td>14.413</td></tr>
+<tr><td>274.870009</td><td>-13.817775</td><td>16.933</td><td>14.514</td><td>12.957</td></tr>
+<tr><td>274.735323</td><td>-13.941575</td><td>16.643</td><td>14.88</td><td>14.291</td></tr>
+<tr><td>274.866294</td><td>-13.841778</td><td>15.615</td><td>13.911</td><td>12.765</td></tr>
+</table>
+</div>
 
-```
-
-{:.output_traceback_line}
-```
-/opt/miniconda/envs/stfc/lib/python3.6/site-packages/astropy/table/table.py in __getitem__(self, item)
-   1226             return self.Row(self, item.item())
-   1227         elif self._is_list_or_tuple_of_str(item):
--> 1228             out = self.__class__([self[x] for x in item],
-   1229                                  meta=deepcopy(self.meta),
-   1230                                  copy_indices=self._copy_indices)
-
-```
-
-{:.output_traceback_line}
-```
-/opt/miniconda/envs/stfc/lib/python3.6/site-packages/astropy/table/table.py in <listcomp>(.0)
-   1226             return self.Row(self, item.item())
-   1227         elif self._is_list_or_tuple_of_str(item):
--> 1228             out = self.__class__([self[x] for x in item],
-   1229                                  meta=deepcopy(self.meta),
-   1230                                  copy_indices=self._copy_indices)
-
-```
-
-{:.output_traceback_line}
-```
-/opt/miniconda/envs/stfc/lib/python3.6/site-packages/astropy/table/table.py in __getitem__(self, item)
-   1220     def __getitem__(self, item):
-   1221         if isinstance(item, str):
--> 1222             return self.columns[item]
-   1223         elif isinstance(item, (int, np.integer)):
-   1224             return self.Row(self, item)
-
-```
-
-{:.output_traceback_line}
-```
-/opt/miniconda/envs/stfc/lib/python3.6/site-packages/astropy/table/table.py in __getitem__(self, item)
-    104         """
-    105         if isinstance(item, str):
---> 106             return OrderedDict.__getitem__(self, item)
-    107         elif isinstance(item, (int, np.integer)):
-    108             return self.values()[item]
-
-```
-
-{:.output_traceback_line}
-```
-KeyError: 'ra'
-```
 
 
 
@@ -1268,28 +1050,3 @@ KeyError: 'ra'
 #3 (continued)
 simple.write('2mass_subset.csv', format='ascii.csv', overwrite=True, comment='#')
 ```
-
-
-{:.output_traceback_line}
-```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-45-ae75b9be004a> in <module>()
-      1 #3 (continued)
-----> 2 simple.write('2mass_subset.csv', format='ascii.csv', overwrite=True, comment='#')
-
-```
-
-{:.output_traceback_line}
-```
-NameError: name 'simple' is not defined
-```
-

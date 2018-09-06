@@ -312,7 +312,7 @@ and others are already a composition:
 
 {:.output_data_text}
 ```
-[Unit("Hz"), Unit("Bq"), Unit("2.7027e-11 Ci")]
+[Unit("Bq"), Unit("Hz"), Unit("2.7027e-11 Ci")]
 ```
 
 
@@ -681,7 +681,7 @@ plt.plot(angle, np.sin(angle))
 
 {:.output_data_text}
 ```
-[<matplotlib.lines.Line2D at 0x7ffb57948400>]
+[<matplotlib.lines.Line2D at 0x7f7a44ef13c8>]
 ```
 
 

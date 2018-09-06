@@ -71,32 +71,6 @@ Including:
 import astropy.units as u
 ```
 
-
-{:.input_area}
-```python
-10 * u.m
-```
-
-
-
-
-$10 \; \mathrm{m}$
-
-
-
-
-{:.input_area}
-```python
-10*u.deg
-```
-
-
-
-
-$10 \; \mathrm{{}^{\circ}}$
-
-
-
 # FITS
 
 
@@ -222,13 +196,13 @@ plt.plot(x, y, "o")
 
 {:.output_data_text}
 ```
-[<matplotlib.lines.Line2D at 0x7feb2e4bd208>]
+[<matplotlib.lines.Line2D at 0x7f6f35fab128>]
 ```
 
 
 
 
-![png](../../images/chapters/08-sunpy-and-astropy/01-introduction-to-open-development_instructor_24_1.png)
+![png](../../images/chapters/08-sunpy-and-astropy/01-introduction-to-open-development_instructor_22_1.png)
 
 
 
@@ -261,13 +235,13 @@ plt.plot(x, gg(x))
 
 {:.output_data_text}
 ```
-[<matplotlib.lines.Line2D at 0x7feb2e4bd8d0>]
+[<matplotlib.lines.Line2D at 0x7f6f35f57f98>]
 ```
 
 
 
 
-![png](../../images/chapters/08-sunpy-and-astropy/01-introduction-to-open-development_instructor_26_1.png)
+![png](../../images/chapters/08-sunpy-and-astropy/01-introduction-to-open-development_instructor_24_1.png)
 
 
 # SunPy
@@ -284,7 +258,7 @@ plt.show()
 ```
 
 
-![png](../../images/chapters/08-sunpy-and-astropy/01-introduction-to-open-development_instructor_28_0.png)
+![png](../../images/chapters/08-sunpy-and-astropy/01-introduction-to-open-development_instructor_26_0.png)
 
 
 ## Astropy and SunPy 😍
@@ -325,7 +299,7 @@ plt.show()
 ```
 
 
-![png](../../images/chapters/08-sunpy-and-astropy/01-introduction-to-open-development_instructor_32_0.png)
+![png](../../images/chapters/08-sunpy-and-astropy/01-introduction-to-open-development_instructor_30_0.png)
 
 
 # TimeSeries
@@ -345,5 +319,5 @@ goes.peek()
 ```
 
 
-![png](../../images/chapters/08-sunpy-and-astropy/01-introduction-to-open-development_instructor_35_0.png)
+![png](../../images/chapters/08-sunpy-and-astropy/01-introduction-to-open-development_instructor_33_0.png)
 
