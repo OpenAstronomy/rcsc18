@@ -38,9 +38,9 @@ Projected coordinate systems are one type of physical coordinate systems, they a
 
 {:.input_area}
 ```python
+import astropy.units as u
 import sunpy.coordinates
 from astropy.coordinates import SkyCoord
-import astropy.units as u
 ```
 
 
@@ -73,8 +73,8 @@ hpc
 
 {:.output_data_text}
 ```
-<SkyCoord (Helioprojective: obstime=2018-09-06 12:26:24.967636, rsun=695508.0 km, observer=<HeliographicStonyhurst Coordinate (obstime=2018-09-06 12:26:24.967636): (lon, lat, radius) in (deg, deg, AU)
-    (0., 7.24707866, 1.00800246)>): (Tx, Ty) in arcsec
+<SkyCoord (Helioprojective: obstime=2018-09-06 18:18:18.345940, rsun=695508.0 km, observer=<HeliographicStonyhurst Coordinate (obstime=2018-09-06 18:18:18.345940): (lon, lat, radius) in (deg, deg, AU)
+    (0., 7.24812956, 1.00794235)>): (Tx, Ty) in arcsec
     (100., 700.)>
 ```
 
@@ -91,8 +91,25 @@ hpc.transform_to('heliographic_stonyhurst')
 
 {:.output_data_text}
 ```
-<SkyCoord (HeliographicStonyhurst: obstime=2018-09-06 12:26:24.967636): (lon, lat, radius) in (deg, deg, km)
-    (10.35215462, 54.32857826, 695508.00000812)>
+<SkyCoord (HeliographicStonyhurst: obstime=2018-09-06 18:18:18.345940): (lon, lat, radius) in (deg, deg, km)
+    (10.35085155, 54.32592721, 695508.00000132)>
+```
+
+
+
+
+{:.input_area}
+```python
+hpc.transform_to("icrs")
+```
+
+
+
+
+{:.output_data_text}
+```
+<SkyCoord (ICRS): (ra, dec, distance) in (deg, deg, km)
+    (56.14835134, 44.35426695, 1228805.25204128)>
 ```
 
 
@@ -112,7 +129,11 @@ As you learned in the previous lesson we can load FITS files with Astropy. To de
 ```python
 from sunpy.data.sample import AIA_171_IMAGE
 from astropy.io import fits
+```
 
+
+{:.input_area}
+```python
 hdulist = fits.open(AIA_171_IMAGE)
 hdulist.verify('silentfix')
 hdulist[0].header
@@ -454,9 +475,35 @@ However, we can cheat and just use Astropy.
 {:.input_area}
 ```python
 from astropy.wcs import WCS
+```
 
+
+{:.input_area}
+```python
 wcs = WCS(header)
 ```
+
+
+{:.input_area}
+```python
+wcs
+```
+
+
+
+
+{:.output_data_text}
+```
+WCS Keywords
+
+Number of WCS axes: 2
+CTYPE : 'HPLN-TAN'  'HPLT-TAN'  
+CRVAL : 0.00089530541880571  0.00038493926472938695  
+CRPIX : 512.5  512.5  
+NAXIS : 1024  1024
+```
+
+
 
 We can convert from pixel to world coordinate:
 
@@ -581,7 +628,7 @@ SkyCoord(100*u.arcsec, -500*u.arcsec, frame=hpc_frame)
 
 *Note: For solar data you should always use `sunpy.map` for this*
 
-## Plotting with wcsaxes
+## Coordinate Aware Plotting
 
 In this section we are going to use the `astropy.visualization.wcsaxes` subpackage to make WCS aware image plots.
 
@@ -591,8 +638,12 @@ For this example we are going to use a Hubble image.
 {:.input_area}
 ```python
 from astropy.io import fits
+```
 
-hdulist = fits.open('./h_n4571_f555_mosaic.fits.gz')
+
+{:.input_area}
+```python
+hdulist = fits.open('h_n4571_f555_mosaic.fits.gz')
 hdulist
 ```
 
@@ -601,7 +652,7 @@ hdulist
 
 {:.output_data_text}
 ```
-[<astropy.io.fits.hdu.image.PrimaryHDU object at 0x7f98f0438b00>]
+[<astropy.io.fits.hdu.image.PrimaryHDU object at 0x7f418f44a7b8>]
 ```
 
 
@@ -630,13 +681,13 @@ ax.imshow(hdulist[0].data, cmap='gray', vmax=1000, interpolation=None, origin='l
 
 {:.output_data_text}
 ```
-<matplotlib.image.AxesImage at 0x7f98ee2722b0>
+<matplotlib.image.AxesImage at 0x7f418d2f58d0>
 ```
 
 
 
 
-![png](../../images/chapters/13-images-in-astronomy/01-images-in-astronomy_instructor_50_1.png)
+![png](../../images/chapters/13-images-in-astronomy/01-images-in-astronomy_instructor_55_1.png)
 
 
 This image now has physcial labels in the native coordinate system of the image. We can see what the coordinate system and projection of this image is using the 'CTYPE' header entries we saw earlier.
@@ -712,7 +763,7 @@ ax.coords.grid(color='white', alpha=0.5, linestyle='solid')
 ```
 
 
-![png](../../images/chapters/13-images-in-astronomy/01-images-in-astronomy_instructor_57_0.png)
+![png](../../images/chapters/13-images-in-astronomy/01-images-in-astronomy_instructor_62_0.png)
 
 
 Now we have a nice plot, we can do a couple of things to plot.
@@ -738,13 +789,13 @@ ax.plot(3000, 3000, 'o')
 
 {:.output_data_text}
 ```
-[<matplotlib.lines.Line2D at 0x7f98e4bece80>]
+[<matplotlib.lines.Line2D at 0x7f4184acb4a8>]
 ```
 
 
 
 
-![png](../../images/chapters/13-images-in-astronomy/01-images-in-astronomy_instructor_60_1.png)
+![png](../../images/chapters/13-images-in-astronomy/01-images-in-astronomy_instructor_65_1.png)
 
 
 ### Overplotting in World Coordinates
@@ -763,22 +814,12 @@ ax.coords.grid(color='white', alpha=0.5, linestyle='solid')
 ax.set_autoscale_on(False)
 
 ax.plot(3000, 3000, 'o')
-# Overplot in FK5 in Degrees
-ax.plot(189.25, 14.23, 'o', transform=ax.get_transform('fk5'))
+# Overplot in FK5
+ax.plot_coord(SkyCoord(189.25*u.deg, 14.23*u.deg, frame="fk5"), "o")
 ```
 
 
-
-
-{:.output_data_text}
-```
-[<matplotlib.lines.Line2D at 0x7f98e4bd08d0>]
-```
-
-
-
-
-![png](../../images/chapters/13-images-in-astronomy/01-images-in-astronomy_instructor_62_1.png)
+![png](../../images/chapters/13-images-in-astronomy/01-images-in-astronomy_instructor_67_0.png)
 
 
 
@@ -817,22 +858,11 @@ overlay.grid(color='orange', alpha=1, linestyle='solid')
 overlay['l'].set_axislabel("Galactic Longitude [degrees]")
 overlay['b'].set_axislabel("Galactic Latitude [degrees]")
 
-
-ax.plot(287.5, 76.65, 'o', transform=ax.get_transform('galactic'))
+ax.plot_coord(SkyCoord(287.5*u.deg, 76.65*u.deg, frame="galactic"), "o")
 ```
 
 
-
-
-{:.output_data_text}
-```
-[<matplotlib.lines.Line2D at 0x7f98e4b322e8>]
-```
-
-
-
-
-![png](../../images/chapters/13-images-in-astronomy/01-images-in-astronomy_instructor_65_1.png)
+![png](../../images/chapters/13-images-in-astronomy/01-images-in-astronomy_instructor_70_0.png)
 
 
 ## SunPy Map
@@ -850,7 +880,7 @@ amap.peek()
 ```
 
 
-![png](../../images/chapters/13-images-in-astronomy/01-images-in-astronomy_instructor_68_0.png)
+![png](../../images/chapters/13-images-in-astronomy/01-images-in-astronomy_instructor_73_0.png)
 
 
 ### Coordinate Systems
@@ -933,19 +963,18 @@ amap = sunpy.map.Map(AIA_171_ROLL_IMAGE)
 
 im = amap.plot()
 ax = plt.gca()
-ax.set_autoscale_on(False)
 
 x = 500*u.arcsec
 y = -300*u.arcsec
 
-ax.plot(x.to(u.deg), y.to(u.deg), 'o', transform=ax.get_transform('world'))
+ax.plot_coord(SkyCoord(x, y, frame=amap.coordinate_frame), "o")
 
 overlay = ax.get_coords_overlay('heliographic_stonyhurst')
 overlay.grid(color='cyan', alpha=1, linestyle='solid')
 ```
 
 
-![png](../../images/chapters/13-images-in-astronomy/01-images-in-astronomy_instructor_76_0.png)
+![png](../../images/chapters/13-images-in-astronomy/01-images-in-astronomy_instructor_81_0.png)
 
 
 
@@ -1020,7 +1049,7 @@ MemoryError                               Traceback (most recent call last)
 
 {:.output_traceback_line}
 ```
-<ipython-input-38-194907119f42> in <module>()
+<ipython-input-43-194907119f42> in <module>()
 ----> 1 mr = amap.rotate()
       2 mr.peek()
 

@@ -239,7 +239,7 @@ Using astroquery and wcsaxes together we can download both an image and a star f
 
 {:.input_area}
 ```python
-from astroquery.skyview import SkyView
+from astroquery.skyview import SkyView#
 import astropy.units as u
 ```
 

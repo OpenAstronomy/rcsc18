@@ -42,9 +42,9 @@ The [astroquery](https://astroquery.readthedocs.io/en/latest/) package has an in
 
 1. Use astroquery to find out what catalogs are available from IRSA. For each catalog, you'll likely find out a short name (e.g. ``akari_fis`` and a longer name, e.g. ``Akari/FIS Bright Source Catalogue``). Find out what catalogs are available for MSX. [Hint: you can search for ``MSX`` or ``Midcourse`` in the long name - and bonus points if you don't do that by hand!]. Keep track of the short name for the catalog that doesn't contain rejected sources (this will make sense once you see the available catalogs)
 1. Next up, do a 'box' search at the position of M16, with a size of 1 degree, from the main MSX catalog. You may run into an issue where there are too many rows being returned (see [here](https://astroquery.readthedocs.io/en/latest/irsa/irsa.html#other-configurations) for information on getting around this issue). How many rows did the query return?
-1. Make a simple scatter plot of the positions of the sources on the sky using their Right Ascension and Declination.
+1. Make a scatter plot of the positions of the sources on the sky using their Right Ascension and Declination.
 1. The table includes columns called ``q_a`` and ``q_c`` that give the quality of the photometry in bands A and C (where 2 and above is good). Filter the table to include only rows where these two values are greater or equal to 2. How many rows remain? You can try and update your plot of the positions.
-1. The ``a``, ``c``, ``d``, and ``e`` bands give the fluxes at 3.4, 4.6, 12, and 22µm respectively. Split the table into two sets of sources: those that have c/a > 1.5, and the remaining sources. Next up, plot the positions of each set of sources and compare their distributions.
+1. The ``a``, ``c``, ``d``, and ``e`` bands give the fluxes at 3.4, 4.6, 12, and 22µm respectively. Split the table into two sets of sources: those that have $c/a > 1.5$, and the remaining sources. Next up, plot the positions of each set of sources and compare their distributions.
 1. Write a Python script that contains a function that given the parameters for the astroquery search (position and width), will return the two groups of sources for the MSX catalog, and share this function with your co-worker (ideally via a shared git repository!).
 
 ## Part 3: visualizing the image and catalog together

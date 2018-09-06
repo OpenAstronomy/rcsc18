@@ -216,7 +216,7 @@ plt.axvline(max_t_goes_short, color='black', linestyle='dashed',linewidth=2)
 
 {:.output_data_text}
 ```
-<matplotlib.lines.Line2D at 0x7ff4e844df28>
+<matplotlib.lines.Line2D at 0x7f981ed35c50>
 ```
 
 
@@ -377,8 +377,8 @@ print("When is dinner? {}".format(dinner))
 
 {:.output_stream}
 ```
-2018-09-06 12:25:52.335724
-2018-09-06 11:25:52.335904
+2018-09-06 18:17:45.411540
+2018-09-06 17:17:45.411670
 When is dinner? 2005-07-14 12:30:00
 
 ```
